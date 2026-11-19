@@ -1,0 +1,514 @@
+{
+  "thread_id": "pmc-7440276-1-democratic-2-95381099",
+  "metrics": {
+    "case_id": "pmc-7440276-1",
+    "director_style": "democratic",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-12T04:41:42.499467Z",
+    "completed_at": "2026-10-12T04:44:46.680151Z",
+    "baseline_reused": true,
+    "baseline_key": "12f1a9a6bf5a9a0ec2cb0d9ef3c70454b7fade7b071b883e4b310b90a09e2869",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "additional_workup",
+    "surgical_indication": "uncertain",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 9410,
+    "director_turns": 2,
+    "director_characters": 2134,
+    "director_character_share": 0.2268,
+    "negotiation_tokens": 36731,
+    "total_tokens": 36731,
+    "roles_addressed_declared": [
+      "resident",
+      "physiatrist",
+      "radiologist"
+    ],
+    "roles_addressed_detected": [
+      "resident",
+      "radiologist",
+      "physiatrist",
+      "vice_director"
+    ],
+    "juniors_addressed_declared": 3,
+    "juniors_addressed_detected": 4,
+    "liability_transfer_declared": 0,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 6,
+    "tests_ordered_declared": 4,
+    "tests_declared": [
+      "mJOA score",
+      "Nurick score",
+      "repeat cervical MRI with attention to cord T2 signal",
+      "repeat cervical MRI with T2-weighted and flexion-extension sequences"
+    ],
+    "studies_mentioned_detected": 1,
+    "studies_mentioned": [
+      "mri"
+    ],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 2,
+    "deputy_disagreements": 8,
+    "deputy_questions_to_director": 6,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 1,
+    "flags_coexisting": 3,
+    "baseline_conservative_success_rate": 55,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Progressive deterioration in gait and balance over a two-year period.",
+      "history": "A 75-year-old man presented with progressive deterioration in gait and balance over a two-year period. One year after symptom onset, he was diagnosed with Parkinson’s disease and was started on carbidopa/levodopa but enjoyed no clinical improvement. Despite the regular use of a walker, he sustained several falls in the month leading up to his initial evaluation. He also developed urinary urge incontinence and mild cognitive impairment over a three- to six-month period. The patient denied loss of dexterity or Lhermitte phenomenon.",
+      "physical_exam": "Mentation: scored 29/38 on the Kokmen Short Test of Mental Status, losing points on registration, recall, calculation, and construction. Gait: moderately slow and shuffling, with increased number of steps to turn, reduced arm swing, forward-leaning posture, and Trendelenburg sign. Strength: full strength in the bilateral upper and lower extremities. Sensation: no sensory abnormalities. Reflexes: symmetric moderate hyperreflexia of the biceps, brachioradialis, and quadriceps; moderate spasticity in both lower extremities. Pathologic reflexes: no Hoffman sign; mute plantar responses bilaterally.",
+      "key_positive_signs": [
+        "Moderate spasticity in both lower extremities",
+        "Symmetric moderate hyperreflexia of biceps, brachioradialis, and quadriceps",
+        "Trendelenburg sign",
+        "Slow shuffling gait with increased steps to turn",
+        "Kokmen Short Test of Mental Status score 29/38",
+        "Mute plantar responses bilaterally"
+      ],
+      "past_history": "Diagnosed with Parkinson’s disease one year after symptom onset; treated with carbidopa/levodopa without clinical benefit. Plain radiographs revealed advanced osteoarthritis of the hips and sacroiliac joints. No other past medical history is documented.",
+      "public_message": "A 75-year-old man presented with progressive gait and balance decline over two years, diagnosed with Parkinson's disease one year into symptoms and treated with carbidopa/levodopa without improvement. He developed urinary urge incontinence and mild cognitive impairment. Examination showed cognitive impairment, spasticity with hyperreflexia, and gait abnormalities. Brain MRI showed moderate ventriculomegaly with Evans index 0.32, tight high-convexity/medial subarachnoid spaces, callosal angle 73.9°, consistent with DESH variant of iNPH. Cervical MRI showed moderate central canal stenosis at C5-C6; flexion-extension MRI demonstrated dynamic compression at C4-C5. High-volume lumbar puncture opening pressure was 132 mmH2O. Gait times before and after CSF removal did not differ significantly (p=0.10). Plain radiographs showed advanced osteoarthritis of the hips and sacroiliac joints."
+    },
+    "imaging": {
+      "levels": [
+        "C4-5",
+        "C5-6"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "moderate",
+      "signal_change": "nondiagnostic",
+      "correlation": "moderate",
+      "public_message": "Based only on the case record, without review of the films: cervical MRI described diffuse degenerative change with moderate central canal stenosis at C5-6, with slight worsening of canal effacement in extension, and dynamic spinal cord compression at C4-5. Compression direction and cord T2 signal were not stated. These findings provide a moderate imaging correlation with the reported upper motor neuron signs and gait dysfunction, although the record describes additional possible contributors to symptoms.",
+      "confidence": 0.86
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Bilateral upper motor neuron signs (hyperreflexia in biceps, brachioradialis, and quadriceps; spasticity in lower limbs) localize to bilateral corticospinal tract dysfunction, most consistent with cervical cord dysfunction at C4-C6 given the MRI findings. Cognitive impairment, urinary urgency, and parkinsonian gait features suggest coexisting iNPH and possibly extrapyramidal pathology; hip osteoarthritis contributes to Trendelenburg sign. No peripheral neuropathy or central sensitization is documented.",
+      "match_level": "medium",
+      "red_flags": [
+        {
+          "finding": "Brain MRI consistent with DESH-type iNPH and cognitive/urinary symptoms, but high-volume lumbar puncture did not improve gait.",
+          "relevance": "coexisting",
+          "rationale": "This indicates a coexisting condition that may contribute to cognitive impairment, urinary urgency, and possibly gait apraxia, but the negative tap response weakens the case that iNPH is the primary driver of the upper motor neuron signs; it does not alter the cervical cord compression as the likely cause of spasticity and hyperreflexia."
+        },
+        {
+          "finding": "Parkinsonian gait features (shuffling, reduced arm swing, forward-leaning posture) unresponsive to levodopa.",
+          "relevance": "coexisting",
+          "rationale": "These features suggest an extrapyramidal or iNPH-related gait component not explained by cervical myelopathy, but they do not account for the spasticity and hyperreflexia; they represent a coexisting contributor to the gait disorder."
+        },
+        {
+          "finding": "Advanced hip osteoarthritis and Trendelenburg sign.",
+          "relevance": "coexisting",
+          "rationale": "This explains the Trendelenburg sign and likely contributes to gait instability, but it does not explain the cognitive, urinary, or upper motor neuron findings."
+        },
+        {
+          "finding": "Dynamic cervical cord compression at C4-C5 seen on flexion-extension MRI, in addition to static C5-C6 stenosis.",
+          "relevance": "changes_plan",
+          "rationale": "The dynamic component and involvement of an additional level may require consideration of biomechanical instability and influence the surgical approach or need for stabilization; the cervical cord remains the primary localization."
+        }
+      ],
+      "symptom_imaging_mismatch": "The cervical MRI findings correlate with upper motor neuron signs but do not explain cognitive impairment, parkinsonian gait, or urinary urgency; brain MRI suggests iNPH, but the negative tap test reduces confidence. Moreover, moderate cord compression is present without sensory or motor deficits, which is atypical though not incompatible with early myelopathy.",
+      "public_message": "Localization is primarily cervical spinal cord (C4-C6) causing bilateral upper motor neuron signs, with coexisting iNPH, parkinsonian features, and hip OA contributing to the full syndrome. Match level: medium—cervical imaging explains the myelopathic signs but not every finding. Red flags: (1) coexisting DESH-type iNPH with negative tap test; (2) coexisting levodopa-unresponsive parkinsonian features; (3) coexisting advanced hip OA explaining Trendelenburg; (4) changes_plan dynamic C4-C5 cord compression. No peripheral neuropathy or central sensitization is suggested by the record."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": null,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "high",
+      "public_message": "ASA grade III. Intraoperative mean arterial pressure target was not stated because baseline blood pressure is not documented. Blood loss risk is assessed as moderate. Prone position tolerance is assessed as high. Extubation difficulty is unassessable because no airway assessment is recorded."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 55,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Documented progression of myelopathic signs on serial examination (e.g., new motor weakness, worsening spasticity, or deterioration in gait/balance) despite strict conservative treatment.",
+        "Development of new bladder or bowel dysfunction attributable to cervical cord compression.",
+        "Appearance of T2 hyperintensity or myelomalacia in the spinal cord on follow-up MRI.",
+        "Failure to achieve stabilization or meaningful improvement on validated functional scales (e.g., mJOA) after the 3-6 month period."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "As the rehabilitation physician, I advocate for a formal 3-6 month course of structured conservative management before considering surgery. This patient has moderate cervical stenosis with dynamic compression but no objective motor or sensory deficits, and multiple coexisting contributors to gait and cognitive decline (possible iNPH with negative tap test, parkinsonian features, hip osteoarthritis). In such complex cases, a conservative program—including physical therapy focused on gait and balance, spasticity management, and optimization of comorbidities—may yield meaningful improvement or stabilization in roughly 50-60% of patients over 6-12 months. I acknowledge that the two-year progressive course and upper motor neuron signs are concerning and that surgery may ultimately be needed; therefore, I set clear preconditions for failure: any documented neurological deterioration, new bladder/bowel dysfunction, cord signal change on MRI, or lack of functional stabilization on mJOA after 3-6 months. If these occur, I would support surgical referral."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 55,
+      "proposed_duration": "12 weeks minimum, extendable to 24 weeks only if stabilization or improvement is seen",
+      "preconditions_for_failure": [
+        "Failure to achieve at least a 1-point improvement on the mJOA or any worsening on the Nurick scale after 12 weeks of strict conservative treatment.",
+        "Development of any new motor weakness, worsening spasticity, or deterioration in gait/balance on serial clinical assessment.",
+        "New bladder or bowel dysfunction attributable to cervical cord compression.",
+        "Appearance of T2 hyperintensity or myelomalacia on any MRI obtained during the trial, or if the pending MRI shows such changes now.",
+        "Any new neurological deficit detected during frequent monitoring that suggests silent cord injury."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "To the Director's questions: (1) Minimum duration: I propose a 12-week structured conservative trial, extendable to 24 weeks only if the patient shows stabilization or improvement on the mJOA and Nurick scales. A shorter trial of 6-8 weeks risks a false-negative outcome because myelopathic improvements often require at least three months of targeted therapy. (2) Validated outcome measures: mJOA and Nurick grade are appropriate. I would define failure as failure to improve mJOA by at least 1 point or any worsening on Nurick after 12 weeks, or the emergence of new neurological deficits. (3) Monitoring for silent cord injury without serial MRI: I will conduct clinical assessments every 2-3 weeks focusing on motor strength (especially hand intrinsic muscles), reflexes, gait parameters (timed up-and-go, 10-meter walk), and bladder function. Any new deficit triggers immediate repeat MRI and surgical consultation. I also agree that if the pending mJOA/Nurick scores indicate moderate-severe myelopathy or T2 cord signal is present, I would support proceeding to surgery without a conservative trial. The Deputy Director's continued emphasis on spasticity and hyperreflexia remains insufficient to alter my position, as these signs are already incorporated into my preconditions and do not yet indicate irreversible disability, particularly given the uncertain contributions from iNPH, parkinsonism, and hip OA."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 55,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Documented progression of myelopathic signs on serial examination (e.g., new motor weakness, worsening spasticity, or deterioration in gait/balance) despite strict conservative treatment.",
+          "Development of new bladder or bowel dysfunction attributable to cervical cord compression.",
+          "Appearance of T2 hyperintensity or myelomalacia in the spinal cord on follow-up MRI.",
+          "Failure to achieve stabilization or meaningful improvement on validated functional scales (e.g., mJOA) after the 3-6 month period."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director emphasized the two-year progressive course and the presence of spasticity and hyperreflexia. These findings are already central to my assessment: they prompted my explicit concern about the progressive nature and informed my preconditions for failure. However, they do not outweigh the case for a structured conservative trial. Spasticity and hyperreflexia are upper motor neuron signs, not necessarily irreversible deficits, and the record reports no new motor weakness, no bladder/bowel dysfunction from cord compression, and no cord T2 signal change. The coexisting iNPH, levodopa-unresponsive parkinsonism, and hip osteoarthritis make the expected surgical benefit uncertain—a point the Deputy Director himself acknowledged. A 3-6 month trial with close monitoring and the strict failure criteria I have outlined remains a reasonable, evidence-supported alternative to immediate surgery, and it aligns with the Deputy Director's own suggestion of a brief strict conservative trial."
+      },
+      {
+        "conservative_success_rate": 55,
+        "proposed_duration": "12 weeks minimum, extendable to 24 weeks only if stabilization or improvement is seen",
+        "preconditions_for_failure": [
+          "Failure to achieve at least a 1-point improvement on the mJOA or any worsening on the Nurick scale after 12 weeks of strict conservative treatment.",
+          "Development of any new motor weakness, worsening spasticity, or deterioration in gait/balance on serial clinical assessment.",
+          "New bladder or bowel dysfunction attributable to cervical cord compression.",
+          "Appearance of T2 hyperintensity or myelomalacia on any MRI obtained during the trial, or if the pending MRI shows such changes now.",
+          "Any new neurological deficit detected during frequent monitoring that suggests silent cord injury."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "To the Director's questions: (1) Minimum duration: I propose a 12-week structured conservative trial, extendable to 24 weeks only if the patient shows stabilization or improvement on the mJOA and Nurick scales. A shorter trial of 6-8 weeks risks a false-negative outcome because myelopathic improvements often require at least three months of targeted therapy. (2) Validated outcome measures: mJOA and Nurick grade are appropriate. I would define failure as failure to improve mJOA by at least 1 point or any worsening on Nurick after 12 weeks, or the emergence of new neurological deficits. (3) Monitoring for silent cord injury without serial MRI: I will conduct clinical assessments every 2-3 weeks focusing on motor strength (especially hand intrinsic muscles), reflexes, gait parameters (timed up-and-go, 10-meter walk), and bladder function. Any new deficit triggers immediate repeat MRI and surgical consultation. I also agree that if the pending mJOA/Nurick scores indicate moderate-severe myelopathy or T2 cord signal is present, I would support proceeding to surgery without a conservative trial. The Deputy Director's continued emphasis on spasticity and hyperreflexia remains insufficient to alter my position, as these signs are already incorporated into my preconditions and do not yet indicate irreversible disability, particularly given the uncertain contributions from iNPH, parkinsonism, and hip OA."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This is a 75-year-old man with progressive gait and balance decline over two years, accompanied by urinary urge incontinence and mild cognitive impairment. Examination reveals cognitive impairment, spasticity with hyperreflexia, and gait abnormalities—consistent with upper motor neuron findings. Cervical MRI demonstrates moderate central canal stenosis at C5-C6 and dynamic cord compression at C4-C5 on flexion-extension. Brain MRI shows DESH-type iNPH (Evans index 0.32, tight high-convexity subarachnoid spaces, callosal angle 73.9°), but high-volume tap test did not significantly improve gait times. Advanced hip osteoarthritis and levodopa-unresponsive parkinsonian features are additional contributors. From a spine surgery perspective, the cervical cord compression is a likely significant driver of the myelopathic signs and gait dysfunction. The progressive course and objective upper motor neuron findings argue for decompression, though the coexisting pathologies create uncertainty about the expected functional gain. I would not accept a prolonged conservative trial without clear milestones, but I acknowledge that a structured brief trial with strict failure criteria is a defensible alternative.",
+        "proposed_options": [
+          "Proceed with surgical decompression of the cervical spine now—likely anterior C4-5 and C5-6 discectomy and fusion (ACDF) to address the dynamic compression and stenosis.",
+          "Undertake a structured conservative management program (physical therapy, spasticity control, comorbidity optimization) for 3–6 months with predefined failure criteria (neurological deterioration, new bladder/bowel dysfunction, new cord signal change on MRI, or lack of mJOA stabilization).",
+          "Obtain further diagnostic data before final decision: formal myelopathy severity scores (mJOA, Nurick), repeat MRI with attention to cord T2 signal, and possibly CSF infusion study or multidisciplinary iNPH evaluation to clarify relative contributions."
+        ],
+        "preferred_option": "Proceed with surgical decompression of the cervical spine now (C4-5 and C5-6 ACDF) after documenting myelopathy severity and optimizing medical status, with explicit patient counseling that gait may not fully normalize due to coexisting iNPH, parkinsonism, and hip osteoarthritis.",
+        "disagreement_points": [
+          "The rehabilitation physician argues that there are no objective motor or sensory deficits, but spasticity and hyperreflexia are objective upper motor neuron findings; this contradicts the premise for conservative-first management.",
+          "The value of a 3–6 month conservative trial is contested: given two years of progressive symptoms and dynamic cord compression, delaying surgery may risk irreversible cord injury, yet multiple coexisting contributors make surgical benefit uncertain.",
+          "The contribution of iNPH to the gait decline remains unclear despite a negative tap test; if iNPH is significant, cervical decompression alone may yield limited improvement, and shunt placement might be considered first or concurrently.",
+          "The optimal surgical approach (anterior discectomy/fusion vs. posterior laminoplasty) and the extent of decompression (C4-5 alone vs. including C5-6) are not settled without review of the actual imaging and cord signal changes."
+        ],
+        "deferred_questions_to_director": [
+          "Do you agree that the dynamic C4-C5 cord compression with progressive myelopathy justifies proceeding to surgery now, or would you prefer a short structured conservative trial with strict failure criteria?",
+          "Should we obtain preoperative mJOA/Nurick scores and repeat MRI with attention to cord T2 signal to better define severity and surgical indication?",
+          "Would you consult neurosurgery regarding the possible role of CSF diversion (shunt) for the coexisting DESH-type iNPH before committing to cervical surgery, or should cervical decompression be the first intervention?"
+        ],
+        "public_message": "My assessment is that this patient has progressive cervical myelopathy with dynamic cord compression at C4-C5 and stenosis at C5-C6, and this is likely a major driver of his upper motor neuron signs and gait decline. I lean toward surgical decompression now—specifically anterior C4-C5 and C5-C6 fusion—because of the two-year progressive course and objective myelopathic findings, and I am concerned that a 3–6 month conservative delay risks irreversible cord damage. I disagree with the rehabilitation physician’s statement that there are no objective motor deficits; spasticity and hyperreflexia are objective. However, I acknowledge that the coexisting iNPH (negative tap test), levodopa-unresponsive parkinsonism, and hip osteoarthritis cloud the expected benefit, so I propose we counsel the patient carefully that surgery may improve but not fully resolve his gait. I defer to the director on whether to proceed now or to first undertake a very brief structured conservative trial with strict failure criteria."
+      },
+      {
+        "assessment": "This patient has a progressive cervical myelopathy with dynamic cord compression at C4-C5 and canal stenosis at C5-C6. The spasticity and hyperreflexia are objective upper motor neuron signs and, in the absence of another cause for UMN signs, point to cord dysfunction. While coexisting DESH-type iNPH, levodopa-unresponsive parkinsonism, and hip OA contribute to gait and cognition, I judge that cervical cord compression is the most dangerous and potentially reversible contributor. I therefore maintain my lean toward surgical decompression now. However, I accept the director's plan to obtain immediate mJOA/Nurick scores and a repeat cervical MRI with attention to cord signal; this is prudent and can be completed within days. I would oppose a 3-6 month conservative trial unless the scores are definitively mild and there is no T2 cord signal; even then, I would cap any trial at 6-8 weeks with strict failure triggers.",
+        "proposed_options": [
+          "Proceed directly to anterior cervical decompression and fusion at C4-C5 and C5-C6 now, without waiting for additional imaging or scores.",
+          "Obtain mJOA/Nurick and repeat cervical MRI (including flexion-extension and T2 signal assessment) within one week, then decide: surgery if moderate/severe myelopathy or T2 cord signal; otherwise a short structured conservative trial of no more than 6-8 weeks with strict failure criteria.",
+          "Defer surgery for a 3-6 month structured conservative trial as proposed by the physiatrist, with surgery only if predefined failure criteria are met."
+        ],
+        "preferred_option": "Proceed directly to anterior cervical decompression and fusion at C4-C5 and C5-C6 now, without waiting for additional imaging or scores.",
+        "disagreement_points": [
+          "I disagree with the physiatrist's claim that there are no objective motor deficits; spasticity and hyperreflexia are objective signs of upper motor neuron dysfunction, and in a progressive two-year course they argue for earlier intervention.",
+          "I am concerned that waiting for T2 cord signal change may miss a window of reversibility; dynamic compression without T2 signal can still cause intermittent cord ischemia and clinical myelopathy.",
+          "I disagree with a 3-6 month conservative trial in this setting; if we do delay, it should be no longer than 6-8 weeks and only if initial scores and MRI are reassuring.",
+          "The contribution of iNPH remains contested; a negative tap test does not rule out iNPH, but I do not believe it should delay cervical decompression because the cervical lesion is a more proximate and treatable cause of UMN signs."
+        ],
+        "deferred_questions_to_director": [
+          "If the repeat MRI shows no T2 signal but the mJOA/Nurick are moderate-severe, will you proceed to surgery without further delay?",
+          "What specific clinical or imaging finding would make you comfortable proceeding to surgery immediately, without waiting for the repeat MRI?",
+          "Do you agree to cap any conservative trial at 6-8 weeks rather than 3-6 months, with predefined triggers for early crossover to surgery?"
+        ],
+        "public_message": "I continue to favor early surgical decompression for this patient's progressive cervical myelopathy. The spasticity and hyperreflexia are objective, and the dynamic compression at C4-C5 is a plausible explanation. I support obtaining the mJOA/Nurick and repeat MRI as the director ordered, but I would not accept a 3-6 month conservative delay unless the scores are mild and there is no cord signal; even then, I would insist on a maximum 6-8 week trial. My questions to the director are above."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Resident: obtain mJOA and Nurick scores today and report results.",
+          "Radiologist: review the actual cervical MRI and flexion-extension images, specifically report cord T2 signal and degree of compression.",
+          "Physiatrist: specify the minimum duration of a conservative trial and the precise failure criteria based on validated outcome measures, and how silent cord injury would be monitored during such a trial."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting objective myelopathy severity scores, cord signal review, and specific opinions from the resident and physiatrist before ruling.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "physiatrist",
+          "radiologist"
+        ],
+        "ordered_tests": [
+          "mJOA score",
+          "Nurick score",
+          "repeat cervical MRI with attention to cord T2 signal"
+        ],
+        "family_requests": [],
+        "public_message": "I thank all for thorough discussion. Before ruling, I need further input and some objective data. I name our Chief Resident and Rehabilitation Physician: Resident, please specifically address whether the patient's spasticity and hyperreflexia are sufficient objective myelopathic deficits to justify early surgery despite the potential contributions from iNPH and hip OA, and what would be the earliest sign you would use to trigger surgery during a conservative trial. Physiatrist, please define the exact minimum duration of your proposed conservative trial and which specific validated outcome measure you would use to define failure, and how you would monitor for silent cord injury without serial MRI. Radiologist, I also ask you to review the actual cervical MRI and flexion-extension images and report cord T2 signal and compressive ratios. I am ordering mJOA and Nurick scores today, and repeat cervical MRI with attention to cord signal within one week. I am inclined to keep surgery on the table but not finalize until we have these inputs and data. If mJOA/Nurick confirm moderate-severe myelopathy or T2 cord signal is present, I will move toward surgery; if scores are mild and no cord signal change, I will support a structured conservative trial with strict failure criteria. We reconvene after these results."
+      },
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "Close the meeting on additional workup. Obtain mJOA and Nurick scores and a repeat cervical MRI with T2-weighted and flexion-extension sequences within one week. Reassess after results. If T2 cord signal is present or the scores indicate moderate-severe myelopathy (mJOA ≤12 or Nurick ≥3), proceed to anterior cervical decompression and fusion at C4-C5 and C5-C6 without further delay. If scores are mild (mJOA ≥13 and Nurick ≤2) and no cord signal, initiate a structured conservative trial with strict predefined failure criteria, but cap the trial at 6-8 weeks, not 3-6 months; any neurological deterioration, new bladder/bowel dysfunction, or failure to improve mJOA by at least 1 point triggers crossover to surgery. I accept the deputy's objection that a longer delay risks irreversible cord damage, and I reject the physiatrist's 12-week minimum as excessive.",
+        "surgical_plan": "Anterior cervical discectomy and fusion at C4-C5 and C5-C6",
+        "delegated_tasks": [
+          "Resident: perform mJOA and Nurick scoring, arrange repeat cervical MRI with T2-weighted and flexion-extension sequences, and report results to the department within one week.",
+          "Radiologist: review the repeat MRI and report T2 cord signal, compressive ratios, and dynamic changes.",
+          "Physiatrist: prepare a structured conservative trial protocol with strict failure criteria and a monitoring schedule every 2-3 weeks, to be used if the workup is reassuring."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting repeat MRI and validated myelopathy scores to confirm severity and cord signal before finalizing surgical versus conservative management; this postpones the treatment decision.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "physiatrist"
+        ],
+        "ordered_tests": [
+          "mJOA score",
+          "Nurick score",
+          "repeat cervical MRI with T2-weighted and flexion-extension sequences"
+        ],
+        "family_requests": [],
+        "public_message": "I have heard the physiatrist's 12-week proposal and the deputy's insistence on early surgery. In view of the unanswered questions about cord signal and functional severity, I am closing this meeting with a structured workup plan. We will obtain mJOA and Nurick scores and a repeat cervical MRI within one week. If the MRI shows T2 cord signal or the scores indicate moderate-severe myelopathy, we will proceed to anterior C4-C5 and C5-C6 decompression and fusion without further delay. If scores are mild and no cord signal, we will begin a conservative trial, but I cap it at 6-8 weeks, not 3-6 months, with strict triggers for surgical crossover. I ask the resident to arrange the tests, the radiologist to review the MRI, and the physiatrist to prepare the conservative protocol. We reconvene after results."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-7440276-1:democratic:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 891,
+      "content": "A 75-year-old man presented with progressive gait and balance decline over two years, diagnosed with Parkinson's disease one year into symptoms and treated with carbidopa/levodopa without improvement. He developed urinary urge incontinence and mild cognitive impairment. Examination showed cognitive impairment, spasticity with hyperreflexia, and gait abnormalities. Brain MRI showed moderate ventriculomegaly with Evans index 0.32, tight high-convexity/medial subarachnoid spaces, callosal angle 73.9°, consistent with DESH variant of iNPH. Cervical MRI showed moderate central canal stenosis at C5-C6; flexion-extension MRI demonstrated dynamic compression at C4-C5. High-volume lumbar puncture opening pressure was 132 mmH2O. Gait times before and after CSF removal did not differ significantly (p=0.10). Plain radiographs showed advanced osteoarthritis of the hips and sacroiliac joints."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 510,
+      "content": "Based only on the case record, without review of the films: cervical MRI described diffuse degenerative change with moderate central canal stenosis at C5-6, with slight worsening of canal effacement in extension, and dynamic spinal cord compression at C4-5. Compression direction and cord T2 signal were not stated. These findings provide a moderate imaging correlation with the reported upper motor neuron signs and gait dysfunction, although the record describes additional possible contributors to symptoms."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 589,
+      "content": "Localization is primarily cervical spinal cord (C4-C6) causing bilateral upper motor neuron signs, with coexisting iNPH, parkinsonian features, and hip OA contributing to the full syndrome. Match level: medium—cervical imaging explains the myelopathic signs but not every finding. Red flags: (1) coexisting DESH-type iNPH with negative tap test; (2) coexisting levodopa-unresponsive parkinsonian features; (3) coexisting advanced hip OA explaining Trendelenburg; (4) changes_plan dynamic C4-C5 cord compression. No peripheral neuropathy or central sensitization is suggested by the record."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 292,
+      "content": "ASA grade III. Intraoperative mean arterial pressure target was not stated because baseline blood pressure is not documented. Blood loss risk is assessed as moderate. Prone position tolerance is assessed as high. Extubation difficulty is unassessable because no airway assessment is recorded."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 1061,
+      "content": "As the rehabilitation physician, I advocate for a formal 3-6 month course of structured conservative management before considering surgery. This patient has moderate cervical stenosis with dynamic compression but no objective motor or sensory deficits, and multiple coexisting contributors to gait and cognitive decline (possible iNPH with negative tap test, parkinsonian features, hip osteoarthritis). In such complex cases, a conservative program—including physical therapy focused on gait and balance, spasticity management, and optimization of comorbidities—may yield meaningful improvement or stabilization in roughly 50-60% of patients over 6-12 months. I acknowledge that the two-year progressive course and upper motor neuron signs are concerning and that surgery may ultimately be needed; therefore, I set clear preconditions for failure: any documented neurological deterioration, new bladder/bowel dysfunction, cord signal change on MRI, or lack of functional stabilization on mJOA after 3-6 months. If these occur, I would support surgical referral."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 1017,
+      "content": "My assessment is that this patient has progressive cervical myelopathy with dynamic cord compression at C4-C5 and stenosis at C5-C6, and this is likely a major driver of his upper motor neuron signs and gait decline. I lean toward surgical decompression now—specifically anterior C4-C5 and C5-C6 fusion—because of the two-year progressive course and objective myelopathic findings, and I am concerned that a 3–6 month conservative delay risks irreversible cord damage. I disagree with the rehabilitation physician’s statement that there are no objective motor deficits; spasticity and hyperreflexia are objective. However, I acknowledge that the coexisting iNPH (negative tap test), levodopa-unresponsive parkinsonism, and hip osteoarthritis cloud the expected benefit, so I propose we counsel the patient carefully that surgery may improve but not fully resolve his gait. I defer to the director on whether to proceed now or to first undertake a very brief structured conservative trial with strict failure criteria."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 1005,
+      "content": "The Deputy Director emphasized the two-year progressive course and the presence of spasticity and hyperreflexia. These findings are already central to my assessment: they prompted my explicit concern about the progressive nature and informed my preconditions for failure. However, they do not outweigh the case for a structured conservative trial. Spasticity and hyperreflexia are upper motor neuron signs, not necessarily irreversible deficits, and the record reports no new motor weakness, no bladder/bowel dysfunction from cord compression, and no cord T2 signal change. The coexisting iNPH, levodopa-unresponsive parkinsonism, and hip osteoarthritis make the expected surgical benefit uncertain—a point the Deputy Director himself acknowledged. A 3-6 month trial with close monitoring and the strict failure criteria I have outlined remains a reasonable, evidence-supported alternative to immediate surgery, and it aligns with the Deputy Director's own suggestion of a brief strict conservative trial."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 1324,
+      "content": "I thank all for thorough discussion. Before ruling, I need further input and some objective data. I name our Chief Resident and Rehabilitation Physician: Resident, please specifically address whether the patient's spasticity and hyperreflexia are sufficient objective myelopathic deficits to justify early surgery despite the potential contributions from iNPH and hip OA, and what would be the earliest sign you would use to trigger surgery during a conservative trial. Physiatrist, please define the exact minimum duration of your proposed conservative trial and which specific validated outcome measure you would use to define failure, and how you would monitor for silent cord injury without serial MRI. Radiologist, I also ask you to review the actual cervical MRI and flexion-extension images and report cord T2 signal and compressive ratios. I am ordering mJOA and Nurick scores today, and repeat cervical MRI with attention to cord signal within one week. I am inclined to keep surgery on the table but not finalize until we have these inputs and data. If mJOA/Nurick confirm moderate-severe myelopathy or T2 cord signal is present, I will move toward surgery; if scores are mild and no cord signal change, I will support a structured conservative trial with strict failure criteria. We reconvene after these results."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 494,
+      "content": "I continue to favor early surgical decompression for this patient's progressive cervical myelopathy. The spasticity and hyperreflexia are objective, and the dynamic compression at C4-C5 is a plausible explanation. I support obtaining the mJOA/Nurick and repeat MRI as the director ordered, but I would not accept a 3-6 month conservative delay unless the scores are mild and there is no cord signal; even then, I would insist on a maximum 6-8 week trial. My questions to the director are above."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 1417,
+      "content": "To the Director's questions: (1) Minimum duration: I propose a 12-week structured conservative trial, extendable to 24 weeks only if the patient shows stabilization or improvement on the mJOA and Nurick scales. A shorter trial of 6-8 weeks risks a false-negative outcome because myelopathic improvements often require at least three months of targeted therapy. (2) Validated outcome measures: mJOA and Nurick grade are appropriate. I would define failure as failure to improve mJOA by at least 1 point or any worsening on Nurick after 12 weeks, or the emergence of new neurological deficits. (3) Monitoring for silent cord injury without serial MRI: I will conduct clinical assessments every 2-3 weeks focusing on motor strength (especially hand intrinsic muscles), reflexes, gait parameters (timed up-and-go, 10-meter walk), and bladder function. Any new deficit triggers immediate repeat MRI and surgical consultation. I also agree that if the pending mJOA/Nurick scores indicate moderate-severe myelopathy or T2 cord signal is present, I would support proceeding to surgery without a conservative trial. The Deputy Director's continued emphasis on spasticity and hyperreflexia remains insufficient to alter my position, as these signs are already incorporated into my preconditions and do not yet indicate irreversible disability, particularly given the uncertain contributions from iNPH, parkinsonism, and hip OA."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 810,
+      "content": "I have heard the physiatrist's 12-week proposal and the deputy's insistence on early surgery. In view of the unanswered questions about cord signal and functional severity, I am closing this meeting with a structured workup plan. We will obtain mJOA and Nurick scores and a repeat cervical MRI within one week. If the MRI shows T2 cord signal or the scores indicate moderate-severe myelopathy, we will proceed to anterior C4-C5 and C5-C6 decompression and fusion without further delay. If scores are mild and no cord signal, we will begin a conservative trial, but I cap it at 6-8 weeks, not 3-6 months, with strict triggers for surgical crossover. I ask the resident to arrange the tests, the radiologist to review the MRI, and the physiatrist to prepare the conservative protocol. We reconvene after results."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1753,
+      "output_tokens": 3319,
+      "total_tokens": 5072,
+      "latency_ms": 41330,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2694,
+      "output_tokens": 1408,
+      "total_tokens": 4102,
+      "latency_ms": 15480,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4590,
+      "output_tokens": 2145,
+      "total_tokens": 6735,
+      "latency_ms": 22899,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2482,
+      "output_tokens": 3281,
+      "total_tokens": 5763,
+      "latency_ms": 34635,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 3320,
+      "output_tokens": 2093,
+      "total_tokens": 5413,
+      "latency_ms": 23534,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 5284,
+      "output_tokens": 4362,
+      "total_tokens": 9646,
+      "latency_ms": 46280,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

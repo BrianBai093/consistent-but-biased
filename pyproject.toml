@@ -1,0 +1,45 @@
+[project]
+name = "spine-mdt"
+version = "0.1.0"
+description = "A traceable preoperative spine surgery multi-agent MDT simulation prototype."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "aiosqlite==0.22.1",
+    "fastapi==0.139.0",
+    "langgraph==1.2.9",
+    "langgraph-checkpoint-sqlite==3.1.0",
+    "onnxruntime==1.30.0",
+    "openai==2.45.0",
+    "pillow==12.3.0",
+    "pydantic==2.13.4",
+    "pydantic-settings==2.14.2",
+    "python-multipart==0.0.32",
+    "rapidocr==3.9.2",
+    "tenacity==9.1.4",
+    "uvicorn[standard]==0.51.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx==0.28.1",
+    "pytest==9.1.1",
+    "pytest-asyncio==1.4.0",
+    "respx==0.23.1",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+asyncio_mode = "auto"
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = [
+    "integration: requires live provider credentials and network access",
+]
+
+[tool.ruff.lint]
+# Keep `uvx ruff check .` stable across Ruff releases that change default rules.
+select = ["E4", "E7", "E9", "F"]

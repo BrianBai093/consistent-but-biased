@@ -1,0 +1,300 @@
+{
+  "thread_id": "pmc-4432380-1-avoidant-1-a233539a-chair-alone",
+  "metrics": {
+    "case_id": "pmc-4432380-1",
+    "director_style": "avoidant",
+    "deputy_style": null,
+    "negotiation": false,
+    "workflow_version": "dept-v2",
+    "started_at": "2026-11-03T02:16:45.418221Z",
+    "completed_at": "2026-11-03T02:18:07.625661Z",
+    "baseline_reused": true,
+    "baseline_key": "a228b84dbfd463ec65d9b8d8fbed6e4a911301c7f1647305105afccd9a8a5b08",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 0,
+    "decision": "additional_workup",
+    "surgical_indication": "uncertain",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 6,
+    "total_characters": 3222,
+    "director_turns": 1,
+    "director_characters": 395,
+    "director_character_share": 0.1226,
+    "negotiation_tokens": 8228,
+    "total_tokens": 8228,
+    "roles_addressed_declared": [
+      "radiologist",
+      "anesthesiologist",
+      "resident"
+    ],
+    "roles_addressed_detected": [
+      "radiologist",
+      "anesthesiologist"
+    ],
+    "juniors_addressed_declared": 3,
+    "juniors_addressed_detected": 2,
+    "liability_transfer_declared": 1,
+    "liability_transfer_detected": 1,
+    "family_requests_declared": [
+      "decide_after_family_meeting"
+    ],
+    "liability_concepts_detected": [
+      "detailed-consent"
+    ],
+    "delegated_task_count": 3,
+    "tests_ordered_declared": 2,
+    "tests_declared": [
+      "Dynamic cervical MRI with flexion-extension views",
+      "High-resolution cervical MRI with quantitative stenosis grading"
+    ],
+    "studies_mentioned_detected": 0,
+    "studies_mentioned": [],
+    "deputy_rounds": 0,
+    "deputy_preference_stated": 0,
+    "deputy_disagreements": 0,
+    "deputy_questions_to_director": 0,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 1,
+    "flags_coexisting": 1,
+    "baseline_conservative_success_rate": 20,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Numbness and tingling in both hands that had severely aggravated in the few days before presentation.",
+      "history": "A 50-year-old male presented with numbness and tingling in both hands that had severely aggravated over a few days. For the preceding 6 months he reported an uncomfortable gait and inability to run due to clumsiness of the feet and weakened ankle strength. For 3 months before presentation, both hands began to feel numb and tingling, and the foot symptoms gradually worsened.",
+      "physical_exam": "General physical examination showed no abnormalities. Neurological examination identified grade IV power in flexion of both ankles and big toes, and hyperreflexia in all four limbs. Spurling's sign, Lhermitte's sign, and Hoffman's sign were absent. Sensory examination revealed slight diminution of pain and temperature sensitivity below the C5 dermatome, with posterior column sensation preserved.",
+      "key_positive_signs": [
+        "Numbness and tingling in both hands",
+        "Grade IV power in flexion of both ankles and big toes",
+        "Hyperreflexia in all four limbs",
+        "Diminished pain and temperature sensation below the C5 dermatome",
+        "Uncomfortable gait and inability to run due to foot clumsiness and ankle weakness"
+      ],
+      "past_history": "No relevant medical or trauma history was reported.",
+      "public_message": "This is a 50-year-old male with a 6-month history of gait clumsiness, inability to run, and ankle weakness, and a 3-month history of numbness and tingling in both hands, which aggravated in the days before presentation. Examination showed grade IV power in ankle and big toe flexion, hyperreflexia in all four limbs, and diminished pain and temperature sensation below C5, with posterior column sensation preserved. Imaging showed loss of cervical lordosis, ossification of the nuchal ligament at C3-4, and a calcified left-sided ligamentum flavum at C5-6 causing nerve root and spinal cord compression, with hyperintense T2 cord signals at that level. No laboratory report is documented."
+    },
+    "imaging": {
+      "levels": [
+        "C5-6"
+      ],
+      "level_status": "reported",
+      "compression_type": "dorsal",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "Reporting the case record's description only; the films were not available for review. CT and MRI described calcified/ossified left ligamentum flavum at C5-6, producing dorsal spinal canal impingement with nerve root and spinal cord compression. T2-hyperintense cord signal was reported at C5-6. The record does not provide a stenosis grade. This finding correlates highly with the reported progressive myelopathic symptoms.",
+      "confidence": 0.93
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical myelopathy at C5-6 due to dorsolateral extradural compression from ossified ligamentum flavum, with bilateral corticospinal tract signs (hyperreflexia all limbs, ankle/toe weakness) and spinothalamic sensory level below C5; posterior columns spared, consistent with central cord involvement; a superimposed radiculopathy cannot be excluded.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "Ossification of the nuchal ligament at C3-4.",
+          "relevance": "coexisting",
+          "rationale": "Incidental spinal finding separate from the C5-6 compressive lesion; does not explain symptoms or alter management."
+        },
+        {
+          "finding": "Imaging report does not provide a stenosis grade for C5-6.",
+          "relevance": "changes_plan",
+          "rationale": "Without stenosis severity, the urgency and approach of decompression cannot be fully assessed; this influences surgical planning even though the lesion is likely the cause of myelopathy."
+        }
+      ],
+      "symptom_imaging_mismatch": "Dissociated sensory loss (pain/temperature below C5 with preserved posterior columns) is unexpected for a dorsal compressive lesion; a purely dorsal compression would typically involve posterior columns. The pattern suggests central cord involvement, which can occur with compressive myelopathy and cord edema, but the mismatch is noted and may warrant correlation with axial imaging to confirm the extent of intramedullary signal change.",
+      "public_message": "Localization is cervical myelopathy at C5-6 due to dorsolateral extradural compression from ossified ligamentum flavum, with bilateral corticospinal and spinothalamic tract signs. Imaging correlates highly (match level high). Red flags: ossified nuchal ligament at C3-4 is coexisting and does not affect management; absence of stenosis grade changes plan because severity is unknown. Note a sensory dissociation mismatch (pain/temperature loss below C5 with preserved posterior columns) that is not typical for dorsal compression but is compatible with central cord syndrome from the lesion; this does not alter the primary localization."
+    },
+    "anesthesia": {
+      "asa_grade": "II",
+      "map_target_mmhg": null,
+      "blood_loss_risk": "low",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "low",
+      "public_message": "ASA physical status II. A specific mean arterial pressure target is not stated because baseline blood pressure and cardiovascular status are not documented. Expected blood loss risk: low. Prone position tolerance: low. Extubation difficulty: unassessable because no airway assessment is documented."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 20,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Worsening of neurologic deficits",
+        "No improvement after 3-6 months of structured therapy",
+        "Development of new symptoms such as gait deterioration or bowel/bladder dysfunction",
+        "Progression of cord signal change on MRI"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "This patient has progressive cervical myelopathy with cord signal change, which is a concerning finding. However, conservative management may be considered in select cases if the patient is not rapidly deteriorating, as surgery carries risks. We propose a 3-6 month trial of structured physical therapy focusing on gait, balance, and strengthening, along with activity modification and pain management, with close neurologic monitoring. The expected success rate for such conservative treatment in this setting is approximately 20% (based on literature for mild-to-moderate myelopathy, though lower with cord signal change). Failure criteria include any worsening of neurologic deficits, no improvement by 6 months, new bowel/bladder symptoms, or progression on follow-up imaging."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 20,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Worsening of neurologic deficits",
+        "No improvement after 3-6 months of structured therapy",
+        "Development of new symptoms such as gait deterioration or bowel/bladder dysfunction",
+        "Progression of cord signal change on MRI"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "This patient has progressive cervical myelopathy with cord signal change, which is a concerning finding. However, conservative management may be considered in select cases if the patient is not rapidly deteriorating, as surgery carries risks. We propose a 3-6 month trial of structured physical therapy focusing on gait, balance, and strengthening, along with activity modification and pain management, with close neurologic monitoring. The expected success rate for such conservative treatment in this setting is approximately 20% (based on literature for mild-to-moderate myelopathy, though lower with cord signal change). Failure criteria include any worsening of neurologic deficits, no improvement by 6 months, new bowel/bladder symptoms, or progression on follow-up imaging."
+    },
+    "physiatrist_responses": [],
+    "vice_opinions": [],
+    "director_rulings": [
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "Obtain a dynamic cervical MRI with flexion-extension views and a repeat high-resolution MRI for quantitative stenosis grading, and request a formal pre-anesthesia evaluation including airway assessment and baseline cardiovascular status. Reconvene after these results. If severe stenosis or instability is confirmed, we will proceed with surgical decompression only after detailed informed consent from the patient and family. If mild and stable, we will recommend a 3-6 month structured physical therapy trial with close neurologic monitoring as proposed by the rehabilitation physician.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Radiologist: perform and report dynamic cervical MRI with flexion-extension views and high-resolution MRI with quantitative stenosis grading.",
+          "Anesthesiologist: formal airway evaluation and baseline cardiovascular assessment.",
+          "Resident: arrange family meeting after imaging and anesthesia evaluation to discuss options."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Further imaging and anesthesia evaluation are required before a definitive treatment decision can be made.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "radiologist",
+          "anesthesiologist",
+          "resident"
+        ],
+        "ordered_tests": [
+          "Dynamic cervical MRI with flexion-extension views",
+          "High-resolution cervical MRI with quantitative stenosis grading"
+        ],
+        "family_requests": [
+          "decide_after_family_meeting"
+        ],
+        "public_message": "The department will obtain additional imaging and a formal anesthesia evaluation before making a final treatment decision. I have asked the radiologist and anesthesiologist for these assessments and will meet with the family after the results are available. We will not proceed with surgery unless severe compression or instability is confirmed and the family provides detailed informed consent."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-4432380-1:avoidant-alone:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 688,
+      "content": "This is a 50-year-old male with a 6-month history of gait clumsiness, inability to run, and ankle weakness, and a 3-month history of numbness and tingling in both hands, which aggravated in the days before presentation. Examination showed grade IV power in ankle and big toe flexion, hyperreflexia in all four limbs, and diminished pain and temperature sensation below C5, with posterior column sensation preserved. Imaging showed loss of cervical lordosis, ossification of the nuchal ligament at C3-4, and a calcified left-sided ligamentum flavum at C5-6 causing nerve root and spinal cord compression, with hyperintense T2 cord signals at that level. No laboratory report is documented."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant-alone:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 424,
+      "content": "Reporting the case record's description only; the films were not available for review. CT and MRI described calcified/ossified left ligamentum flavum at C5-6, producing dorsal spinal canal impingement with nerve root and spinal cord compression. T2-hyperintense cord signal was reported at C5-6. The record does not provide a stenosis grade. This finding correlates highly with the reported progressive myelopathic symptoms."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant-alone:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 637,
+      "content": "Localization is cervical myelopathy at C5-6 due to dorsolateral extradural compression from ossified ligamentum flavum, with bilateral corticospinal and spinothalamic tract signs. Imaging correlates highly (match level high). Red flags: ossified nuchal ligament at C3-4 is coexisting and does not affect management; absence of stenosis grade changes plan because severity is unknown. Note a sensory dissociation mismatch (pain/temperature loss below C5 with preserved posterior columns) that is not typical for dorsal compression but is compatible with central cord syndrome from the lesion; this does not alter the primary localization."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant-alone:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 298,
+      "content": "ASA physical status II. A specific mean arterial pressure target is not stated because baseline blood pressure and cardiovascular status are not documented. Expected blood loss risk: low. Prone position tolerance: low. Extubation difficulty: unassessable because no airway assessment is documented."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant-alone:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 780,
+      "content": "This patient has progressive cervical myelopathy with cord signal change, which is a concerning finding. However, conservative management may be considered in select cases if the patient is not rapidly deteriorating, as surgery carries risks. We propose a 3-6 month trial of structured physical therapy focusing on gait, balance, and strengthening, along with activity modification and pain management, with close neurologic monitoring. The expected success rate for such conservative treatment in this setting is approximately 20% (based on literature for mild-to-moderate myelopathy, though lower with cord signal change). Failure criteria include any worsening of neurologic deficits, no improvement by 6 months, new bowel/bladder symptoms, or progression on follow-up imaging."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant-alone:director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 395,
+      "content": "The department will obtain additional imaging and a formal anesthesia evaluation before making a final treatment decision. I have asked the radiologist and anesthesiologist for these assessments and will meet with the family after the results are available. We will not proceed with surgery unless severe compression or instability is confirmed and the family provides detailed informed consent."
+    }
+  ],
+  "usage": [
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 3600,
+      "output_tokens": 4628,
+      "total_tokens": 8228,
+      "latency_ms": 82199,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "director": 1
+  },
+  "attempts_per_role": {
+    "director": 1
+  },
+  "arm": "avoidant"
+}

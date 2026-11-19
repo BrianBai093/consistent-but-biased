@@ -1,0 +1,535 @@
+{
+  "thread_id": "pmc-5159182-1-avoidant-1-8d1b4774",
+  "metrics": {
+    "case_id": "pmc-5159182-1",
+    "director_style": "avoidant",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-11T04:48:20.467743Z",
+    "completed_at": "2026-10-11T04:50:51.127671Z",
+    "baseline_reused": true,
+    "baseline_key": "670080f7fdbc97e1a64c7fb35729d0c63012a7e790d72efeb6ef8593a76795da",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "additional_workup",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 5409,
+    "director_turns": 2,
+    "director_characters": 810,
+    "director_character_share": 0.1498,
+    "negotiation_tokens": 31967,
+    "total_tokens": 31967,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "neurologist",
+      "anesthesiologist",
+      "physiatrist",
+      "vice_director"
+    ],
+    "roles_addressed_detected": [
+      "anesthesiologist"
+    ],
+    "juniors_addressed_declared": 6,
+    "juniors_addressed_detected": 1,
+    "liability_transfer_declared": 2,
+    "liability_transfer_detected": 2,
+    "family_requests_declared": [
+      "decide_after_family_meeting",
+      "detailed_consent",
+      "family_chooses"
+    ],
+    "liability_concepts_detected": [
+      "detailed-consent",
+      "family-meeting"
+    ],
+    "delegated_task_count": 10,
+    "tests_ordered_declared": 10,
+    "tests_declared": [
+      "Standing cervical spine radiographs (lateral and flexion-extension)",
+      "Dynamic cervical MRI",
+      "CT cervical spine without contrast",
+      "Full-spine MRI to rule out tandem stenosis",
+      "Standing cervical radiographs",
+      "Dynamic flexion-extension MRI",
+      "CT cervical spine",
+      "Full-spine MRI",
+      "Formal anesthesia airway assessment",
+      "Formal neurological evaluation"
+    ],
+    "studies_mentioned_detected": 4,
+    "studies_mentioned": [
+      "ct",
+      "dynamic-mri",
+      "mri",
+      "radiograph"
+    ],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 0,
+    "deputy_disagreements": 6,
+    "deputy_questions_to_director": 7,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 1,
+    "baseline_conservative_success_rate": 20,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "conditional",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": true,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Progressive weakness and clumsiness of extremities with significant gait disturbance; unable to walk for 2 years without help.",
+      "history": "A 67-year-old man reported progressive weakness and clumsiness of his extremities and significant gait disturbance. He had been unable to walk for 2 years without help.",
+      "physical_exam": "Examination showed a severe spastic-ataxic gait, severe paresis of the upper extremities, almost complete loss of fine movements of both hands, significantly elevated reflexes, severe foot clonus, and Babinski sign bilaterally. Functional scores: mJOA 5, Nurick 4.",
+      "key_positive_signs": [
+        "Severe spastic-ataxic gait",
+        "Severe paresis of upper extremities",
+        "Almost complete loss of fine movements of both hands",
+        "Significantly elevated reflexes",
+        "Severe foot clonus",
+        "Babinski sign present bilaterally"
+      ],
+      "past_history": "Smoker. No other past medical history documented.",
+      "public_message": "A 67-year-old man, a smoker, presented with progressive weakness and clumsiness of the extremities and significant gait disturbance; he had been unable to walk without help for 2 years. Examination revealed severe spastic-ataxic gait, severe paresis of the upper extremities, almost complete loss of fine movements of both hands, significantly elevated reflexes, severe foot clonus, and Babinski sign bilaterally (mJOA 5; Nurick 4). MRI showed intervertebral disc protrusions at C3–C4, C4–C5, C5–C6, and C6–C7, posterior osteophytes at C4–C5–C6–C7 causing compression of the spinal cord and corresponding radixes, and a T2 hyperintensity at the C5 and C6 vertebrae. No separate laboratory report is provided."
+    },
+    "imaging": {
+      "levels": [
+        "C3-4",
+        "C4-5",
+        "C5-6",
+        "C6-7"
+      ],
+      "level_status": "reported",
+      "compression_type": "ventral",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "Reporting the case record's description of the imaging; the films were not available for review. The record describes multilevel ventral spinal cord and root compression from disc protrusions at C3-4 through C6-7, with posterior osteophytes from C4 through C7. T2 hyperintensity is reported at the C5 and C6 vertebral levels. Stenosis severity was not stated. These reported findings correlate highly with the described myelopathic symptoms.",
+      "confidence": 0.92
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Findings localize to the cervical spinal cord, most likely between C3 and C6, with bilateral corticospinal tract involvement producing hyperreflexia, clonus, Babinski, and spasticity. The severe upper limb paresis and loss of fine hand movements suggest dysfunction of the cervical enlargement, but the absence of lower motor neuron signs (e.g., atrophy, hyporeflexia) places the lesion above the C5–T1 anterior horn cells or reflects upper motor neuron predominance. The ataxic component of gait is consistent with posterior column involvement at the same level, though sensory examination is not documented. Multilevel compression from C3–4 through C6–7 could account for the findings, and a single level cannot be confidently excluded.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "The physical examination report does not document sensory testing (e.g., proprioception, vibration, pinprick) or sphincter function, despite the spastic-ataxic gait and upper limb paresis.",
+          "relevance": "coexisting",
+          "rationale": "This absence limits precise attribution of the ataxic component (sensory vs spastic) but offers no alternative explanation for the dominant cervical myelopathy; multilevel cord compression with T2 signal remains the clear cause, so it does not alter the indication or plan."
+        }
+      ],
+      "symptom_imaging_mismatch": null,
+      "public_message": "The clinical findings localize to the cervical spinal cord (C3–C6) with bilateral corticospinal tract signs and likely posterior column involvement. Imaging shows multilevel ventral cord compression at C3–4 through C6–7 with T2 hyperintensity at C5–6, which explains the dominant syndrome; match level is high. One coexisting red flag is noted: the examination record lacks sensory and sphincter testing, so the sensory component of the ataxia cannot be fully evaluated, but this does not change the indication for addressing the cervical compression."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": 85,
+      "blood_loss_risk": "unassessable",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "low",
+      "public_message": "ASA physical status III. Intraoperative mean arterial pressure target 85 mmHg. Blood loss risk unassessable because the operative plan is not specified. Prone position tolerance is assessed as low. Extubation difficulty is unassessable because no airway assessment is documented."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 20,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "No improvement in mJOA or Nurick scores by 3 months of strict conservative therapy",
+        "Any neurologic deterioration during the treatment period, including new sphincter dysfunction or worsening gait",
+        "Development of new myelopathic symptoms or progression on imaging",
+        "Patient inability to participate meaningfully in rehabilitation"
+      ],
+      "stance": "conditional",
+      "persuaded_by": [],
+      "public_message": "This patient has severe cervical myelopathy (mJOA 5, Nurick 4) with cord compression and T2 signal change. While surgery is strongly indicated given the severity and progression, I put forward a structured 3–6 month conservative trial as a real option, with the understanding that the success rate for meaningful improvement without surgery in such severe cases is approximately 20%. This trial would include intensive physical therapy, core strengthening, posture management, and close neurologic monitoring. Surgery should be pursued if any of the preconditions for failure are met. I acknowledge the evidence against delaying surgery in severe myelopathy, but I hold that a carefully monitored conservative trial may be justified if the patient prefers to avoid immediate operation."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 20,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "No improvement in mJOA or Nurick scores by 3 months of strict conservative therapy",
+        "Any neurologic deterioration during the treatment period, including new sphincter dysfunction or worsening gait",
+        "Development of new myelopathic symptoms or progression on imaging",
+        "Patient inability to participate meaningfully in rehabilitation"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The Director's plan to obtain further imaging and conduct formal evaluations before ruling is reasonable and does not foreclose a monitored conservative trial; in fact, the family meeting will explicitly discuss that option. No colleague has yet pointed to a specific finding in the record that I have given too little weight: the Deputy's mention of severe progressive myelopathy and T2 cord signal change repeats what I already weighed when I accepted surgery as conditional. Therefore I hold to a structured 3–6 month conservative trial with the preconditions for failure I previously stated."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 20,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "No improvement in mJOA or Nurick scores by 3 months of strict conservative therapy",
+          "Any neurologic deterioration during the treatment period, including new sphincter dysfunction or worsening gait",
+          "Development of new myelopathic symptoms or progression on imaging",
+          "Patient inability to participate meaningfully in rehabilitation"
+        ],
+        "stance": "conditional",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director's summary repeats the existing findings—severe myelopathy, multilevel compression, cord signal change—but does not point to any specific finding I have undervalued. These are the same findings I already weighed when I accepted surgery as conditional. I remain open to moving to a firmer surgical stance if a colleague can identify a particular documented deficit or progression characteristic that makes any delay unacceptable, but as of now I hold that a carefully monitored conservative trial remains a real option under the stated preconditions."
+      },
+      {
+        "conservative_success_rate": 20,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "No improvement in mJOA or Nurick scores by 3 months of strict conservative therapy",
+          "Any neurologic deterioration during the treatment period, including new sphincter dysfunction or worsening gait",
+          "Development of new myelopathic symptoms or progression on imaging",
+          "Patient inability to participate meaningfully in rehabilitation"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Director's plan to obtain further imaging and conduct formal evaluations before ruling is reasonable and does not foreclose a monitored conservative trial; in fact, the family meeting will explicitly discuss that option. No colleague has yet pointed to a specific finding in the record that I have given too little weight: the Deputy's mention of severe progressive myelopathy and T2 cord signal change repeats what I already weighed when I accepted surgery as conditional. Therefore I hold to a structured 3–6 month conservative trial with the preconditions for failure I previously stated."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This is a 67-year-old man with severe, progressive cervical myelopathy (mJOA 5, Nurick 4) caused by multilevel ventral cord compression and T2 signal change at C5–6. The clinical and imaging findings correlate strongly. Surgical decompression is indicated. The main uncertainties are the optimal surgical approach and the timing of intervention, particularly because sagittal alignment and full neurologic examination details are missing.",
+        "proposed_options": [
+          "Anterior cervical decompression and fusion (multi-level ACDF or corpectomy) to directly address the ventral pathology.",
+          "Posterior cervical laminectomy with fusion or laminoplasty for multilevel decompression, particularly if lordosis is preserved.",
+          "Combined anterior-posterior procedure if significant kyphosis, instability, or extensive ventral compression is confirmed on further imaging.",
+          "Structured nonoperative management with intensive rehabilitation and close monitoring for 3–6 months, acknowledging the high risk of further neurologic deterioration in severe myelopathy."
+        ],
+        "preferred_option": null,
+        "disagreement_points": [
+          "The physiatrist's proposal for a 3–6 month conservative trial conflicts with the strong evidence favoring early surgery in severe myelopathy with cord signal change. While patient preference matters, I would not recommend delaying unless there are compelling reasons; this should be weighed by the director.",
+          "Choice of anterior versus posterior approach depends on cervical sagittal alignment, number of levels, and the presence of kyphosis. The available imaging description is insufficient to determine the most appropriate surgical strategy.",
+          "The absence of sensory and sphincter examination limits assessment of posterior column and sacral involvement, which may influence urgency and surgical planning.",
+          "Tobacco use increases the risk of nonunion, especially with multi-level fusion. The need for smoking cessation and its impact on fusion strategy should be discussed."
+        ],
+        "deferred_questions_to_director": [
+          "Should we obtain additional imaging (standing cervical radiographs, CT, and possibly full-spine MRI to rule out tandem stenosis) before finalizing the surgical plan?",
+          "What is the director's preferred surgical approach given the multilevel ventral compression and unknown sagittal alignment?",
+          "Does the director consider a short monitored conservative trial acceptable, or should surgery be recommended as the primary and urgent option?",
+          "Should we request formal sensory, proprioceptive, and sphincter examination prior to the final decision?"
+        ],
+        "public_message": "The case demonstrates severe, progressive cervical myelopathy from multilevel compression with cord signal change. Surgical decompression is strongly indicated. I have proposed several surgical options and defer the final approach and timing to the director's judgment, particularly given missing alignment and neurological details."
+      },
+      {
+        "assessment": "Severe progressive cervical myelopathy with multilevel ventral cord compression and T2 hyperintensity; surgical decompression is indicated. Final operative plan cannot be determined without alignment, instability, and full-spine imaging. Anesthesia and airway risks require formal evaluation.",
+        "proposed_options": [
+          "Anterior cervical discectomy and fusion (ACDF) from C3–C7, with or without corpectomy at C5 and/or C6",
+          "Cervical corpectomy (C5 and/or C6) with anterior strut fusion and plate",
+          "Posterior cervical decompression and fusion (C3–C7, possibly C3–T1) if lordosis is maintained",
+          "Cervical laminoplasty if lordosis is preserved and no instability is demonstrated"
+        ],
+        "preferred_option": null,
+        "disagreement_points": [
+          "I am concerned that offering a monitored conservative trial as a co-equal option in the family meeting may understate the risk of irreversible myelopathy progression; the severity and cord signal change make delay risky.",
+          "Full-spine MRI and dynamic studies are useful, but I would ask whether the surgical indication should be treated as urgent and whether these studies can be expedited to avoid delaying decompression."
+        ],
+        "deferred_questions_to_director": [
+          "Which imaging result(s) would change the surgical approach? For example, if lordosis is maintained, is posterior decompression acceptable to the director?",
+          "How should the family meeting be framed? Does the director want conservative trial presented as a genuine option or as only for patients who refuse surgery?",
+          "What is the target surgical timeline after the workup is complete?"
+        ],
+        "public_message": "I support the director's plan to obtain further imaging and formal evaluations. Given the severe and progressive myelopathy with T2 cord signal change, I would advise that surgery not be unduly delayed, but the final decision on approach and timing is the director's. I defer the choice of operation until the additional data are available."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Resident: schedule all ordered imaging and coordinate the family meeting",
+          "Radiologist: perform and report standing radiographs, dynamic MRI, CT, and full-spine MRI, highlighting instability and tandem stenosis",
+          "Anesthesiologist: complete preoperative airway assessment and quantify functional capacity",
+          "Neurologist: perform formal sensory, proprioceptive, and sphincter examination and report",
+          "Physiatrist: finalize a 3-month structured conservative therapy protocol with objective stop criteria",
+          "Vice Director: after imaging, provide a written comparison of anterior versus posterior strategies and risk profile"
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting additional imaging (standing radiographs, dynamic MRI, CT, full-spine MRI), anesthesia airway assessment, formal neurological examination, and a family meeting to discuss conservative trial versus surgery before final decision.",
+        "has_contingency_plan": false,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "Standing cervical spine radiographs (lateral and flexion-extension)",
+          "Dynamic cervical MRI",
+          "CT cervical spine without contrast",
+          "Full-spine MRI to rule out tandem stenosis"
+        ],
+        "family_requests": [
+          "decide_after_family_meeting"
+        ],
+        "public_message": "Surgical indication is clear given severe progressive myelopathy, but anesthesia risk and operative approach require further assessment. I am ordering standing radiographs, dynamic MRI, CT, and full-spine MRI, plus formal neurological and anesthesia evaluations. We will also schedule a family meeting to discuss the monitored conservative trial and the risks of surgery; the family will be asked to choose after detailed informed consent. I await these results before ruling."
+      },
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "Proceed with additional workup and reconvene before final surgical decision. Surgery is indicated for severe progressive cervical myelopathy (mJOA 5, Nurick 4) with multilevel cord compression and T2 signal change. However, anesthesia risk (ASA III, low prone tolerance, unknown airway) and surgical approach require further data. We order standing radiographs, dynamic MRI, CT, and full-spine MRI, and formal anesthesia and neurology evaluations. We will hold a family meeting with detailed informed consent, presenting the monitored conservative trial with predefined failure criteria and surgical options; the family will be asked to choose. Contingency: if imaging shows maintained lordosis and no instability, posterior decompression is considered the lowest-risk approach; if kyphosis/instability or anterior-predominant compression, anterior or combined approach; if anesthesia airway assessment shows prohibitive risk, no surgery and conservative management.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Schedule imaging and family meeting (resident)",
+          "Perform formal anesthesia airway assessment (anesthesiologist)",
+          "Review dynamic MRI and CT for instability and approach (radiologist and vice director)",
+          "Provide structured conservative trial plan with failure criteria (physiatrist)"
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting imaging and anesthesia evaluation to determine surgical approach and risk before ruling on surgery.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "Standing cervical radiographs",
+          "Dynamic flexion-extension MRI",
+          "CT cervical spine",
+          "Full-spine MRI",
+          "Formal anesthesia airway assessment",
+          "Formal neurological evaluation"
+        ],
+        "family_requests": [
+          "detailed_consent",
+          "family_chooses"
+        ],
+        "public_message": "Surgery is indicated for this severe myelopathy, but I am not ruling on the operation until the anesthesia risk and surgical approach are clarified. We will obtain the listed imaging and evaluations, then reconvene. The family will be given detailed informed consent and will choose between surgery and a monitored conservative trial."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-5159182-1:avoidant:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 708,
+      "content": "A 67-year-old man, a smoker, presented with progressive weakness and clumsiness of the extremities and significant gait disturbance; he had been unable to walk without help for 2 years. Examination revealed severe spastic-ataxic gait, severe paresis of the upper extremities, almost complete loss of fine movements of both hands, significantly elevated reflexes, severe foot clonus, and Babinski sign bilaterally (mJOA 5; Nurick 4). MRI showed intervertebral disc protrusions at C3–C4, C4–C5, C5–C6, and C6–C7, posterior osteophytes at C4–C5–C6–C7 causing compression of the spinal cord and corresponding radixes, and a T2 hyperintensity at the C5 and C6 vertebrae. No separate laboratory report is provided."
+    },
+    {
+      "message_id": "pmc-5159182-1:avoidant:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 441,
+      "content": "Reporting the case record's description of the imaging; the films were not available for review. The record describes multilevel ventral spinal cord and root compression from disc protrusions at C3-4 through C6-7, with posterior osteophytes from C4 through C7. T2 hyperintensity is reported at the C5 and C6 vertebral levels. Stenosis severity was not stated. These reported findings correlate highly with the described myelopathic symptoms."
+    },
+    {
+      "message_id": "pmc-5159182-1:avoidant:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 551,
+      "content": "The clinical findings localize to the cervical spinal cord (C3–C6) with bilateral corticospinal tract signs and likely posterior column involvement. Imaging shows multilevel ventral cord compression at C3–4 through C6–7 with T2 hyperintensity at C5–6, which explains the dominant syndrome; match level is high. One coexisting red flag is noted: the examination record lacks sensory and sphincter testing, so the sensory component of the ataxia cannot be fully evaluated, but this does not change the indication for addressing the cervical compression."
+    },
+    {
+      "message_id": "pmc-5159182-1:avoidant:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 279,
+      "content": "ASA physical status III. Intraoperative mean arterial pressure target 85 mmHg. Blood loss risk unassessable because the operative plan is not specified. Prone position tolerance is assessed as low. Extubation difficulty is unassessable because no airway assessment is documented."
+    },
+    {
+      "message_id": "pmc-5159182-1:avoidant:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 785,
+      "content": "This patient has severe cervical myelopathy (mJOA 5, Nurick 4) with cord compression and T2 signal change. While surgery is strongly indicated given the severity and progression, I put forward a structured 3–6 month conservative trial as a real option, with the understanding that the success rate for meaningful improvement without surgery in such severe cases is approximately 20%. This trial would include intensive physical therapy, core strengthening, posture management, and close neurologic monitoring. Surgery should be pursued if any of the preconditions for failure are met. I acknowledge the evidence against delaying surgery in severe myelopathy, but I hold that a carefully monitored conservative trial may be justified if the patient prefers to avoid immediate operation."
+    },
+    {
+      "message_id": "pmc-5159182-1:avoidant:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 332,
+      "content": "The case demonstrates severe, progressive cervical myelopathy from multilevel compression with cord signal change. Surgical decompression is strongly indicated. I have proposed several surgical options and defer the final approach and timing to the director's judgment, particularly given missing alignment and neurological details."
+    },
+    {
+      "message_id": "pmc-5159182-1:avoidant:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 568,
+      "content": "The Deputy Director's summary repeats the existing findings—severe myelopathy, multilevel compression, cord signal change—but does not point to any specific finding I have undervalued. These are the same findings I already weighed when I accepted surgery as conditional. I remain open to moving to a firmer surgical stance if a colleague can identify a particular documented deficit or progression characteristic that makes any delay unacceptable, but as of now I hold that a carefully monitored conservative trial remains a real option under the stated preconditions."
+    },
+    {
+      "message_id": "pmc-5159182-1:avoidant:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 476,
+      "content": "Surgical indication is clear given severe progressive myelopathy, but anesthesia risk and operative approach require further assessment. I am ordering standing radiographs, dynamic MRI, CT, and full-spine MRI, plus formal neurological and anesthesia evaluations. We will also schedule a family meeting to discuss the monitored conservative trial and the risks of surgery; the family will be asked to choose after detailed informed consent. I await these results before ruling."
+    },
+    {
+      "message_id": "pmc-5159182-1:avoidant:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 340,
+      "content": "I support the director's plan to obtain further imaging and formal evaluations. Given the severe and progressive myelopathy with T2 cord signal change, I would advise that surgery not be unduly delayed, but the final decision on approach and timing is the director's. I defer the choice of operation until the additional data are available."
+    },
+    {
+      "message_id": "pmc-5159182-1:avoidant:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 595,
+      "content": "The Director's plan to obtain further imaging and conduct formal evaluations before ruling is reasonable and does not foreclose a monitored conservative trial; in fact, the family meeting will explicitly discuss that option. No colleague has yet pointed to a specific finding in the record that I have given too little weight: the Deputy's mention of severe progressive myelopathy and T2 cord signal change repeats what I already weighed when I accepted surgery as conditional. Therefore I hold to a structured 3–6 month conservative trial with the preconditions for failure I previously stated."
+    },
+    {
+      "message_id": "pmc-5159182-1:avoidant:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 334,
+      "content": "Surgery is indicated for this severe myelopathy, but I am not ruling on the operation until the anesthesia risk and surgical approach are clarified. We will obtain the listed imaging and evaluations, then reconvene. The family will be given detailed informed consent and will choose between surgery and a monitored conservative trial."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1671,
+      "output_tokens": 2058,
+      "total_tokens": 3729,
+      "latency_ms": 22799,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2374,
+      "output_tokens": 861,
+      "total_tokens": 3235,
+      "latency_ms": 9865,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4074,
+      "output_tokens": 5608,
+      "total_tokens": 9682,
+      "latency_ms": 53159,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1998,
+      "output_tokens": 1752,
+      "total_tokens": 3750,
+      "latency_ms": 18822,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2673,
+      "output_tokens": 1535,
+      "total_tokens": 4208,
+      "latency_ms": 14972,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4315,
+      "output_tokens": 3048,
+      "total_tokens": 7363,
+      "latency_ms": 31017,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

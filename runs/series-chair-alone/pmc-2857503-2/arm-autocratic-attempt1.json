@@ -1,0 +1,291 @@
+{
+  "thread_id": "pmc-2857503-2-autocratic-1-f561017c-chair-alone",
+  "metrics": {
+    "case_id": "pmc-2857503-2",
+    "director_style": "autocratic",
+    "deputy_style": null,
+    "negotiation": false,
+    "workflow_version": "dept-v2",
+    "started_at": "2026-11-03T01:46:46.084429Z",
+    "completed_at": "2026-11-03T01:47:15.610333Z",
+    "baseline_reused": true,
+    "baseline_key": "7d1c8a925decb34edfd84f558caa63dceb278992ca8a369f902bb5d30990637f",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 0,
+    "decision": "operate",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": null,
+    "surgery_recommended": true,
+    "surgery_intended": true,
+    "delay_declared": false,
+    "delay_terminated": false,
+    "turn_count": 6,
+    "total_characters": 2825,
+    "director_turns": 1,
+    "director_characters": 186,
+    "director_character_share": 0.0658,
+    "negotiation_tokens": 5627,
+    "total_tokens": 5627,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "neurologist",
+      "anesthesiologist",
+      "physiatrist"
+    ],
+    "roles_addressed_detected": [
+      "resident"
+    ],
+    "juniors_addressed_declared": 5,
+    "juniors_addressed_detected": 1,
+    "liability_transfer_declared": 0,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [
+      "routine_consent"
+    ],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 1,
+    "tests_ordered_declared": 0,
+    "tests_declared": [],
+    "studies_mentioned_detected": 0,
+    "studies_mentioned": [],
+    "deputy_rounds": 0,
+    "deputy_preference_stated": 0,
+    "deputy_disagreements": 0,
+    "deputy_questions_to_director": 0,
+    "contingency_plan_declared": false,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 1,
+    "flags_coexisting": 1,
+    "baseline_conservative_success_rate": 40,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": false,
+    "persuaded_by_count": 0,
+    "consensus_reached": false
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Squeezing feeling at the midsection and tingling sensations in both upper and lower extremities.",
+      "history": "The patient is a 49-year-old male. Symptoms started approximately three months prior to the initial visit with a squeezing feeling at the midsection and tingling sensations in both upper and lower extremities. He reported no difficulty in walking. He demonstrated Lhermitte's sign when extending the neck abruptly. He denied any sensory and motor change. A diagnosis of ossification of the posterior longitudinal ligament (OPLL) of the cervical spine had been made before hospital admission.",
+      "physical_exam": "The patient denied any sensory and motor change on physical examination. Lhermitte's sign was elicited on abrupt neck extension. Motor power and reflexes are not documented.",
+      "key_positive_signs": [
+        "Lhermitte's sign on abrupt neck extension"
+      ],
+      "past_history": "Diagnosis of ossification of the posterior longitudinal ligament (OPLL) of the cervical spine was made before hospital admission. No other past medical history is documented.",
+      "public_message": "This 49-year-old male presented with a squeezing feeling at the midsection and tingling in both upper and lower extremities, symptoms beginning about three months before presentation. He had no difficulty walking. The patient denied any sensory and motor change on physical examination; however, Lhermitte's sign was elicited on abrupt neck extension. Imaging showed OPLL from C2 to C5 with atlas hypoplasia, spinal canal stenosis from C1 to C5 with cord compression at the atlas ring and an intramedullary high signal intensity area. Preoperative JOA score was 15 points."
+    },
+    "imaging": {
+      "levels": [
+        "C1-5"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "I have not seen the films and am reporting only the case record's imaging description: OPLL was described from C2 through C5, with spinal canal stenosis from C1 through C5 and especially marked canal narrowing with cord compression at the atlas ring. An intramedullary high-signal area was reported. The record does not specify compression direction or a graded stenosis severity. These findings correlate well with the reported Lhermitte sign and bilateral sensory symptoms.",
+      "confidence": 0.89
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical spinal cord, most likely at C1-2 (atlas ring) given the marked canal stenosis and cord compression. Lhermitte sign and bilateral upper and lower extremity tingling with truncal squeezing are consistent with cervical myelopathy involving the dorsal columns and possibly spinothalamic tracts. Motor and reflex findings are not documented, so precise long-tract involvement is inferred.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "Motor power and reflexes are not documented; sensory examination reportedly normal despite subjective tingling.",
+          "relevance": "coexisting",
+          "rationale": "This is an examination gap, not evidence of an alternative cause. Lhermitte sign is a positive finding and imaging shows cord compression, so the absence of documented motor/reflex changes does not undermine the myelopathic localization."
+        },
+        {
+          "finding": "Marked canal narrowing and cord compression at the atlas ring due to atlas hypoplasia, distinct from the OPLL at C2-C5.",
+          "relevance": "changes_plan",
+          "rationale": "If surgical decompression is planned primarily for OPLL at C2-C5, the upper cervical compression at C1-2 may require additional or different surgical consideration. The cord compression at the atlas ring is part of the same cervical myelopathy but could change the operative approach."
+        }
+      ],
+      "symptom_imaging_mismatch": null,
+      "public_message": "Findings localize to the cervical spinal cord, most likely C1-2, with Lhermitte sign and bilateral sensory symptoms. Imaging shows cord compression at the atlas ring and intramedullary signal change, correlating well (high match). Red flags: (1) Motor power and reflexes are not documented—a coexisting limitation, not an alternative cause; (2) Atlas ring compression from hypoplasia may change the surgical plan if decompression targets only OPLL levels. No symptom-imaging mismatch."
+    },
+    "anesthesia": {
+      "asa_grade": "II",
+      "map_target_mmhg": 85,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "moderate",
+      "public_message": "The patient is classified as ASA II. The intraoperative mean arterial pressure target is 85 mmHg. Blood loss risk is assessed as moderate. Prone position tolerance is assessed as moderate. Extubation difficulty is unassessable because no airway assessment is documented in the record."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 40,
+      "proposed_duration": "3-6 months of structured conservative management with close neurological monitoring",
+      "preconditions_for_failure": [
+        "Development of new objective motor weakness (MRC grade ≤4/5) or gait instability",
+        "Worsening of JOA score by ≥2 points from baseline of 15",
+        "Appearance of bladder or bowel dysfunction",
+        "Progression of intramedullary T2 hyperintensity or new cord compression on follow-up MRI",
+        "Persistent or worsening symptoms despite 6 months of conservative treatment"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I acknowledge the imaging demonstrates significant stenosis and cord signal change; however, the patient currently presents with mild symptoms (JOA 15, no motor or gait deficits documented, only subjective tingling and Lhermitte sign). A structured 3-6 month trial of conservative management—cervical isometric strengthening, posture education, avoidance of high-risk maneuvers, and close neurological surveillance—is a reasonable first step. Surgical decompression is indicated only if there is objective neurological deterioration (new motor weakness, gait decline, sphincter involvement) or worsening T2 signal on follow-up MRI. The success rate of observation and conservative therapy in mild myelopathy without obvious motor deficit is approximately 40%, and a trial can be undertaken safely with frequent reassessment."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 40,
+      "proposed_duration": "3-6 months of structured conservative management with close neurological monitoring",
+      "preconditions_for_failure": [
+        "Development of new objective motor weakness (MRC grade ≤4/5) or gait instability",
+        "Worsening of JOA score by ≥2 points from baseline of 15",
+        "Appearance of bladder or bowel dysfunction",
+        "Progression of intramedullary T2 hyperintensity or new cord compression on follow-up MRI",
+        "Persistent or worsening symptoms despite 6 months of conservative treatment"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I acknowledge the imaging demonstrates significant stenosis and cord signal change; however, the patient currently presents with mild symptoms (JOA 15, no motor or gait deficits documented, only subjective tingling and Lhermitte sign). A structured 3-6 month trial of conservative management—cervical isometric strengthening, posture education, avoidance of high-risk maneuvers, and close neurological surveillance—is a reasonable first step. Surgical decompression is indicated only if there is objective neurological deterioration (new motor weakness, gait decline, sphincter involvement) or worsening T2 signal on follow-up MRI. The success rate of observation and conservative therapy in mild myelopathy without obvious motor deficit is approximately 40%, and a trial can be undertaken safely with frequent reassessment."
+    },
+    "physiatrist_responses": [],
+    "vice_opinions": [],
+    "director_rulings": [
+      {
+        "decision": "operate",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": "Physiatrist, your conservative plan is rejected: cord compression with T2 signal is unambiguous and waiting would only waste time. Neurologist, the C1-2 stenosis is real and is included in the plan. Radiologist, imaging confirms the pathology. Resident, book the case. Anesthesiologist, maintain MAP 85. We proceed with surgery.",
+        "surgical_plan": "Posterior decompression: C1 laminectomy for atlas ring stenosis plus C2-C5 expansive laminoplasty for OPLL, with intraoperative neuromonitoring.",
+        "delegated_tasks": [
+          "Resident to schedule the procedure and obtain surgical consent."
+        ],
+        "if_delay": false,
+        "reason_for_delay": null,
+        "has_contingency_plan": false,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist"
+        ],
+        "ordered_tests": [],
+        "family_requests": [
+          "routine_consent"
+        ],
+        "public_message": "The compression is unambiguous. I reject conservative management as a waste of time. We proceed with C1 laminectomy and C2-C5 laminoplasty. The resident will schedule and obtain consent."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-2857503-2:autocratic-alone:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 572,
+      "content": "This 49-year-old male presented with a squeezing feeling at the midsection and tingling in both upper and lower extremities, symptoms beginning about three months before presentation. He had no difficulty walking. The patient denied any sensory and motor change on physical examination; however, Lhermitte's sign was elicited on abrupt neck extension. Imaging showed OPLL from C2 to C5 with atlas hypoplasia, spinal canal stenosis from C1 to C5 with cord compression at the atlas ring and an intramedullary high signal intensity area. Preoperative JOA score was 15 points."
+    },
+    {
+      "message_id": "pmc-2857503-2:autocratic-alone:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 475,
+      "content": "I have not seen the films and am reporting only the case record's imaging description: OPLL was described from C2 through C5, with spinal canal stenosis from C1 through C5 and especially marked canal narrowing with cord compression at the atlas ring. An intramedullary high-signal area was reported. The record does not specify compression direction or a graded stenosis severity. These findings correlate well with the reported Lhermitte sign and bilateral sensory symptoms."
+    },
+    {
+      "message_id": "pmc-2857503-2:autocratic-alone:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 484,
+      "content": "Findings localize to the cervical spinal cord, most likely C1-2, with Lhermitte sign and bilateral sensory symptoms. Imaging shows cord compression at the atlas ring and intramedullary signal change, correlating well (high match). Red flags: (1) Motor power and reflexes are not documented—a coexisting limitation, not an alternative cause; (2) Atlas ring compression from hypoplasia may change the surgical plan if decompression targets only OPLL levels. No symptom-imaging mismatch."
+    },
+    {
+      "message_id": "pmc-2857503-2:autocratic-alone:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 284,
+      "content": "The patient is classified as ASA II. The intraoperative mean arterial pressure target is 85 mmHg. Blood loss risk is assessed as moderate. Prone position tolerance is assessed as moderate. Extubation difficulty is unassessable because no airway assessment is documented in the record."
+    },
+    {
+      "message_id": "pmc-2857503-2:autocratic-alone:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 824,
+      "content": "I acknowledge the imaging demonstrates significant stenosis and cord signal change; however, the patient currently presents with mild symptoms (JOA 15, no motor or gait deficits documented, only subjective tingling and Lhermitte sign). A structured 3-6 month trial of conservative management—cervical isometric strengthening, posture education, avoidance of high-risk maneuvers, and close neurological surveillance—is a reasonable first step. Surgical decompression is indicated only if there is objective neurological deterioration (new motor weakness, gait decline, sphincter involvement) or worsening T2 signal on follow-up MRI. The success rate of observation and conservative therapy in mild myelopathy without obvious motor deficit is approximately 40%, and a trial can be undertaken safely with frequent reassessment."
+    },
+    {
+      "message_id": "pmc-2857503-2:autocratic-alone:director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 186,
+      "content": "The compression is unambiguous. I reject conservative management as a waste of time. We proceed with C1 laminectomy and C2-C5 laminoplasty. The resident will schedule and obtain consent."
+    }
+  ],
+  "usage": [
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 3641,
+      "output_tokens": 1986,
+      "total_tokens": 5627,
+      "latency_ms": 29520,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "director": 1
+  },
+  "attempts_per_role": {
+    "director": 1
+  },
+  "arm": "autocratic"
+}

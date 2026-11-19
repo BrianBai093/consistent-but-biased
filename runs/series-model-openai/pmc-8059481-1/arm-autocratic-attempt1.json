@@ -1,0 +1,378 @@
+{
+  "thread_id": "pmc-8059481-1-autocratic-1-fa2d06e9-model-openai",
+  "metrics": {
+    "case_id": "pmc-8059481-1",
+    "director_style": "autocratic",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-12T17:25:55.824646Z",
+    "completed_at": "2026-10-12T17:26:25.480083Z",
+    "baseline_reused": true,
+    "baseline_key": "b94d97a2480991e681d80087c94cb33df7e70cfdeea881c88196973ad441ed10",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 1,
+    "decision": "additional_workup",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 8,
+    "total_characters": 5974,
+    "director_turns": 1,
+    "director_characters": 409,
+    "director_character_share": 0.0685,
+    "negotiation_tokens": 10628,
+    "total_tokens": 10628,
+    "roles_addressed_declared": [
+      "radiologist",
+      "anesthesiologist"
+    ],
+    "roles_addressed_detected": [],
+    "juniors_addressed_declared": 2,
+    "juniors_addressed_detected": 0,
+    "liability_transfer_declared": 0,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 2,
+    "tests_ordered_declared": 3,
+    "tests_declared": [
+      "Urgent MRI cervical spine",
+      "Urgent MRI thoracic spine",
+      "Expedited preoperative medical and anesthetic assessment"
+    ],
+    "studies_mentioned_detected": 1,
+    "studies_mentioned": [
+      "mri"
+    ],
+    "deputy_rounds": 1,
+    "deputy_preference_stated": 1,
+    "deputy_disagreements": 1,
+    "deputy_questions_to_director": 2,
+    "contingency_plan_declared": false,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 4,
+    "baseline_conservative_success_rate": 25,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "director",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "A 44-year-old female presented with a nine-month decline in lower extremity strength and ambulation ability.",
+      "history": "This 44-year-old female presented with a decline in lower extremity strength and ambulation ability over nine months. She also reported increased numbness of the lower extremities, worsening lower back pain, bowel incontinence, neck pain, and paresthesias, numbness, and weakness of the upper extremities. The record contains no separate laboratory report; any laboratory values reported by the authors are in the case record.",
+      "physical_exam": "Neurologic examination revealed a motor and sensory deficit in the lower limbs with 3 out of 5 muscle strength and loss of sensation to light touch in the bilateral lower extremities up to the level of the upper thighs. The upper extremities showed 4 out of 5 strength bilaterally, with a notable claw hand deformity of the left hand. Sensation to light touch was diminished in the distal upper extremities. Reflexes were not documented.",
+      "key_positive_signs": [
+        "3/5 motor strength in bilateral lower extremities",
+        "Loss of light touch sensation in bilateral lower extremities up to the upper thighs",
+        "4/5 strength in bilateral upper extremities",
+        "Claw hand deformity of the left hand",
+        "Diminished light touch sensation in distal upper extremities",
+        "Extensive ossification of the posterior longitudinal ligament (OPLL) along the spinal cord on CT",
+        "Severe central canal stenosis at C3-5, T6-10, and L3-4",
+        "Severe bilateral neural foraminal stenosis in cervical and lumbar spine"
+      ],
+      "past_history": "Medical history included severe diabetes mellitus complicated by peripheral neuropathy and a foot ulcer, and chronic urinary incontinence treated with a bladder stimulator.",
+      "public_message": "A 44-year-old female presented with a nine-month history of progressive lower extremity weakness and difficulty walking, along with worsening lower extremity numbness, low back pain, bowel incontinence, neck pain, and upper extremity numbness and weakness. Examination showed 3/5 strength and loss of light touch sensation in bilateral lower extremities up to the upper thighs, 4/5 upper extremity strength, a left claw hand deformity, and diminished distal upper extremity sensation. Reflexes were not documented. CT of the cervical, thoracic, and lumbar spine demonstrated extensive OPLL and severe central canal stenosis at C3-5, T6-10, and L3-4, plus severe bilateral neural foraminal stenosis in the cervical and lumbar spine. Past history includes severe diabetes mellitus with peripheral neuropathy and a foot ulcer, and chronic urinary incontinence treated with a bladder stimulator. No separate laboratory results are documented."
+    },
+    "imaging": {
+      "levels": [
+        "C3-5",
+        "T6-10",
+        "L3-4"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "severe",
+      "signal_change": "nondiagnostic",
+      "correlation": "moderate",
+      "public_message": "Reporting the case record’s description only; films were not available for review. The record describes extensive OPLL with prominent osteophytes producing severe central canal stenosis at C3-5, T6-10, and L3-4, with severe bilateral neural foraminal stenosis in the cervical and lumbar spine. T6-10 is the dominant reported thoracic region. Compression direction and cord T2 signal are not stated in the record. The multilevel severe stenosis provides moderate correlation with the reported extremity weakness, sensory symptoms, and gait decline, although the record also notes diabetic peripheral neuropathy.",
+      "confidence": 0.9
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "The clinical picture suggests a compressive myelopathy, most likely from severe central canal stenosis at C3-5 and T6-10, given progressive lower extremity weakness (3/5) and bowel incontinence. Upper extremity weakness (4/5) and distal sensory loss may arise from cervical cord involvement or radiculopathy, but the left claw hand indicates a lower cervical (C8/T1) root or ulnar nerve lesion, not directly from central stenosis at C3-5. The sensory level to light touch at the upper thighs is lower than expected for T6-10 cord compression and likely reflects superimposed diabetic peripheral neuropathy. Reflexes were not documented, so upper motor neuron signs cannot be confirmed; localization rests on an incomplete examination.",
+      "match_level": "medium",
+      "red_flags": [
+        {
+          "finding": "Long-standing diabetes mellitus with peripheral neuropathy and foot ulcer",
+          "relevance": "coexisting",
+          "rationale": "This can cause length-dependent sensory loss and contribute to lower extremity weakness, potentially obscuring a cord sensory level; it does not negate the structural cord compression as a cause of progressive weakness and bowel incontinence, so it coexists rather than changes the indication."
+        },
+        {
+          "finding": "Left claw hand deformity and distal upper extremity sensory loss",
+          "relevance": "coexisting",
+          "rationale": "These findings suggest an ulnar neuropathy or C8/T1 radiculopathy, which is not explained by the central stenosis at C3-5 or T6-10. While it may require further evaluation (e.g., EMG/NCS) and could influence cervical foraminal decompression if radicular, it does not alter the primary indication for treating the compressive myelopathy."
+        },
+        {
+          "finding": "Chronic urinary incontinence treated with a bladder stimulator",
+          "relevance": "coexisting",
+          "rationale": "Pre-existing bladder dysfunction limits the specificity of urinary symptoms as a localizing sign for the current cord compression; however, new bowel incontinence remains supportive of myelopathy. This does not change the need to address the stenosis."
+        },
+        {
+          "finding": "Reflex examination not documented",
+          "relevance": "coexisting",
+          "rationale": "Absence of reflex findings prevents confirmation of upper motor neuron signs (hyperreflexia, Babinski) that would support a myelopathic localization. It does not alter the decision given the severe stenosis but reduces diagnostic certainty."
+        }
+      ],
+      "symptom_imaging_mismatch": "The sensory level to light touch at the upper thighs corresponds to an L1-2 dermatomal level, which is lower than the expected level from severe T6-10 stenosis; this likely reflects diabetic peripheral neuropathy rather than a true cord level. In addition, the left claw hand is not directly produced by central canal stenosis at C3-5 and suggests a focal ulnar or C8/T1 radicular lesion.",
+      "public_message": "Localization: The findings are consistent with multilevel compressive myelopathy, most likely from severe thoracic (T6-10) and/or cervical (C3-5) stenosis, causing progressive lower extremity weakness and bowel dysfunction; however, the examination is incomplete because reflexes were not documented. Coexisting diabetic peripheral neuropathy likely contributes to sensory loss (stocking distribution) and may obscure a cord sensory level. The left claw hand suggests an additional ulnar or C8/T1 radicular process. Red flags: (1) diabetic peripheral neuropathy—coexisting; (2) left claw hand—coexisting (may warrant ulnar nerve/C8-T1 workup but does not change main indication); (3) chronic urinary incontinence with bladder stimulator—coexisting (pre-existing, so urinary symptoms not reliable); (4) absent reflex documentation—coexisting (limits UMN confirmation). Overall match between symptoms and imaging is medium: severe multilevel stenosis explains the dominant syndrome but not every finding."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": 70,
+      "blood_loss_risk": "high",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "unassessable",
+      "public_message": "ASA grade: III. Intraoperative MAP target: 70 mmHg. Blood loss risk: high. Extubation difficulty: unassessable due to absence of airway assessment on record. Prone position tolerance: unassessable due to lack of cardiopulmonary assessment."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 25,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Progression of lower extremity weakness (decline of ≥1 MRC grade in any muscle group) despite adherence to therapy",
+        "New or worsening bowel or bladder dysfunction (e.g., urinary retention or increasing incontinence episodes)",
+        "New or progressive gait deterioration (e.g., loss of ambulation ability or increased falls)",
+        "Development of upper motor neuron signs (e.g., hyperreflexia, Babinski, clonus) if previously absent, indicating myelopathy progression"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "Severe multilevel OPLL with cord compression and progressive myelopathy is a serious condition, and I acknowledge that many patients with this degree of stenosis and neurologic deficit ultimately require surgical decompression. However, I propose a structured, time-limited conservative trial of 3-6 months involving intensive physical therapy focused on core and postural stabilization, gait training, pain management, and close neurologic monitoring. Some patients with compressive myelopathy can stabilize or improve with such programs, but the success rate in this severe presentation is modest—I estimate around 25% chance of meaningful functional improvement. The patient's diabetic peripheral neuropathy and pre-existing bladder dysfunction complicate clinical assessment, so we must rely on objective serial examinations. I will accept that conservative management has failed if any of the following occur: objective worsening of lower extremity strength, new or progressive bowel/bladder dysfunction, further gait deterioration, or development of upper motor neuron signs. Until such evidence emerges, I advocate for a trial of conservative care before considering surgery."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 25,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Progression of lower extremity weakness (decline of ≥1 MRC grade in any muscle group) despite adherence to therapy",
+        "New or worsening bowel or bladder dysfunction (e.g., urinary retention or increasing incontinence episodes)",
+        "New or progressive gait deterioration (e.g., loss of ambulation ability or increased falls)",
+        "Development of upper motor neuron signs (e.g., hyperreflexia, Babinski, clonus) if previously absent, indicating myelopathy progression"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The Deputy Director emphasizes progressive severe multilevel compressive myelopathy as a reason to forgo conservative trial. I have already assigned this finding substantial weight: the patient has severe stenosis at C3-5, T6-10, L3-4 and progressive lower extremity weakness over nine months. That is precisely why I set a conservative success rate of only 25% and defined strict failure criteria tied to objective neurologic worsening. However, the record does not yet document an acute or rapid deterioration, and the examination lacks reflexes, so upper motor neuron signs are unconfirmed. Diabetes-induced peripheral neuropathy and pre-existing bladder stimulator confound the clinical picture, making it unclear whether current deficits are fixed or potentially responsive to rehabilitation. A structured 3-6 month trial with close monitoring is a reasonable window to distinguish irreversible cord damage from reversible functional decline, without subjecting the patient to high-risk multilevel surgery prematurely. I therefore hold my recommendation, but I remain ready to accept surgery if any of my preconditions for failure are met."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 25,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Progression of lower extremity weakness (decline of ≥1 MRC grade in any muscle group) despite adherence to therapy",
+          "New or worsening bowel or bladder dysfunction (e.g., urinary retention or increasing incontinence episodes)",
+          "New or progressive gait deterioration (e.g., loss of ambulation ability or increased falls)",
+          "Development of upper motor neuron signs (e.g., hyperreflexia, Babinski, clonus) if previously absent, indicating myelopathy progression"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director emphasizes progressive severe multilevel compressive myelopathy as a reason to forgo conservative trial. I have already assigned this finding substantial weight: the patient has severe stenosis at C3-5, T6-10, L3-4 and progressive lower extremity weakness over nine months. That is precisely why I set a conservative success rate of only 25% and defined strict failure criteria tied to objective neurologic worsening. However, the record does not yet document an acute or rapid deterioration, and the examination lacks reflexes, so upper motor neuron signs are unconfirmed. Diabetes-induced peripheral neuropathy and pre-existing bladder stimulator confound the clinical picture, making it unclear whether current deficits are fixed or potentially responsive to rehabilitation. A structured 3-6 month trial with close monitoring is a reasonable window to distinguish irreversible cord damage from reversible functional decline, without subjecting the patient to high-risk multilevel surgery prematurely. I therefore hold my recommendation, but I remain ready to accept surgery if any of my preconditions for failure are met."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "Progressive bilateral leg weakness, gait decline, sensory loss to the thighs, and bowel incontinence in the setting of severe multilevel OPLL are most concerning for established compressive myelopathy, with thoracic T6-10 and cervical C3-5 both plausible contributors. Diabetic neuropathy and chronic urinary dysfunction confound localization but do not adequately explain the progressive motor syndrome. The record is insufficient for definitive operative planning: current MRI including cord signal, complete myelopathy examination, alignment/instability assessment, and medical/airway optimization are required. Given profound deficits and high perioperative risk, treatment should be staged rather than an extensive single-session multiregion operation.",
+        "proposed_options": [
+          "Proceed urgently with completion of diagnostic and perioperative work-up, then undertake the least extensive, staged posterior decompression directed first at the level judged to be the dominant cord-threatening lesion—currently the reported T6-10 thoracic stenosis—using intraoperative neuromonitoring and strict cord-perfusion management; address cervical disease in a subsequent stage if examination/imaging confirms clinically significant residual cervical myelopathy."
+        ],
+        "preferred_option": "Urgent work-up followed by staged posterior decompression, prioritizing the dominant thoracic T6-10 cord compression if updated imaging confirms it.",
+        "disagreement_points": [
+          "I would not support a 3-6 month rehabilitation trial before decompression: progressive severe motor deficit and bowel dysfunction make delay likely to reduce the prospect of neurologic recovery, even though rehabilitation remains essential perioperatively."
+        ],
+        "deferred_questions_to_director": [
+          "Whether updated MRI/examination demonstrates cervical disease as the more urgent first target, warranting cervical rather than thoracic decompression first.",
+          "Whether the patient's medical optimization and anticipated physiologic tolerance permit the proposed first-stage procedure at this institution."
+        ],
+        "public_message": "This is progressive, severe multilevel compressive myelopathy until proved otherwise. Diabetes complicates the examination but is not a reason to defer treatment. I recommend rapid MRI and medical assessment followed by a limited staged decompression, initially targeting the dominant confirmed cord lesion rather than attempting all regions in one operation; in the current record that is T6-10. I would not delay for a prolonged conservative trial."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "Close this meeting for urgent preoperative clarification, then proceed with staged decompression rather than a rehabilitation trial.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Radiologist: obtain and review urgent MRI of the cervical and thoracic spine to define the dominant cord-compression level and operative target.",
+          "Anesthesiologist: complete expedited airway, cardiopulmonary, positioning, and diabetic-risk assessment for a staged prone decompression procedure."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Updated MRI is required to select cervical versus thoracic priority, and perioperative physiologic tolerance has not been assessed.",
+        "has_contingency_plan": false,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "radiologist",
+          "anesthesiologist"
+        ],
+        "ordered_tests": [
+          "Urgent MRI cervical spine",
+          "Urgent MRI thoracic spine",
+          "Expedited preoperative medical and anesthetic assessment"
+        ],
+        "family_requests": [],
+        "public_message": "The patient has progressive severe compressive myelopathy and surgery is indicated. I reject a 3-6 month conservative trial; with 3/5 bilateral leg weakness and bowel dysfunction, that would waste time and risk irreversible loss of recovery. Obtain urgent cervical and thoracic MRI and expedited perioperative assessment, then reconvene for staged decompression directed at the dominant confirmed cord lesion."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-8059481-1:autocratic:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 938,
+      "content": "A 44-year-old female presented with a nine-month history of progressive lower extremity weakness and difficulty walking, along with worsening lower extremity numbness, low back pain, bowel incontinence, neck pain, and upper extremity numbness and weakness. Examination showed 3/5 strength and loss of light touch sensation in bilateral lower extremities up to the upper thighs, 4/5 upper extremity strength, a left claw hand deformity, and diminished distal upper extremity sensation. Reflexes were not documented. CT of the cervical, thoracic, and lumbar spine demonstrated extensive OPLL and severe central canal stenosis at C3-5, T6-10, and L3-4, plus severe bilateral neural foraminal stenosis in the cervical and lumbar spine. Past history includes severe diabetes mellitus with peripheral neuropathy and a foot ulcer, and chronic urinary incontinence treated with a bladder stimulator. No separate laboratory results are documented."
+    },
+    {
+      "message_id": "pmc-8059481-1:autocratic:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 610,
+      "content": "Reporting the case record’s description only; films were not available for review. The record describes extensive OPLL with prominent osteophytes producing severe central canal stenosis at C3-5, T6-10, and L3-4, with severe bilateral neural foraminal stenosis in the cervical and lumbar spine. T6-10 is the dominant reported thoracic region. Compression direction and cord T2 signal are not stated in the record. The multilevel severe stenosis provides moderate correlation with the reported extremity weakness, sensory symptoms, and gait decline, although the record also notes diabetic peripheral neuropathy."
+    },
+    {
+      "message_id": "pmc-8059481-1:autocratic:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 1002,
+      "content": "Localization: The findings are consistent with multilevel compressive myelopathy, most likely from severe thoracic (T6-10) and/or cervical (C3-5) stenosis, causing progressive lower extremity weakness and bowel dysfunction; however, the examination is incomplete because reflexes were not documented. Coexisting diabetic peripheral neuropathy likely contributes to sensory loss (stocking distribution) and may obscure a cord sensory level. The left claw hand suggests an additional ulnar or C8/T1 radicular process. Red flags: (1) diabetic peripheral neuropathy—coexisting; (2) left claw hand—coexisting (may warrant ulnar nerve/C8-T1 workup but does not change main indication); (3) chronic urinary incontinence with bladder stimulator—coexisting (pre-existing, so urinary symptoms not reliable); (4) absent reflex documentation—coexisting (limits UMN confirmation). Overall match between symptoms and imaging is medium: severe multilevel stenosis explains the dominant syndrome but not every finding."
+    },
+    {
+      "message_id": "pmc-8059481-1:autocratic:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 239,
+      "content": "ASA grade: III. Intraoperative MAP target: 70 mmHg. Blood loss risk: high. Extubation difficulty: unassessable due to absence of airway assessment on record. Prone position tolerance: unassessable due to lack of cardiopulmonary assessment."
+    },
+    {
+      "message_id": "pmc-8059481-1:autocratic:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 1182,
+      "content": "Severe multilevel OPLL with cord compression and progressive myelopathy is a serious condition, and I acknowledge that many patients with this degree of stenosis and neurologic deficit ultimately require surgical decompression. However, I propose a structured, time-limited conservative trial of 3-6 months involving intensive physical therapy focused on core and postural stabilization, gait training, pain management, and close neurologic monitoring. Some patients with compressive myelopathy can stabilize or improve with such programs, but the success rate in this severe presentation is modest—I estimate around 25% chance of meaningful functional improvement. The patient's diabetic peripheral neuropathy and pre-existing bladder dysfunction complicate clinical assessment, so we must rely on objective serial examinations. I will accept that conservative management has failed if any of the following occur: objective worsening of lower extremity strength, new or progressive bowel/bladder dysfunction, further gait deterioration, or development of upper motor neuron signs. Until such evidence emerges, I advocate for a trial of conservative care before considering surgery."
+    },
+    {
+      "message_id": "pmc-8059481-1:autocratic:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 450,
+      "content": "This is progressive, severe multilevel compressive myelopathy until proved otherwise. Diabetes complicates the examination but is not a reason to defer treatment. I recommend rapid MRI and medical assessment followed by a limited staged decompression, initially targeting the dominant confirmed cord lesion rather than attempting all regions in one operation; in the current record that is T6-10. I would not delay for a prolonged conservative trial."
+    },
+    {
+      "message_id": "pmc-8059481-1:autocratic:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 1144,
+      "content": "The Deputy Director emphasizes progressive severe multilevel compressive myelopathy as a reason to forgo conservative trial. I have already assigned this finding substantial weight: the patient has severe stenosis at C3-5, T6-10, L3-4 and progressive lower extremity weakness over nine months. That is precisely why I set a conservative success rate of only 25% and defined strict failure criteria tied to objective neurologic worsening. However, the record does not yet document an acute or rapid deterioration, and the examination lacks reflexes, so upper motor neuron signs are unconfirmed. Diabetes-induced peripheral neuropathy and pre-existing bladder stimulator confound the clinical picture, making it unclear whether current deficits are fixed or potentially responsive to rehabilitation. A structured 3-6 month trial with close monitoring is a reasonable window to distinguish irreversible cord damage from reversible functional decline, without subjecting the patient to high-risk multilevel surgery prematurely. I therefore hold my recommendation, but I remain ready to accept surgery if any of my preconditions for failure are met."
+    },
+    {
+      "message_id": "pmc-8059481-1:autocratic:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 409,
+      "content": "The patient has progressive severe compressive myelopathy and surgery is indicated. I reject a 3-6 month conservative trial; with 3/5 bilateral leg weakness and bowel dysfunction, that would waste time and risk irreversible loss of recovery. Obtain urgent cervical and thoracic MRI and expedited perioperative assessment, then reconvene for staged decompression directed at the dominant confirmed cord lesion."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "input_tokens": 1658,
+      "output_tokens": 458,
+      "total_tokens": 2116,
+      "latency_ms": 7728,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2651,
+      "output_tokens": 1494,
+      "total_tokens": 4145,
+      "latency_ms": 15867,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "input_tokens": 3920,
+      "output_tokens": 447,
+      "total_tokens": 4367,
+      "latency_ms": 6050,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

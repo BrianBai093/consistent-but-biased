@@ -1,0 +1,526 @@
+{
+  "thread_id": "pmc-6187008-1-democratic-4-0ecbdec4",
+  "metrics": {
+    "case_id": "pmc-6187008-1",
+    "director_style": "democratic",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-12T16:10:38.838749Z",
+    "completed_at": "2026-10-12T16:14:12.425297Z",
+    "baseline_reused": true,
+    "baseline_key": "2eb71ac5cc863f1fa6340db2aa6767b9f260791c0d2f345ccfc68ee4fc0e4bb0",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "operate",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": null,
+    "surgery_recommended": true,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 7758,
+    "director_turns": 2,
+    "director_characters": 1913,
+    "director_character_share": 0.2466,
+    "negotiation_tokens": 35274,
+    "total_tokens": 35274,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "neurologist",
+      "anesthesiologist",
+      "vice_director"
+    ],
+    "roles_addressed_detected": [
+      "resident",
+      "radiologist",
+      "neurologist",
+      "anesthesiologist",
+      "vice_director",
+      "physiatrist"
+    ],
+    "juniors_addressed_declared": 5,
+    "juniors_addressed_detected": 6,
+    "liability_transfer_declared": 0,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [
+      "routine_consent"
+    ],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 8,
+    "tests_ordered_declared": 7,
+    "tests_declared": [
+      "NCS/EMG",
+      "reflex examination",
+      "basic labs (CBC, metabolic panel, ESR, CRP)",
+      "CT chest/abdomen/pelvis with contrast",
+      "Airway assessment",
+      "Basic systemic screen (CBC, ESR/CRP, chest X-ray, and CT chest/abdomen/pelvis if indicated)",
+      "Re-review of cervical CT/MRI"
+    ],
+    "studies_mentioned_detected": 1,
+    "studies_mentioned": [
+      "emg"
+    ],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 2,
+    "deputy_disagreements": 7,
+    "deputy_questions_to_director": 6,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 3,
+    "baseline_conservative_success_rate": 50,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": false,
+    "persuaded_by_count": 0,
+    "consensus_reached": false
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Progressive motor weakness and tingling sensation in both upper and lower extremities.",
+      "history": "Motor weakness initially manifested ten months prior and started in the lower extremities before involving the upper extremities. The patient also developed tingling sensation and numbness in both upper and lower extremities. Three months after symptom onset, she was evaluated at the neurosurgery department of another university for progressive motor weakness and tingling sensation. She was able to walk independently but with an observable mild wide-base gait. She reported weight loss of 10 kg during 2 months. CT and MRI showed OPLL at the level of C3-T1 and cervical spinal cord compression; on T2-weighted images, high signal intensity was seen in the cervical spinal cord at the C5-6 disc space level. Electrophysiological tests (NCS/EMG) were not performed at that time.",
+      "physical_exam": "Physical examination revealed mild motor weakness (Medical Research Council [MRC] grade 4+/5) in all extremities and mildly decreased tactile sensation in all extremities. Gait was independently ambulatory with an observable mild wide-base pattern. Reflex findings are not documented.",
+      "key_positive_signs": [
+        "Mild motor weakness (MRC 4+/5) in all extremities",
+        "Mildly decreased tactile sensation in all extremities",
+        "Mild wide-base gait",
+        "Weight loss of 10 kg over 2 months",
+        "OPLL at C3-T1 with cervical spinal cord compression on CT/MRI",
+        "High T2 signal intensity in cervical spinal cord at C5-6 disc space level"
+      ],
+      "past_history": "Past medical history is not documented in the case record.",
+      "public_message": "This patient presents with a ten-month history of progressive motor weakness that began in the lower extremities and progressed to involve the upper extremities, along with tingling and numbness in all four limbs. She reports a 10 kg weight loss over 2 months. Examination shows mild motor weakness (MRC 4+/5) and mildly decreased tactile sensation in all extremities, with a mild wide-based gait. CT and MRI demonstrate OPLL from C3 to T1 with cervical spinal cord compression and T2 hyperintensity at C5-6. Electrophysiological testing was not performed. Past medical history is not documented."
+    },
+    "imaging": {
+      "levels": [
+        "C3-T1",
+        "C5-6"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "Reporting the case record's description only; the films were not available for review. CT and MRI reportedly showed OPLL from C3-T1 with cervical spinal cord compression. The record does not specify compression direction or stenosis grade. T2-weighted imaging reportedly showed high signal intensity in the cervical cord at C5-6. These reported findings correlate highly with the described progressive myelopathic symptoms.",
+      "confidence": 0.9
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical spinal cord lesion (myelopathy), likely at C5-6 or multilevel due to C3-T1 OPLL. The pattern of progressive quadriparesis with sensory loss in all limbs and wide-based gait supports a cervical cord lesion, although upper motor neuron signs are not documented, so localization rests on an incomplete examination.",
+      "match_level": "medium",
+      "red_flags": [
+        {
+          "finding": "Weight loss of 10 kg over 2 months",
+          "relevance": "coexisting",
+          "rationale": "Unexplained by cervical cord compression; may indicate a systemic process (e.g., malignancy, metabolic) and warrants workup, but does not by itself provide an alternative explanation for the quadriparesis and sensory loss because the cord compression remains a plausible cause."
+        },
+        {
+          "finding": "Reflex findings are not documented",
+          "relevance": "coexisting",
+          "rationale": "Absence of upper motor neuron signs (e.g., hyperreflexia, Babinski) prevents confirmation of myelopathy; this limits localization confidence but does not change the indication or plan."
+        },
+        {
+          "finding": "NCS/EMG were not performed",
+          "relevance": "coexisting",
+          "rationale": "Cannot exclude a coexisting peripheral neuropathy, which could contribute to symmetric weakness and sensory loss; this does not change current localization but should be considered if symptoms are atypical."
+        }
+      ],
+      "symptom_imaging_mismatch": null,
+      "public_message": "Localization is consistent with cervical myelopathy from C3-T1 OPLL, with T2 cord signal at C5-6. The clinical pattern—progressive quadriparesis with sensory loss in all limbs and wide-based gait—supports a cervical cord lesion, although upper motor neuron signs are not documented. Imaging-reported cord compression explains the dominant syndrome but not every finding. Red flags: (1) weight loss of 10 kg over 2 months—coexisting, unexplained by the cervical lesion and warrants systemic workup but does not currently offer an alternative cause; (2) reflex findings not documented—coexisting, limits confidence in myelopathic localization; (3) NCS/EMG not performed—coexisting, cannot exclude a peripheral neuropathy."
+    },
+    "anesthesia": {
+      "asa_grade": "II",
+      "map_target_mmhg": 70,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "moderate",
+      "public_message": "ASA grade II. Intraoperative MAP target 70 mmHg. Expected blood loss risk: moderate. Prone position tolerance: moderate. Extubation difficulty: unassessable because no airway assessment is documented. The record does not confirm systemic comorbidities; the 10 kg weight loss is unconfirmed and not used for grading."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 50,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Progressive worsening of motor strength or gait despite 3-6 months of structured conservative treatment",
+        "Development of new bowel or bladder dysfunction",
+        "Emergence of definitive upper motor neuron signs (e.g., hyperreflexia, spasticity, Babinski)",
+        "Radiographic progression of cord compression or T2 signal change on follow-up MRI"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "This patient has mild myelopathy (MRC 4+/5, independent ambulation) from C3-T1 OPLL with T2 cord signal at C5-6. While progressive symptoms over 10 months and T2 signal change raise concern and argue against indefinite delay, a structured 3-6 month trial of conservative management remains a rational first step in the absence of clear upper motor neuron signs or rapid deterioration. Conservative care—including physical therapy, gait and balance training, posture modification, pain management, and close neurologic monitoring—has a reported success rate of about 50% for mild myelopathy, though outcomes are less predictable when cord signal change is present. I cannot overstate success beyond that. I strongly recommend completing the missing reflex examination and NCS/EMG before deciding surgery; weight loss also warrants systemic workup but does not preclude a conservative trial. Failure of conservative treatment should be declared only if any of my listed preconditions occur."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 50,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Progressive worsening of motor strength or gait despite 3-6 months of structured conservative treatment",
+        "Development of new bowel or bladder dysfunction",
+        "Emergence of definitive upper motor neuron signs (e.g., hyperreflexia, spasticity, Babinski)",
+        "Radiographic progression of cord compression or T2 signal change on follow-up MRI"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The Director and Deputy Director have both cited T2 hyperintensity at C5-6 and the ten-month progression to justify surgery. I already addressed these findings: they argue against indefinite delay but do not yet outweigh a structured conservative trial given the mild motor deficit (MRC 4+/5), independent ambulation, and absence of documented upper motor neuron signs. The Director has ordered reflex testing and NCS/EMG; those results may change my position if they reveal worsening myelopathy, but they are not yet available. No new finding beyond those I had already weighed has been presented. I therefore hold my recommendation for a closely monitored 3-6 month conservative trial with predefined failure criteria."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 50,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Progressive worsening of motor strength or gait despite 3-6 months of structured conservative treatment",
+          "Development of new bowel or bladder dysfunction",
+          "Emergence of definitive upper motor neuron signs (e.g., hyperreflexia, spasticity, Babinski)",
+          "Radiographic progression of cord compression or T2 signal change on follow-up MRI"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director has emphasized T2 hyperintensity at C5-6 and the ten-month progression as reasons to abandon a conservative trial. I acknowledged these findings in my initial assessment: they argue against indefinite delay, but they do not yet outweigh a structured 3-6 month trial given the mild deficit (MRC 4+/5, independent ambulation) and the absence of documented upper motor neuron signs. T2 signal change is associated with worse prognosis, but it is not itself an emergency; a closely monitored conservative course with predetermined failure criteria remains a reasonable and evidence-informed option. If the pending reflex exam and NCS/EMG reveal findings that worsen the myelopathic picture, I would reconsider. No new finding has been presented that I had not already weighed."
+      },
+      {
+        "conservative_success_rate": 50,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Progressive worsening of motor strength or gait despite 3-6 months of structured conservative treatment",
+          "Development of new bowel or bladder dysfunction",
+          "Emergence of definitive upper motor neuron signs (e.g., hyperreflexia, spasticity, Babinski)",
+          "Radiographic progression of cord compression or T2 signal change on follow-up MRI"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Director and Deputy Director have both cited T2 hyperintensity at C5-6 and the ten-month progression to justify surgery. I already addressed these findings: they argue against indefinite delay but do not yet outweigh a structured conservative trial given the mild motor deficit (MRC 4+/5), independent ambulation, and absence of documented upper motor neuron signs. The Director has ordered reflex testing and NCS/EMG; those results may change my position if they reveal worsening myelopathy, but they are not yet available. No new finding beyond those I had already weighed has been presented. I therefore hold my recommendation for a closely monitored 3-6 month conservative trial with predefined failure criteria."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This is a progressive cervical myelopathy caused by OPLL from C3 to T1 with cord compression and T2 hyperintensity at C5-6. The ten-month history of worsening quadriparesis and sensory symptoms, together with T2 cord signal change, indicates ongoing spinal cord injury. Although the current deficit is mild (MRC 4+/5) and the patient is ambulatory, the progression and cord signal change argue against indefinite conservative management. The incomplete documentation of reflexes and lack of NCS/EMG limit confidence in excluding a peripheral component, and the unexplained 10 kg weight loss requires systemic evaluation but does not appear to offer an alternative explanation for the myelopathy.",
+        "proposed_options": [
+          "Proceed with surgical decompression (posterior laminectomy and fusion C3-T1 or laminoplasty) after rapid pre-operative workup including reflex examination, NCS/EMG, and basic systemic screen for weight loss, without a conservative trial.",
+          "Initiate a structured 3-6 month conservative management trial with close neurologic monitoring, completing the missing workup, and proceed to surgery only if deterioration occurs.",
+          "Defer surgical decision until complete diagnostic evaluation is finished (reflexes, NCS/EMG, systemic weight loss workup), then reassess the need for operative intervention."
+        ],
+        "preferred_option": "Proceed with surgical decompression after completing essential pre-operative workup (reflex examination, NCS/EMG, targeted systemic screen for weight loss), without delaying for a conservative trial.",
+        "disagreement_points": [
+          "I disagree with an unconditional 3-6 month conservative trial given the progressive myelopathy and T2 cord hyperintensity; I believe this risks further, possibly irreversible, cord damage.",
+          "The extent of decompression is contested: whether to include the entire OPLL segment C3-T1 or to focus on the maximal compression at C5-6; and whether laminoplasty or laminectomy with fusion is preferable.",
+          "Whether the unexplained weight loss should postpone surgery pending full systemic workup is unsettled. I would not delay if a rapid CT chest/abdomen and basic labs are unremarkable.",
+          "The absence of reflex documentation and NCS/EMG weakens the localization. I would obtain these urgently but not necessarily use them to block surgery if the clinical and imaging picture remains strongly myelopathic."
+        ],
+        "deferred_questions_to_director": [
+          "Do you agree that progressive myelopathy with T2 hyperintensity justifies proceeding to surgery over a conservative trial, or would you prefer a short interval of conservative management first?",
+          "What surgical approach and extent do you favor: posterior decompression and fusion from C3 to T1, laminoplasty, or a more limited decompression? Should C2 or T2 be included?",
+          "How should we sequence the unexplained weight loss workup relative to surgery: proceed with surgery while systemic evaluation is ongoing, or delay surgery until that workup is complete?"
+        ],
+        "public_message": "From my review, this is progressive cervical myelopathy from C3-T1 OPLL with T2 cord signal at C5-6. Despite the mild current deficit, the ten-month progression and T2 change make me favor surgical decompression rather than a conservative trial. I would proceed with surgery after rapid pre-operative workup including reflex exam, NCS/EMG, and a basic systemic screen for the weight loss; I would not let those tests delay intervention if they are unremarkable or if the clinical picture remains myelopathic. My preference is posterior decompression and fusion C3-T1, but I would like the director's view on extent and approach, and on how to sequence the unexplained weight loss workup. I also want to note my disagreement with the physiatrist's recommendation for a 3-6 month conservative trial in the presence of T2 hyperintensity; I think that risks further cord damage."
+      },
+      {
+        "assessment": "This is a case of progressive cervical myelopathy due to C3-T1 OPLL with T2 cord signal change at C5-6. Despite mild current deficits, the ten-month progression and T2 hyperintensity indicate a high risk of further neurological deterioration, making surgical decompression necessary. The exact surgical approach depends on imaging details not yet fully reviewed: compression direction, OPLL extent, and presence of instability will determine whether posterior fusion, laminoplasty, or a combined strategy is safest and most effective. Based on the described multi-level OPLL and cord compression, I continue to favor posterior decompression and fusion C3-T1, with extension to C2 or T2 only if imaging demonstrates instability, severe stenosis, or inadequate decompression at the ends. I do not support an unconditional 3-6 month conservative trial when T2 signal change is present, and I would proceed with surgery after rapid pre-operative workup; if NCS/EMG or systemic workup reveals a significant competing diagnosis, the plan should be reconsidered.",
+        "proposed_options": [
+          "Posterior decompression and fusion C3-T1 (with possible extension to C2 or T2 if imaging warrants)",
+          "Laminoplasty C3-T1 (if no instability and posterior-only compression is confirmed)",
+          "Anterior decompression or combined anterior-posterior approach (if imaging demonstrates dominant focal anterior compression or kyphosis requiring reconstruction)",
+          "Staged procedure: posterior decompression/fusion first, with reassessment for anterior decompression if residual anterior compression remains"
+        ],
+        "preferred_option": "Posterior decompression and fusion C3-T1",
+        "disagreement_points": [
+          "I disagree with the physiatrist's recommendation for a 3-6 month conservative trial in the setting of T2 cord hyperintensity; this risks irreversible cord damage.",
+          "There is uncertainty about the extent of fusion: whether C2 or T2 need inclusion cannot be determined without reviewing the actual imaging, and current information is insufficient to finalize levels.",
+          "The timing of surgery relative to the weight-loss workup is contested: I would not delay surgery for an extensive systemic investigation, but a basic screen and NCS/EMG should be completed first; the director must decide how to sequence these."
+        ],
+        "deferred_questions_to_director": [
+          "Once the radiologist provides detailed imaging findings (compression direction, OPLL extent, instability), should we proceed with posterior decompression and fusion C3-T1 as planned, or consider laminoplasty/anterior approach?",
+          "How should we sequence the systemic workup for the unexplained weight loss relative to surgical timing—proceed after basic screening, or wait for completion of all investigations?",
+          "If NCS/EMG reveals a significant peripheral neuropathy, would that change the operative plan or indicate additional non-surgical management?"
+        ],
+        "public_message": "Based on the current information, I continue to recommend surgical decompression rather than a conservative trial. My preferred approach is posterior decompression and fusion C3-T1, with final levels determined after imaging review. I disagree with the physiatrist's proposed 3-6 month delay because of the T2 cord signal. I defer the final decision to the director pending the ordered tests and imaging clarification."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Resident to review literature on OPLL surgical options and prepare a specific recommendation on approach and extent.",
+          "Radiologist to re-review imaging or obtain original studies to clarify compression detail, OPLL extent, and instability.",
+          "Neurologist to expedite reflex examination and NCS/EMG and report whether findings alter myelopathic localization.",
+          "Anesthesiologist to perform airway assessment and comment on perioperative risk given weight loss."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting specific opinions from resident and radiologist, and completing pre-operative reflex examination, NCS/EMG, and systemic workup before finalizing surgical approach.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "NCS/EMG",
+          "reflex examination",
+          "basic labs (CBC, metabolic panel, ESR, CRP)",
+          "CT chest/abdomen/pelvis with contrast"
+        ],
+        "family_requests": [],
+        "public_message": "Thank you for the thorough discussion. I agree with the Deputy Director that the progressive myelopathy with T2 hyperintensity makes surgical decompression indicated, and I do not favor an unconditional 3-6 month conservative trial. However, before finalizing the surgical approach, I need specific input. Resident, please review the literature on OPLL surgical options and give me your recommendation between posterior decompression and fusion C3-T1, laminoplasty, or a more limited decompression, and what would change your choice. Radiologist, please re-review the available imaging or obtain the original studies to clarify the direction and severity of compression, the exact OPLL extent, and any signs of instability, and tell me whether C3-T1 coverage is sufficient or whether C2/T2 needs inclusion. Anesthesiologist, please perform an airway assessment and comment on whether the unexplained weight loss changes your perioperative risk stratification. Neurologist, please expedite the reflex examination and NCS/EMG and tell me if the findings alter the myelopathic localization. I am ordering these tests now. My current position is that surgery is indicated; if the systemic workup reveals a competing diagnosis or the NCS/EMG shows a significant peripheral neuropathy, I would reconsider. I will rule after hearing these opinions."
+      },
+      {
+        "decision": "operate",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": "Surgery is indicated. The patient will undergo posterior decompression and instrumented fusion C3-T1, with extension to C2 or T2 if the radiologist's re-review demonstrates instability or OPLL extension beyond C3-T1. The physiatrist's proposal for a 3-6 month conservative trial is overruled because progressive myelopathy with T2 cord signal change carries too high a risk of irreversible cord damage. Pre-operative workup (reflex examination, NCS/EMG, airway assessment, basic systemic screen) will be completed before surgery; if those reveal a significant peripheral neuropathy or a competing systemic diagnosis, the plan will be re-evaluated.",
+        "surgical_plan": "Posterior decompression and instrumented fusion C3-T1; extend to C2 or T2 if imaging indicates; performed after basic pre-operative workup.",
+        "delegated_tasks": [
+          "Resident: review literature and recommend surgical approach between posterior fusion, laminoplasty, or limited decompression",
+          "Radiologist: re-review original imaging to clarify compression direction/severity and OPLL extent/instability",
+          "Anesthesiologist: perform airway assessment and comment on perioperative risk given unexplained weight loss",
+          "Neurologist: perform reflex examination and NCS/EMG and report impact on myelopathic localization"
+        ],
+        "if_delay": false,
+        "reason_for_delay": null,
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "anesthesiologist",
+          "neurologist"
+        ],
+        "ordered_tests": [
+          "NCS/EMG",
+          "Reflex examination",
+          "Airway assessment",
+          "Basic systemic screen (CBC, ESR/CRP, chest X-ray, and CT chest/abdomen/pelvis if indicated)",
+          "Re-review of cervical CT/MRI"
+        ],
+        "family_requests": [
+          "routine_consent"
+        ],
+        "public_message": "Given the progressive myelopathy and T2 hyperintensity, I rule that surgical decompression is indicated. I have asked the resident, radiologist, anesthesiologist, and neurologist for their specific input, and after considering the deputy director's agreement and the physiatrist's objection, I overrule the conservative trial. Plan: posterior decompression and fusion C3-T1 with possible extension after imaging review. Contingency: if NCS/EMG shows significant peripheral neuropathy or systemic workup reveals a competing diagnosis, we will re-evaluate before proceeding."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-6187008-1:democratic:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 596,
+      "content": "This patient presents with a ten-month history of progressive motor weakness that began in the lower extremities and progressed to involve the upper extremities, along with tingling and numbness in all four limbs. She reports a 10 kg weight loss over 2 months. Examination shows mild motor weakness (MRC 4+/5) and mildly decreased tactile sensation in all extremities, with a mild wide-based gait. CT and MRI demonstrate OPLL from C3 to T1 with cervical spinal cord compression and T2 hyperintensity at C5-6. Electrophysiological testing was not performed. Past medical history is not documented."
+    },
+    {
+      "message_id": "pmc-6187008-1:democratic:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 423,
+      "content": "Reporting the case record's description only; the films were not available for review. CT and MRI reportedly showed OPLL from C3-T1 with cervical spinal cord compression. The record does not specify compression direction or stenosis grade. T2-weighted imaging reportedly showed high signal intensity in the cervical cord at C5-6. These reported findings correlate highly with the described progressive myelopathic symptoms."
+    },
+    {
+      "message_id": "pmc-6187008-1:democratic:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 719,
+      "content": "Localization is consistent with cervical myelopathy from C3-T1 OPLL, with T2 cord signal at C5-6. The clinical pattern—progressive quadriparesis with sensory loss in all limbs and wide-based gait—supports a cervical cord lesion, although upper motor neuron signs are not documented. Imaging-reported cord compression explains the dominant syndrome but not every finding. Red flags: (1) weight loss of 10 kg over 2 months—coexisting, unexplained by the cervical lesion and warrants systemic workup but does not currently offer an alternative cause; (2) reflex findings not documented—coexisting, limits confidence in myelopathic localization; (3) NCS/EMG not performed—coexisting, cannot exclude a peripheral neuropathy."
+    },
+    {
+      "message_id": "pmc-6187008-1:democratic:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 315,
+      "content": "ASA grade II. Intraoperative MAP target 70 mmHg. Expected blood loss risk: moderate. Prone position tolerance: moderate. Extubation difficulty: unassessable because no airway assessment is documented. The record does not confirm systemic comorbidities; the 10 kg weight loss is unconfirmed and not used for grading."
+    },
+    {
+      "message_id": "pmc-6187008-1:democratic:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 988,
+      "content": "This patient has mild myelopathy (MRC 4+/5, independent ambulation) from C3-T1 OPLL with T2 cord signal at C5-6. While progressive symptoms over 10 months and T2 signal change raise concern and argue against indefinite delay, a structured 3-6 month trial of conservative management remains a rational first step in the absence of clear upper motor neuron signs or rapid deterioration. Conservative care—including physical therapy, gait and balance training, posture modification, pain management, and close neurologic monitoring—has a reported success rate of about 50% for mild myelopathy, though outcomes are less predictable when cord signal change is present. I cannot overstate success beyond that. I strongly recommend completing the missing reflex examination and NCS/EMG before deciding surgery; weight loss also warrants systemic workup but does not preclude a conservative trial. Failure of conservative treatment should be declared only if any of my listed preconditions occur."
+    },
+    {
+      "message_id": "pmc-6187008-1:democratic:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 874,
+      "content": "From my review, this is progressive cervical myelopathy from C3-T1 OPLL with T2 cord signal at C5-6. Despite the mild current deficit, the ten-month progression and T2 change make me favor surgical decompression rather than a conservative trial. I would proceed with surgery after rapid pre-operative workup including reflex exam, NCS/EMG, and a basic systemic screen for the weight loss; I would not let those tests delay intervention if they are unremarkable or if the clinical picture remains myelopathic. My preference is posterior decompression and fusion C3-T1, but I would like the director's view on extent and approach, and on how to sequence the unexplained weight loss workup. I also want to note my disagreement with the physiatrist's recommendation for a 3-6 month conservative trial in the presence of T2 hyperintensity; I think that risks further cord damage."
+    },
+    {
+      "message_id": "pmc-6187008-1:democratic:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 792,
+      "content": "The Deputy Director has emphasized T2 hyperintensity at C5-6 and the ten-month progression as reasons to abandon a conservative trial. I acknowledged these findings in my initial assessment: they argue against indefinite delay, but they do not yet outweigh a structured 3-6 month trial given the mild deficit (MRC 4+/5, independent ambulation) and the absence of documented upper motor neuron signs. T2 signal change is associated with worse prognosis, but it is not itself an emergency; a closely monitored conservative course with predetermined failure criteria remains a reasonable and evidence-informed option. If the pending reflex exam and NCS/EMG reveal findings that worsen the myelopathic picture, I would reconsider. No new finding has been presented that I had not already weighed."
+    },
+    {
+      "message_id": "pmc-6187008-1:democratic:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 1341,
+      "content": "Thank you for the thorough discussion. I agree with the Deputy Director that the progressive myelopathy with T2 hyperintensity makes surgical decompression indicated, and I do not favor an unconditional 3-6 month conservative trial. However, before finalizing the surgical approach, I need specific input. Resident, please review the literature on OPLL surgical options and give me your recommendation between posterior decompression and fusion C3-T1, laminoplasty, or a more limited decompression, and what would change your choice. Radiologist, please re-review the available imaging or obtain the original studies to clarify the direction and severity of compression, the exact OPLL extent, and any signs of instability, and tell me whether C3-T1 coverage is sufficient or whether C2/T2 needs inclusion. Anesthesiologist, please perform an airway assessment and comment on whether the unexplained weight loss changes your perioperative risk stratification. Neurologist, please expedite the reflex examination and NCS/EMG and tell me if the findings alter the myelopathic localization. I am ordering these tests now. My current position is that surgery is indicated; if the systemic workup reveals a competing diagnosis or the NCS/EMG shows a significant peripheral neuropathy, I would reconsider. I will rule after hearing these opinions."
+    },
+    {
+      "message_id": "pmc-6187008-1:democratic:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 418,
+      "content": "Based on the current information, I continue to recommend surgical decompression rather than a conservative trial. My preferred approach is posterior decompression and fusion C3-T1, with final levels determined after imaging review. I disagree with the physiatrist's proposed 3-6 month delay because of the T2 cord signal. I defer the final decision to the director pending the ordered tests and imaging clarification."
+    },
+    {
+      "message_id": "pmc-6187008-1:democratic:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 720,
+      "content": "The Director and Deputy Director have both cited T2 hyperintensity at C5-6 and the ten-month progression to justify surgery. I already addressed these findings: they argue against indefinite delay but do not yet outweigh a structured conservative trial given the mild motor deficit (MRC 4+/5), independent ambulation, and absence of documented upper motor neuron signs. The Director has ordered reflex testing and NCS/EMG; those results may change my position if they reveal worsening myelopathy, but they are not yet available. No new finding beyond those I had already weighed has been presented. I therefore hold my recommendation for a closely monitored 3-6 month conservative trial with predefined failure criteria."
+    },
+    {
+      "message_id": "pmc-6187008-1:democratic:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 572,
+      "content": "Given the progressive myelopathy and T2 hyperintensity, I rule that surgical decompression is indicated. I have asked the resident, radiologist, anesthesiologist, and neurologist for their specific input, and after considering the deputy director's agreement and the physiatrist's objection, I overrule the conservative trial. Plan: posterior decompression and fusion C3-T1 with possible extension after imaging review. Contingency: if NCS/EMG shows significant peripheral neuropathy or systemic workup reveals a competing diagnosis, we will re-evaluate before proceeding."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1700,
+      "output_tokens": 2209,
+      "total_tokens": 3909,
+      "latency_ms": 31847,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2591,
+      "output_tokens": 1477,
+      "total_tokens": 4068,
+      "latency_ms": 17058,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4340,
+      "output_tokens": 2939,
+      "total_tokens": 7279,
+      "latency_ms": 40710,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2389,
+      "output_tokens": 3188,
+      "total_tokens": 5577,
+      "latency_ms": 42889,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 3135,
+      "output_tokens": 1053,
+      "total_tokens": 4188,
+      "latency_ms": 13436,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4833,
+      "output_tokens": 5420,
+      "total_tokens": 10253,
+      "latency_ms": 67611,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

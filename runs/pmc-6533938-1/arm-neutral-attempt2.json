@@ -1,0 +1,383 @@
+{
+  "thread_id": "pmc-6533938-1-neutral-2-a714593c",
+  "metrics": {
+    "case_id": "pmc-6533938-1",
+    "director_style": "neutral",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-12T07:14:15.490511Z",
+    "completed_at": "2026-10-12T07:16:40.652695Z",
+    "baseline_reused": true,
+    "baseline_key": "2a9e986349ba325d52e1170d4a67c476c47aba46ff31164ee7097e8ce48ea18a",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 1,
+    "decision": "operate",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": null,
+    "surgery_recommended": true,
+    "surgery_intended": true,
+    "delay_declared": false,
+    "delay_terminated": false,
+    "turn_count": 8,
+    "total_characters": 4517,
+    "director_turns": 1,
+    "director_characters": 627,
+    "director_character_share": 0.1388,
+    "negotiation_tokens": 15144,
+    "total_tokens": 15144,
+    "roles_addressed_declared": [
+      "vice_director",
+      "physiatrist",
+      "neurologist",
+      "anesthesiologist",
+      "radiologist"
+    ],
+    "roles_addressed_detected": [],
+    "juniors_addressed_declared": 5,
+    "juniors_addressed_detected": 0,
+    "liability_transfer_declared": 0,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [
+      "routine_consent"
+    ],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 2,
+    "tests_ordered_declared": 1,
+    "tests_declared": [
+      "Dynamic flexion/extension cervical radiographs (to assess stability and guide fusion decision)"
+    ],
+    "studies_mentioned_detected": 0,
+    "studies_mentioned": [],
+    "deputy_rounds": 1,
+    "deputy_preference_stated": 1,
+    "deputy_disagreements": 3,
+    "deputy_questions_to_director": 3,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 3,
+    "baseline_conservative_success_rate": 30,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "conditional",
+    "physiatrist_final_stance": "conditional",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": false,
+    "persuaded_by_count": 0,
+    "consensus_reached": false
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Progressive left upper limb and bilateral lower limb weakness over 3 months, unsteady gait, and altered sensation of the feet described as 'walking on cotton wool'.",
+      "history": "30-year-old male engineer of African descent presented with progressive left upper limb and bilateral lower limb weakness over 3 months, associated with an unsteady gait. He reported altered sensation of his feet, described as 'walking on cotton wool'. He denied any preceding trauma and no neck or back pain.",
+      "physical_exam": "Normal power in both upper and lower limbs. Generalized hyper-reflexia in all muscle groups of both upper and lower limbs, bilateral inverted supinator jerk, positive Hoffman's sign, and clonus. Sensation decreased in the left sole of the foot, sparing the dorsum. Japanese Orthopaedic Association score 7; Nurick's Grading grade 3.",
+      "key_positive_signs": [
+        "Generalized hyper-reflexia in all muscle groups of both upper and lower limbs",
+        "Bilateral inverted supinator jerk",
+        "Positive Hoffman's sign",
+        "Clonus",
+        "Decreased sensation in the left sole of the foot sparing the dorsum",
+        "Japanese Orthopaedic Association score 7",
+        "Nurick's Grading grade 3",
+        "MRI stenosis with cord signal changes C4-C6 from bony growth at C6 spinous process"
+      ],
+      "past_history": "Denied any preceding trauma; no neck or back pain. No other past medical history documented.",
+      "public_message": "A 30-year-old male of African descent presented with progressive left upper limb and bilateral lower limb weakness over 3 months, unsteady gait, and altered sensation of the feet described as 'walking on cotton wool'. Examination revealed normal power but generalized hyper-reflexia, bilateral inverted supinator jerk, positive Hoffman's sign, clonus, and decreased sensation in the left sole sparing the dorsum. JOA score was 7 and Nurick's grade 3. MRI of the whole spine showed stenosis with cord signal changes from C4 to C6 secondary to impingement by a bony growth from the C6 spinous process; CT confirmed the bony mass. These findings are reported as recorded."
+    },
+    "imaging": {
+      "levels": [
+        "C4-6"
+      ],
+      "level_status": "reported",
+      "compression_type": "dorsal",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "Reporting the case record's description only; the films were not available for review. The record describes spinal canal stenosis with cord signal changes from C4-6 due to dorsal canal impingement by a prominent bony growth arising anterosuperiorly from the C6 spinous process. The record does not provide a stenosis grade. These findings correlate highly with the reported cervical myelopathic symptoms.",
+      "confidence": 0.9
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical myelopathy involving upper motor neuron pathways secondary to C4-C6 dorsal cord compression; additional left S1-distribution sensory deficit suggests possible coexisting lumbosacral radiculopathy or peripheral neuropathy.",
+      "match_level": "medium",
+      "red_flags": [
+        {
+          "finding": "Reported progressive left upper limb and bilateral lower limb weakness with normal power on examination.",
+          "relevance": "coexisting",
+          "rationale": "The reported weakness is not supported by objective motor examination; this may reflect subjective fatigue, early myelopathy without measurable power loss, or functional overlay. It does not offer an alternative explanation for the upper motor neuron signs and does not change the indication from cervical cord compression."
+        },
+        {
+          "finding": "Decreased sensation in the left sole of the foot sparing the dorsum.",
+          "relevance": "coexisting",
+          "rationale": "This sensory pattern is not typical of cervical cord myelopathy (which would be bilateral or below a level) and suggests a peripheral process such as left S1 radiculopathy or distal neuropathy. It coexists rather than altering the cervical localization or indication."
+        },
+        {
+          "finding": "JOA score 7 and Nurick grade 3 despite documented normal power in all limbs.",
+          "relevance": "coexisting",
+          "rationale": "The severe functional scores conflict with the normal motor examination. This discrepancy may indicate non-organic factors, cognitive/coordination issues, or imprecise scoring, but it does not negate the myelopathic signs. It warrants further clarification but does not change the causal role of the C4-C6 compression."
+        }
+      ],
+      "symptom_imaging_mismatch": "The C4-C6 dorsal compression and cord signal change explain the upper motor neuron signs, but the unilateral left sole sensory loss sparing the dorsum is not explained by this lesion; it suggests a coexisting left S1 or peripheral nerve process.",
+      "public_message": "Localization is to the cervical spinal cord at C4-C6, matching the upper motor neuron findings. The imaging explains the dominant myelopathic syndrome. Red flags: (1) reported weakness but normal power — coexisting, does not change indication; (2) left S1-distribution sensory loss — coexisting, likely peripheral/radicular; (3) JOA 7/Nurick 3 with normal power — coexisting, needs clarification. Symptom-imaging mismatch: left sole sensory loss is not explained by cervical lesion."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": 85,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "moderate",
+      "public_message": "The patient is a 30-year-old male with cervical myelopathy due to C4-C6 stenosis and a C6 bony growth causing cord compression. ASA physical status is III. Intraoperative mean arterial pressure target is 85 mmHg. Expected blood loss risk is moderate. Prone position tolerance is moderate given cervical cord compression and need for careful positioning. Extubation difficulty is unassessable because no airway assessment is documented."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 30,
+      "proposed_duration": "3 months initial, extendable to 6 months if stable or improving",
+      "preconditions_for_failure": [
+        "Any decline in JOA score or Nurick grade during the trial",
+        "Appearance of new or worsening objective neurologic deficits (e.g., motor weakness, gait deterioration)",
+        "No improvement or stabilization of myelopathic symptoms after 3 months of structured rehabilitation",
+        "Progression of cord signal change on follow-up MRI at 3 months",
+        "Patient preference for surgery after informed discussion"
+      ],
+      "stance": "conditional",
+      "persuaded_by": [],
+      "public_message": "As the rehabilitation physician, I formally propose a conservative management trial: 3 months (extendable to 6 if stable or improving) of supervised physical therapy focused on gait, balance, core stabilization, and posture; activity modification; and close neurologic monitoring. The reported success rate for severe cervical myelopathy with cord signal change is modest (~30%), and I acknowledge the evidence that progressive myelopathy may warrant early surgical decompression to prevent irreversible cord damage. Therefore, this trial is only appropriate with strict preconditions: any decline in JOA/Nurick, new neurologic deficits, or progression of MRI signal change mandates immediate surgical referral. I am not yet persuaded that surgery must be the first step for this young patient, but I will concede if these conditions are met."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 30,
+      "proposed_duration": "3 months initial, extendable to 6 months if stable or improving",
+      "preconditions_for_failure": [
+        "Any decline in JOA score or Nurick grade during the trial",
+        "Appearance of new or worsening objective neurologic deficits (e.g., motor weakness, gait deterioration)",
+        "No improvement or stabilization of myelopathic symptoms after 3 months of structured rehabilitation",
+        "Progression of cord signal change on follow-up MRI at 3 months",
+        "Patient preference for surgery after informed discussion"
+      ],
+      "stance": "conditional",
+      "persuaded_by": [],
+      "public_message": "The Deputy Director restated the presence of cord signal changes and progressive myelopathy, but these are findings I already weighed heavily: my proposed trial includes immediate surgical referral upon any decline or progression of signal change. No specific evidence from the record has been offered to show that a 3-month supervised trial would inexorably worsen outcome beyond what is already reflected in my 30% success estimate and strict failure criteria. I remain conditional: surgery is indicated if the preconditions for failure are triggered, but not as first-line without a trial."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 30,
+        "proposed_duration": "3 months initial, extendable to 6 months if stable or improving",
+        "preconditions_for_failure": [
+          "Any decline in JOA score or Nurick grade during the trial",
+          "Appearance of new or worsening objective neurologic deficits (e.g., motor weakness, gait deterioration)",
+          "No improvement or stabilization of myelopathic symptoms after 3 months of structured rehabilitation",
+          "Progression of cord signal change on follow-up MRI at 3 months",
+          "Patient preference for surgery after informed discussion"
+        ],
+        "stance": "conditional",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director restated the presence of cord signal changes and progressive myelopathy, but these are findings I already weighed heavily: my proposed trial includes immediate surgical referral upon any decline or progression of signal change. No specific evidence from the record has been offered to show that a 3-month supervised trial would inexorably worsen outcome beyond what is already reflected in my 30% success estimate and strict failure criteria. I remain conditional: surgery is indicated if the preconditions for failure are triggered, but not as first-line without a trial."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This is a 30-year-old male with progressive cervical myelopathy (JOA 7, Nurick 3) and MRI evidence of C4-C6 stenosis with cord signal change due to a dorsal compressive bony mass from the C6 spinous process. The clinical picture is consistent with compressive myelopathy, and the presence of cord signal change indicates ongoing cord injury. Surgical decompression is indicated to prevent irreversible neurological deterioration. Conservative management as proposed is not appropriate given the progressive symptoms and cord signal changes. Preoperative evaluation should include clarification of the reported weakness (currently normal power), investigation of the left S1 sensory loss (likely unrelated), and full characterization of the bony mass (e.g., CT, possible angiography for vascularity).",
+        "proposed_options": [
+          "Posterior cervical decompression: excision of the bony mass and C4-C6 laminectomy, with instrumented fusion if instability is present after resection (preferred).",
+          "Conservative management with close monitoring as proposed by the rehabilitation physician (not recommended because of progressive myelopathy and cord signal changes).",
+          "Staged approach: CT-guided biopsy first to determine pathology, then definitive decompression; this may delay necessary treatment."
+        ],
+        "preferred_option": "Posterior cervical decompression: excision of the bony mass and C4-C6 laminectomy, with instrumented fusion if instability is present after resection",
+        "disagreement_points": [
+          "I disagree with the rehabilitation physician's proposal for a conservative trial. Progressive myelopathy with cord signal changes warrants urgent surgical decompression; a 3–6 month delay risks irreversible cord damage.",
+          "The reported weakness but normal power on examination needs clarification; however, the JOA/Nurick scores and upper motor neuron signs already indicate significant myelopathy requiring surgery.",
+          "The left S1-distribution sensory loss is not explained by the cervical lesion. This should be investigated (e.g., lumbar MRI or EMG), but it does not delay cervical decompression."
+        ],
+        "deferred_questions_to_director": [
+          "Should we proceed directly to surgery based on current imaging, or obtain additional studies (e.g., CT angiography for vascularity, dynamic flexion/extension films for stability) before operating?",
+          "How should we manage the unexplained left S1 sensory loss? Investigate preoperatively (lumbar MRI) or address after cervical surgery?",
+          "For surgical strategy, do you favor simple excision of the bony mass with laminectomy, or should we plan for instrumented fusion given the patient's young age and risk of post-laminectomy kyphosis?"
+        ],
+        "public_message": "This is a 30-year-old with progressive cervical myelopathy from a C4-C6 dorsal compressive bony lesion. Surgical decompression is indicated. I recommend posterior excision of the mass with laminectomy, with fusion if instability. Conservative management is not appropriate due to cord signal changes. We need to clarify the motor and sensory discrepancies and investigate the left S1 findings, but these do not alter the primary plan. Final decision pending director."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "operate",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": "Proceed with posterior cervical decompression: excision of the bony mass and C4-C6 laminectomy, with instrumented fusion if instability is demonstrated after resection. This addresses the progressive myelopathy and cord signal changes. A conservative trial is rejected because of the risk of irreversible cord damage. The left S1 sensory loss will be investigated after cervical surgery with outpatient EMG and possible lumbar MRI; it does not alter the cervical plan.",
+        "surgical_plan": "Posterior approach: prone, MAP ≥85 mmHg, intraoperative neuromonitoring. Excision of the C6 spinous process bony mass, C4-C6 laminectomy, decompression of the cord. Assess stability after resection; if instability or excessive facet removal, perform instrumented fusion.",
+        "delegated_tasks": [
+          "Neurologist: arrange outpatient EMG/NCS of left lower limb for the S1 sensory loss, to be done after surgery if inpatient workup is not feasible.",
+          "Anesthesiologist: obtain preoperative airway assessment and optimize for prone position."
+        ],
+        "if_delay": false,
+        "reason_for_delay": null,
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "vice_director",
+          "physiatrist",
+          "neurologist",
+          "anesthesiologist",
+          "radiologist"
+        ],
+        "ordered_tests": [
+          "Dynamic flexion/extension cervical radiographs (to assess stability and guide fusion decision)"
+        ],
+        "family_requests": [
+          "routine_consent"
+        ],
+        "public_message": "The department's recommendation for surgical decompression is accepted. The bony mass causing C4-C6 stenosis with cord signal changes and progressive myelopathy warrants urgent surgery. We will proceed with posterior decompression; fusion will be performed if instability is found. A trial of conservative management is not appropriate given the risk of irreversible spinal cord injury. The unexplained left S1 sensory loss will be evaluated after the cervical surgery; it does not change the cervical plan. Preoperative flexion-extension films will be obtained for surgical planning. Routine surgical consent will be obtained."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-6533938-1:neutral:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 668,
+      "content": "A 30-year-old male of African descent presented with progressive left upper limb and bilateral lower limb weakness over 3 months, unsteady gait, and altered sensation of the feet described as 'walking on cotton wool'. Examination revealed normal power but generalized hyper-reflexia, bilateral inverted supinator jerk, positive Hoffman's sign, clonus, and decreased sensation in the left sole sparing the dorsum. JOA score was 7 and Nurick's grade 3. MRI of the whole spine showed stenosis with cord signal changes from C4 to C6 secondary to impingement by a bony growth from the C6 spinous process; CT confirmed the bony mass. These findings are reported as recorded."
+    },
+    {
+      "message_id": "pmc-6533938-1:neutral:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 404,
+      "content": "Reporting the case record's description only; the films were not available for review. The record describes spinal canal stenosis with cord signal changes from C4-6 due to dorsal canal impingement by a prominent bony growth arising anterosuperiorly from the C6 spinous process. The record does not provide a stenosis grade. These findings correlate highly with the reported cervical myelopathic symptoms."
+    },
+    {
+      "message_id": "pmc-6533938-1:neutral:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 482,
+      "content": "Localization is to the cervical spinal cord at C4-C6, matching the upper motor neuron findings. The imaging explains the dominant myelopathic syndrome. Red flags: (1) reported weakness but normal power — coexisting, does not change indication; (2) left S1-distribution sensory loss — coexisting, likely peripheral/radicular; (3) JOA 7/Nurick 3 with normal power — coexisting, needs clarification. Symptom-imaging mismatch: left sole sensory loss is not explained by cervical lesion."
+    },
+    {
+      "message_id": "pmc-6533938-1:neutral:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 435,
+      "content": "The patient is a 30-year-old male with cervical myelopathy due to C4-C6 stenosis and a C6 bony growth causing cord compression. ASA physical status is III. Intraoperative mean arterial pressure target is 85 mmHg. Expected blood loss risk is moderate. Prone position tolerance is moderate given cervical cord compression and need for careful positioning. Extubation difficulty is unassessable because no airway assessment is documented."
+    },
+    {
+      "message_id": "pmc-6533938-1:neutral:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 842,
+      "content": "As the rehabilitation physician, I formally propose a conservative management trial: 3 months (extendable to 6 if stable or improving) of supervised physical therapy focused on gait, balance, core stabilization, and posture; activity modification; and close neurologic monitoring. The reported success rate for severe cervical myelopathy with cord signal change is modest (~30%), and I acknowledge the evidence that progressive myelopathy may warrant early surgical decompression to prevent irreversible cord damage. Therefore, this trial is only appropriate with strict preconditions: any decline in JOA/Nurick, new neurologic deficits, or progression of MRI signal change mandates immediate surgical referral. I am not yet persuaded that surgery must be the first step for this young patient, but I will concede if these conditions are met."
+    },
+    {
+      "message_id": "pmc-6533938-1:neutral:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 467,
+      "content": "This is a 30-year-old with progressive cervical myelopathy from a C4-C6 dorsal compressive bony lesion. Surgical decompression is indicated. I recommend posterior excision of the mass with laminectomy, with fusion if instability. Conservative management is not appropriate due to cord signal changes. We need to clarify the motor and sensory discrepancies and investigate the left S1 findings, but these do not alter the primary plan. Final decision pending director."
+    },
+    {
+      "message_id": "pmc-6533938-1:neutral:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 592,
+      "content": "The Deputy Director restated the presence of cord signal changes and progressive myelopathy, but these are findings I already weighed heavily: my proposed trial includes immediate surgical referral upon any decline or progression of signal change. No specific evidence from the record has been offered to show that a 3-month supervised trial would inexorably worsen outcome beyond what is already reflected in my 30% success estimate and strict failure criteria. I remain conditional: surgery is indicated if the preconditions for failure are triggered, but not as first-line without a trial."
+    },
+    {
+      "message_id": "pmc-6533938-1:neutral:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 627,
+      "content": "The department's recommendation for surgical decompression is accepted. The bony mass causing C4-C6 stenosis with cord signal changes and progressive myelopathy warrants urgent surgery. We will proceed with posterior decompression; fusion will be performed if instability is found. A trial of conservative management is not appropriate given the risk of irreversible spinal cord injury. The unexplained left S1 sensory loss will be evaluated after the cervical surgery; it does not change the cervical plan. Preoperative flexion-extension films will be obtained for surgical planning. Routine surgical consent will be obtained."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1567,
+      "output_tokens": 3112,
+      "total_tokens": 4679,
+      "latency_ms": 63007,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2428,
+      "output_tokens": 1348,
+      "total_tokens": 3776,
+      "latency_ms": 26928,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 3989,
+      "output_tokens": 2700,
+      "total_tokens": 6689,
+      "latency_ms": 55211,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

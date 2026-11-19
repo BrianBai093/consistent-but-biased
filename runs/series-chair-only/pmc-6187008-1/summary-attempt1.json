@@ -1,0 +1,169 @@
+{
+  "case_id": "pmc-6187008-1",
+  "case_source": "text",
+  "series": "chair-only",
+  "dataset": {
+    "name": "PMC-Patients",
+    "source": "https://huggingface.co/datasets/zhengyun21/PMC-Patients",
+    "license": "CC BY-NC-SA 4.0"
+  },
+  "pmc_patient_uid": "6187008-1",
+  "pmid": "30370039",
+  "workflow_version": "dept-v2",
+  "started_at": "2026-11-03T02:30:29.890007+00:00",
+  "completed_at": "2026-11-03T02:37:09.402011+00:00",
+  "sources": {
+    "case_pages": 1,
+    "test_pages": 0,
+    "images": 0
+  },
+  "imaging_source": "record_text",
+  "preparation": {
+    "method": "llm_filter",
+    "reused": true
+  },
+  "filter": {
+    "approved_by": "automatic",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "attempts": 1,
+    "source_characters": 3807,
+    "kept_characters": 1207,
+    "removed_passages": 2,
+    "by_category": {
+      "decision": 0,
+      "intraoperative": 1,
+      "postoperative": 7,
+      "treatment_opinion": 0
+    },
+    "unreviewed_screen_hits": [
+      "case-page-001: [decision-already-taken] informed consentx1"
+    ]
+  },
+  "failed_arms": [],
+  "attempt": 1,
+  "prompt_fingerprints": {
+    "resident": "911019b94d5296b9",
+    "radiologist": "7de607488068b3e8",
+    "neurologist": "f6dd9fb7e2923a10",
+    "anesthesiologist": "df8cfc047c0f5310",
+    "physiatrist": "43f99788600b6121",
+    "physiatrist:negotiation": "a73a27d85af924be",
+    "vice_director": "37e6ab70c45c00c8",
+    "deputy-style:democratic": "790f0a05e28c8b8e",
+    "deputy-style:autocratic": "e854eb335d09418f",
+    "deputy-style:avoidant": "1f96ebdb513331df",
+    "deputy-style:neutral": "7fec20c9ae1c524c",
+    "director": "976916f0644b0ac5",
+    "style:democratic": "03de1300ca1a935f",
+    "style:autocratic": "16003b2b1c808c21",
+    "style:avoidant": "a1cec00ed5839d6e",
+    "style:neutral": "0cd45dfff37bd09d",
+    "radiologist:record_only": "f63ff5e79b9f39c5",
+    "case_report_filter": "7c6ce55d20b39143"
+  },
+  "settings": {
+    "text_provider": "deepseek",
+    "image_provider": "openai",
+    "deepseek_thinking": "max",
+    "department_role_models": {},
+    "department_style_variant": "a",
+    "max_negotiation_rounds": 2,
+    "persona_on": "chair",
+    "negotiation": true
+  },
+  "arms": [
+    {
+      "arm": "autocratic",
+      "director_style": "autocratic",
+      "deputy_style": "neutral",
+      "negotiation": true,
+      "decision": "operate",
+      "surgical_indication": "yes",
+      "workup_would_change_decision_to": null,
+      "surgery_recommended": true,
+      "surgery_intended": true,
+      "termination_cause": "director_ruled",
+      "negotiation_rounds": 1,
+      "turn_count": 8,
+      "total_characters": 4172,
+      "director_character_share": 0.0698,
+      "negotiation_tokens": 14070,
+      "juniors_addressed_declared": 6,
+      "juniors_addressed_detected": 0,
+      "liability_transfer_declared": 1,
+      "liability_transfer_detected": 1,
+      "family_requests_declared": [
+        "detailed_consent"
+      ],
+      "tests_ordered_declared": 2,
+      "studies_mentioned_detected": 1,
+      "deputy_preference_stated": 1,
+      "deputy_disagreements": 3,
+      "deputy_questions_to_director": 3,
+      "contingency_plan_declared": true,
+      "baseline_conservative_success_rate": 50,
+      "flags_changing_indication": 0,
+      "flags_changing_plan": 0,
+      "flags_coexisting": 3,
+      "consensus_declared": "not_reached",
+      "physiatrist_final_stance": "hold",
+      "advocate_agrees_with_ruling": false,
+      "consensus_reached": false
+    },
+    {
+      "arm": "avoidant",
+      "director_style": "avoidant",
+      "deputy_style": "neutral",
+      "negotiation": true,
+      "decision": "additional_workup",
+      "surgical_indication": "uncertain",
+      "workup_would_change_decision_to": "conservative",
+      "surgery_recommended": false,
+      "surgery_intended": false,
+      "termination_cause": "director_ruled",
+      "negotiation_rounds": 2,
+      "turn_count": 11,
+      "total_characters": 6620,
+      "director_character_share": 0.1983,
+      "negotiation_tokens": 33716,
+      "juniors_addressed_declared": 6,
+      "juniors_addressed_detected": 0,
+      "liability_transfer_declared": 2,
+      "liability_transfer_detected": 2,
+      "family_requests_declared": [
+        "decide_after_family_meeting",
+        "family_chooses"
+      ],
+      "tests_ordered_declared": 11,
+      "studies_mentioned_detected": 4,
+      "deputy_preference_stated": 2,
+      "deputy_disagreements": 7,
+      "deputy_questions_to_director": 5,
+      "contingency_plan_declared": true,
+      "baseline_conservative_success_rate": 50,
+      "flags_changing_indication": 0,
+      "flags_changing_plan": 0,
+      "flags_coexisting": 3,
+      "consensus_declared": "not_reached",
+      "physiatrist_final_stance": "hold",
+      "advocate_agrees_with_ruling": null,
+      "consensus_reached": null
+    }
+  ],
+  "validity": {
+    "one_baseline": true,
+    "baseline_keys": [
+      "2eb71ac5cc863f1fa6340db2aa6767b9f260791c0d2f345ccfc68ee4fc0e4bb0"
+    ],
+    "generated_then_reused": [
+      true,
+      true
+    ],
+    "identical_baseline_transcript": true,
+    "baseline_turns": [
+      5,
+      5
+    ]
+  }
+}

@@ -1,0 +1,496 @@
+{
+  "thread_id": "pmc-2857503-2-avoidant-2-f561017c-traits",
+  "metrics": {
+    "case_id": "pmc-2857503-2",
+    "director_style": "avoidant",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-13T06:11:02.193953Z",
+    "completed_at": "2026-10-13T06:16:54.078702Z",
+    "baseline_reused": true,
+    "baseline_key": "7d1c8a925decb34edfd84f558caa63dceb278992ca8a369f902bb5d30990637f",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "additional_workup",
+    "surgical_indication": "uncertain",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 5848,
+    "director_turns": 2,
+    "director_characters": 810,
+    "director_character_share": 0.1385,
+    "negotiation_tokens": 36837,
+    "total_tokens": 36837,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "neurologist"
+    ],
+    "roles_addressed_detected": [
+      "resident",
+      "radiologist"
+    ],
+    "juniors_addressed_declared": 3,
+    "juniors_addressed_detected": 2,
+    "liability_transfer_declared": 0,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 5,
+    "tests_ordered_declared": 6,
+    "tests_declared": [
+      "Full neurological examination (motor power, reflexes, gait, sphincter function)",
+      "Dynamic flexion-extension cervical radiographs",
+      "CT myelogram of cervical spine",
+      "Complete neurological examination",
+      "Dynamic imaging",
+      "CT myelogram"
+    ],
+    "studies_mentioned_detected": 2,
+    "studies_mentioned": [
+      "ct",
+      "myelogram"
+    ],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 2,
+    "deputy_disagreements": 6,
+    "deputy_questions_to_director": 5,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 1,
+    "flags_coexisting": 1,
+    "baseline_conservative_success_rate": 40,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Squeezing feeling at the midsection and tingling sensations in both upper and lower extremities.",
+      "history": "The patient is a 49-year-old male. Symptoms started approximately three months prior to the initial visit with a squeezing feeling at the midsection and tingling sensations in both upper and lower extremities. He reported no difficulty in walking. He demonstrated Lhermitte's sign when extending the neck abruptly. He denied any sensory and motor change. A diagnosis of ossification of the posterior longitudinal ligament (OPLL) of the cervical spine had been made before hospital admission.",
+      "physical_exam": "The patient denied any sensory and motor change on physical examination. Lhermitte's sign was elicited on abrupt neck extension. Motor power and reflexes are not documented.",
+      "key_positive_signs": [
+        "Lhermitte's sign on abrupt neck extension"
+      ],
+      "past_history": "Diagnosis of ossification of the posterior longitudinal ligament (OPLL) of the cervical spine was made before hospital admission. No other past medical history is documented.",
+      "public_message": "This 49-year-old male presented with a squeezing feeling at the midsection and tingling in both upper and lower extremities, symptoms beginning about three months before presentation. He had no difficulty walking. The patient denied any sensory and motor change on physical examination; however, Lhermitte's sign was elicited on abrupt neck extension. Imaging showed OPLL from C2 to C5 with atlas hypoplasia, spinal canal stenosis from C1 to C5 with cord compression at the atlas ring and an intramedullary high signal intensity area. Preoperative JOA score was 15 points."
+    },
+    "imaging": {
+      "levels": [
+        "C1-5"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "I have not seen the films and am reporting only the case record's imaging description: OPLL was described from C2 through C5, with spinal canal stenosis from C1 through C5 and especially marked canal narrowing with cord compression at the atlas ring. An intramedullary high-signal area was reported. The record does not specify compression direction or a graded stenosis severity. These findings correlate well with the reported Lhermitte sign and bilateral sensory symptoms.",
+      "confidence": 0.89
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical spinal cord, most likely at C1-2 (atlas ring) given the marked canal stenosis and cord compression. Lhermitte sign and bilateral upper and lower extremity tingling with truncal squeezing are consistent with cervical myelopathy involving the dorsal columns and possibly spinothalamic tracts. Motor and reflex findings are not documented, so precise long-tract involvement is inferred.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "Motor power and reflexes are not documented; sensory examination reportedly normal despite subjective tingling.",
+          "relevance": "coexisting",
+          "rationale": "This is an examination gap, not evidence of an alternative cause. Lhermitte sign is a positive finding and imaging shows cord compression, so the absence of documented motor/reflex changes does not undermine the myelopathic localization."
+        },
+        {
+          "finding": "Marked canal narrowing and cord compression at the atlas ring due to atlas hypoplasia, distinct from the OPLL at C2-C5.",
+          "relevance": "changes_plan",
+          "rationale": "If surgical decompression is planned primarily for OPLL at C2-C5, the upper cervical compression at C1-2 may require additional or different surgical consideration. The cord compression at the atlas ring is part of the same cervical myelopathy but could change the operative approach."
+        }
+      ],
+      "symptom_imaging_mismatch": null,
+      "public_message": "Findings localize to the cervical spinal cord, most likely C1-2, with Lhermitte sign and bilateral sensory symptoms. Imaging shows cord compression at the atlas ring and intramedullary signal change, correlating well (high match). Red flags: (1) Motor power and reflexes are not documented—a coexisting limitation, not an alternative cause; (2) Atlas ring compression from hypoplasia may change the surgical plan if decompression targets only OPLL levels. No symptom-imaging mismatch."
+    },
+    "anesthesia": {
+      "asa_grade": "II",
+      "map_target_mmhg": 85,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "moderate",
+      "public_message": "The patient is classified as ASA II. The intraoperative mean arterial pressure target is 85 mmHg. Blood loss risk is assessed as moderate. Prone position tolerance is assessed as moderate. Extubation difficulty is unassessable because no airway assessment is documented in the record."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 40,
+      "proposed_duration": "3-6 months of structured conservative management with close neurological monitoring",
+      "preconditions_for_failure": [
+        "Development of new objective motor weakness (MRC grade ≤4/5) or gait instability",
+        "Worsening of JOA score by ≥2 points from baseline of 15",
+        "Appearance of bladder or bowel dysfunction",
+        "Progression of intramedullary T2 hyperintensity or new cord compression on follow-up MRI",
+        "Persistent or worsening symptoms despite 6 months of conservative treatment"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I acknowledge the imaging demonstrates significant stenosis and cord signal change; however, the patient currently presents with mild symptoms (JOA 15, no motor or gait deficits documented, only subjective tingling and Lhermitte sign). A structured 3-6 month trial of conservative management—cervical isometric strengthening, posture education, avoidance of high-risk maneuvers, and close neurological surveillance—is a reasonable first step. Surgical decompression is indicated only if there is objective neurological deterioration (new motor weakness, gait decline, sphincter involvement) or worsening T2 signal on follow-up MRI. The success rate of observation and conservative therapy in mild myelopathy without obvious motor deficit is approximately 40%, and a trial can be undertaken safely with frequent reassessment."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 40,
+      "proposed_duration": "3-6 months of structured conservative management with close neurological monitoring",
+      "preconditions_for_failure": [
+        "Development of new objective motor weakness (MRC grade ≤4/5) or gait instability",
+        "Worsening of JOA score by ≥2 points from baseline of 15",
+        "Appearance of bladder or bowel dysfunction",
+        "Progression of intramedullary T2 hyperintensity or new cord compression on follow-up MRI",
+        "Persistent or worsening symptoms despite 6 months of conservative treatment"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The Director's plan to reconvene after a complete neurological examination and dynamic imaging/CT myelogram aligns with my position: we must obtain the missing exam data before endorsing surgery. The Deputy Director's caution about C1 ring compression and cord signal change points to findings already embedded in my failure criteria—worsening T2 signal or new deficits would trigger surgery. Those findings alone, in a patient with mild symptoms (JOA 15, no documented motor or gait deficits), do not outweigh the case for a strictly monitored conservative trial. I hold to that trial, contingent on reassuring data from the pending work-up, with a short surveillance interval and explicit failure criteria."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 40,
+        "proposed_duration": "3-6 months of structured conservative management with close neurological monitoring",
+        "preconditions_for_failure": [
+          "Development of new objective motor weakness (MRC grade ≤4/5) or gait instability",
+          "Worsening of JOA score by ≥2 points from baseline of 15",
+          "Appearance of bladder or bowel dysfunction",
+          "Progression of intramedullary T2 hyperintensity or new cord compression on follow-up MRI",
+          "Persistent or worsening symptoms despite 6 months of conservative treatment"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director has stated that surgical decompression appears indicated but also acknowledges conservative management as an alternative with strict surveillance, and the final decision rests with the director. The neurologist's comments highlight that motor power and reflexes are not documented—a gap that argues for urgent completion of the exam before any irreversible decision, not for abandoning a monitored trial. No speaker has pointed to a specific finding that outweighs the patient's currently mild clinical status (JOA 15, no documented motor or gait deficits). I hold to the conservative position: a structured 3-6 month trial with close neurological surveillance and clear failure criteria is appropriate, and we should document the full neurological exam and dynamic imaging as part of that surveillance before concluding that surgery is immediately necessary."
+      },
+      {
+        "conservative_success_rate": 40,
+        "proposed_duration": "3-6 months of structured conservative management with close neurological monitoring",
+        "preconditions_for_failure": [
+          "Development of new objective motor weakness (MRC grade ≤4/5) or gait instability",
+          "Worsening of JOA score by ≥2 points from baseline of 15",
+          "Appearance of bladder or bowel dysfunction",
+          "Progression of intramedullary T2 hyperintensity or new cord compression on follow-up MRI",
+          "Persistent or worsening symptoms despite 6 months of conservative treatment"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Director's plan to reconvene after a complete neurological examination and dynamic imaging/CT myelogram aligns with my position: we must obtain the missing exam data before endorsing surgery. The Deputy Director's caution about C1 ring compression and cord signal change points to findings already embedded in my failure criteria—worsening T2 signal or new deficits would trigger surgery. Those findings alone, in a patient with mild symptoms (JOA 15, no documented motor or gait deficits), do not outweigh the case for a strictly monitored conservative trial. I hold to that trial, contingent on reassuring data from the pending work-up, with a short surveillance interval and explicit failure criteria."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This patient has concordant clinical and imaging findings of cervical compressive myelopathy. OPLL from C2 to C5 with atlas hypoplasia creates severe canal stenosis, with the most significant compression at the C1 ring and an intramedullary T2 high-signal lesion. Although the JOA score is 15 and overt motor deficits have not yet been documented, Lhermitte sign and cord signal change indicate early myelopathy rather than a benign incidental finding. The anatomic severity and OPLL make this a high-risk situation for stepwise neurological deterioration. I would not defer treatment solely on the basis of the current mild symptom profile.",
+        "proposed_options": [
+          "Proceed with surgical decompression, tailored to include the C1 ring (C1 laminectomy/foramen magnum enlargement) and addressing OPLL C2-C5 (posterior laminectomy/laminoplasty with consideration of instrumented fusion), after completing neurological examination and dynamic imaging.",
+          "Offer a time-limited trial of conservative management with structured surveillance: cervical isometric exercises, activity modification, repeat neurological examination at 6-12 weeks, and repeat MRI at 3-6 months; proceed to surgery if any neurological worsening or new/worsening T2 signal.",
+          "Complete additional preoperative workup before deciding: formal motor/reflex/gait examination, dynamic flexion-extension radiographs, CT myelogram or high-resolution CT to characterize OPLL extent and C1 anatomy, and anesthesia airway assessment."
+        ],
+        "preferred_option": "Proceed with surgical decompression, tailored to include the C1 ring (C1 laminectomy/foramen magnum enlargement) and addressing OPLL C2-C5 (posterior laminectomy/laminoplasty with consideration of instrumented fusion), after completing neurological examination and dynamic imaging.",
+        "disagreement_points": [
+          "I disagree with the rehabilitation physician's framing that observation has a 40% success rate in mild myelopathy; that figure is not applicable to OPLL with C1 ring compression and cord signal change. This anatomy is high risk for progression.",
+          "The reported imaging does not specify the direction of compression or a graded severity, and the neurological exam lacks motor power, reflexes, gait, and sphincter assessment. Calling this 'mild' without those data is premature.",
+          "Any surgical plan limited to C2-C5 OPLL without addressing the atlas ring compression would leave the most severe stenosis untreated."
+        ],
+        "deferred_questions_to_director": [
+          "Whether to schedule the patient for surgical consultation now or to endorse a conservative trial with safeguards.",
+          "Whether to order additional imaging (dynamic radiographs, CT myelogram) before finalizing the surgical approach.",
+          "How to document the discussion of progression risk if the patient or family prefers conservative management, including assigning a named clinician to own the surveillance schedule."
+        ],
+        "public_message": "The patient has cervical compressive myelopathy from OPLL C2-C5 with atlas hypoplasia and T2 cord signal. The team should complete the neurological exam and dynamic imaging. Surgical decompression including the C1 ring appears indicated; conservative management is an alternative with strict surveillance. Final decision rests with the director."
+      },
+      {
+        "assessment": "This is a 49-year-old man with cervical compressive myelopathy from OPLL C2-C5 and atlas hypoplasia causing C1 ring stenosis with T2 cord signal. Symptoms are currently mild (JOA 15, no documented motor or gait deficits), but the combination of C1 compression and signal change indicates a high-risk substrate for progression. The absence of motor, reflex, and sphincter examination is a critical gap that must be filled before any irreversible decision. I agree with the director's plan to reconvene after complete neurological examination and dynamic imaging; however, I would not accept a 3-6 month conservative trial as the default for this pathology.",
+        "proposed_options": [
+          "Complete neurological examination (motor, sensory, reflexes, gait, sphincter) and dynamic flexion/extension radiographs plus CT myelogram before final treatment decision.",
+          "If objective myelopathy or dynamic instability is found, surgical decompression including C1 posterior arch decompression and OPLL management as needed.",
+          "If no objective deficits and imaging shows stable compression, a closely monitored conservative trial with explicit deterioration criteria and a shortened surveillance interval (e.g., repeat MRI at 3 months, immediate reassessment for any new symptom), with surgery reconsidered at first sign of progression."
+        ],
+        "preferred_option": "I favor surgical decompression including C1 if the pending examination or imaging demonstrates any objective cord dysfunction or instability; conservative management is acceptable only if findings remain completely reassuring and is not my default recommendation.",
+        "disagreement_points": [
+          "The rehabilitation physician's position that mild symptoms justify a 3-6 month conservative trial by default is not appropriate for OPLL with C1 ring compression and T2 signal change; the risk of progression is substantial, and the threshold for surgery should be lower.",
+          "The cited approximate 40% success rate for conservative management is not specific to this high-risk anatomical substrate and should not be used to delay potentially necessary surgery.",
+          "A conservative trial must include a shorter surveillance interval than 3-6 months, with immediate reassessment and surgical planning for any new myelopathic sign, given the C1 compression."
+        ],
+        "deferred_questions_to_director": [
+          "Do you want the resident to complete the full neurological examination and the radiologist to obtain dynamic imaging and CT myelogram before we reconvene, and what timeline should be set for those studies?",
+          "If conservative management is chosen, what specific failure criteria and follow-up interval would you consider safe for this C1-C5 stenosis with cord signal change?"
+        ],
+        "public_message": "I support reconvening after we have a complete neurological examination and dynamic imaging. The C1 ring compression and cord signal change make me cautious about a prolonged conservative trial. If the new data show objective myelopathy or instability, I recommend surgical decompression including the C1 level. If the data are reassuring, a strictly monitored conservative trial might be acceptable, but with a short surveillance interval and clear failure criteria."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Resident: complete and document full neurological examination including motor power, reflexes, gait, and sphincter function.",
+          "Radiologist: obtain dynamic flexion-extension cervical radiographs and CT myelogram; report direction of compression and graded stenosis severity.",
+          "Neurologist: integrate completed neurological findings with imaging to clarify surgical urgency and level of maximal compression."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Treatment decision withheld pending completion of neurological examination and dynamic imaging/CT myelogram to define compression anatomy and objective deficit status.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist"
+        ],
+        "ordered_tests": [
+          "Full neurological examination (motor power, reflexes, gait, sphincter function)",
+          "Dynamic flexion-extension cervical radiographs",
+          "CT myelogram of cervical spine"
+        ],
+        "family_requests": [],
+        "public_message": "The department will reconvene after the resident documents a complete neurological examination and the radiologist provides dynamic imaging and CT myelogram. If objective motor weakness, sphincter dysfunction, or significant dynamic instability is found, surgery will be recommended; if examinations remain without deficits and imaging shows stable compression, a conservative trial with strict surveillance may be considered. Surgical indication remains uncertain pending these data."
+      },
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "Proceed with additional workup: resident to complete full neurological examination; radiologist to obtain dynamic imaging and CT myelogram. Department will reconvene after results. If objective myelopathy, sphincter dysfunction, or dynamic instability is found, surgical decompression including C1 will be recommended; if results are reassuring, a strictly monitored conservative trial with short interval will be considered.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Resident to complete full neurological examination",
+          "Radiologist to obtain dynamic imaging and CT myelogram"
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Pending completion of neurological examination and dynamic imaging/CT myelogram to clarify surgical indication and plan.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist"
+        ],
+        "ordered_tests": [
+          "Complete neurological examination",
+          "Dynamic imaging",
+          "CT myelogram"
+        ],
+        "family_requests": [],
+        "public_message": "The department will obtain a complete neurological examination and dynamic imaging/CT myelogram before finalizing treatment. We will reconvene with results; if objective myelopathy or instability is present, surgery including C1 decompression is recommended; otherwise a closely monitored conservative trial may be considered."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-2857503-2:avoidant:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 572,
+      "content": "This 49-year-old male presented with a squeezing feeling at the midsection and tingling in both upper and lower extremities, symptoms beginning about three months before presentation. He had no difficulty walking. The patient denied any sensory and motor change on physical examination; however, Lhermitte's sign was elicited on abrupt neck extension. Imaging showed OPLL from C2 to C5 with atlas hypoplasia, spinal canal stenosis from C1 to C5 with cord compression at the atlas ring and an intramedullary high signal intensity area. Preoperative JOA score was 15 points."
+    },
+    {
+      "message_id": "pmc-2857503-2:avoidant:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 475,
+      "content": "I have not seen the films and am reporting only the case record's imaging description: OPLL was described from C2 through C5, with spinal canal stenosis from C1 through C5 and especially marked canal narrowing with cord compression at the atlas ring. An intramedullary high-signal area was reported. The record does not specify compression direction or a graded stenosis severity. These findings correlate well with the reported Lhermitte sign and bilateral sensory symptoms."
+    },
+    {
+      "message_id": "pmc-2857503-2:avoidant:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 484,
+      "content": "Findings localize to the cervical spinal cord, most likely C1-2, with Lhermitte sign and bilateral sensory symptoms. Imaging shows cord compression at the atlas ring and intramedullary signal change, correlating well (high match). Red flags: (1) Motor power and reflexes are not documented—a coexisting limitation, not an alternative cause; (2) Atlas ring compression from hypoplasia may change the surgical plan if decompression targets only OPLL levels. No symptom-imaging mismatch."
+    },
+    {
+      "message_id": "pmc-2857503-2:avoidant:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 284,
+      "content": "The patient is classified as ASA II. The intraoperative mean arterial pressure target is 85 mmHg. Blood loss risk is assessed as moderate. Prone position tolerance is assessed as moderate. Extubation difficulty is unassessable because no airway assessment is documented in the record."
+    },
+    {
+      "message_id": "pmc-2857503-2:avoidant:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 824,
+      "content": "I acknowledge the imaging demonstrates significant stenosis and cord signal change; however, the patient currently presents with mild symptoms (JOA 15, no motor or gait deficits documented, only subjective tingling and Lhermitte sign). A structured 3-6 month trial of conservative management—cervical isometric strengthening, posture education, avoidance of high-risk maneuvers, and close neurological surveillance—is a reasonable first step. Surgical decompression is indicated only if there is objective neurological deterioration (new motor weakness, gait decline, sphincter involvement) or worsening T2 signal on follow-up MRI. The success rate of observation and conservative therapy in mild myelopathy without obvious motor deficit is approximately 40%, and a trial can be undertaken safely with frequent reassessment."
+    },
+    {
+      "message_id": "pmc-2857503-2:avoidant:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 345,
+      "content": "The patient has cervical compressive myelopathy from OPLL C2-C5 with atlas hypoplasia and T2 cord signal. The team should complete the neurological exam and dynamic imaging. Surgical decompression including the C1 ring appears indicated; conservative management is an alternative with strict surveillance. Final decision rests with the director."
+    },
+    {
+      "message_id": "pmc-2857503-2:avoidant:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 879,
+      "content": "The Deputy Director has stated that surgical decompression appears indicated but also acknowledges conservative management as an alternative with strict surveillance, and the final decision rests with the director. The neurologist's comments highlight that motor power and reflexes are not documented—a gap that argues for urgent completion of the exam before any irreversible decision, not for abandoning a monitored trial. No speaker has pointed to a specific finding that outweighs the patient's currently mild clinical status (JOA 15, no documented motor or gait deficits). I hold to the conservative position: a structured 3-6 month trial with close neurological surveillance and clear failure criteria is appropriate, and we should document the full neurological exam and dynamic imaging as part of that surveillance before concluding that surgery is immediately necessary."
+    },
+    {
+      "message_id": "pmc-2857503-2:avoidant:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 484,
+      "content": "The department will reconvene after the resident documents a complete neurological examination and the radiologist provides dynamic imaging and CT myelogram. If objective motor weakness, sphincter dysfunction, or significant dynamic instability is found, surgery will be recommended; if examinations remain without deficits and imaging shows stable compression, a conservative trial with strict surveillance may be considered. Surgical indication remains uncertain pending these data."
+    },
+    {
+      "message_id": "pmc-2857503-2:avoidant:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 467,
+      "content": "I support reconvening after we have a complete neurological examination and dynamic imaging. The C1 ring compression and cord signal change make me cautious about a prolonged conservative trial. If the new data show objective myelopathy or instability, I recommend surgical decompression including the C1 level. If the data are reassuring, a strictly monitored conservative trial might be acceptable, but with a short surveillance interval and clear failure criteria."
+    },
+    {
+      "message_id": "pmc-2857503-2:avoidant:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 708,
+      "content": "The Director's plan to reconvene after a complete neurological examination and dynamic imaging/CT myelogram aligns with my position: we must obtain the missing exam data before endorsing surgery. The Deputy Director's caution about C1 ring compression and cord signal change points to findings already embedded in my failure criteria—worsening T2 signal or new deficits would trigger surgery. Those findings alone, in a patient with mild symptoms (JOA 15, no documented motor or gait deficits), do not outweigh the case for a strictly monitored conservative trial. I hold to that trial, contingent on reassuring data from the pending work-up, with a short surveillance interval and explicit failure criteria."
+    },
+    {
+      "message_id": "pmc-2857503-2:avoidant:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 326,
+      "content": "The department will obtain a complete neurological examination and dynamic imaging/CT myelogram before finalizing treatment. We will reconvene with results; if objective myelopathy or instability is present, surgery including C1 decompression is recommended; otherwise a closely monitored conservative trial may be considered."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1563,
+      "output_tokens": 4064,
+      "total_tokens": 5627,
+      "latency_ms": 75802,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2357,
+      "output_tokens": 1531,
+      "total_tokens": 3888,
+      "latency_ms": 22472,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4172,
+      "output_tokens": 3323,
+      "total_tokens": 7495,
+      "latency_ms": 60878,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1940,
+      "output_tokens": 3477,
+      "total_tokens": 5417,
+      "latency_ms": 65536,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2751,
+      "output_tokens": 1119,
+      "total_tokens": 3870,
+      "latency_ms": 20702,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4535,
+      "output_tokens": 6005,
+      "total_tokens": 10540,
+      "latency_ms": 106469,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

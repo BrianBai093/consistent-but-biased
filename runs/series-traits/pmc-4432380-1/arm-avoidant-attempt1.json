@@ -1,0 +1,500 @@
+{
+  "thread_id": "pmc-4432380-1-avoidant-1-a233539a-traits",
+  "metrics": {
+    "case_id": "pmc-4432380-1",
+    "director_style": "avoidant",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-13T05:07:21.195457Z",
+    "completed_at": "2026-10-13T05:10:30.406627Z",
+    "baseline_reused": true,
+    "baseline_key": "a228b84dbfd463ec65d9b8d8fbed6e4a911301c7f1647305105afccd9a8a5b08",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "operate",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": null,
+    "surgery_recommended": true,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 6049,
+    "director_turns": 2,
+    "director_characters": 1126,
+    "director_character_share": 0.1861,
+    "negotiation_tokens": 33384,
+    "total_tokens": 33384,
+    "roles_addressed_declared": [
+      "radiologist",
+      "resident",
+      "vice_director",
+      "anesthesiologist"
+    ],
+    "roles_addressed_detected": [
+      "resident",
+      "radiologist",
+      "vice_director",
+      "physiatrist"
+    ],
+    "juniors_addressed_declared": 4,
+    "juniors_addressed_detected": 4,
+    "liability_transfer_declared": 1,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [
+      "detailed_consent"
+    ],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 7,
+    "tests_ordered_declared": 6,
+    "tests_declared": [
+      "Quantitative stenosis grade and cord compression ratio from original CT/MRI",
+      "Serum calcium, phosphate, alkaline phosphatase, PTH, 25-hydroxyvitamin D",
+      "CRP and ESR",
+      "MRI/CT with quantitative stenosis grade at C5-6",
+      "Basic metabolic panel including calcium, phosphate, alkaline phosphatase, and PTH",
+      "Preoperative labs (CBC, coagulation, renal/hepatic function)"
+    ],
+    "studies_mentioned_detected": 0,
+    "studies_mentioned": [],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 2,
+    "deputy_disagreements": 5,
+    "deputy_questions_to_director": 4,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 1,
+    "flags_coexisting": 1,
+    "baseline_conservative_success_rate": 20,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": false,
+    "persuaded_by_count": 0,
+    "consensus_reached": false
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Numbness and tingling in both hands that had severely aggravated in the few days before presentation.",
+      "history": "A 50-year-old male presented with numbness and tingling in both hands that had severely aggravated over a few days. For the preceding 6 months he reported an uncomfortable gait and inability to run due to clumsiness of the feet and weakened ankle strength. For 3 months before presentation, both hands began to feel numb and tingling, and the foot symptoms gradually worsened.",
+      "physical_exam": "General physical examination showed no abnormalities. Neurological examination identified grade IV power in flexion of both ankles and big toes, and hyperreflexia in all four limbs. Spurling's sign, Lhermitte's sign, and Hoffman's sign were absent. Sensory examination revealed slight diminution of pain and temperature sensitivity below the C5 dermatome, with posterior column sensation preserved.",
+      "key_positive_signs": [
+        "Numbness and tingling in both hands",
+        "Grade IV power in flexion of both ankles and big toes",
+        "Hyperreflexia in all four limbs",
+        "Diminished pain and temperature sensation below the C5 dermatome",
+        "Uncomfortable gait and inability to run due to foot clumsiness and ankle weakness"
+      ],
+      "past_history": "No relevant medical or trauma history was reported.",
+      "public_message": "This is a 50-year-old male with a 6-month history of gait clumsiness, inability to run, and ankle weakness, and a 3-month history of numbness and tingling in both hands, which aggravated in the days before presentation. Examination showed grade IV power in ankle and big toe flexion, hyperreflexia in all four limbs, and diminished pain and temperature sensation below C5, with posterior column sensation preserved. Imaging showed loss of cervical lordosis, ossification of the nuchal ligament at C3-4, and a calcified left-sided ligamentum flavum at C5-6 causing nerve root and spinal cord compression, with hyperintense T2 cord signals at that level. No laboratory report is documented."
+    },
+    "imaging": {
+      "levels": [
+        "C5-6"
+      ],
+      "level_status": "reported",
+      "compression_type": "dorsal",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "Reporting the case record's description only; the films were not available for review. CT and MRI described calcified/ossified left ligamentum flavum at C5-6, producing dorsal spinal canal impingement with nerve root and spinal cord compression. T2-hyperintense cord signal was reported at C5-6. The record does not provide a stenosis grade. This finding correlates highly with the reported progressive myelopathic symptoms.",
+      "confidence": 0.93
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical myelopathy at C5-6 due to dorsolateral extradural compression from ossified ligamentum flavum, with bilateral corticospinal tract signs (hyperreflexia all limbs, ankle/toe weakness) and spinothalamic sensory level below C5; posterior columns spared, consistent with central cord involvement; a superimposed radiculopathy cannot be excluded.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "Ossification of the nuchal ligament at C3-4.",
+          "relevance": "coexisting",
+          "rationale": "Incidental spinal finding separate from the C5-6 compressive lesion; does not explain symptoms or alter management."
+        },
+        {
+          "finding": "Imaging report does not provide a stenosis grade for C5-6.",
+          "relevance": "changes_plan",
+          "rationale": "Without stenosis severity, the urgency and approach of decompression cannot be fully assessed; this influences surgical planning even though the lesion is likely the cause of myelopathy."
+        }
+      ],
+      "symptom_imaging_mismatch": "Dissociated sensory loss (pain/temperature below C5 with preserved posterior columns) is unexpected for a dorsal compressive lesion; a purely dorsal compression would typically involve posterior columns. The pattern suggests central cord involvement, which can occur with compressive myelopathy and cord edema, but the mismatch is noted and may warrant correlation with axial imaging to confirm the extent of intramedullary signal change.",
+      "public_message": "Localization is cervical myelopathy at C5-6 due to dorsolateral extradural compression from ossified ligamentum flavum, with bilateral corticospinal and spinothalamic tract signs. Imaging correlates highly (match level high). Red flags: ossified nuchal ligament at C3-4 is coexisting and does not affect management; absence of stenosis grade changes plan because severity is unknown. Note a sensory dissociation mismatch (pain/temperature loss below C5 with preserved posterior columns) that is not typical for dorsal compression but is compatible with central cord syndrome from the lesion; this does not alter the primary localization."
+    },
+    "anesthesia": {
+      "asa_grade": "II",
+      "map_target_mmhg": null,
+      "blood_loss_risk": "low",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "low",
+      "public_message": "ASA physical status II. A specific mean arterial pressure target is not stated because baseline blood pressure and cardiovascular status are not documented. Expected blood loss risk: low. Prone position tolerance: low. Extubation difficulty: unassessable because no airway assessment is documented."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 20,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Worsening of neurologic deficits",
+        "No improvement after 3-6 months of structured therapy",
+        "Development of new symptoms such as gait deterioration or bowel/bladder dysfunction",
+        "Progression of cord signal change on MRI"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "This patient has progressive cervical myelopathy with cord signal change, which is a concerning finding. However, conservative management may be considered in select cases if the patient is not rapidly deteriorating, as surgery carries risks. We propose a 3-6 month trial of structured physical therapy focusing on gait, balance, and strengthening, along with activity modification and pain management, with close neurologic monitoring. The expected success rate for such conservative treatment in this setting is approximately 20% (based on literature for mild-to-moderate myelopathy, though lower with cord signal change). Failure criteria include any worsening of neurologic deficits, no improvement by 6 months, new bowel/bladder symptoms, or progression on follow-up imaging."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 20,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Worsening of neurologic deficits",
+        "No improvement after 3-6 months of structured therapy",
+        "Development of new symptoms such as gait deterioration or bowel/bladder dysfunction",
+        "Progression of cord signal change on MRI"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The Deputy Director again cites progressive myelopathy with cord signal change as the reason for surgery. These are the same findings I have already incorporated: I set conservative success at only 20% and included any neurologic worsening or progression on imaging as failure criteria. However, the patient currently has only grade IV weakness, no bowel/bladder dysfunction, and no rapid deterioration, and the director himself has called for further imaging and labs before ruling. Until those results are available, the argument for immediate surgical planning does not outweigh the case for a closely monitored 3-6 month conservative trial."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 20,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Worsening of neurologic deficits",
+          "No improvement after 3-6 months of structured therapy",
+          "Development of new symptoms such as gait deterioration or bowel/bladder dysfunction",
+          "Progression of cord signal change on MRI"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director has pointed to the cord signal change and progressive myelopathy as reasons for surgical planning. These findings were already central to my assessment: I estimated only a 20% success rate for conservative care precisely because of them, and my failure criteria include any neurologic worsening or progression on imaging. However, the patient currently has only grade IV weakness, no bowel/bladder dysfunction, and no rapid deterioration. A time-limited, closely monitored trial of 3-6 months with structured therapy remains a defensible option given surgical risks. I would accept surgery if the stated failure criteria are met, but the argument presented does not outweigh the case for a conservative trial at this stage."
+      },
+      {
+        "conservative_success_rate": 20,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Worsening of neurologic deficits",
+          "No improvement after 3-6 months of structured therapy",
+          "Development of new symptoms such as gait deterioration or bowel/bladder dysfunction",
+          "Progression of cord signal change on MRI"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director again cites progressive myelopathy with cord signal change as the reason for surgery. These are the same findings I have already incorporated: I set conservative success at only 20% and included any neurologic worsening or progression on imaging as failure criteria. However, the patient currently has only grade IV weakness, no bowel/bladder dysfunction, and no rapid deterioration, and the director himself has called for further imaging and labs before ruling. Until those results are available, the argument for immediate surgical planning does not outweigh the case for a closely monitored 3-6 month conservative trial."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This patient has progressive cervical myelopathy with clinical and imaging correlation at C5-6 from ossified ligamentum flavum. The presence of T2 cord hyperintensity indicates structural cord damage and, in conjunction with progressive gait and hand symptoms, predicts a poor natural history without decompression. Conservative management is unlikely to halt progression and carries risk of irreversible neurologic deficit. Surgical decompression is the only intervention that addresses the mechanical compression directly.",
+        "proposed_options": [
+          "Posterior cervical decompression at C5-6 (hemilaminectomy or laminectomy with resection of ossified ligamentum flavum and foraminotomy as needed), with or without instrumented fusion depending on intraoperative stability and preoperative alignment.",
+          "Conservative management with structured rehabilitation and close neurologic monitoring for 3-6 months, reserved only if the patient refuses surgery or has prohibitive operative risk."
+        ],
+        "preferred_option": "Posterior cervical decompression at C5-6",
+        "disagreement_points": [
+          "The rehabilitation proposal for a trial of conservative care is not supported by the natural history of progressive myelopathy with cord signal change; it may expose the patient to preventable neurologic deterioration.",
+          "The absence of a quantified stenosis grade and full laboratory work-up should not delay surgical planning, but these data are needed to finalize the approach and rule out metabolically driven ossification."
+        ],
+        "deferred_questions_to_director": [
+          "Should we proceed with surgical planning without a stenosis grade, or obtain additional imaging/consultation first?",
+          "How should we handle the patient's preferences if he is risk-averse but has a clear surgical indication?"
+        ],
+        "public_message": "This is a case of progressive cervical myelopathy from a compressive ossified ligamentum flavum at C5-6 with cord signal change. The evidence supports timely surgical decompression. Conservative care can be considered only as a fallback for a patient who declines surgery or is not an operative candidate. I recommend moving to surgical planning."
+      },
+      {
+        "assessment": "This is a 50-year-old man with progressive cervical myelopathy caused by a calcified/ossified left ligamentum flavum at C5-6, resulting in dorsal spinal cord compression with T2 cord signal change. Clinical findings (grade IV ankle/toe flexion weakness, hyperreflexia, dissociated sensory loss) localize to C5-6 and are highly correlated with the imaging. Despite the pending quantitative stenosis grade and metabolic work-up, the combination of progressive myelopathic symptoms and cord signal change makes conservative management hazardous; delayed decompression risks irreversible cord injury. The coexisting ossified nuchal ligament at C3-4 does not alter the primary surgical target but raises the possibility of multilevel spinal stiffness or underlying ossification tendency, which may influence fusion decisions and long-term outcome.",
+        "proposed_options": [
+          "Posterior cervical decompression at C5-6: laminectomy/foraminotomy with excision of the ossified ligamentum flavum, with or without instrumented fusion depending on preoperative lordosis and instability.",
+          "If the patient declines surgery or is deemed unfit, a time-limited structured conservative trial with strict neurologic monitoring and failure criteria (as outlined by rehabilitation) could be offered, though it is not the preferred strategy."
+        ],
+        "preferred_option": "Posterior cervical decompression at C5-6: laminectomy/foraminotomy with excision of the ossified ligamentum flavum, with or without instrumented fusion depending on preoperative lordosis and instability.",
+        "disagreement_points": [
+          "I disagree with the rehabilitation physician's suggestion that a 3-6 month conservative trial is a reasonable primary option in this case; progressive myelopathy with cord signal change warrants timely surgery, and a conservative trial risks further irreversible deficits.",
+          "The lack of a quantitative stenosis grade should not delay surgical decision-making, as the clinical and imaging evidence already supports significant cord compression; however, the grade will help define the extent of decompression and need for fusion.",
+          "The metabolic work-up may identify a systemic cause of ossification (e.g., DISH, hypoparathyroidism) but should not delay decompression if neurologic progression is ongoing."
+        ],
+        "deferred_questions_to_director": [
+          "Should we proceed with surgical scheduling now while awaiting the quantitative stenosis grade and metabolic labs, or wait for all results before finalizing the operative plan?",
+          "Will the patient's preferences about surgery be obtained before the next meeting, and how should we weigh a patient refusal against the strong surgical indication?"
+        ],
+        "public_message": "My recommendation is surgical decompression for this progressive cervical myelopathy from ossified ligamentum flavum at C5-6. Conservative management is not advisable as primary treatment. Pending imaging grade and labs may refine surgical details, but the indication for surgery is clear. I stand ready to discuss the operation with the patient when appropriate."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Radiologist: retrieve and review the original CT/MRI images, provide a quantitative stenosis grade and cord compression ratio at C5-6.",
+          "Resident: order and document serum calcium, phosphate, alkaline phosphatase, PTH, 25-hydroxyvitamin D, CRP, and ESR; obtain prior imaging for review.",
+          "Vice Director: discuss with the patient the likely diagnosis, natural history, and surgical option while results are pending, without committing to a procedure."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting quantitative stenosis grade and metabolic laboratory results before finalizing the surgical plan; patient preferences are also pending.",
+        "has_contingency_plan": false,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "radiologist",
+          "resident",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "Quantitative stenosis grade and cord compression ratio from original CT/MRI",
+          "Serum calcium, phosphate, alkaline phosphatase, PTH, 25-hydroxyvitamin D",
+          "CRP and ESR"
+        ],
+        "family_requests": [],
+        "public_message": "I have heard the assessments. The clinical picture is consistent with progressive cervical myelopathy from a compressive ossified ligamentum flavum at C5-6 with cord signal change, and surgery is likely indicated. However, before I make a final ruling, we need the actual imaging with a quantitative stenosis grade and basic metabolic work-up to rule out metabolically driven ossification. I am asking the radiologist to review the original films and provide the grade, the resident to obtain labs and the imaging, and the deputy to discuss the diagnosis and likely surgical option with the patient so his preferences are known when we reconvene. We will reconvene after these results."
+      },
+      {
+        "decision": "operate",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": "I rule for surgery now. The clinical and imaging evidence indicates progressive cervical myelopathy from C5-6 ossified ligamentum flavum with cord signal change. The physiatrist's proposed conservative trial carries a low chance of success and unacceptable risk of irreversible neurologic worsening. Surgery is indicated. We will proceed with posterior cervical decompression, specifically C5-6 laminectomy/foraminotomy with excision of the ossified ligamentum flavum, with instrumented fusion if preoperative imaging shows significant instability or loss of lordosis. We will obtain quantitative stenosis grade and basic metabolic tests as part of preoperative workup, but they will not delay the decision. I am asking the deputy to obtain detailed informed consent and discuss the risks and benefits, including the option of conservative management if the patient refuses surgery. The resident should schedule the procedure and ensure preop labs and films are available. The anesthesiologist should perform a preanesthetic evaluation including airway assessment. If metabolic workup reveals a treatable cause, that will be addressed, but decompression remains indicated.",
+        "surgical_plan": "Posterior cervical decompression at C5-6: laminectomy/foraminotomy with excision of the ossified ligamentum flavum; instrumented fusion if preoperative lordosis is inadequate or instability is demonstrated.",
+        "delegated_tasks": [
+          "Radiologist: review original films and provide a quantitative stenosis grade before surgery.",
+          "Resident: schedule the procedure and ensure preoperative labs and imaging are completed.",
+          "Vice Director: obtain detailed informed consent from the patient, emphasizing risks of surgery and of conservative management.",
+          "Anesthesiologist: perform preoperative evaluation, including airway assessment and cardiovascular status."
+        ],
+        "if_delay": false,
+        "reason_for_delay": null,
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "vice_director",
+          "radiologist",
+          "resident",
+          "anesthesiologist"
+        ],
+        "ordered_tests": [
+          "MRI/CT with quantitative stenosis grade at C5-6",
+          "Basic metabolic panel including calcium, phosphate, alkaline phosphatase, and PTH",
+          "Preoperative labs (CBC, coagulation, renal/hepatic function)"
+        ],
+        "family_requests": [
+          "detailed_consent"
+        ],
+        "public_message": "Surgery is indicated for progressive cervical myelopathy from C5-6 ossified ligamentum flavum. We will proceed with posterior decompression now, while obtaining imaging grade and metabolic labs as part of preoperative workup; results will refine surgical details but not delay the decision. The physiatrist's proposed conservative trial is not accepted as primary management due to unacceptable risk of irreversible neurologic deterioration."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-4432380-1:avoidant:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 688,
+      "content": "This is a 50-year-old male with a 6-month history of gait clumsiness, inability to run, and ankle weakness, and a 3-month history of numbness and tingling in both hands, which aggravated in the days before presentation. Examination showed grade IV power in ankle and big toe flexion, hyperreflexia in all four limbs, and diminished pain and temperature sensation below C5, with posterior column sensation preserved. Imaging showed loss of cervical lordosis, ossification of the nuchal ligament at C3-4, and a calcified left-sided ligamentum flavum at C5-6 causing nerve root and spinal cord compression, with hyperintense T2 cord signals at that level. No laboratory report is documented."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 424,
+      "content": "Reporting the case record's description only; the films were not available for review. CT and MRI described calcified/ossified left ligamentum flavum at C5-6, producing dorsal spinal canal impingement with nerve root and spinal cord compression. T2-hyperintense cord signal was reported at C5-6. The record does not provide a stenosis grade. This finding correlates highly with the reported progressive myelopathic symptoms."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 637,
+      "content": "Localization is cervical myelopathy at C5-6 due to dorsolateral extradural compression from ossified ligamentum flavum, with bilateral corticospinal and spinothalamic tract signs. Imaging correlates highly (match level high). Red flags: ossified nuchal ligament at C3-4 is coexisting and does not affect management; absence of stenosis grade changes plan because severity is unknown. Note a sensory dissociation mismatch (pain/temperature loss below C5 with preserved posterior columns) that is not typical for dorsal compression but is compatible with central cord syndrome from the lesion; this does not alter the primary localization."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 298,
+      "content": "ASA physical status II. A specific mean arterial pressure target is not stated because baseline blood pressure and cardiovascular status are not documented. Expected blood loss risk: low. Prone position tolerance: low. Extubation difficulty: unassessable because no airway assessment is documented."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 780,
+      "content": "This patient has progressive cervical myelopathy with cord signal change, which is a concerning finding. However, conservative management may be considered in select cases if the patient is not rapidly deteriorating, as surgery carries risks. We propose a 3-6 month trial of structured physical therapy focusing on gait, balance, and strengthening, along with activity modification and pain management, with close neurologic monitoring. The expected success rate for such conservative treatment in this setting is approximately 20% (based on literature for mild-to-moderate myelopathy, though lower with cord signal change). Failure criteria include any worsening of neurologic deficits, no improvement by 6 months, new bowel/bladder symptoms, or progression on follow-up imaging."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 346,
+      "content": "This is a case of progressive cervical myelopathy from a compressive ossified ligamentum flavum at C5-6 with cord signal change. The evidence supports timely surgical decompression. Conservative care can be considered only as a fallback for a patient who declines surgery or is not an operative candidate. I recommend moving to surgical planning."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 743,
+      "content": "The Deputy Director has pointed to the cord signal change and progressive myelopathy as reasons for surgical planning. These findings were already central to my assessment: I estimated only a 20% success rate for conservative care precisely because of them, and my failure criteria include any neurologic worsening or progression on imaging. However, the patient currently has only grade IV weakness, no bowel/bladder dysfunction, and no rapid deterioration. A time-limited, closely monitored trial of 3-6 months with structured therapy remains a defensible option given surgical risks. I would accept surgery if the stated failure criteria are met, but the argument presented does not outweigh the case for a conservative trial at this stage."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 685,
+      "content": "I have heard the assessments. The clinical picture is consistent with progressive cervical myelopathy from a compressive ossified ligamentum flavum at C5-6 with cord signal change, and surgery is likely indicated. However, before I make a final ruling, we need the actual imaging with a quantitative stenosis grade and basic metabolic work-up to rule out metabolically driven ossification. I am asking the radiologist to review the original films and provide the grade, the resident to obtain labs and the imaging, and the deputy to discuss the diagnosis and likely surgical option with the patient so his preferences are known when we reconvene. We will reconvene after these results."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 363,
+      "content": "My recommendation is surgical decompression for this progressive cervical myelopathy from ossified ligamentum flavum at C5-6. Conservative management is not advisable as primary treatment. Pending imaging grade and labs may refine surgical details, but the indication for surgery is clear. I stand ready to discuss the operation with the patient when appropriate."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 644,
+      "content": "The Deputy Director again cites progressive myelopathy with cord signal change as the reason for surgery. These are the same findings I have already incorporated: I set conservative success at only 20% and included any neurologic worsening or progression on imaging as failure criteria. However, the patient currently has only grade IV weakness, no bowel/bladder dysfunction, and no rapid deterioration, and the director himself has called for further imaging and labs before ruling. Until those results are available, the argument for immediate surgical planning does not outweigh the case for a closely monitored 3-6 month conservative trial."
+    },
+    {
+      "message_id": "pmc-4432380-1:avoidant:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 441,
+      "content": "Surgery is indicated for progressive cervical myelopathy from C5-6 ossified ligamentum flavum. We will proceed with posterior decompression now, while obtaining imaging grade and metabolic labs as part of preoperative workup; results will refine surgical details but not delay the decision. The physiatrist's proposed conservative trial is not accepted as primary management due to unacceptable risk of irreversible neurologic deterioration."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1599,
+      "output_tokens": 1271,
+      "total_tokens": 2870,
+      "latency_ms": 15225,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2342,
+      "output_tokens": 1260,
+      "total_tokens": 3602,
+      "latency_ms": 14231,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4004,
+      "output_tokens": 3056,
+      "total_tokens": 7060,
+      "latency_ms": 36551,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2019,
+      "output_tokens": 2718,
+      "total_tokens": 4737,
+      "latency_ms": 31645,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2756,
+      "output_tokens": 1090,
+      "total_tokens": 3846,
+      "latency_ms": 12482,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4506,
+      "output_tokens": 6763,
+      "total_tokens": 11269,
+      "latency_ms": 79047,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

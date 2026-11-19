@@ -1,0 +1,536 @@
+{
+  "thread_id": "pmc-6580147-1-avoidant-2-bc03d8e6-traits",
+  "metrics": {
+    "case_id": "pmc-6580147-1",
+    "director_style": "avoidant",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-13T05:32:59.043548Z",
+    "completed_at": "2026-10-13T05:35:55.145587Z",
+    "baseline_reused": true,
+    "baseline_key": "629aa4c84208d49af3e7f01ec8383a8628ef7e3198cd4e982f7b516108428b2b",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "operate",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": null,
+    "surgery_recommended": true,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 5398,
+    "director_turns": 2,
+    "director_characters": 441,
+    "director_character_share": 0.0817,
+    "negotiation_tokens": 30853,
+    "total_tokens": 30853,
+    "roles_addressed_declared": [
+      "radiologist",
+      "neurologist",
+      "anesthesiologist",
+      "vice_director",
+      "resident",
+      "physiatrist"
+    ],
+    "roles_addressed_detected": [
+      "radiologist",
+      "neurologist",
+      "anesthesiologist"
+    ],
+    "juniors_addressed_declared": 6,
+    "juniors_addressed_detected": 3,
+    "liability_transfer_declared": 1,
+    "liability_transfer_detected": 1,
+    "family_requests_declared": [
+      "detailed_consent"
+    ],
+    "liability_concepts_detected": [
+      "detailed-consent"
+    ],
+    "delegated_task_count": 10,
+    "tests_ordered_declared": 8,
+    "tests_declared": [
+      "CT cervical spine without contrast",
+      "Flexion/extension cervical radiographs",
+      "Full cervical MRI with axial and sagittal views including foraminal assessment",
+      "Complete blood count with differential and C-reactive protein",
+      "Blood cultures",
+      "High-resolution MRI cervical spine with T2-weighted cord signal assessment",
+      "CT cervical spine for bony anatomy and foraminal stenosis",
+      "Leukocytosis workup: CBC with differential, CRP, blood cultures if febrile, urinalysis"
+    ],
+    "studies_mentioned_detected": 0,
+    "studies_mentioned": [],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 2,
+    "deputy_disagreements": 9,
+    "deputy_questions_to_director": 6,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 1,
+    "flags_coexisting": 2,
+    "baseline_conservative_success_rate": 30,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": false,
+    "persuaded_by_count": 0,
+    "consensus_reached": false
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "A 50-year-old man presented with neck pain of 6 months' duration, with paraesthesia radiating from both shoulders to the fingers, and worsening weakness in both lower extremities over 5 months.",
+      "history": "The patient had intermittent neck pain with paraesthesia in both shoulders radiating to the fingers, mostly during activities, for 6 months. There was no prior trauma. Over the following 5 months, the pain and paraesthesia worsened, and he developed weakness in both lower extremities. He consulted a neurosurgeon, who stated there was nerve entrapment. He underwent physiotherapy for 4 months without improvement. He then presented to our hospital. He worked as a contractor and mostly sat behind a desk. He denied any decrease in body weight or appetite and had no history of chronic cough.",
+      "physical_exam": "On physical examination, general condition was unremarkable (further details not documented). There was no tenderness on palpation along the midline. Examination of the cervical spine showed positive Lhermitte test, finger-escape test, grip-and-release test, Hoffman-Tromner sign, and Spurling sign. The patient was able to move his neck normally. Further examination revealed diminished motoric strength in all extremities with positive Babinski reflex and clonus, with normal patellar and Achilles tendon reflexes. He had urinary retention and faecal incontinence. Radiographic examination showed straight cervical spine with mid-sagittal diameter of 10 mm and a Torg ratio of 0.37. There was osteophyte, endplate irregularity, and disc-space narrowing at C4-C5 levels with spur formation at C3 through C5. Magnetic resonance imaging showed cervical canal stenosis at C4-C5 levels and spinal cord compression. Laboratory findings were unremarkable except for leukocytosis.",
+      "key_positive_signs": [
+        "Positive Lhermitte test",
+        "Positive finger-escape test",
+        "Positive grip-and-release test",
+        "Positive Hoffman-Tromner sign",
+        "Positive Spurling sign",
+        "Diminished motor strength in all extremities",
+        "Positive Babinski reflex",
+        "Clonus",
+        "Urinary retention",
+        "Faecal incontinence",
+        "Radiographic straight cervical spine with mid-sagittal diameter 10 mm and Torg ratio 0.37",
+        "Osteophyte, endplate irregularity, and disc-space narrowing at C4-C5 with spur formation at C3-C5",
+        "MRI cervical canal stenosis at C4-C5 with spinal cord compression",
+        "Leukocytosis on laboratory testing"
+      ],
+      "past_history": "No history of diabetes mellitus or hypertension. No history of trauma. Denied decrease in body weight, appetite, or chronic cough. Occupation: contractor, mostly desk-based. Previous treatment: physiotherapy for 4 months with no improvement; prior neurosurgical consultation reported nerve entrapment.",
+      "public_message": "This is a 50-year-old man with a 6-month history of neck pain with paraesthesia radiating to both shoulders and fingers, worsening over 5 months with weakness in both lower extremities. Physical examination showed positive Lhermitte, finger-escape, grip-and-release, Hoffman-Tromner and Spurling signs; diminished motor strength in all extremities; positive Babinski reflex and clonus; normal patellar and Achilles tendon reflexes; and urinary retention and faecal incontinence. Radiographs showed a straight cervical spine with mid-sagittal diameter of 10 mm and Torg ratio of 0.37, with osteophyte, endplate irregularity and disc-space narrowing at C4-C5 and spur formation at C3-C5. MRI showed cervical canal stenosis at C4-C5 with spinal cord compression. Laboratory findings were unremarkable except for leukocytosis. Past history: no diabetes, hypertension, trauma, weight loss, appetite decrease, or chronic cough; occupation contractor mostly desk-based; physiotherapy for 4 months with no improvement."
+    },
+    "imaging": {
+      "levels": [
+        "C4-5"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "nondiagnostic",
+      "correlation": "high",
+      "public_message": "Reporting the case record’s description only; the films were not available for review. The record describes cervical canal stenosis with spinal cord compression at C4-5, correlating highly with the reported myelopathic symptoms. Compression direction, stenosis grade, and cord T2 signal are not stated.",
+      "confidence": 0.9
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical spinal cord at C4-C5 with compressive myelopathy, plus a likely cervical radiculopathy (C5 or C6) suggested by radicular symptoms and a positive Spurling sign.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "Positive Spurling sign with paresthesias radiating from shoulders to fingers",
+          "relevance": "changes_plan",
+          "rationale": "Indicates a radicular component in addition to myelopathy. The MRI report describes canal stenosis and cord compression but does not mention foraminal stenosis; if present, decompression should address the nerve roots as well."
+        },
+        {
+          "finding": "Normal patellar and Achilles tendon reflexes despite positive Babinski reflex and clonus",
+          "relevance": "coexisting",
+          "rationale": "Upper motor neuron lesions typically cause hyperreflexia. Normal DTRs may reflect early myelopathy or a coexisting peripheral neuropathy, but they do not undermine the evidence of cord compression."
+        },
+        {
+          "finding": "Leukocytosis on laboratory testing",
+          "relevance": "coexisting",
+          "rationale": "Not explained by cervical stenosis and not an alternative cause of the myelopathy. It may indicate an unrelated infection or inflammation but does not alter the localization or indication."
+        }
+      ],
+      "symptom_imaging_mismatch": "The MRI report describes central canal stenosis and cord compression at C4-C5, which explains the myelopathic syndrome. However, the radicular symptoms (shoulder-to-finger paresthesias, positive Spurling sign) are not directly explained by the reported imaging; foraminal stenosis is not described.",
+      "public_message": "Localization: cervical spinal cord at C4-C5 with compressive myelopathy; additional radicular component suggested by Spurling sign and radiating paresthesias. Imaging-symptom match is high for the dominant myelopathic syndrome. Red flags: (1) Positive Spurling sign with radicular symptoms—changes_plan—may indicate foraminal stenosis requiring decompression of nerve roots; MRI did not describe foramina. (2) Normal patellar and Achilles reflexes despite Babinski and clonus—coexisting—an atypical finding possibly due to early myelopathy or coexisting peripheral neuropathy; does not alter the main diagnosis. (3) Leukocytosis—coexisting—incidental laboratory abnormality not explained by cervical stenosis and not an alternative cause of cord compression."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": 85,
+      "blood_loss_risk": "low",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "moderate",
+      "public_message": "ASA grade III; intraoperative MAP target 85 mmHg; blood loss risk low; prone position tolerance moderate; extubation difficulty unassessable because no airway assessment is documented."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 30,
+      "proposed_duration": "6 months",
+      "preconditions_for_failure": [
+        "No improvement or worsening of myelopathic symptoms (gait, strength, bladder/bowel function) after 6 weeks of structured conservative care.",
+        "Progression of neurological deficits on serial examination.",
+        "New or worsening cord signal change on MRI.",
+        "Development of acute urinary retention or faecal incontinence (already present; if worsens)."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I acknowledge the progressive myelopathy and the evidence that delay may risk irreversible cord damage. However, the patient is only 50 years old and has not had a structured, supervised conservative program with clear goals and close monitoring. I propose a formal 3-6 month course of intensive physical therapy, core strengthening, posture management, and symptom control, with defined failure criteria. Success rates from structured conservative care in mild-to-moderate compressive myelopathy are around 30%, but in this case with severe myelopathy and already failed physiotherapy, that figure may be optimistic. Nevertheless, given the risks of surgery, a time-limited trial under strict supervision is a reasonable first step. If there is no improvement after 6 weeks or if neurological deficits worsen, I would accept surgery."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 30,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "No improvement or worsening of myelopathic symptoms (gait, strength, bladder/bowel function) after 6 weeks of structured conservative care.",
+        "Progression of neurological deficits on serial examination.",
+        "New or worsening cord signal change on MRI.",
+        "Worsening of existing urinary retention or faecal incontinence."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The Deputy Director has reiterated progressive myelopathy, sphincter dysfunction, and cord compression at C4-C5, but these are findings already in the record and already accounted for in my previous assessment. No specific finding has been identified that I have underweighted, and no explanation has been given for why a closely monitored 6-week conservative trial would risk irreversible damage beyond what my predefined failure criteria guard against. I therefore maintain the offer of a time-limited conservative trial."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 30,
+        "proposed_duration": "6 months",
+        "preconditions_for_failure": [
+          "No improvement or worsening of myelopathic symptoms (gait, strength, bladder/bowel function) after 6 weeks of structured conservative care.",
+          "Progression of neurological deficits on serial examination.",
+          "New or worsening cord signal change on MRI.",
+          "Development of acute urinary retention or faecal incontinence (already present; if worsens)."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "I note the Deputy Director's recommendation for surgical decompression, but the argument references only progressive cervical myelopathy and cord compression, findings already in the record and already accounted for in my initial assessment. No new specific finding has been pointed to—such as cord signal change or a deficit that conservative care demonstrably cannot reverse—nor has any argument explained why my defined failure criteria (6-week no-improvement, worsening deficits, new signal change) are insufficient to prevent irreversible damage. I therefore maintain the offer of a time-limited, closely monitored conservative trial."
+      },
+      {
+        "conservative_success_rate": 30,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "No improvement or worsening of myelopathic symptoms (gait, strength, bladder/bowel function) after 6 weeks of structured conservative care.",
+          "Progression of neurological deficits on serial examination.",
+          "New or worsening cord signal change on MRI.",
+          "Worsening of existing urinary retention or faecal incontinence."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director has reiterated progressive myelopathy, sphincter dysfunction, and cord compression at C4-C5, but these are findings already in the record and already accounted for in my previous assessment. No specific finding has been identified that I have underweighted, and no explanation has been given for why a closely monitored 6-week conservative trial would risk irreversible damage beyond what my predefined failure criteria guard against. I therefore maintain the offer of a time-limited conservative trial."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This patient has progressive cervical compressive myelopathy with severe canal stenosis at C4-C5, concordant clinical signs including sphincter dysfunction, pyramidal tract signs, and failed conservative management. Surgical decompression is indicated to prevent irreversible cord injury. A further prolonged conservative trial is not supported by current evidence and risks neurological deterioration. The precise surgical approach depends on compression morphology, foraminal involvement, and stability, which require additional imaging.",
+        "proposed_options": [
+          "Anterior cervical decompression and fusion (ACDF or corpectomy) if compression is predominantly anterior.",
+          "Posterior decompression (laminoplasty or laminectomy with fusion) if compression is posterior or multilevel.",
+          "Combined anterior-posterior approach if significant circumferential compression or instability.",
+          "Short-term supervised conservative trial with strict failure criteria (not recommended given severity and sphincter involvement)."
+        ],
+        "preferred_option": "Surgical decompression with fusion, approach determined by further imaging; I favour anterior decompression if the compression is anterior, with attention to foraminal stenosis.",
+        "disagreement_points": [
+          "I disagree with the rehabilitation physician's proposal for a 3-6 month conservative trial. Progressive myelopathy with sphincter dysfunction and failed physiotherapy indicates a need for timely surgical intervention.",
+          "The neurologist noted normal patellar and Achilles reflexes despite Babinski and clonus. This atypical finding may suggest coexisting peripheral neuropathy but does not change the surgical indication.",
+          "Leukocytosis is unexplained and should be investigated preoperatively, but it is not a reason to delay surgery.",
+          "The MRI report lacks critical details: compression direction, T2 signal change, and foraminal stenosis. These are essential for surgical planning."
+        ],
+        "deferred_questions_to_director": [
+          "Should we obtain additional imaging (CT, flexion/extension radiographs, full MRI with axial views) before scheduling surgery?",
+          "How would you like to proceed with the unexplained leukocytosis?",
+          "Do you concur with proceeding directly to surgery, or do you wish to consider a very short period of observation with defined failure criteria?"
+        ],
+        "public_message": "Based on the clinical presentation, surgical decompression is indicated for this patient with progressive cervical myelopathy and cord compression. I recommend obtaining further imaging to better define the compression and foraminal involvement, then proceeding with the appropriate surgical approach. A conservative trial is not advisable given the risk of irreversible neurological damage."
+      },
+      {
+        "assessment": "This is a 50-year-old man with progressive cervical myelopathy (weakness in all extremities, sphincter dysfunction, UMN signs) and MRI evidence of cord compression at C4-C5. The 5-month progression despite physiotherapy and the presence of sphincter involvement are poor prognostic indicators and make surgical decompression urgent. The available imaging description lacks critical details—stenosis grade, cord T2 signal change, and foraminal involvement—which are needed to choose the optimal surgical approach and to counsel on prognosis. A conservative trial of 3-6 months is not justified given the risk of irreversible cord damage; even a short delay must have very strict stop criteria. I recommend expediting the additional imaging and pre-operative workup, then proceeding to decompression without unnecessary delay.",
+        "proposed_options": [
+          "Proceed with urgent surgical decompression (anterior cervical discectomy/corpectomy or posterior laminectomy/laminoplasty, depending on imaging) after completing high-resolution MRI with cord signal assessment, CT as needed, and pre-operative medical clearance; treat leukocytosis if indicated.",
+          "Offer a strictly time-limited conservative trial of no more than 2 weeks with daily neurological checks and defined stop criteria while completing surgical workup; this is not recommended because of high risk of irreversible cord damage, but could be considered if the director insists on exploring non-operative options.",
+          "If imaging shows only mild compression without T2 signal change and no dynamic instability, consider longer non-operative management with close surveillance; however, current clinical severity makes this unlikely."
+        ],
+        "preferred_option": "Proceed with urgent surgical decompression (anterior cervical discectomy/corpectomy or posterior laminectomy/laminoplasty, depending on imaging) after completing high-resolution MRI with cord signal assessment, CT as needed, and pre-operative medical clearance; treat leukocytosis if indicated.",
+        "disagreement_points": [
+          "Need to clarify extent of cord compression and presence/absence of T2 signal change on MRI; this affects urgency, prognosis, and surgical approach.",
+          "Need to evaluate foraminal stenosis given radicular symptoms and positive Spurling sign; foraminal decompression may be required.",
+          "Normal patellar and Achilles reflexes despite Babinski and clonus are atypical; possible coexisting peripheral neuropathy or early myelopathy should be considered during surgical planning and rehabilitation.",
+          "Leukocytosis is unexplained and should be investigated before surgery to rule out infection or inflammatory cause; if present, it may alter timing or require treatment.",
+          "The rehabilitation physician's proposal of a 3-6 month conservative trial conflicts with evidence in progressive myelopathy with sphincter dysfunction; a delay of that length is unacceptable."
+        ],
+        "deferred_questions_to_director": [
+          "After imaging review, which surgical approach (anterior vs posterior) would you prefer based on compression location and number of levels?",
+          "Should we proceed with leukocytosis workup concurrently with surgical planning, and what white cell count threshold would you require before clearing surgery?",
+          "How would you like to handle the disagreement with the rehabilitation physician: a formal case conference, second neurosurgical opinion, or a directive from you?"
+        ],
+        "public_message": "The patient has progressive cervical myelopathy with sphincter dysfunction and cord compression at C4-5. Surgical decompression is indicated. I recommend completing the imaging workup urgently and scheduling surgery without unnecessary delay. I will assist in coordinating the required studies and surgical planning."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Radiologist: obtain the original cervical spine films and perform/complete MRI with axial and sagittal views including foraminal assessment; report compression direction, stenosis grade, and cord T2 signal.",
+          "Neurologist: advise on the significance of the normal patellar and Achilles reflexes in the setting of Babinski and clonus, and recommend an evaluation plan for the unexplained leukocytosis.",
+          "Anesthesiologist: perform and document a complete airway assessment to clarify extubation difficulty risk.",
+          "Vice Director: review the additional imaging once available and propose a definitive surgical approach, including whether foraminal decompression is required."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting additional imaging and specialist assessments before committing to a treatment plan.",
+        "has_contingency_plan": false,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "CT cervical spine without contrast",
+          "Flexion/extension cervical radiographs",
+          "Full cervical MRI with axial and sagittal views including foraminal assessment",
+          "Complete blood count with differential and C-reactive protein",
+          "Blood cultures"
+        ],
+        "family_requests": [],
+        "public_message": "I am not ready to rule on the treatment decision until we have complete imaging and further assessments. I have ordered additional studies and requested specific input from radiology, neurology, anesthesiology, and the vice director. We will reconvene once these results are available."
+      },
+      {
+        "decision": "operate",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": "Surgery is indicated for this progressive cervical myelopathy with cord compression and sphincter dysfunction. We will proceed with urgent decompression. The exact approach (anterior cervical discectomy/corpectomy or posterior laminectomy/laminoplasty) will be selected after high-resolution MRI with T2 cord signal and CT; foraminal stenosis, if present, will be decompressed. Preoperative leukocytosis workup proceeds concurrently; no delay in surgical booking. The disagreement with the physiatrist is overridden: a 3-6 month conservative trial is unacceptable given progressive myelopathy and sphincter dysfunction; the defined failure criteria are not sufficient to prevent irreversible cord damage. I have asked the deputy to coordinate imaging and booking, the resident to arrange workup, and anesthesia for clearance. Detailed informed consent will be obtained with emphasis on risks.",
+        "surgical_plan": "Urgent surgical decompression of cervical cord at C4-C5. Approach to be determined by high-resolution MRI/CT: anterior cervical discectomy/corpectomy with fusion if compression is anterior or limited levels, or posterior laminectomy/laminoplasty if multi-level or posterior compression; include foraminal decompression if foraminal stenosis is confirmed. Intraoperative MAP target 85 mmHg. Postoperative rehabilitation to begin early.",
+        "delegated_tasks": [
+          "Deputy Director: coordinate urgent high-resolution MRI and CT, determine surgical approach, schedule surgery.",
+          "Resident: arrange preoperative leukocytosis workup and medical clearance.",
+          "Anesthesiologist: complete preoperative assessment with airway evaluation.",
+          "Radiologist: report cord T2 signal and foraminal stenosis.",
+          "Neurologist: review leukocytosis and intraoperative monitoring plan.",
+          "Physiatrist: plan postoperative rehabilitation."
+        ],
+        "if_delay": false,
+        "reason_for_delay": null,
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "High-resolution MRI cervical spine with T2-weighted cord signal assessment",
+          "CT cervical spine for bony anatomy and foraminal stenosis",
+          "Leukocytosis workup: CBC with differential, CRP, blood cultures if febrile, urinalysis"
+        ],
+        "family_requests": [
+          "detailed_consent"
+        ],
+        "public_message": "We are proceeding with urgent surgical decompression. Imaging will finalize the approach but will not delay the decision. Detailed consent will be obtained."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-6580147-1:avoidant:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 1010,
+      "content": "This is a 50-year-old man with a 6-month history of neck pain with paraesthesia radiating to both shoulders and fingers, worsening over 5 months with weakness in both lower extremities. Physical examination showed positive Lhermitte, finger-escape, grip-and-release, Hoffman-Tromner and Spurling signs; diminished motor strength in all extremities; positive Babinski reflex and clonus; normal patellar and Achilles tendon reflexes; and urinary retention and faecal incontinence. Radiographs showed a straight cervical spine with mid-sagittal diameter of 10 mm and Torg ratio of 0.37, with osteophyte, endplate irregularity and disc-space narrowing at C4-C5 and spur formation at C3-C5. MRI showed cervical canal stenosis at C4-C5 with spinal cord compression. Laboratory findings were unremarkable except for leukocytosis. Past history: no diabetes, hypertension, trauma, weight loss, appetite decrease, or chronic cough; occupation contractor mostly desk-based; physiotherapy for 4 months with no improvement."
+    },
+    {
+      "message_id": "pmc-6580147-1:avoidant:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 302,
+      "content": "Reporting the case record’s description only; the films were not available for review. The record describes cervical canal stenosis with spinal cord compression at C4-5, correlating highly with the reported myelopathic symptoms. Compression direction, stenosis grade, and cord T2 signal are not stated."
+    },
+    {
+      "message_id": "pmc-6580147-1:avoidant:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 758,
+      "content": "Localization: cervical spinal cord at C4-C5 with compressive myelopathy; additional radicular component suggested by Spurling sign and radiating paresthesias. Imaging-symptom match is high for the dominant myelopathic syndrome. Red flags: (1) Positive Spurling sign with radicular symptoms—changes_plan—may indicate foraminal stenosis requiring decompression of nerve roots; MRI did not describe foramina. (2) Normal patellar and Achilles reflexes despite Babinski and clonus—coexisting—an atypical finding possibly due to early myelopathy or coexisting peripheral neuropathy; does not alter the main diagnosis. (3) Leukocytosis—coexisting—incidental laboratory abnormality not explained by cervical stenosis and not an alternative cause of cord compression."
+    },
+    {
+      "message_id": "pmc-6580147-1:avoidant:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 184,
+      "content": "ASA grade III; intraoperative MAP target 85 mmHg; blood loss risk low; prone position tolerance moderate; extubation difficulty unassessable because no airway assessment is documented."
+    },
+    {
+      "message_id": "pmc-6580147-1:avoidant:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 834,
+      "content": "I acknowledge the progressive myelopathy and the evidence that delay may risk irreversible cord damage. However, the patient is only 50 years old and has not had a structured, supervised conservative program with clear goals and close monitoring. I propose a formal 3-6 month course of intensive physical therapy, core strengthening, posture management, and symptom control, with defined failure criteria. Success rates from structured conservative care in mild-to-moderate compressive myelopathy are around 30%, but in this case with severe myelopathy and already failed physiotherapy, that figure may be optimistic. Nevertheless, given the risks of surgery, a time-limited trial under strict supervision is a reasonable first step. If there is no improvement after 6 weeks or if neurological deficits worsen, I would accept surgery."
+    },
+    {
+      "message_id": "pmc-6580147-1:avoidant:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 391,
+      "content": "Based on the clinical presentation, surgical decompression is indicated for this patient with progressive cervical myelopathy and cord compression. I recommend obtaining further imaging to better define the compression and foraminal involvement, then proceeding with the appropriate surgical approach. A conservative trial is not advisable given the risk of irreversible neurological damage."
+    },
+    {
+      "message_id": "pmc-6580147-1:avoidant:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 639,
+      "content": "I note the Deputy Director's recommendation for surgical decompression, but the argument references only progressive cervical myelopathy and cord compression, findings already in the record and already accounted for in my initial assessment. No new specific finding has been pointed to—such as cord signal change or a deficit that conservative care demonstrably cannot reverse—nor has any argument explained why my defined failure criteria (6-week no-improvement, worsening deficits, new signal change) are insufficient to prevent irreversible damage. I therefore maintain the offer of a time-limited, closely monitored conservative trial."
+    },
+    {
+      "message_id": "pmc-6580147-1:avoidant:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 285,
+      "content": "I am not ready to rule on the treatment decision until we have complete imaging and further assessments. I have ordered additional studies and requested specific input from radiology, neurology, anesthesiology, and the vice director. We will reconvene once these results are available."
+    },
+    {
+      "message_id": "pmc-6580147-1:avoidant:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 316,
+      "content": "The patient has progressive cervical myelopathy with sphincter dysfunction and cord compression at C4-5. Surgical decompression is indicated. I recommend completing the imaging workup urgently and scheduling surgery without unnecessary delay. I will assist in coordinating the required studies and surgical planning."
+    },
+    {
+      "message_id": "pmc-6580147-1:avoidant:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 523,
+      "content": "The Deputy Director has reiterated progressive myelopathy, sphincter dysfunction, and cord compression at C4-C5, but these are findings already in the record and already accounted for in my previous assessment. No specific finding has been identified that I have underweighted, and no explanation has been given for why a closely monitored 6-week conservative trial would risk irreversible damage beyond what my predefined failure criteria guard against. I therefore maintain the offer of a time-limited conservative trial."
+    },
+    {
+      "message_id": "pmc-6580147-1:avoidant:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 156,
+      "content": "We are proceeding with urgent surgical decompression. Imaging will finalize the approach but will not delay the decision. Detailed consent will be obtained."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1656,
+      "output_tokens": 1866,
+      "total_tokens": 3522,
+      "latency_ms": 26692,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2427,
+      "output_tokens": 865,
+      "total_tokens": 3292,
+      "latency_ms": 11465,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4157,
+      "output_tokens": 3785,
+      "total_tokens": 7942,
+      "latency_ms": 46383,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1969,
+      "output_tokens": 2615,
+      "total_tokens": 4584,
+      "latency_ms": 36554,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2690,
+      "output_tokens": 1319,
+      "total_tokens": 4009,
+      "latency_ms": 14537,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4516,
+      "output_tokens": 2988,
+      "total_tokens": 7504,
+      "latency_ms": 40443,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

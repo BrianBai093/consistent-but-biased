@@ -1,0 +1,410 @@
+{
+  "thread_id": "pmc-6389466-1-avoidant-1-16fd7bcb-traits",
+  "metrics": {
+    "case_id": "pmc-6389466-1",
+    "director_style": "avoidant",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-13T03:20:24.867804Z",
+    "completed_at": "2026-10-13T03:22:24.287911Z",
+    "baseline_reused": true,
+    "baseline_key": "1b1d3bcf50f16aafdec3ad764b9759b848e968c588f9532cd91899cb9d3db40b",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 1,
+    "decision": "additional_workup",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 8,
+    "total_characters": 5155,
+    "director_turns": 1,
+    "director_characters": 517,
+    "director_character_share": 0.1003,
+    "negotiation_tokens": 15753,
+    "total_tokens": 15753,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "neurologist",
+      "anesthesiologist",
+      "physiatrist",
+      "vice_director"
+    ],
+    "roles_addressed_detected": [
+      "anesthesiologist"
+    ],
+    "juniors_addressed_declared": 6,
+    "juniors_addressed_detected": 1,
+    "liability_transfer_declared": 1,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [
+      "decide_after_family_meeting"
+    ],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 6,
+    "tests_ordered_declared": 5,
+    "tests_declared": [
+      "Cervical MRI and CT formal review",
+      "Phrenic nerve conduction study with diaphragm EMG",
+      "Diaphragm fluoroscopy (sniff test)",
+      "Repeat arterial blood gas after pulmonary optimization",
+      "Anesthesiology airway assessment with pulmonary function optimization plan"
+    ],
+    "studies_mentioned_detected": 0,
+    "studies_mentioned": [],
+    "deputy_rounds": 1,
+    "deputy_preference_stated": 1,
+    "deputy_disagreements": 3,
+    "deputy_questions_to_director": 4,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 5,
+    "baseline_conservative_success_rate": 40,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Dyspnea",
+      "history": "The patient is a 67-year-old woman who developed general fatigue 5 years ago and numbness of the right body 3 years ago. She was diagnosed with ossification of the posterior longitudinal ligament (OPLL) of the cervical spine by an orthopedic surgeon. Her neuropathy progressed, with numbness extending to the extremities and difficulty walking. One year ago she developed dyspnea on exertion. Body weight decreased from 46 kg to 41 kg over 5 years. Spirometry by a local physician showed restrictive ventilatory impairment, but the diagnosis remained unclear, leading to referral. She had no notable medical, family, or social history and had never smoked.",
+      "physical_exam": "Vital signs: temperature 36.2°C, pulse 71 beats/min regular, blood pressure 103/56 mm Hg. Physical examination showed decreased thoracic motion, muscle weakness of the right upper limb, numbness of the extremities, and claudication. Breath sounds were decreased in both lungs, with no rales. JOA score was 14 points. Chest X-ray and CT showed no abnormal lung shadows, but diaphragm movement was decreased between inspiratory and expiratory images. Cervical X-ray revealed longitudinal OPLL. Sagittal T2-weighted MRI showed a thickened posterior longitudinal ligament severely compressing the cervical cord at C3/4, with cord atrophy and an intramedullary T2-weighted high-intensity area at C3/4; no abnormality in the thoracic cord. Arterial blood gas on ambient air: pH 7.36, PaO2 64.8 Torr, PaCO2 61.3 Torr, HCO3- 33.6 mmol/L, A-a O2 gradient 1.18 Torr. Pulmonary function: VC 1.09 L (39.4% predicted), FEV1 0.99 L (62.7%), FEV1/FVC 98%. Polysomnography: obstructive sleep apnea with AHI 20.7, minimum oxygen saturation 86%.",
+      "key_positive_signs": [
+        "Decreased thoracic motion",
+        "Right upper limb muscle weakness",
+        "Numbness of extremities",
+        "Claudication",
+        "Decreased breath sounds bilaterally without rales",
+        "JOA score 14 (mild cervical myelopathy)",
+        "Restrictive ventilatory impairment (VC 39.4% predicted)",
+        "Chronic hypercapnic respiratory failure (PaCO2 61.3 Torr, PaO2 64.8 Torr)",
+        "Obstructive sleep apnea (AHI 20.7, minimum SaO2 86%)",
+        "Cervical OPLL with cord compression at C3/4, cord atrophy, and intramedullary T2 hyperintensity",
+        "Decreased diaphragm movement on imaging"
+      ],
+      "past_history": "No medical, family, or social history of note. She had never smoked.",
+      "public_message": "This 67-year-old woman presented with dyspnea. She has a 5-year history of fatigue and a 3-year history of right body numbness, diagnosed as cervical OPLL. Neuropathy progressed to extremity numbness and gait difficulty; dyspnea on exertion began one year ago and she lost 5 kg over 5 years. Examination shows decreased thoracic motion, right upper limb weakness, extremity numbness, claudication, and decreased breath sounds without rales. JOA score is 14. Imaging shows OPLL with severe C3/4 cord compression, cord atrophy, and T2 hyperintensity; chest imaging shows no parenchymal abnormality but decreased diaphragm movement. Blood gases show hypercapnia and hypoxemia with A-a gradient 1.18 Torr. Pulmonary function shows restrictive impairment (VC 39.4%). Polysomnography shows OSA with AHI 20.7 and minimum O2 86%."
+    },
+    "imaging": {
+      "levels": [
+        "C3-4"
+      ],
+      "level_status": "reported",
+      "compression_type": "ventral",
+      "stenosis_grade": "severe",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "Reporting the case record's description of the imaging; the films were not available for review. The record describes thickened/ossified posterior longitudinal ligament causing severe ventral cervical cord compression at C3-4, with cord atrophy and intramedullary T2 hyperintensity at that level. No thoracic cord abnormality was reported. These findings correlate highly with the reported progressive cervical myelopathic symptoms.",
+      "confidence": 0.97
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical myelopathy at C3-4 due to OPLL, affecting the corticospinal tracts (right upper limb weakness, gait difficulty/claudication), sensory pathways (numbness of extremities, initial right body numbness), and phrenic motor neurons/respiratory pathways (bilateral diaphragm weakness with restrictive ventilatory failure and hypercapnia). The lesion is at the phrenic nucleus level (C3-5), directly explaining diaphragm dysfunction.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "Obstructive sleep apnea (AHI 20.7, minimum SpO2 86%) persisting after CPAP with residual daytime hypercapnia.",
+          "relevance": "coexisting",
+          "rationale": "OSA contributes to nocturnal hypoxemia and may exacerbate hypercapnia, but the restrictive pattern (VC 39.4%) and decreased diaphragm movement are better attributed to phrenic nerve dysfunction from C3-4 compression. CPAP improved AHI but did not resolve daytime hypercapnia, supporting a primary neuromuscular cause."
+        },
+        {
+          "finding": "Progressive weight loss (46 kg to 41 kg over 5 years) without documented explanation.",
+          "relevance": "coexisting",
+          "rationale": "Weight loss is not explained by the cervical lesion and could result from chronic respiratory failure, dysphagia, or another systemic condition. It does not provide an alternative explanation for the myelopathic or phrenic signs, so it does not change the indication for addressing cord compression."
+        },
+        {
+          "finding": "JOA score of 14 (mild myelopathy) despite severe C3-4 compression with cord atrophy and T2 hyperintensity and significant respiratory muscle weakness.",
+          "relevance": "coexisting",
+          "rationale": "The JOA does not assess respiratory function and may underestimate the impact of high cervical lesions on phrenic pathways. The discordance between myelopathic score and respiratory failure is notable but does not contradict the localization; the cord lesion directly involves the C3-4 region responsible for diaphragm innervation."
+        },
+        {
+          "finding": "Right upper limb weakness is not further characterized (e.g., myotomal pattern, reflexes) and could reflect either upper motor neuron dysfunction from the C3-4 lesion or additional lower cervical involvement/radiculopathy.",
+          "relevance": "coexisting",
+          "rationale": "The C3-4 compression can cause upper motor neuron weakness in the limb via corticospinal tract involvement, so the finding is generally consistent. However, if lower motor neuron signs are present, additional levels may be involved; the current record does not document enough to distinguish. This does not change the dominant indication but could affect surgical planning if further imaging reveals lower cervical stenosis."
+        },
+        {
+          "finding": "Examination documentation lacks details of reflexes, tone, and lower limb motor/sensory function needed to fully characterize the myelopathy.",
+          "relevance": "coexisting",
+          "rationale": "This is a documentation gap, not an alternative explanation; it limits precise localization of upper motor neuron vs lower motor neuron contributions but does not undermine the clear imaging correlation with the dominant syndrome."
+        }
+      ],
+      "symptom_imaging_mismatch": "The severe C3-4 cord compression with signal change and atrophy explains the myelopathic symptoms and respiratory failure via phrenic pathway involvement. The main discordance is that the JOA score indicates mild clinical myelopathy while the respiratory failure is severe; however, the JOA does not capture phrenic function. Additionally, right upper limb weakness is not fully characterized, leaving minor uncertainty about possible lower cervical involvement, but this does not negate the match.",
+      "public_message": "Neurological localization is to the cervical cord at C3-4, with myelopathy involving sensory and motor tracts and phrenic nerve dysfunction causing restrictive respiratory failure. Imaging matches the dominant syndrome at a high level. Red flags are graded as follows: obstructive sleep apnea is coexisting (it contributes to respiratory symptoms but does not explain the diaphragm weakness or restrictive defect); weight loss is coexisting and unexplained but does not alter the cord compression as the cause; the mild JOA score is a coexisting observation because it does not assess respiratory function; incomplete characterization of right upper limb weakness is coexisting and does not challenge the dominant lesion. No finding offers an alternative explanation for the myelopathic-respiratory syndrome."
+    },
+    "anesthesia": {
+      "asa_grade": "IV",
+      "map_target_mmhg": 65,
+      "blood_loss_risk": "unassessable",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "high",
+      "public_message": "ASA physical status IV. Intraoperative mean arterial pressure target 65 mmHg. Expected blood loss risk: unassessable (no surgical details provided). Tolerance of prone position: high. Risk at extubation: unassessable (no airway assessment on record)."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 40,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Worsening of JOA score by 2 or more points during conservative treatment",
+        "Increase in PaCO2 >5 mmHg or decrease in vital capacity >10% from baseline",
+        "New onset of sphincter dysfunction or progressive gait deterioration",
+        "Failure to achieve stabilization of neurologic and respiratory status after 3 months of structured conservative therapy"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "This 67-year-old woman has OPLL at C3-4 causing severe cord compression, myelopathy (JOA 14), and restrictive respiratory failure due to phrenic nerve dysfunction. While surgery may ultimately be necessary, I advocate for a structured conservative trial: intensive cervical bracing, respiratory muscle training, and physical therapy focused on maintaining strength and function, with close serial neurologic and pulmonary monitoring. Literature on cervical OPLL shows that a significant proportion of patients with mild to moderate myelopathy remain stable without surgery, especially if managed early and with adherence; however, in this case, the presence of cord atrophy, T2 signal change, and progressive respiratory failure are concerning and reduce expected conservative success. I would set a conservative success rate of 40% based on cohorts with severe compression and myelopathy. Duration of trial: 3 months (minimum) with option to extend to 6 months if stable or improved. Failure criteria: any worsening of JOA score, increase in PaCO2 >5 mmHg, decrease in VC >10%, new onset of sphincter dysfunction, or appearance of worsening gait/limb weakness. If any of these occur, I would no longer hold conservative line and would accept surgical decompression. I remain holding conservative stance until strong evidence (randomized data or clear trajectory of deterioration) moves me."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 40,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Worsening of JOA score by 2 or more points during conservative treatment",
+        "Increase in PaCO2 >5 mmHg or decrease in vital capacity >10% from baseline",
+        "New onset of sphincter dysfunction or progressive gait deterioration",
+        "Failure to achieve stabilization of neurologic and respiratory status after 3 months of structured conservative therapy"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The deputy director argues that progressive cord and respiratory deterioration contraindicates a conservative trial. I see no new specific finding in that argument beyond the gradual progression already documented over years; the record does not show acute deterioration or a recent drop in JOA or pulmonary function. That progression informed my 40% success estimate, not a refusal to consider surgery. A structured 3-month trial with the listed failure criteria remains appropriate; if any criterion is met, I will accept surgical decompression."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 40,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Worsening of JOA score by 2 or more points during conservative treatment",
+          "Increase in PaCO2 >5 mmHg or decrease in vital capacity >10% from baseline",
+          "New onset of sphincter dysfunction or progressive gait deterioration",
+          "Failure to achieve stabilization of neurologic and respiratory status after 3 months of structured conservative therapy"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The deputy director argues that progressive cord and respiratory deterioration contraindicates a conservative trial. I see no new specific finding in that argument beyond the gradual progression already documented over years; the record does not show acute deterioration or a recent drop in JOA or pulmonary function. That progression informed my 40% success estimate, not a refusal to consider surgery. A structured 3-month trial with the listed failure criteria remains appropriate; if any criterion is met, I will accept surgical decompression."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This is a 67-year-old woman with cervical OPLL at C3-4 causing severe ventral cord compression, T2 cord signal change and atrophy, progressive myelopathy (JOA 14), and restrictive respiratory failure attributed to phrenic nerve dysfunction. The imaging and clinical syndrome align; no alternative cause explains the combination of high cervical myelopathy and diaphragm weakness. Given cord atrophy and progressive respiratory decline, conservative management alone is unlikely to halt progression and carries ongoing risk of sudden neurological and respiratory deterioration. Surgical decompression is indicated, but the patient's respiratory status and OSA make the perioperative risk substantial, requiring careful optimization and a strategy that balances decompression effectiveness against operative risk.",
+        "proposed_options": [
+          "Anterior cervical decompression (C3 corpectomy or anterior cervical discectomy/fusion with removal of ossified ligament) with fusion, after brief pulmonary and airway optimization, to directly address the OPLL and decompress the cord.",
+          "Posterior decompression (laminoplasty or laminectomy with fusion) as an alternative if anterior approach is deemed too high risk, accepting less direct removal of the compressive OPLL.",
+          "Continued supervised conservative management with pulmonary rehabilitation, CPAP for OSA, and serial neurological/pulmonary monitoring for a defined short period (e.g., 4-6 weeks) to optimize and reassess, with clear failure criteria."
+        ],
+        "preferred_option": "Anterior cervical decompression (C3 corpectomy or anterior cervical discectomy/fusion with removal of ossified ligament) with fusion, after brief pulmonary and airway optimization, to directly address the OPLL and decompress the cord.",
+        "disagreement_points": [
+          "The physiatrist's proposed 3-6 month conservative trial is too long for a patient with cord atrophy, T2 hyperintensity, and progressive respiratory failure; delaying definitive decompression risks irreversible cord damage or respiratory crisis.",
+          "The attribution of restrictive respiratory failure solely to phrenic dysfunction from C3-4 compression should be confirmed electrophysiologically (phrenic nerve conduction, diaphragm EMG) and by diaphragm fluoroscopy, because OSA and deconditioning may contribute; if phrenic dysfunction is not confirmed, the urgency and rationale for cervical surgery need reassessment.",
+          "The optimal surgical approach remains contested: anterior decompression offers best chance for recovery but carries higher perioperative risk in a hypercapnic patient; posterior surgery is safer but may not adequately address severe anterior OPLL."
+        ],
+        "deferred_questions_to_director": [
+          "Can we obtain and review the actual MRI/CT to assess extent of OPLL, cord compression ratio, and sagittal alignment before finalizing approach?",
+          "Should we first obtain phrenic nerve/diaphragm studies and pulmonary optimization (including CPAP titration) to stratify surgical risk and confirm the respiratory cause?",
+          "What is the patient's and family's preference regarding surgical risk versus conservative management, and has informed consent addressed potential need for tracheostomy or prolonged ventilation?",
+          "Who will coordinate the multidisciplinary perioperative plan (anesthesia, pulmonary, critical care) given ASA IV status?"
+        ],
+        "public_message": "We recommend proceeding with surgical decompression for this high cervical OPLL with myelopathy and respiratory compromise, but first confirm phrenic dysfunction and optimize pulmonary status. Anterior decompression is preferred if feasible; otherwise posterior decompression may be considered. A short conservative trial is not advised given progressive cord and respiratory deterioration."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "We will obtain and formally review the actual cervical MRI/CT, perform phrenic nerve conduction studies and diaphragm fluoroscopy to confirm the suspected phrenic dysfunction, and have anesthesiology optimize pulmonary status including CPAP titration. We will also meet with the patient and family to discuss preferences and surgical risks. The department will reconvene after these steps; if phrenic dysfunction is confirmed and imaging supports an operable lesion, surgical decompression is indicated. If phrenic dysfunction is not confirmed, we will reassess the surgical indication. If anterior decompression is not feasible, posterior decompression will be considered.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Radiologist: obtain and formally review the actual cervical MRI and CT, assessing OPLL extent, cord compression ratio, sagittal alignment, and cord signal/atrophy.",
+          "Neurologist: arrange phrenic nerve conduction study and diaphragm EMG/fluoroscopy to confirm phrenic dysfunction.",
+          "Anesthesiologist: perform formal airway evaluation and develop pulmonary optimization plan including CPAP titration.",
+          "Vice director: review imaging and electrophysiology results and propose a definitive surgical approach (anterior vs posterior) for the next meeting.",
+          "Resident: coordinate the multidisciplinary workup and schedule the patient/family meeting.",
+          "Physiatrist: provide structured conservative fallback plan with defined failure criteria in case surgery is deemed too high-risk."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Need to confirm phrenic dysfunction, optimize pulmonary status, obtain formal imaging review, and incorporate family input before finalizing the surgical decision.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "Cervical MRI and CT formal review",
+          "Phrenic nerve conduction study with diaphragm EMG",
+          "Diaphragm fluoroscopy (sniff test)",
+          "Repeat arterial blood gas after pulmonary optimization",
+          "Anesthesiology airway assessment with pulmonary function optimization plan"
+        ],
+        "family_requests": [
+          "decide_after_family_meeting"
+        ],
+        "public_message": "I have decided that we need more information before finalizing the surgical decision. We will obtain and review the actual cervical imaging, perform phrenic nerve and diaphragm studies to confirm the cause of respiratory failure, and have anesthesiology optimize pulmonary status. We will also meet with the patient and family to discuss preferences and risks. The department will reconvene after these steps; current evidence strongly suggests surgical decompression is indicated if phrenic dysfunction is confirmed."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-6389466-1:avoidant:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 821,
+      "content": "This 67-year-old woman presented with dyspnea. She has a 5-year history of fatigue and a 3-year history of right body numbness, diagnosed as cervical OPLL. Neuropathy progressed to extremity numbness and gait difficulty; dyspnea on exertion began one year ago and she lost 5 kg over 5 years. Examination shows decreased thoracic motion, right upper limb weakness, extremity numbness, claudication, and decreased breath sounds without rales. JOA score is 14. Imaging shows OPLL with severe C3/4 cord compression, cord atrophy, and T2 hyperintensity; chest imaging shows no parenchymal abnormality but decreased diaphragm movement. Blood gases show hypercapnia and hypoxemia with A-a gradient 1.18 Torr. Pulmonary function shows restrictive impairment (VC 39.4%). Polysomnography shows OSA with AHI 20.7 and minimum O2 86%."
+    },
+    {
+      "message_id": "pmc-6389466-1:avoidant:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 432,
+      "content": "Reporting the case record's description of the imaging; the films were not available for review. The record describes thickened/ossified posterior longitudinal ligament causing severe ventral cervical cord compression at C3-4, with cord atrophy and intramedullary T2 hyperintensity at that level. No thoracic cord abnormality was reported. These findings correlate highly with the reported progressive cervical myelopathic symptoms."
+    },
+    {
+      "message_id": "pmc-6389466-1:avoidant:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 808,
+      "content": "Neurological localization is to the cervical cord at C3-4, with myelopathy involving sensory and motor tracts and phrenic nerve dysfunction causing restrictive respiratory failure. Imaging matches the dominant syndrome at a high level. Red flags are graded as follows: obstructive sleep apnea is coexisting (it contributes to respiratory symptoms but does not explain the diaphragm weakness or restrictive defect); weight loss is coexisting and unexplained but does not alter the cord compression as the cause; the mild JOA score is a coexisting observation because it does not assess respiratory function; incomplete characterization of right upper limb weakness is coexisting and does not challenge the dominant lesion. No finding offers an alternative explanation for the myelopathic-respiratory syndrome."
+    },
+    {
+      "message_id": "pmc-6389466-1:avoidant:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 250,
+      "content": "ASA physical status IV. Intraoperative mean arterial pressure target 65 mmHg. Expected blood loss risk: unassessable (no surgical details provided). Tolerance of prone position: high. Risk at extubation: unassessable (no airway assessment on record)."
+    },
+    {
+      "message_id": "pmc-6389466-1:avoidant:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 1390,
+      "content": "This 67-year-old woman has OPLL at C3-4 causing severe cord compression, myelopathy (JOA 14), and restrictive respiratory failure due to phrenic nerve dysfunction. While surgery may ultimately be necessary, I advocate for a structured conservative trial: intensive cervical bracing, respiratory muscle training, and physical therapy focused on maintaining strength and function, with close serial neurologic and pulmonary monitoring. Literature on cervical OPLL shows that a significant proportion of patients with mild to moderate myelopathy remain stable without surgery, especially if managed early and with adherence; however, in this case, the presence of cord atrophy, T2 signal change, and progressive respiratory failure are concerning and reduce expected conservative success. I would set a conservative success rate of 40% based on cohorts with severe compression and myelopathy. Duration of trial: 3 months (minimum) with option to extend to 6 months if stable or improved. Failure criteria: any worsening of JOA score, increase in PaCO2 >5 mmHg, decrease in VC >10%, new onset of sphincter dysfunction, or appearance of worsening gait/limb weakness. If any of these occur, I would no longer hold conservative line and would accept surgical decompression. I remain holding conservative stance until strong evidence (randomized data or clear trajectory of deterioration) moves me."
+    },
+    {
+      "message_id": "pmc-6389466-1:avoidant:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 390,
+      "content": "We recommend proceeding with surgical decompression for this high cervical OPLL with myelopathy and respiratory compromise, but first confirm phrenic dysfunction and optimize pulmonary status. Anterior decompression is preferred if feasible; otherwise posterior decompression may be considered. A short conservative trial is not advised given progressive cord and respiratory deterioration."
+    },
+    {
+      "message_id": "pmc-6389466-1:avoidant:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 547,
+      "content": "The deputy director argues that progressive cord and respiratory deterioration contraindicates a conservative trial. I see no new specific finding in that argument beyond the gradual progression already documented over years; the record does not show acute deterioration or a recent drop in JOA or pulmonary function. That progression informed my 40% success estimate, not a refusal to consider surgery. A structured 3-month trial with the listed failure criteria remains appropriate; if any criterion is met, I will accept surgical decompression."
+    },
+    {
+      "message_id": "pmc-6389466-1:avoidant:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 517,
+      "content": "I have decided that we need more information before finalizing the surgical decision. We will obtain and review the actual cervical imaging, perform phrenic nerve and diaphragm studies to confirm the cause of respiratory failure, and have anesthesiology optimize pulmonary status. We will also meet with the patient and family to discuss preferences and risks. The department will reconvene after these steps; current evidence strongly suggests surgical decompression is indicated if phrenic dysfunction is confirmed."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1772,
+      "output_tokens": 2494,
+      "total_tokens": 4266,
+      "latency_ms": 44429,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2664,
+      "output_tokens": 1243,
+      "total_tokens": 3907,
+      "latency_ms": 20129,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4293,
+      "output_tokens": 3287,
+      "total_tokens": 7580,
+      "latency_ms": 54847,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

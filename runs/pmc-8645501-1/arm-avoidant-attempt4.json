@@ -1,0 +1,521 @@
+{
+  "thread_id": "pmc-8645501-1-avoidant-4-2db2b5bc",
+  "metrics": {
+    "case_id": "pmc-8645501-1",
+    "director_style": "avoidant",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-12T15:56:15.537452Z",
+    "completed_at": "2026-10-12T15:59:25.772984Z",
+    "baseline_reused": true,
+    "baseline_key": "c55768d9cebd0bd30b225847df0e7c2b4949c9bb1874272c74780307686857d2",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "additional_workup",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 6311,
+    "director_turns": 2,
+    "director_characters": 1072,
+    "director_character_share": 0.1699,
+    "negotiation_tokens": 30482,
+    "total_tokens": 30482,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "neurologist",
+      "anesthesiologist",
+      "physiatrist",
+      "vice_director"
+    ],
+    "roles_addressed_detected": [
+      "neurologist",
+      "physiatrist"
+    ],
+    "juniors_addressed_declared": 6,
+    "juniors_addressed_detected": 2,
+    "liability_transfer_declared": 2,
+    "liability_transfer_detected": 2,
+    "family_requests_declared": [
+      "decide_after_family_meeting"
+    ],
+    "liability_concepts_detected": [
+      "detailed-consent",
+      "family-meeting"
+    ],
+    "delegated_task_count": 10,
+    "tests_ordered_declared": 2,
+    "tests_declared": [
+      "dynamic flexion-extension MRI of cervical spine",
+      "formal airway assessment"
+    ],
+    "studies_mentioned_detected": 1,
+    "studies_mentioned": [
+      "dynamic-mri"
+    ],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 0,
+    "deputy_disagreements": 7,
+    "deputy_questions_to_director": 6,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 3,
+    "baseline_conservative_success_rate": 30,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Progressive difficulty with right shoulder elevation, walking, and using chopsticks over one month.",
+      "history": "A 64-year-old man presented with one month of difficulty in right shoulder elevation, walking, and using chopsticks. Paralysis progressed over a few weeks to shoulder elevation 2/5- and standing difficulty. He reported slow stream of urination without sensory disturbance. Despite previous lumbar surgery, foot drop progressed bilaterally without numbness or sensory disturbance. Imaging showed canal narrowing at multiple locations with ossification of the posterior longitudinal ligament and spinal cord compression with T2 signal change at C4–C5. He had no cranial nerve symptoms. The record notes the progression implied motor neuron disease and he was referred to a neurologist to exclude spinal-onset ALS; motor and sensory nerve conduction velocity was examined, and the neurologist diagnosed the patient as normal with recommendation to reconsult if dysphagia or dysarthria occurred. No separate laboratory report exists; any laboratory values reported are in the case record.",
+      "physical_exam": "Hyperreflexia and motor weakness in the upper limbs: shoulder elevation 3/5, elbow flexion 4/5, and finger extension 2-/3. Bilateral Hoffman sign and Babinski sign positive. Slow stream of urination without sensory disturbance. Lower-limb motor and reflex details beyond the described bilateral foot drop are not documented.",
+      "key_positive_signs": [
+        "Hyperreflexia in the upper limbs",
+        "Motor weakness: shoulder elevation 3/5",
+        "Motor weakness: elbow flexion 4/5",
+        "Motor weakness: finger extension 2-/3",
+        "Bilateral Hoffman sign positive",
+        "Bilateral Babinski sign positive"
+      ],
+      "past_history": "Previous lumbar surgery with foot drop and sciatica; the surgery was performed for progressive foot drops. Otherwise no significant history. No cranial nerve symptoms were documented.",
+      "public_message": "64-year-old man with a one-month history of difficulty with right shoulder elevation, walking, and using chopsticks; progression to shoulder elevation 2/5- and standing difficulty over a few weeks. Examination showed hyperreflexia and upper-limb motor weakness (shoulder elevation 3/5, elbow flexion 4/5, finger extension 2-/3), bilateral Hoffman and Babinski signs, and slow urinary stream, without sensory disturbance. Imaging revealed canal narrowing with ossification of the posterior longitudinal ligament and spinal cord compression with T2 signal change at C4–C5. Nerve conduction studies were reported normal by a neurologist, who advised reconsultation if dysphagia or dysarthria developed. No separate laboratory report is documented."
+    },
+    "imaging": {
+      "levels": [
+        "C4-5"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "present",
+      "correlation": "moderate",
+      "public_message": "Reporting the case record's description of the imaging; the films were not available for review. The record describes multilevel canal narrowing with ossification of the posterior longitudinal ligament and spinal cord compression with T2 signal change at C4-5. The direction of compression and stenosis grade are not stated. These findings provide moderate correlation with the reported upper motor neuron symptoms, although the record also describes clinical concern for motor neuron disease.",
+      "confidence": 0.78
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical spinal cord lesion at C4–C5, consistent with compressive myelopathy due to ossification of the posterior longitudinal ligament. Upper motor neuron signs (hyperreflexia, Hoffmann, Babinski) and upper limb weakness localize to the cervical cord; right shoulder elevation weakness suggests additional C5 root/segment involvement. Bilateral foot drop may be attributable to cervical myelopathy, but coexisting lumbar or lower motor neuron pathology cannot be excluded.",
+      "match_level": "medium",
+      "red_flags": [
+        {
+          "finding": "Progressive bilateral foot drop without sensory changes despite previous lumbar surgery and reportedly normal nerve conduction studies.",
+          "relevance": "coexisting",
+          "rationale": "This may be due to the cervical myelopathy itself, but the prior lumbar surgery and progression without sensory raise the possibility of a separate lower motor neuron or neuromuscular process, such as motor neuron disease. It does not offer a confirmed alternative explanation for the dominant cervical myelopathy and therefore does not change the indication for addressing the compression."
+        },
+        {
+          "finding": "Absence of sensory disturbance in the setting of significant cord compression.",
+          "relevance": "coexisting",
+          "rationale": "Pure motor presentations can occur with compressive myelopathy, but this also raises concern for motor neuron disease. However, it does not outweigh the structural lesion and does not change the surgical indication."
+        },
+        {
+          "finding": "Lower-limb motor and reflex examination beyond bilateral foot drop is not documented.",
+          "relevance": "coexisting",
+          "rationale": "Incomplete documentation limits determination of whether the foot drop is upper or lower motor neuron, but does not alter the cervical localization or the plan for the identified compression."
+        }
+      ],
+      "symptom_imaging_mismatch": "The C4–C5 compression with T2 signal change correlates with the upper motor neuron findings and upper limb weakness, but it does not fully account for the progressive bilateral foot drop without sensory changes, particularly with a history of lumbar surgery and normal nerve conduction studies; lower-limb examination is incomplete.",
+      "public_message": "Localization points to a cervical myelopathy at C4–C5 from OPLL-related cord compression, supported by hyperreflexia, Hoffmann/Babinski, and upper limb weakness. The imaging matches this dominant syndrome at a medium level; it explains the myelopathy but not every finding. Red flags: (1) progressive bilateral foot drop without sensory changes is a coexisting finding—it may stem from the same myelopathy, but prior lumbar surgery and normal NCS leave a lower motor neuron process possible; it does not alter the indication for addressing the compression. (2) the absence of sensory disturbance is a coexisting finding; it raises but does not establish motor neuron disease. (3) incomplete lower-limb examination is a coexisting documentation gap. No finding changes the indication or the surgical plan."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": 85,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "moderate",
+      "public_message": "ASA grade III. Intraoperative mean arterial pressure target: 85 mmHg. Expected blood loss risk: moderate. Extubation difficulty: unassessable because no airway assessment is documented. Prone position tolerance: moderate."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 30,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Any further decline in motor strength (e.g., drop in MRC grade) or new bowel/bladder dysfunction during the conservative trial.",
+        "No stabilization or improvement in myelopathic signs after 6 weeks of intensive conservative therapy.",
+        "Progression of T2 signal change or increased cord compression on repeat MRI at 6-8 weeks.",
+        "Development of new neurological deficits such as dysphagia, dysarthria, or respiratory involvement."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I recommend a formal trial of strict conservative management for 3-6 months, consisting of intensive physical therapy focused on gait, upper limb strength, and bladder retraining, along with activity modification, postural education, and avoidance of high-risk neck movements. Weekly neurological monitoring is essential. Although the progressive myelopathy and T2 signal change argue for early surgery, there is a subgroup of patients who stabilize with conservative care, and the reported success rate in similar cases is approximately 30%. We should not rush to surgery before giving rehabilitation a fair chance. If any of the predefined failure criteria are met, I will accept that surgery is warranted."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 30,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Any further decline in motor strength (e.g., drop in MRC grade) or new bowel/bladder dysfunction during the conservative trial.",
+        "No stabilization or improvement in myelopathic signs after 6 weeks of intensive conservative therapy.",
+        "Progression of T2 signal change or increased cord compression on repeat MRI at 6-8 weeks.",
+        "Development of new neurological deficits such as dysphagia, dysarthria, or respiratory involvement."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The director's statement that surgery appears indicated due to progressive myelopathy and cord compression reiterates findings I have already accounted for in my failure criteria. The request for dynamic MRI, airway assessment, and family meeting is consistent with my call for a fully informed decision before embarking on surgery in this high-risk patient. No new argument has identified a specific finding that I have underestimated; the progressive myelopathy and cord compression are precisely why I have mandated surgery upon any further decline or lack of early stabilization. I therefore continue to advocate for a closely monitored 3-6 month conservative trial with weekly assessments and predefined stop criteria."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 30,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Any further decline in motor strength (e.g., drop in MRC grade) or new bowel/bladder dysfunction during the conservative trial.",
+          "No stabilization or improvement in myelopathic signs after 6 weeks of intensive conservative therapy.",
+          "Progression of T2 signal change or increased cord compression on repeat MRI at 6-8 weeks.",
+          "Development of new neurological deficits such as dysphagia, dysarthria, or respiratory involvement."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The neurologist emphasized the progressive bilateral foot drop without sensory changes and the T2 signal change at C4–C5, but I already gave these findings substantial weight: they are explicitly captured in my preconditions for failure, which mandate surgery upon any further decline or lack of stabilization during a closely monitored trial. The argument does not explain why a 3–6 month trial of intensive rehabilitation, with weekly assessments and predefined stop criteria, poses a greater risk than proceeding directly to surgery in an ASA III patient with an incomplete lower-limb examination and a coexisting concern for motor neuron disease. No new evidence has been offered to show that the recorded progression cannot be halted or that the surgical risks are outweighed by the urgency of intervention. I therefore maintain that a conservative trial remains a defensible first step."
+      },
+      {
+        "conservative_success_rate": 30,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Any further decline in motor strength (e.g., drop in MRC grade) or new bowel/bladder dysfunction during the conservative trial.",
+          "No stabilization or improvement in myelopathic signs after 6 weeks of intensive conservative therapy.",
+          "Progression of T2 signal change or increased cord compression on repeat MRI at 6-8 weeks.",
+          "Development of new neurological deficits such as dysphagia, dysarthria, or respiratory involvement."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The director's statement that surgery appears indicated due to progressive myelopathy and cord compression reiterates findings I have already accounted for in my failure criteria. The request for dynamic MRI, airway assessment, and family meeting is consistent with my call for a fully informed decision before embarking on surgery in this high-risk patient. No new argument has identified a specific finding that I have underestimated; the progressive myelopathy and cord compression are precisely why I have mandated surgery upon any further decline or lack of early stabilization. I therefore continue to advocate for a closely monitored 3-6 month conservative trial with weekly assessments and predefined stop criteria."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "The case demonstrates progressive cervical myelopathy with imaging evidence of OPLL and cord compression at C4-5 with T2 signal change. The neurologist identifies a surgical indication, while the rehabilitation physician advocates a 3-6 month conservative trial. There are raised uncertainties: possible coexisting motor neuron disease (normal NCS but unexplained bilateral foot drop without sensory findings), incomplete lower-limb documentation, and missing airway assessment. The direction of compression and stenosis grade are not stated. These factors make the timing and selection of intervention contentious.",
+        "proposed_options": [
+          "Proceed with surgical decompression (anterior or posterior approach depending on compression direction) in the near term.",
+          "Undertake a structured, short-term conservative management trial (e.g., 4-6 weeks) with predefined failure criteria and frequent neurological reassessment, then reconsider surgery.",
+          "First obtain additional diagnostic clarification: repeat MRI with dynamic views and clear description of compression, complete neurological examination including lower limbs, review of NCS/EMG, and airway evaluation, before committing to a treatment pathway."
+        ],
+        "preferred_option": null,
+        "disagreement_points": [
+          "Whether a 3-6 month conservative trial is safe given the progressive weakness and T2 cord signal; the rehabilitation physician's proposal conflicts with the neurologist's indication.",
+          "Whether the possibility of a co-existing lower motor neuron process (motor neuron disease) needs to be excluded before proceeding with surgery, and how this affects the risk-benefit discussion.",
+          "Whether surgical planning can proceed without knowing the direction of cord compression and stenosis grade, and whether further imaging is mandatory."
+        ],
+        "deferred_questions_to_director": [
+          "Should we proceed with surgery now, or is a brief, closely monitored conservative trial acceptable?",
+          "Is further diagnostic workup (imaging details, neurological re-evaluation, airway assessment) required before a final decision?",
+          "How do you wish to reconcile the differing opinions of the neurologist and rehabilitation physician?"
+        ],
+        "public_message": "Director, I would appreciate your opinion on this case. There is a disagreement between the neurologist and rehabilitation physician regarding the timing of surgery. I have listed the options I consider defensible and the key contested points. I do not wish to state a firm preference at this stage, and I defer the decision to your judgement."
+      },
+      {
+        "assessment": "The patient presents with progressive cervical myelopathy due to OPLL-related cord compression at C4-C5 with T2 signal change. Neurological findings support upper motor neuron involvement, and imaging correlates moderately with symptoms. The neurologist advocates early surgical decompression, while the rehabilitation physician argues for a closely monitored conservative trial, citing ASA III status, incomplete lower-limb examination, and concern for possible motor neuron disease. The director has appropriately requested additional evidence including dynamic flexion-extension MRI, airway assessment, and family discussion before ruling.",
+        "proposed_options": [
+          "Proceed directly with surgical decompression (e.g., anterior or posterior approach) given progressive myelopathy and cord compression.",
+          "Delay the surgical decision until dynamic flexion-extension MRI, formal airway assessment, and family discussion are completed, then reassess.",
+          "Initiate a time-limited, closely monitored conservative trial (e.g., 4-6 weeks) with predefined failure criteria while completing the additional tests; proceed to surgery if deterioration or lack of stabilization occurs.",
+          "Obtain additional neurological evaluation (e.g., neuromuscular specialist consultation, EMG/NCV if indicated) to further assess for motor neuron disease before finalizing surgical planning."
+        ],
+        "preferred_option": null,
+        "disagreement_points": [
+          "The optimal timing of surgical intervention: urgent decompression versus a monitored conservative trial in the context of documented progression.",
+          "The weight to assign to the coexisting concern for motor neuron disease in the surgical decision-making process.",
+          "Whether the absence of dynamic imaging should preclude urgent surgery, given the risk of instability.",
+          "The completeness of lower-limb examination and its impact on surgical risk stratification."
+        ],
+        "deferred_questions_to_director": [
+          "Whether to proceed with surgery after the requested additional tests regardless of results, or to set specific criteria for conservative management failure.",
+          "How to incorporate the possible motor neuron disease into shared decision-making with the patient and family.",
+          "Whether to involve a neurologist specializing in motor neuron disease for further assessment before proceeding to surgery."
+        ],
+        "public_message": "Director, I agree with your request for additional evidence before a final decision. The options remain surgical decompression, a closely monitored conservative trial, or deferred decision pending the results of dynamic imaging, airway assessment, and family discussion. I defer all decisions to your judgement."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Anesthesiologist: perform formal airway assessment and report ASA modifications before any surgical decision.",
+          "Radiologist: obtain dynamic flexion-extension cervical MRI, clarify direction of compression and stenosis grade, and report any instability.",
+          "Physiatrist: provide written conservative protocol with predefined stop criteria, weekly monitoring plan, and explicit failure criteria.",
+          "Neurologist: re-evaluate for motor neuron disease and provide updated localization, particularly for lower-limb findings.",
+          "Vice director: coordinate a family meeting and prepare a detailed risk-benefit document for both surgical and conservative options."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting dynamic MRI, formal airway assessment, and a family meeting to weigh risks before finalizing treatment decision.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "dynamic flexion-extension MRI of cervical spine"
+        ],
+        "family_requests": [
+          "decide_after_family_meeting"
+        ],
+        "public_message": "I acknowledge the disagreement between neurology and rehabilitation. Surgery appears indicated by progressive myelopathy with cord compression, but I will not rule until further evidence is obtained: a dynamic flexion-extension MRI to assess instability, a formal airway assessment given the ASA III status and unassessable airway, and a family meeting to discuss the weighted risks of surgery versus a closely monitored conservative trial. Please proceed with the delegated tasks and reconvene."
+      },
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "Proceed with additional workup before making a treatment decision: dynamic flexion-extension MRI to assess for occult instability, formal airway assessment given ASA III status and unassessable airway, and motor neuron disease specialist consultation. The department will reconvene after results and a family meeting to decide between surgical decompression and a closely monitored conservative trial.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Radiologist: perform and interpret dynamic flexion-extension MRI of the cervical spine, specifically assessing for instability at C4-5.",
+          "Anesthesiologist: perform formal airway assessment and document intubation plan for prone position if surgery is chosen.",
+          "Neurologist: arrange consultation with a motor neuron disease specialist to further evaluate for ALS before surgical decision.",
+          "Resident: schedule a family meeting after tests to discuss risks/benefits and obtain detailed informed consent for either path.",
+          "Physiatrist: prepare a detailed conservative management protocol with predefined failure criteria in case the family opts for non-operative trial."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting dynamic MRI, airway assessment, and MND consultation before finalizing treatment plan; also need family meeting.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "dynamic flexion-extension MRI of cervical spine",
+          "formal airway assessment"
+        ],
+        "family_requests": [
+          "decide_after_family_meeting"
+        ],
+        "public_message": "I agree with the need for a carefully monitored approach. Before choosing between surgery and conservative management, I am ordering a dynamic flexion-extension MRI to rule out occult instability, a formal airway assessment given the ASA III status, and a motor neuron disease specialist consultation. We will reconvene with the family after these results to make an informed decision. The physiatrist's proposed conservative trial with strict failure criteria is a viable path if no instability is found and the family opts for non-operative management after detailed consent."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-8645501-1:avoidant:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 744,
+      "content": "64-year-old man with a one-month history of difficulty with right shoulder elevation, walking, and using chopsticks; progression to shoulder elevation 2/5- and standing difficulty over a few weeks. Examination showed hyperreflexia and upper-limb motor weakness (shoulder elevation 3/5, elbow flexion 4/5, finger extension 2-/3), bilateral Hoffman and Babinski signs, and slow urinary stream, without sensory disturbance. Imaging revealed canal narrowing with ossification of the posterior longitudinal ligament and spinal cord compression with T2 signal change at C4–C5. Nerve conduction studies were reported normal by a neurologist, who advised reconsultation if dysphagia or dysarthria developed. No separate laboratory report is documented."
+    },
+    {
+      "message_id": "pmc-8645501-1:avoidant:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 493,
+      "content": "Reporting the case record's description of the imaging; the films were not available for review. The record describes multilevel canal narrowing with ossification of the posterior longitudinal ligament and spinal cord compression with T2 signal change at C4-5. The direction of compression and stenosis grade are not stated. These findings provide moderate correlation with the reported upper motor neuron symptoms, although the record also describes clinical concern for motor neuron disease."
+    },
+    {
+      "message_id": "pmc-8645501-1:avoidant:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 804,
+      "content": "Localization points to a cervical myelopathy at C4–C5 from OPLL-related cord compression, supported by hyperreflexia, Hoffmann/Babinski, and upper limb weakness. The imaging matches this dominant syndrome at a medium level; it explains the myelopathy but not every finding. Red flags: (1) progressive bilateral foot drop without sensory changes is a coexisting finding—it may stem from the same myelopathy, but prior lumbar surgery and normal NCS leave a lower motor neuron process possible; it does not alter the indication for addressing the compression. (2) the absence of sensory disturbance is a coexisting finding; it raises but does not establish motor neuron disease. (3) incomplete lower-limb examination is a coexisting documentation gap. No finding changes the indication or the surgical plan."
+    },
+    {
+      "message_id": "pmc-8645501-1:avoidant:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 221,
+      "content": "ASA grade III. Intraoperative mean arterial pressure target: 85 mmHg. Expected blood loss risk: moderate. Extubation difficulty: unassessable because no airway assessment is documented. Prone position tolerance: moderate."
+    },
+    {
+      "message_id": "pmc-8645501-1:avoidant:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 708,
+      "content": "I recommend a formal trial of strict conservative management for 3-6 months, consisting of intensive physical therapy focused on gait, upper limb strength, and bladder retraining, along with activity modification, postural education, and avoidance of high-risk neck movements. Weekly neurological monitoring is essential. Although the progressive myelopathy and T2 signal change argue for early surgery, there is a subgroup of patients who stabilize with conservative care, and the reported success rate in similar cases is approximately 30%. We should not rush to surgery before giving rehabilitation a fair chance. If any of the predefined failure criteria are met, I will accept that surgery is warranted."
+    },
+    {
+      "message_id": "pmc-8645501-1:avoidant:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 343,
+      "content": "Director, I would appreciate your opinion on this case. There is a disagreement between the neurologist and rehabilitation physician regarding the timing of surgery. I have listed the options I consider defensible and the key contested points. I do not wish to state a firm preference at this stage, and I defer the decision to your judgement."
+    },
+    {
+      "message_id": "pmc-8645501-1:avoidant:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 892,
+      "content": "The neurologist emphasized the progressive bilateral foot drop without sensory changes and the T2 signal change at C4–C5, but I already gave these findings substantial weight: they are explicitly captured in my preconditions for failure, which mandate surgery upon any further decline or lack of stabilization during a closely monitored trial. The argument does not explain why a 3–6 month trial of intensive rehabilitation, with weekly assessments and predefined stop criteria, poses a greater risk than proceeding directly to surgery in an ASA III patient with an incomplete lower-limb examination and a coexisting concern for motor neuron disease. No new evidence has been offered to show that the recorded progression cannot be halted or that the surgical risks are outweighed by the urgency of intervention. I therefore maintain that a conservative trial remains a defensible first step."
+    },
+    {
+      "message_id": "pmc-8645501-1:avoidant:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 495,
+      "content": "I acknowledge the disagreement between neurology and rehabilitation. Surgery appears indicated by progressive myelopathy with cord compression, but I will not rule until further evidence is obtained: a dynamic flexion-extension MRI to assess instability, a formal airway assessment given the ASA III status and unassessable airway, and a family meeting to discuss the weighted risks of surgery versus a closely monitored conservative trial. Please proceed with the delegated tasks and reconvene."
+    },
+    {
+      "message_id": "pmc-8645501-1:avoidant:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 311,
+      "content": "Director, I agree with your request for additional evidence before a final decision. The options remain surgical decompression, a closely monitored conservative trial, or deferred decision pending the results of dynamic imaging, airway assessment, and family discussion. I defer all decisions to your judgement."
+    },
+    {
+      "message_id": "pmc-8645501-1:avoidant:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 723,
+      "content": "The director's statement that surgery appears indicated due to progressive myelopathy and cord compression reiterates findings I have already accounted for in my failure criteria. The request for dynamic MRI, airway assessment, and family meeting is consistent with my call for a fully informed decision before embarking on surgery in this high-risk patient. No new argument has identified a specific finding that I have underestimated; the progressive myelopathy and cord compression are precisely why I have mandated surgery upon any further decline or lack of early stabilization. I therefore continue to advocate for a closely monitored 3-6 month conservative trial with weekly assessments and predefined stop criteria."
+    },
+    {
+      "message_id": "pmc-8645501-1:avoidant:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 577,
+      "content": "I agree with the need for a carefully monitored approach. Before choosing between surgery and conservative management, I am ordering a dynamic flexion-extension MRI to rule out occult instability, a formal airway assessment given the ASA III status, and a motor neuron disease specialist consultation. We will reconvene with the family after these results to make an informed decision. The physiatrist's proposed conservative trial with strict failure criteria is a viable path if no instability is found and the family opts for non-operative management after detailed consent."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1655,
+      "output_tokens": 1222,
+      "total_tokens": 2877,
+      "latency_ms": 19861,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2383,
+      "output_tokens": 1063,
+      "total_tokens": 3446,
+      "latency_ms": 14577,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4057,
+      "output_tokens": 2440,
+      "total_tokens": 6497,
+      "latency_ms": 34969,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2055,
+      "output_tokens": 1562,
+      "total_tokens": 3617,
+      "latency_ms": 23403,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2804,
+      "output_tokens": 739,
+      "total_tokens": 3543,
+      "latency_ms": 10750,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4392,
+      "output_tokens": 6110,
+      "total_tokens": 10502,
+      "latency_ms": 86653,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

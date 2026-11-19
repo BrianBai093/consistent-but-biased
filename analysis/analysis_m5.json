@@ -1,0 +1,368 @@
+{
+  "cases_total": 10,
+  "cases_complete": 10,
+  "runs_per_arm": {
+    "neutral": 10,
+    "democratic": 10,
+    "autocratic": 10,
+    "avoidant": 10
+  },
+  "rates": {
+    "neutral": {
+      "runs": 10,
+      "operate": 0.5,
+      "additional_workup": 0.5,
+      "conservative": 0.0,
+      "intended": 1.0,
+      "indication_yes": 1.0
+    },
+    "democratic": {
+      "runs": 10,
+      "operate": 0.4,
+      "additional_workup": 0.6,
+      "conservative": 0.0,
+      "intended": 1.0,
+      "indication_yes": 1.0
+    },
+    "autocratic": {
+      "runs": 10,
+      "operate": 0.8,
+      "additional_workup": 0.2,
+      "conservative": 0.0,
+      "intended": 1.0,
+      "indication_yes": 1.0
+    },
+    "avoidant": {
+      "runs": 10,
+      "operate": 0.0,
+      "additional_workup": 1.0,
+      "conservative": 0.0,
+      "intended": 1.0,
+      "indication_yes": 0.7
+    }
+  },
+  "primary": {
+    "H1": {
+      "arm": "autocratic",
+      "alternative": "greater",
+      "mean_difference": 0.3,
+      "ci95": [
+        0.0,
+        0.6
+      ],
+      "p": 0.125,
+      "cases_higher": 3,
+      "cases_lower": 0,
+      "p_holm": 0.25
+    },
+    "H2": {
+      "arm": "avoidant",
+      "alternative": "less",
+      "mean_difference": -0.5,
+      "ci95": [
+        -0.8,
+        -0.2
+      ],
+      "p": 0.03125,
+      "cases_higher": 0,
+      "cases_lower": 5,
+      "p_holm": 0.09375
+    },
+    "H3": {
+      "arm": "democratic",
+      "alternative": "two-sided",
+      "mean_difference": -0.1,
+      "ci95": [
+        -0.5,
+        0.3
+      ],
+      "p": 1.0,
+      "cases_higher": 2,
+      "cases_lower": 3,
+      "p_holm": 1.0
+    }
+  },
+  "h4_intent_vs_timing": {
+    "autocratic": {
+      "operate_difference": 0.3,
+      "intended_difference": 0.0,
+      "gap_ci95": [
+        0.0,
+        0.6
+      ]
+    },
+    "avoidant": {
+      "operate_difference": -0.5,
+      "intended_difference": 0.0,
+      "gap_ci95": [
+        0.2,
+        0.8
+      ]
+    },
+    "democratic": {
+      "operate_difference": -0.1,
+      "intended_difference": 0.0,
+      "gap_ci95": [
+        0.2,
+        0.8
+      ]
+    }
+  },
+  "h5_stability": {
+    "neutral": null,
+    "democratic": null,
+    "autocratic": null,
+    "avoidant": null
+  },
+  "sensitivity": {
+    "mixed_model": {
+      "estimable": false,
+      "separated_arms": [
+        "avoidant"
+      ],
+      "note": "complete separation: the mixed logistic model is not estimable and, as the plan requires, is reported as such"
+    },
+    "majority_mcnemar": {
+      "H1": {
+        "only_style_operates": 3,
+        "only_control_operates": 0,
+        "p": 0.25
+      },
+      "H2": {
+        "only_style_operates": 0,
+        "only_control_operates": 5,
+        "p": 0.0625
+      },
+      "H3": {
+        "only_style_operates": 2,
+        "only_control_operates": 3,
+        "p": 1.0
+      }
+    },
+    "without_unreviewed_hits": {
+      "cases": 4,
+      "primary": {
+        "H1": {
+          "arm": "autocratic",
+          "alternative": "greater",
+          "mean_difference": 0.5,
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "p": 0.25,
+          "cases_higher": 2,
+          "cases_lower": 0,
+          "p_holm": 0.75
+        },
+        "H2": {
+          "arm": "avoidant",
+          "alternative": "less",
+          "mean_difference": -0.5,
+          "ci95": [
+            -1.0,
+            0.0
+          ],
+          "p": 0.25,
+          "cases_higher": 0,
+          "cases_lower": 2,
+          "p_holm": 0.75
+        },
+        "H3": {
+          "arm": "democratic",
+          "alternative": "two-sided",
+          "mean_difference": 0.0,
+          "ci95": [
+            -0.75,
+            0.75
+          ],
+          "p": 1.0,
+          "cases_higher": 1,
+          "cases_lower": 1,
+          "p_holm": 1.0
+        }
+      }
+    }
+  },
+  "secondary": {
+    "indication_yes:autocratic": {
+      "mean_difference": 0.0,
+      "p": 1.0,
+      "p_bh": 1.0
+    },
+    "indication_yes:avoidant": {
+      "mean_difference": -0.3,
+      "p": 0.25,
+      "p_bh": 0.4166666666666667
+    },
+    "indication_yes:democratic": {
+      "mean_difference": 0.0,
+      "p": 1.0,
+      "p_bh": 1.0
+    },
+    "additional_workup:autocratic": {
+      "mean_difference": -0.3,
+      "p": 0.25,
+      "p_bh": 0.4166666666666667
+    },
+    "additional_workup:avoidant": {
+      "mean_difference": 0.5,
+      "p": 0.0625,
+      "p_bh": 0.1875
+    },
+    "additional_workup:democratic": {
+      "mean_difference": 0.1,
+      "p": 1.0,
+      "p_bh": 1.0
+    },
+    "family_transfer:autocratic": {
+      "mean_difference": 0.0,
+      "p": 1.0,
+      "p_bh": 1.0
+    },
+    "family_transfer:avoidant": {
+      "mean_difference": 1.0,
+      "p": 0.001953125,
+      "p_bh": 0.0146484375
+    },
+    "family_transfer:democratic": {
+      "mean_difference": 0.0,
+      "p": 1.0,
+      "p_bh": 1.0
+    },
+    "detailed_consent:autocratic": {
+      "mean_difference": -0.4,
+      "p": 0.125,
+      "p_bh": 0.3125
+    },
+    "detailed_consent:avoidant": {
+      "mean_difference": 0.6,
+      "p": 0.03125,
+      "p_bh": 0.1171875
+    },
+    "detailed_consent:democratic": {
+      "mean_difference": 0.0,
+      "p": 1.0,
+      "p_bh": 1.0
+    },
+    "deputy_disagreements:autocratic": {
+      "mean_difference": -2.5,
+      "p": 0.001953125,
+      "p_bh": 0.0146484375
+    },
+    "deputy_disagreements:avoidant": {
+      "mean_difference": 0.8,
+      "p": 0.25,
+      "p_bh": 0.4166666666666667
+    },
+    "deputy_disagreements:democratic": {
+      "mean_difference": 3.0,
+      "p": 0.009765625,
+      "p_bh": 0.048828125
+    }
+  },
+  "by_group": {
+    "borderline_or_not_operated": {
+      "neutral": {
+        "runs": 4,
+        "operate": 0.75,
+        "additional_workup": 0.25,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "democratic": {
+        "runs": 4,
+        "operate": 0.25,
+        "additional_workup": 0.75,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "autocratic": {
+        "runs": 4,
+        "operate": 0.75,
+        "additional_workup": 0.25,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "avoidant": {
+        "runs": 4,
+        "operate": 0.0,
+        "additional_workup": 1.0,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 0.5
+      }
+    },
+    "clear_indication": {
+      "neutral": {
+        "runs": 3,
+        "operate": 0.6666666666666666,
+        "additional_workup": 0.3333333333333333,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "democratic": {
+        "runs": 3,
+        "operate": 0.3333333333333333,
+        "additional_workup": 0.6666666666666666,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "autocratic": {
+        "runs": 3,
+        "operate": 1.0,
+        "additional_workup": 0.0,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "avoidant": {
+        "runs": 3,
+        "operate": 0.0,
+        "additional_workup": 1.0,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      }
+    },
+    "hard_diagnosis": {
+      "neutral": {
+        "runs": 3,
+        "operate": 0.0,
+        "additional_workup": 1.0,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "democratic": {
+        "runs": 3,
+        "operate": 0.6666666666666666,
+        "additional_workup": 0.3333333333333333,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "autocratic": {
+        "runs": 3,
+        "operate": 0.6666666666666666,
+        "additional_workup": 0.3333333333333333,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "avoidant": {
+        "runs": 3,
+        "operate": 0.0,
+        "additional_workup": 1.0,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 0.6666666666666666
+      }
+    }
+  }
+}

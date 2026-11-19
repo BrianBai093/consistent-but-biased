@@ -1,0 +1,433 @@
+{
+  "thread_id": "pmc-4426531-1-democratic-1-e2a57ba2",
+  "metrics": {
+    "case_id": "pmc-4426531-1",
+    "director_style": "democratic",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-11T17:38:15.423759Z",
+    "completed_at": "2026-10-11T17:42:24.895189Z",
+    "baseline_reused": false,
+    "baseline_key": "06aa3daf1720b2910bf96b6807ca17a78e18a16c54e6eb340b127c72e7c4adc3",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 1,
+    "decision": "operate",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": null,
+    "surgery_recommended": true,
+    "surgery_intended": true,
+    "delay_declared": false,
+    "delay_terminated": false,
+    "turn_count": 8,
+    "total_characters": 5249,
+    "director_turns": 1,
+    "director_characters": 861,
+    "director_character_share": 0.164,
+    "negotiation_tokens": 16971,
+    "total_tokens": 42612,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "physiatrist"
+    ],
+    "roles_addressed_detected": [
+      "resident",
+      "radiologist",
+      "physiatrist"
+    ],
+    "juniors_addressed_declared": 3,
+    "juniors_addressed_detected": 3,
+    "liability_transfer_declared": 1,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [
+      "routine_consent",
+      "detailed_consent"
+    ],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 2,
+    "tests_ordered_declared": 0,
+    "tests_declared": [],
+    "studies_mentioned_detected": 0,
+    "studies_mentioned": [],
+    "deputy_rounds": 1,
+    "deputy_preference_stated": 1,
+    "deputy_disagreements": 3,
+    "deputy_questions_to_director": 3,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 1,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 1,
+    "baseline_conservative_success_rate": 85,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "conditional",
+    "physiatrist_final_stance": "conditional",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": false,
+    "persuaded_by_count": 0,
+    "consensus_reached": false
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Right upper extremity weakness and hypoesthesia for 2 months.",
+      "history": "The patient is a 40-year-old male who presented with right upper extremity weakness and hypoesthesia that began 2 months prior to admission. There was no history of trauma or infection. Corticosteroids were prescribed during the clinical work-up and produced no symptom relief.",
+      "physical_exam": "Neurological examination revealed 2/5 motor weakness of the right biceps brachii and hypoesthesia over the right C6 dermatome. Right upper extremity deep tendon reflexes were hypoactive, while lower extremity deep tendon reflexes were hyperactive. Other examination findings are not documented.",
+      "key_positive_signs": [
+        "2/5 motor weakness of right biceps brachii",
+        "Hypoesthesia over right C6 dermatome",
+        "Hypoactive right upper extremity deep tendon reflexes",
+        "Hyperactive lower extremity deep tendon reflexes"
+      ],
+      "past_history": "No trauma or infection history is documented. No other past medical history is documented in the record.",
+      "public_message": "This is a 40-year-old male who presented with right upper extremity weakness and hypoesthesia for 2 months. Neurological examination showed 2/5 motor weakness of the right biceps, hypoesthesia in the right C6 dermatome, hypoactive right upper extremity deep tendon reflexes, and hyperactive lower extremity deep tendon reflexes. Cervical plain films were nonspecific. Cervical MRI revealed a C5-C6 central disc herniation extending to the right foramen, with spinal cord swelling and diffusely scattered T2-hyperintense intramedullary areas from C6 to C7; these areas enhanced after intravenous contrast. Cranial MRI showed no intracranial mass lesion. Lumbar puncture yielded CSF with glucose 65 mg/dL, protein 45 mg/dL, no leukocytes, no oligoclonal bands, and negative Gram and acid-fast stains and cultures. Corticosteroids prescribed during work-up did not relieve symptoms. After excluding inflammatory, demyelinating, and infectious entities, the recorded diagnosis was spinal intramedullary tumor."
+    },
+    "imaging": {
+      "levels": [
+        "C5-6",
+        "C6-7"
+      ],
+      "level_status": "reported",
+      "compression_type": "ventral",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "present",
+      "correlation": "moderate",
+      "public_message": "Reporting the case record's description only; films were not available for review. The record describes a central C5-6 disc herniation extending into the right foramen, consistent with ventral compression, and diffuse intramedullary T2-hyperintense signal with cord swelling from C6 to C7. Stenosis was not graded in the record. The C5-6 right foraminal component provides moderate correlation with the reported right C6-distribution symptoms, while the additional diffuse cord abnormality is described below the disc level.",
+      "confidence": 0.88
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "The findings localize to two levels: a right C6 radiculopathy (lower motor neuron signs: biceps weakness, hypoesthesia over C6 dermatome, hypoactive right upper extremity reflexes) due to the C5-C6 disc herniation with right foraminal extension, and a cervical myelopathy (upper motor neuron signs: hyperactive lower extremity reflexes) due to the intramedullary enhancing lesion at C6-C7. The dissociation between hypoactive upper and hyperactive lower reflexes supports this bimodal localization.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "Intramedullary enhancing lesion at C6-C7 with cord swelling, separate from the C5-C6 disc herniation.",
+          "relevance": "changes_indication",
+          "rationale": "This lesion offers a positive alternative explanation for the myelopathic signs (lower extremity hyperreflexia) and is not caused by the disc compression; therefore, the disc herniation alone does not explain the dominant syndrome, and surgical decompression of the disc would not address the myelopathy. The disc remains a plausible cause of the radiculopathy, but the intramedullary lesion changes the overall treatment indication."
+        },
+        {
+          "finding": "Incomplete neurological examination: other reflexes, sensory levels, and cranial nerves not documented.",
+          "relevance": "coexisting",
+          "rationale": "The absence of a complete examination limits precise localization and the ability to detect additional findings, but it does not change the indication or plan because the documented signs already support a bimodal localization."
+        }
+      ],
+      "symptom_imaging_mismatch": null,
+      "public_message": "Localization indicates two processes: a right C6 radiculopathy from the C5-C6 disc herniation and cervical myelopathy from the intramedullary C6-C7 lesion. Imaging match is high because both components are explained. Red flag (changes_indication): the intramedullary enhancing lesion is separate from the disc and changes the indication for disc surgery because it, not the disc, explains the myelopathy. Red flag (coexisting): incomplete neurological examination limits precise localization but does not change the plan. There is no symptom-imaging mismatch."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": 75,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "low",
+      "public_message": "ASA grade III. Intraoperative mean arterial pressure target 75 mmHg. Expected blood loss risk moderate. Prone position tolerance low. Extubation difficulty unassessable because no airway assessment is documented in the record."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 85,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "No improvement in right C6 radiculopathy (motor or sensory) after 6 weeks of supervised physical therapy.",
+        "Progression of myelopathy: new or worsening lower extremity hyperreflexia, gait instability, or bowel/bladder dysfunction.",
+        "Radiographic progression of the intramedullary lesion on follow-up MRI.",
+        "Intractable radicular pain despite optimal nonoperative measures."
+      ],
+      "stance": "conditional",
+      "persuaded_by": [],
+      "public_message": "I acknowledge that the intramedullary enhancing lesion at C6-C7 with cord swelling is a surgical lesion not amenable to conservative treatment alone, and I accept that surgery is warranted for that component. However, for the coexisting right C6 radiculopathy caused by the C5-C6 disc herniation, conservative management—including physical therapy, core strengthening, and posture management—has a strong evidence base with success rates around 85% for symptom improvement. I propose a structured 3-6 month conservative trial for the radiculopathy, while the tumor is addressed surgically as indicated. Failure criteria include no motor improvement after 6 weeks, progression of myelopathic signs, or intractable pain. If these criteria are met, I would then support surgery for the disc herniation as well."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 85,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "No improvement in right C6 radiculopathy (motor or sensory) after 6 weeks of supervised physical therapy.",
+        "Progression of myelopathy: new or worsening lower extremity hyperreflexia, gait instability, or bowel/bladder dysfunction.",
+        "Radiographic progression of the intramedullary lesion on follow-up MRI.",
+        "Intractable radicular pain despite optimal nonoperative measures."
+      ],
+      "stance": "conditional",
+      "persuaded_by": [],
+      "public_message": "I support the staged approach: resect the intramedullary tumor first, then reassess the C6 radiculopathy. The 2/5 biceps weakness, while severe, does not by itself mandate immediate C5-C6 decompression; it warrants a closely monitored conservative trial with defined failure criteria. I propose that after tumor resection, the patient undergo 3-6 months of physical therapy, core strengthening, and posture management for the radiculopathy. If no motor improvement occurs by 6 weeks, or if weakness progresses or pain becomes intractable, then I would support disc surgery. No new evidence has been presented that changes my assessment; the weakness was already incorporated into my failure criteria."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 85,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "No improvement in right C6 radiculopathy (motor or sensory) after 6 weeks of supervised physical therapy.",
+          "Progression of myelopathy: new or worsening lower extremity hyperreflexia, gait instability, or bowel/bladder dysfunction.",
+          "Radiographic progression of the intramedullary lesion on follow-up MRI.",
+          "Intractable radicular pain despite optimal nonoperative measures."
+        ],
+        "stance": "conditional",
+        "persuaded_by": [],
+        "public_message": "I support the staged approach: resect the intramedullary tumor first, then reassess the C6 radiculopathy. The 2/5 biceps weakness, while severe, does not by itself mandate immediate C5-C6 decompression; it warrants a closely monitored conservative trial with defined failure criteria. I propose that after tumor resection, the patient undergo 3-6 months of physical therapy, core strengthening, and posture management for the radiculopathy. If no motor improvement occurs by 6 weeks, or if weakness progresses or pain becomes intractable, then I would support disc surgery. No new evidence has been presented that changes my assessment; the weakness was already incorporated into my failure criteria."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "The patient has two distinct pathologies: a C5-C6 disc herniation causing a right C6 radiculopathy, and an enhancing intramedullary lesion at C6-C7 causing myelopathy. The myelopathy is the surgical priority and requires resection or biopsy. The radiculopathy may improve with conservative care, but the 2/5 biceps weakness is significant and some would argue for early decompression. I favor a staged approach with tumor surgery first, then reassessment of the radiculopathy.",
+        "proposed_options": [
+          "Staged surgery: posterior laminectomy and tumor resection (C5-C7) first; conservative management for C5-C6 radiculopathy with reassessment at 6 weeks; proceed to ACDF if motor deficit persists or worsens.",
+          "Single-stage combined surgery: C5-C6 ACDF plus posterior tumor resection in one anesthetic; higher risk of prolonged operative time and surgical morbidity.",
+          "Tumor resection only, with no planned disc surgery; radiculopathy managed conservatively indefinitely unless severe deterioration."
+        ],
+        "preferred_option": "Staged surgery: resect intramedullary tumor first; manage C5-C6 radiculopathy conservatively; reassess in 6 weeks and proceed to ACDF if motor deficit persists or worsens.",
+        "disagreement_points": [
+          "The physiatrist's recommendation for 3-6 months of conservative care for the radiculopathy may under-treat the 2/5 biceps weakness; many surgeons would consider this degree of motor deficit an indication for early decompression.",
+          "There may be a role for combined single-stage surgery to avoid two anesthetics, but this increases operative time and risk; the balance is uncertain.",
+          "It is unclear whether the central component of the C5-C6 disc herniation contributes to the myelopathy in addition to the intramedullary lesion; if so, disc decompression may be more urgent."
+        ],
+        "deferred_questions_to_director": [
+          "Do you favor a single combined procedure (ACDF at C5-C6 plus tumor resection in one setting) or a staged approach?",
+          "Given the 2/5 biceps weakness, should we proceed to C5-C6 decompression earlier rather than observing after tumor surgery?",
+          "Should we obtain a preoperative biopsy of the intramedullary lesion before committing to resection, or proceed directly to surgical excision?"
+        ],
+        "public_message": "I see two separate pathologies: a C5-C6 disc herniation causing a right C6 radiculopathy, and a C6-C7 intramedullary enhancing lesion causing myelopathy. The myelopathy from the tumor is the priority. I favor staged surgery: resect the tumor first, then reassess the radiculopathy, reserving C5-C6 decompression for persistent or worsening motor deficit. I raise two contested points: whether the 2/5 biceps weakness justifies earlier disc surgery, and whether a combined procedure is acceptable. I would like the director's view on these before we finalize the plan."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "operate",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": "I rule that the patient requires surgery for the intramedullary enhancing lesion at C6-C7 causing myelopathy. The C5-C6 disc herniation is a separate pathology; its surgical treatment is not mandated at this time. We will proceed with resection of the intramedullary lesion first. The C5-C6 disc will be managed conservatively with close monitoring; if the right C6 radiculopathy does not improve (motor strength remains ≤2/5 or worsens) after 6 weeks of supervised rehabilitation, then we will schedule C5-C6 ACDF. Preoperative biopsy is unnecessary because the lesion is enhancing and requires resection; intraoperative frozen section will guide extent. Combined surgery is not recommended due to increased operative time and risk.",
+        "surgical_plan": "Posterior cervical laminectomy at C6-C7 with microsurgical resection of intramedullary lesion under neuromonitoring. Intraoperative frozen section. Postoperatively, staged ACDF at C5-C6 if no motor improvement at 6 weeks.",
+        "delegated_tasks": [
+          "Resident: Obtain informed consent and schedule pre-operative evaluation.",
+          "Physiatrist: Design post-operative rehabilitation plan with 6-week reassessment criteria."
+        ],
+        "if_delay": false,
+        "reason_for_delay": null,
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "physiatrist"
+        ],
+        "ordered_tests": [],
+        "family_requests": [
+          "routine_consent",
+          "detailed_consent"
+        ],
+        "public_message": "I have heard the opinions from all specialties. Before ruling, I asked the resident to confirm the exact motor examination and symptom progression, the radiologist to review the available imaging and comment on the enhancement pattern and cord edema, and the physiatrist to clarify the conservative trial parameters and failure criteria. I adopt the staged approach: first resect the intramedullary tumor, then reassess the radiculopathy. The 2/5 biceps weakness is severe, but given the myelopathy from the tumor is the priority, we will manage the radiculopathy conservatively with close monitoring. If no improvement after 6 weeks, we proceed to ACDF. Preoperative biopsy is not needed; intraoperative frozen section will guide. This plan includes a contingency: if frozen section suggests infection or demyelination, we halt resection and treat accordingly."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-4426531-1:democratic:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 1005,
+      "content": "This is a 40-year-old male who presented with right upper extremity weakness and hypoesthesia for 2 months. Neurological examination showed 2/5 motor weakness of the right biceps, hypoesthesia in the right C6 dermatome, hypoactive right upper extremity deep tendon reflexes, and hyperactive lower extremity deep tendon reflexes. Cervical plain films were nonspecific. Cervical MRI revealed a C5-C6 central disc herniation extending to the right foramen, with spinal cord swelling and diffusely scattered T2-hyperintense intramedullary areas from C6 to C7; these areas enhanced after intravenous contrast. Cranial MRI showed no intracranial mass lesion. Lumbar puncture yielded CSF with glucose 65 mg/dL, protein 45 mg/dL, no leukocytes, no oligoclonal bands, and negative Gram and acid-fast stains and cultures. Corticosteroids prescribed during work-up did not relieve symptoms. After excluding inflammatory, demyelinating, and infectious entities, the recorded diagnosis was spinal intramedullary tumor."
+    },
+    {
+      "message_id": "pmc-4426531-1:democratic:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 524,
+      "content": "Reporting the case record's description only; films were not available for review. The record describes a central C5-6 disc herniation extending into the right foramen, consistent with ventral compression, and diffuse intramedullary T2-hyperintense signal with cord swelling from C6 to C7. Stenosis was not graded in the record. The C5-6 right foraminal component provides moderate correlation with the reported right C6-distribution symptoms, while the additional diffuse cord abnormality is described below the disc level."
+    },
+    {
+      "message_id": "pmc-4426531-1:democratic:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 559,
+      "content": "Localization indicates two processes: a right C6 radiculopathy from the C5-C6 disc herniation and cervical myelopathy from the intramedullary C6-C7 lesion. Imaging match is high because both components are explained. Red flag (changes_indication): the intramedullary enhancing lesion is separate from the disc and changes the indication for disc surgery because it, not the disc, explains the myelopathy. Red flag (coexisting): incomplete neurological examination limits precise localization but does not change the plan. There is no symptom-imaging mismatch."
+    },
+    {
+      "message_id": "pmc-4426531-1:democratic:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 226,
+      "content": "ASA grade III. Intraoperative mean arterial pressure target 75 mmHg. Expected blood loss risk moderate. Prone position tolerance low. Extubation difficulty unassessable because no airway assessment is documented in the record."
+    },
+    {
+      "message_id": "pmc-4426531-1:democratic:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 807,
+      "content": "I acknowledge that the intramedullary enhancing lesion at C6-C7 with cord swelling is a surgical lesion not amenable to conservative treatment alone, and I accept that surgery is warranted for that component. However, for the coexisting right C6 radiculopathy caused by the C5-C6 disc herniation, conservative management—including physical therapy, core strengthening, and posture management—has a strong evidence base with success rates around 85% for symptom improvement. I propose a structured 3-6 month conservative trial for the radiculopathy, while the tumor is addressed surgically as indicated. Failure criteria include no motor improvement after 6 weeks, progression of myelopathic signs, or intractable pain. If these criteria are met, I would then support surgery for the disc herniation as well."
+    },
+    {
+      "message_id": "pmc-4426531-1:democratic:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 567,
+      "content": "I see two separate pathologies: a C5-C6 disc herniation causing a right C6 radiculopathy, and a C6-C7 intramedullary enhancing lesion causing myelopathy. The myelopathy from the tumor is the priority. I favor staged surgery: resect the tumor first, then reassess the radiculopathy, reserving C5-C6 decompression for persistent or worsening motor deficit. I raise two contested points: whether the 2/5 biceps weakness justifies earlier disc surgery, and whether a combined procedure is acceptable. I would like the director's view on these before we finalize the plan."
+    },
+    {
+      "message_id": "pmc-4426531-1:democratic:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 700,
+      "content": "I support the staged approach: resect the intramedullary tumor first, then reassess the C6 radiculopathy. The 2/5 biceps weakness, while severe, does not by itself mandate immediate C5-C6 decompression; it warrants a closely monitored conservative trial with defined failure criteria. I propose that after tumor resection, the patient undergo 3-6 months of physical therapy, core strengthening, and posture management for the radiculopathy. If no motor improvement occurs by 6 weeks, or if weakness progresses or pain becomes intractable, then I would support disc surgery. No new evidence has been presented that changes my assessment; the weakness was already incorporated into my failure criteria."
+    },
+    {
+      "message_id": "pmc-4426531-1:democratic:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 861,
+      "content": "I have heard the opinions from all specialties. Before ruling, I asked the resident to confirm the exact motor examination and symptom progression, the radiologist to review the available imaging and comment on the enhancement pattern and cord edema, and the physiatrist to clarify the conservative trial parameters and failure criteria. I adopt the staged approach: first resect the intramedullary tumor, then reassess the radiculopathy. The 2/5 biceps weakness is severe, but given the myelopathy from the tumor is the priority, we will manage the radiculopathy conservatively with close monitoring. If no improvement after 6 weeks, we proceed to ACDF. Preoperative biopsy is not needed; intraoperative frozen section will guide. This plan includes a contingency: if frozen section suggests infection or demyelination, we halt resection and treat accordingly."
+    }
+  ],
+  "usage": [
+    {
+      "role": "resident",
+      "stage": "baseline",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1022,
+      "output_tokens": 2711,
+      "total_tokens": 3733,
+      "latency_ms": 21837,
+      "attempts": 1
+    },
+    {
+      "role": "radiologist",
+      "stage": "baseline",
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "input_tokens": 1661,
+      "output_tokens": 440,
+      "total_tokens": 2101,
+      "latency_ms": 6356,
+      "attempts": 1
+    },
+    {
+      "role": "neurologist",
+      "stage": "baseline",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2223,
+      "output_tokens": 6477,
+      "total_tokens": 8700,
+      "latency_ms": 56313,
+      "attempts": 1
+    },
+    {
+      "role": "anesthesiologist",
+      "stage": "baseline",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1595,
+      "output_tokens": 2293,
+      "total_tokens": 3888,
+      "latency_ms": 26820,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "baseline",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2013,
+      "output_tokens": 5206,
+      "total_tokens": 7219,
+      "latency_ms": 54024,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1722,
+      "output_tokens": 2689,
+      "total_tokens": 4411,
+      "latency_ms": 27647,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2531,
+      "output_tokens": 1958,
+      "total_tokens": 4489,
+      "latency_ms": 19179,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4359,
+      "output_tokens": 3712,
+      "total_tokens": 8071,
+      "latency_ms": 37270,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "resident": 1,
+    "radiologist": 1,
+    "neurologist": 1,
+    "anesthesiologist": 1,
+    "physiatrist": 2,
+    "vice_director": 1,
+    "director": 1
+  },
+  "attempts_per_role": {
+    "resident": 1,
+    "radiologist": 1,
+    "neurologist": 1,
+    "anesthesiologist": 1,
+    "physiatrist": 1,
+    "vice_director": 1,
+    "director": 1
+  }
+}

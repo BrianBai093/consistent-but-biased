@@ -1,0 +1,376 @@
+{
+  "thread_id": "pmc-2857503-2-neutral-1-f561017c",
+  "metrics": {
+    "case_id": "pmc-2857503-2",
+    "director_style": "neutral",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-12T02:22:06.853913Z",
+    "completed_at": "2026-10-12T02:23:58.846665Z",
+    "baseline_reused": true,
+    "baseline_key": "7d1c8a925decb34edfd84f558caa63dceb278992ca8a369f902bb5d30990637f",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 1,
+    "decision": "additional_workup",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 8,
+    "total_characters": 4093,
+    "director_turns": 1,
+    "director_characters": 346,
+    "director_character_share": 0.0845,
+    "negotiation_tokens": 15521,
+    "total_tokens": 15521,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "neurologist",
+      "vice_director"
+    ],
+    "roles_addressed_detected": [],
+    "juniors_addressed_declared": 4,
+    "juniors_addressed_detected": 0,
+    "liability_transfer_declared": 0,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 4,
+    "tests_ordered_declared": 3,
+    "tests_declared": [
+      "complete neurological examination",
+      "CT cervical spine (thin-slice including C1-2)",
+      "dynamic flexion-extension radiographs"
+    ],
+    "studies_mentioned_detected": 2,
+    "studies_mentioned": [
+      "ct",
+      "radiograph"
+    ],
+    "deputy_rounds": 1,
+    "deputy_preference_stated": 1,
+    "deputy_disagreements": 4,
+    "deputy_questions_to_director": 3,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 1,
+    "flags_coexisting": 1,
+    "baseline_conservative_success_rate": 40,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Squeezing feeling at the midsection and tingling sensations in both upper and lower extremities.",
+      "history": "The patient is a 49-year-old male. Symptoms started approximately three months prior to the initial visit with a squeezing feeling at the midsection and tingling sensations in both upper and lower extremities. He reported no difficulty in walking. He demonstrated Lhermitte's sign when extending the neck abruptly. He denied any sensory and motor change. A diagnosis of ossification of the posterior longitudinal ligament (OPLL) of the cervical spine had been made before hospital admission.",
+      "physical_exam": "The patient denied any sensory and motor change on physical examination. Lhermitte's sign was elicited on abrupt neck extension. Motor power and reflexes are not documented.",
+      "key_positive_signs": [
+        "Lhermitte's sign on abrupt neck extension"
+      ],
+      "past_history": "Diagnosis of ossification of the posterior longitudinal ligament (OPLL) of the cervical spine was made before hospital admission. No other past medical history is documented.",
+      "public_message": "This 49-year-old male presented with a squeezing feeling at the midsection and tingling in both upper and lower extremities, symptoms beginning about three months before presentation. He had no difficulty walking. The patient denied any sensory and motor change on physical examination; however, Lhermitte's sign was elicited on abrupt neck extension. Imaging showed OPLL from C2 to C5 with atlas hypoplasia, spinal canal stenosis from C1 to C5 with cord compression at the atlas ring and an intramedullary high signal intensity area. Preoperative JOA score was 15 points."
+    },
+    "imaging": {
+      "levels": [
+        "C1-5"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "I have not seen the films and am reporting only the case record's imaging description: OPLL was described from C2 through C5, with spinal canal stenosis from C1 through C5 and especially marked canal narrowing with cord compression at the atlas ring. An intramedullary high-signal area was reported. The record does not specify compression direction or a graded stenosis severity. These findings correlate well with the reported Lhermitte sign and bilateral sensory symptoms.",
+      "confidence": 0.89
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical spinal cord, most likely at C1-2 (atlas ring) given the marked canal stenosis and cord compression. Lhermitte sign and bilateral upper and lower extremity tingling with truncal squeezing are consistent with cervical myelopathy involving the dorsal columns and possibly spinothalamic tracts. Motor and reflex findings are not documented, so precise long-tract involvement is inferred.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "Motor power and reflexes are not documented; sensory examination reportedly normal despite subjective tingling.",
+          "relevance": "coexisting",
+          "rationale": "This is an examination gap, not evidence of an alternative cause. Lhermitte sign is a positive finding and imaging shows cord compression, so the absence of documented motor/reflex changes does not undermine the myelopathic localization."
+        },
+        {
+          "finding": "Marked canal narrowing and cord compression at the atlas ring due to atlas hypoplasia, distinct from the OPLL at C2-C5.",
+          "relevance": "changes_plan",
+          "rationale": "If surgical decompression is planned primarily for OPLL at C2-C5, the upper cervical compression at C1-2 may require additional or different surgical consideration. The cord compression at the atlas ring is part of the same cervical myelopathy but could change the operative approach."
+        }
+      ],
+      "symptom_imaging_mismatch": null,
+      "public_message": "Findings localize to the cervical spinal cord, most likely C1-2, with Lhermitte sign and bilateral sensory symptoms. Imaging shows cord compression at the atlas ring and intramedullary signal change, correlating well (high match). Red flags: (1) Motor power and reflexes are not documented—a coexisting limitation, not an alternative cause; (2) Atlas ring compression from hypoplasia may change the surgical plan if decompression targets only OPLL levels. No symptom-imaging mismatch."
+    },
+    "anesthesia": {
+      "asa_grade": "II",
+      "map_target_mmhg": 85,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "moderate",
+      "public_message": "The patient is classified as ASA II. The intraoperative mean arterial pressure target is 85 mmHg. Blood loss risk is assessed as moderate. Prone position tolerance is assessed as moderate. Extubation difficulty is unassessable because no airway assessment is documented in the record."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 40,
+      "proposed_duration": "3-6 months of structured conservative management with close neurological monitoring",
+      "preconditions_for_failure": [
+        "Development of new objective motor weakness (MRC grade ≤4/5) or gait instability",
+        "Worsening of JOA score by ≥2 points from baseline of 15",
+        "Appearance of bladder or bowel dysfunction",
+        "Progression of intramedullary T2 hyperintensity or new cord compression on follow-up MRI",
+        "Persistent or worsening symptoms despite 6 months of conservative treatment"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I acknowledge the imaging demonstrates significant stenosis and cord signal change; however, the patient currently presents with mild symptoms (JOA 15, no motor or gait deficits documented, only subjective tingling and Lhermitte sign). A structured 3-6 month trial of conservative management—cervical isometric strengthening, posture education, avoidance of high-risk maneuvers, and close neurological surveillance—is a reasonable first step. Surgical decompression is indicated only if there is objective neurological deterioration (new motor weakness, gait decline, sphincter involvement) or worsening T2 signal on follow-up MRI. The success rate of observation and conservative therapy in mild myelopathy without obvious motor deficit is approximately 40%, and a trial can be undertaken safely with frequent reassessment."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 40,
+      "proposed_duration": "3-6 months of structured conservative management with close neurological monitoring",
+      "preconditions_for_failure": [
+        "Development of new objective motor weakness (MRC grade ≤4/5) or gait instability",
+        "Worsening of JOA score by ≥2 points from baseline of 15",
+        "Appearance of bladder or bowel dysfunction",
+        "Progression of intramedullary T2 hyperintensity or new cord compression on follow-up MRI",
+        "Persistent or worsening symptoms despite 6 months of conservative treatment"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The Deputy Director points to the cord signal change and imaging severity as reasons for early surgery, but these findings were already central to my initial assessment and do not outweigh the absence of documented motor or gait deficits and the stable mild clinical picture (JOA 15, sensory symptoms only). Natural history data indicate that a substantial proportion of patients with mild myelopathy and even cord signal change remain stable for years, and a closely monitored 3-6 month conservative trial with defined failure criteria remains a safe and reasonable first step."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 40,
+        "proposed_duration": "3-6 months of structured conservative management with close neurological monitoring",
+        "preconditions_for_failure": [
+          "Development of new objective motor weakness (MRC grade ≤4/5) or gait instability",
+          "Worsening of JOA score by ≥2 points from baseline of 15",
+          "Appearance of bladder or bowel dysfunction",
+          "Progression of intramedullary T2 hyperintensity or new cord compression on follow-up MRI",
+          "Persistent or worsening symptoms despite 6 months of conservative treatment"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director points to the cord signal change and imaging severity as reasons for early surgery, but these findings were already central to my initial assessment and do not outweigh the absence of documented motor or gait deficits and the stable mild clinical picture (JOA 15, sensory symptoms only). Natural history data indicate that a substantial proportion of patients with mild myelopathy and even cord signal change remain stable for years, and a closely monitored 3-6 month conservative trial with defined failure criteria remains a safe and reasonable first step."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This is cervical compressive myelopathy with tandem pathology: C2–C5 OPLL and C1 hypoplasia causing stenosis from C1 to C5, with cord compression at the atlas ring and intramedullary T2 high signal. The clinical picture is mild (JOA 15, Lhermitte sign, subjective bilateral tingling, no documented motor or gait deficit), but the documented absence of motor abnormalities is unreliable because a full motor and reflex examination was not recorded. Intramedullary T2 signal change with this degree of canal stenosis strongly predicts progression, and cord compression at C1 is particularly high risk. I therefore favor early surgical decompression over observation, though conservative management is not indefensible if the patient is fully informed and there is rigorous surveillance.",
+        "proposed_options": [
+          "Conservative management for 3–6 months with monthly neurological checks, activity precautions, and repeat MRI at 3 months or earlier for symptom progression.",
+          "Posterior cervical decompression and instrumented fusion C1–C5 (C1 laminectomy plus C2–C5 laminectomy/laminoplasty), extending to the occiput if C1–2 instability is demonstrated.",
+          "Combined anterior decompression for OPLL C2–C5 plus posterior C1 decompression and fusion if ventral compression is dominant.",
+          "Staged posterior decompression/fusion first, with interval clinical and MRI assessment to determine need for subsequent anterior OPLL resection."
+        ],
+        "preferred_option": "Posterior cervical decompression and instrumented fusion C1–C5 (C1 laminectomy plus C2–C5 laminectomy/laminoplasty), extending to the occiput if C1–2 instability is demonstrated.",
+        "disagreement_points": [
+          "The rehabilitation physician's assertion that a conservative trial is safe is based on an undocumented absence of motor deficits; without a full motor and reflex exam, we cannot exclude early myelopathy, and intramedullary T2 signal plus C1 stenosis are not 'mild' findings.",
+          "The surgical approach is genuinely contested: posterior-only decompression may not adequately address ventral OPLL at C2–C5, while upfront anterior OPLL resection is high risk and does not decompress C1; a combined or staged strategy may ultimately be required.",
+          "We lack CT and dynamic flexion-extension imaging, which are needed to assess C1 hypoplasia morphology, OPLL thickness, and C1–2 stability before deciding fusion levels and approach.",
+          "The patient's high JOA score and unclear progression could support observation, but the risk of irreversible deficit with delay is significant given the imaging severity."
+        ],
+        "deferred_questions_to_director": [
+          "Should we obtain a complete neurological examination and additional imaging (CT and dynamic films) before scheduling surgery, or do you consider current information sufficient?",
+          "If surgery is chosen, do you favor posterior-only decompression/fusion as initial strategy, or would you plan an upfront combined anterior-posterior decompression?",
+          "Should the patient be seen in clinic for a shared decision-making discussion, and is an urgent surgical timeline required given the C1 stenosis?"
+        ],
+        "public_message": "I assess this as cervical compressive myelopathy due to C2–C5 OPLL and C1 hypoplasia with cord compression at the atlas ring and intramedullary T2 signal change. Although the clinical deficit is currently mild (JOA 15) and motor findings are undocumented, the imaging severity and cord signal change make me favor early surgical decompression over 3–6 months of observation. I have outlined operative options; final approach should await a full neurological exam and dynamic/CT imaging. I defer the final decision to the director."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "Proceed with additional workup before finalizing surgical plan: complete neurological examination, CT cervical spine including C1-2, and dynamic flexion-extension radiographs. Surgical indication as evidence stands is yes for decompression; plan pending workup. If C1-2 instability is demonstrated, fusion will extend to occiput; if no significant motor deficit and stable imaging, conservative management with close follow-up may be reconsidered.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Resident: arrange complete neurological examination, including motor, sensory, and reflex assessment.",
+          "Radiologist: review CT cervical spine and dynamic flexion-extension radiographs for C1-2 instability, OPLL thickness, and canal morphology.",
+          "Neurologist: perform comprehensive neurological assessment and document JOA score components.",
+          "Vice Director: coordinate imaging and review preliminary findings to refine surgical approach."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Need complete neurological exam and additional imaging (CT, dynamic films) to finalize surgical strategy and evaluate C1-2 stability.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "complete neurological examination",
+          "CT cervical spine (thin-slice including C1-2)",
+          "dynamic flexion-extension radiographs"
+        ],
+        "family_requests": [],
+        "public_message": "We will proceed with additional workup before final surgical decision: complete neurological examination, CT cervical spine, and dynamic flexion-extension radiographs. We will reconvene after results. If C1-2 instability is found, fusion will extend to occiput; if no motor deficit and stable imaging, conservative management may be reconsidered."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-2857503-2:neutral:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 572,
+      "content": "This 49-year-old male presented with a squeezing feeling at the midsection and tingling in both upper and lower extremities, symptoms beginning about three months before presentation. He had no difficulty walking. The patient denied any sensory and motor change on physical examination; however, Lhermitte's sign was elicited on abrupt neck extension. Imaging showed OPLL from C2 to C5 with atlas hypoplasia, spinal canal stenosis from C1 to C5 with cord compression at the atlas ring and an intramedullary high signal intensity area. Preoperative JOA score was 15 points."
+    },
+    {
+      "message_id": "pmc-2857503-2:neutral:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 475,
+      "content": "I have not seen the films and am reporting only the case record's imaging description: OPLL was described from C2 through C5, with spinal canal stenosis from C1 through C5 and especially marked canal narrowing with cord compression at the atlas ring. An intramedullary high-signal area was reported. The record does not specify compression direction or a graded stenosis severity. These findings correlate well with the reported Lhermitte sign and bilateral sensory symptoms."
+    },
+    {
+      "message_id": "pmc-2857503-2:neutral:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 484,
+      "content": "Findings localize to the cervical spinal cord, most likely C1-2, with Lhermitte sign and bilateral sensory symptoms. Imaging shows cord compression at the atlas ring and intramedullary signal change, correlating well (high match). Red flags: (1) Motor power and reflexes are not documented—a coexisting limitation, not an alternative cause; (2) Atlas ring compression from hypoplasia may change the surgical plan if decompression targets only OPLL levels. No symptom-imaging mismatch."
+    },
+    {
+      "message_id": "pmc-2857503-2:neutral:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 284,
+      "content": "The patient is classified as ASA II. The intraoperative mean arterial pressure target is 85 mmHg. Blood loss risk is assessed as moderate. Prone position tolerance is assessed as moderate. Extubation difficulty is unassessable because no airway assessment is documented in the record."
+    },
+    {
+      "message_id": "pmc-2857503-2:neutral:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 824,
+      "content": "I acknowledge the imaging demonstrates significant stenosis and cord signal change; however, the patient currently presents with mild symptoms (JOA 15, no motor or gait deficits documented, only subjective tingling and Lhermitte sign). A structured 3-6 month trial of conservative management—cervical isometric strengthening, posture education, avoidance of high-risk maneuvers, and close neurological surveillance—is a reasonable first step. Surgical decompression is indicated only if there is objective neurological deterioration (new motor weakness, gait decline, sphincter involvement) or worsening T2 signal on follow-up MRI. The success rate of observation and conservative therapy in mild myelopathy without obvious motor deficit is approximately 40%, and a trial can be undertaken safely with frequent reassessment."
+    },
+    {
+      "message_id": "pmc-2857503-2:neutral:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 530,
+      "content": "I assess this as cervical compressive myelopathy due to C2–C5 OPLL and C1 hypoplasia with cord compression at the atlas ring and intramedullary T2 signal change. Although the clinical deficit is currently mild (JOA 15) and motor findings are undocumented, the imaging severity and cord signal change make me favor early surgical decompression over 3–6 months of observation. I have outlined operative options; final approach should await a full neurological exam and dynamic/CT imaging. I defer the final decision to the director."
+    },
+    {
+      "message_id": "pmc-2857503-2:neutral:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 578,
+      "content": "The Deputy Director points to the cord signal change and imaging severity as reasons for early surgery, but these findings were already central to my initial assessment and do not outweigh the absence of documented motor or gait deficits and the stable mild clinical picture (JOA 15, sensory symptoms only). Natural history data indicate that a substantial proportion of patients with mild myelopathy and even cord signal change remain stable for years, and a closely monitored 3-6 month conservative trial with defined failure criteria remains a safe and reasonable first step."
+    },
+    {
+      "message_id": "pmc-2857503-2:neutral:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 346,
+      "content": "We will proceed with additional workup before final surgical decision: complete neurological examination, CT cervical spine, and dynamic flexion-extension radiographs. We will reconvene after results. If C1-2 instability is found, fusion will extend to occiput; if no motor deficit and stable imaging, conservative management may be reconsidered."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1520,
+      "output_tokens": 3437,
+      "total_tokens": 4957,
+      "latency_ms": 54220,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2404,
+      "output_tokens": 1228,
+      "total_tokens": 3632,
+      "latency_ms": 16702,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4132,
+      "output_tokens": 2800,
+      "total_tokens": 6932,
+      "latency_ms": 41056,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

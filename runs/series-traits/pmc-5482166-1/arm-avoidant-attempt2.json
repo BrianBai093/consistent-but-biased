@@ -1,0 +1,512 @@
+{
+  "thread_id": "pmc-5482166-1-avoidant-2-1887fe25-traits",
+  "metrics": {
+    "case_id": "pmc-5482166-1",
+    "director_style": "avoidant",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-13T07:21:01.809062Z",
+    "completed_at": "2026-10-13T07:27:46.683761Z",
+    "baseline_reused": true,
+    "baseline_key": "40fffb2b07236fc0ef49ab3f6efa92d7d50891a9c9f3babef0ee9ed9c0099216",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "additional_workup",
+    "surgical_indication": "uncertain",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 6634,
+    "director_turns": 2,
+    "director_characters": 1060,
+    "director_character_share": 0.1598,
+    "negotiation_tokens": 33690,
+    "total_tokens": 33690,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "neurologist",
+      "vice_director",
+      "anesthesiologist"
+    ],
+    "roles_addressed_detected": [
+      "radiologist",
+      "neurologist",
+      "anesthesiologist",
+      "physiatrist"
+    ],
+    "juniors_addressed_declared": 5,
+    "juniors_addressed_detected": 4,
+    "liability_transfer_declared": 0,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 8,
+    "tests_ordered_declared": 7,
+    "tests_declared": [
+      "Urgent formal neuroradiology review of current MRI with attention to compression direction, stenosis grade, and enhancement characteristics.",
+      "Repeat cervical MRI with and without contrast, including axial T1/T2 and diffusion-weighted sequences, if not already performed.",
+      "CT cervical spine to assess bony anatomy and any dynamic instability.",
+      "Basic laboratory panel including inflammatory markers and, if safe, CSF analysis.",
+      "Urgent repeat cervical MRI with and without contrast, including axial T2 and STIR sequences and explicit description of stenosis grade/direction and enhancement pattern.",
+      "CSF analysis (cell count, protein, glucose, oligoclonal bands, cytology) if no contraindication.",
+      "Serum B12, RPR, ANA, ESR, CRP, aquaporin-4 antibody."
+    ],
+    "studies_mentioned_detected": 0,
+    "studies_mentioned": [],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 2,
+    "deputy_disagreements": 6,
+    "deputy_questions_to_director": 7,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 2,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 0,
+    "baseline_conservative_success_rate": 30,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Weakness and numbness involving all four extremities and progressive sphincter dysfunction over the last 2 months in a 41-year-old female with no history of trauma.",
+      "history": "A 41-year-old female with no history of trauma presented with weakness and numbness involving all four extremities and progressive sphincter dysfunction over the last 2 months. Initial cervical noncontrast MRI showed a hyperintense intramedullary cord signal, with differential diagnoses including cervical spondylotic myelopathy and tumor. She was referred for an open biopsy of the cervical spinal cord to document the pathology of the tumor. At the time of transfer, she had severe spastic quadriparesis, markedly greater in the upper than in the lower extremities. Follow-up MRI revealed cervical spondylosis with C5–C6 and C6–C7 cord compression associated with an extensive intramedullary high cord signal and cord enlargement on T2-weighted sagittal images extending from C5 to C7; axial images confirmed the intramedullary signal abnormality. T1-weighted MRI sagittal scan showed the lesion enhanced with contrast at the C5–C6 level.",
+      "physical_exam": "On examination at the time of transfer, severe spastic quadriparesis was present, markedly greater in the upper than in the lower extremities. Weakness and numbness involving all four extremities and progressive sphincter dysfunction were reported in the history. Detailed motor power, reflexes, sensation, and sphincter examination findings are not documented in the record.",
+      "key_positive_signs": [
+        "Severe spastic quadriparesis, markedly greater in upper than lower extremities",
+        "Weakness and numbness involving all four extremities",
+        "Progressive sphincter dysfunction over the last 2 months",
+        "Cervical MRI: hyperintense intramedullary cord signal from C5 to C7 on T2-weighted imaging",
+        "Cervical spondylosis with C5–C6 and C6–C7 cord compression",
+        "Contrast enhancement at C5–C6 level on T1-weighted MRI sagittal scan"
+      ],
+      "past_history": "Past medical history, surgical history, medications, allergies, family history, and social history are not documented in the provided record. No history of trauma was reported.",
+      "public_message": "A 41-year-old female with no history of trauma presented with weakness and numbness involving all four extremities and progressive sphincter dysfunction over the last 2 months. Initial cervical noncontrast MRI showed a hyperintense intramedullary cord signal, raising differential diagnoses of cervical spondylotic myelopathy and tumor; she was referred for open biopsy. At transfer, examination revealed severe spastic quadriparesis, markedly greater in the upper than in the lower extremities. Follow-up MRI showed cervical spondylosis with C5–C6 and C6–C7 cord compression, an extensive intramedullary high signal and cord enlargement from C5 to C7 on T2-weighted images, and contrast enhancement at C5–C6 on T1-weighted sagittal images. Past medical history is not documented. No separate laboratory results are available."
+    },
+    "imaging": {
+      "levels": [
+        "C5-6",
+        "C6-7"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "I have not seen the films and am reporting only the case record's imaging description: cervical spondylosis with cord compression at C5-6 and C6-7, with extensive intramedullary T2 high signal and cord enlargement from C5 to C7. The record does not state compression direction or stenosis grade. These reported findings correlate highly with the described progressive myelopathic symptoms.",
+      "confidence": 0.91
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical spinal cord lesion at C5–C7, likely intramedullary, producing upper motor neuron signs in all four limbs. The upper extremity predominance suggests central cord involvement. Detailed motor, reflex, sensory, and sphincter examination findings are not documented, limiting precise localization.",
+      "match_level": "medium",
+      "red_flags": [
+        {
+          "finding": "Intramedullary cord enlargement and contrast enhancement at C5–C6 on MRI",
+          "relevance": "changes_indication",
+          "rationale": "This suggests an intrinsic cord lesion (e.g., tumor, demyelination, inflammation) that could independently cause the progressive myelopathy; surgical decompression for spondylotic compression may not address the primary pathology, and biopsy or medical management may be needed."
+        },
+        {
+          "finding": "Upper extremity-predominant spastic quadriparesis",
+          "relevance": "changes_indication",
+          "rationale": "In compressive cervical myelopathy from C5–C7 spondylosis, lower extremities are typically more affected due to longer corticospinal tracts; upper extremity predominance suggests a central cord or intramedullary process, reinforcing the likelihood of a primary cord lesion rather than compression alone."
+        }
+      ],
+      "symptom_imaging_mismatch": "The imaging shows C5–C6 and C6–C7 cord compression, but the clinical pattern of upper extremity-predominant spastic quadriparesis is atypical for compressive cervical myelopathy at those levels, which would be expected to affect lower limbs more; additionally, cord enlargement and contrast enhancement are not typical for simple spondylotic compression, suggesting an intramedullary lesion that better explains the symptoms.",
+      "public_message": "Localization: cervical spinal cord (C5–C7), with upper motor neuron signs in all four limbs. The imaging correlates with myelopathy but also shows an enhancing intramedullary lesion. Match level: medium. Red flags: (1) Enhancing intramedullary lesion (changes_indication) - may be the primary cause, not spondylotic compression. (2) Upper extremity-predominant weakness (changes_indication) - atypical for compression, supports intrinsic cord pathology. No other red flags."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": 85,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "moderate",
+      "public_message": "ASA physical status III based on severe spastic quadriparesis with sphincter dysfunction from cervical cord compression. Intraoperative MAP target stated as 85 mmHg. Expected blood loss risk: moderate. Prone position tolerance: moderate. Extubation difficulty: unassessable because no airway assessment is documented in the record."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 30,
+      "proposed_duration": "3-6 months of strict conservative management",
+      "preconditions_for_failure": [
+        "No improvement or further deterioration in motor or sphincter function after 3 months of intensive conservative therapy.",
+        "New or worsening neurological deficits at any point during the conservative trial.",
+        "Progression of intramedullary signal abnormality or contrast enhancement on follow-up cervical MRI at 3 months.",
+        "Inability to participate in therapy due to pain, functional decline, or medical instability."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I remain the strongest advocate for conservative care. Given the progressive myelopathy and sphincter dysfunction, surgery is being considered, but before proceeding to irreversible intervention, I propose a formal, time-limited 3-6 month trial of intensive conservative management under close neurological monitoring. This would include supervised physical therapy for gait/balance/strength, occupational therapy for activities of daily living, cervical isometric strengthening, posture education, and avoidance of high-risk activities. The literature on nonoperative management of cervical spondylotic myelopathy reports that a subset of patients—particularly those with mild symptoms and no rapid progression—can stabilize or improve without surgery; however, I acknowledge that severe spastic quadriparesis with sphincter involvement and cord enhancement indicates a poorer prognosis for conservative care. Therefore, I define failure as any of the following: (1) no improvement or further deterioration in motor or sphincter function after 3 months of strict conservative therapy; (2) new or worsening neurological deficits during the trial; (3) progression of intramedullary signal abnormality or enhancement on follow-up MRI at 3 months; or (4) inability to participate in therapy due to pain or functional decline. If any of these occur, I will accept that conservative management has failed and support surgical intervention or biopsy as appropriate. Until then, I hold my stance for a trial of conservative care."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 30,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "No improvement or further deterioration in motor or sphincter function after 3 months of intensive conservative therapy.",
+        "New or worsening neurological deficits at any point during the conservative trial.",
+        "Progression of intramedullary signal abnormality or contrast enhancement on follow-up cervical MRI at 3 months.",
+        "Inability to participate in therapy due to pain, functional decline, or medical instability."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The Deputy Director has repeated the recommendation for urgent surgery, citing 'significant compressive component' and 'risk of permanent cord injury,' but has not pointed to any specific finding in the record that I have given too little weight. The cord compression and progressive deficits were already central to my risk assessment, which is why I defined strict failure criteria and a short trial window. The Director's own uncertainty about whether this is primarily compressive or intrinsic cord disease supports my caution about irreversible intervention before that question is answered. As no new specific finding has been argued, I hold my position that a closely monitored 3-6 month conservative trial remains a reasonable option."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 30,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "No improvement or further deterioration in motor or sphincter function after 3 months of intensive conservative therapy.",
+          "New or worsening neurological deficits at any point during the conservative trial.",
+          "Progression of intramedullary signal abnormality or contrast enhancement on follow-up cervical MRI at 3 months.",
+          "Inability to participate in therapy due to pain, functional decline, or medical instability."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director has put forward 'severe progressive cervical myelopathy' as a reason to skip conservative management. That is a finding I have already weighed heavily: it is exactly why I set strict failure criteria and a short trial window. However, the record also shows an enhancing intramedullary lesion that may not be solely compressive; urgent decompression could even be non-curative if there is an intrinsic cord pathology. Without additional argument tying the existing findings to a risk that outweighs a time-limited, closely monitored conservative trial, I hold my position. A 3-6 month trial with predefined failure points remains a reasonable option before irreversible surgery."
+      },
+      {
+        "conservative_success_rate": 30,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "No improvement or further deterioration in motor or sphincter function after 3 months of intensive conservative therapy.",
+          "New or worsening neurological deficits at any point during the conservative trial.",
+          "Progression of intramedullary signal abnormality or contrast enhancement on follow-up cervical MRI at 3 months.",
+          "Inability to participate in therapy due to pain, functional decline, or medical instability."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director has repeated the recommendation for urgent surgery, citing 'significant compressive component' and 'risk of permanent cord injury,' but has not pointed to any specific finding in the record that I have given too little weight. The cord compression and progressive deficits were already central to my risk assessment, which is why I defined strict failure criteria and a short trial window. The Director's own uncertainty about whether this is primarily compressive or intrinsic cord disease supports my caution about irreversible intervention before that question is answered. As no new specific finding has been argued, I hold my position that a closely monitored 3-6 month conservative trial remains a reasonable option."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This is a 41-year-old woman with rapidly progressive myelopathy (spastic quadriparesis, upper extremity predominant, sphincter dysfunction) and MRI showing C5-6 and C6-7 cord compression with extensive intramedullary T2 hyperintensity and focal enhancement. The clinical picture is most consistent with severe cervical spondylotic myelopathy, but the enhancing lesion introduces diagnostic uncertainty for an intrinsic cord tumor, demyelinating disease, or inflammatory myelitis. Regardless of etiology, the presence of severe, progressive deficits with sphincter involvement constitutes a surgical emergency; conservative management of 3-6 months risks irreversible cord damage. I recommend urgent surgical decompression, with intraoperative biopsy for the enhancing lesion if safely accessible, after rapid exclusion of treatable medical mimics (e.g., with whole-spine MRI, basic labs, and lumbar puncture if no contraindication).",
+        "proposed_options": [
+          "Urgent anterior cervical decompression (e.g., ACDF at C5-6 and C6-7 or corpectomy as indicated by compression anatomy) with intraoperative biopsy of the enhancing intramedullary lesion.",
+          "Immediate diagnostic workup (whole-spine and brain MRI with contrast, CSF analysis, serum inflammatory/infectious markers, and CT chest/abdomen/pelvis if concern for metastatic disease) before deciding on surgery, but with a strict 24-48 hour timeframe.",
+          "Surgical biopsy of the enhancing lesion alone (posterior approach) to establish tissue diagnosis before decompression, if the lesion is suspected to be neoplastic and separate from compression.",
+          "Conservative management trial as proposed by physiatrist (not recommended due to high risk of irreversible deterioration)."
+        ],
+        "preferred_option": "Urgent surgical decompression combined with lesion biopsy during the same operation, after rapid exclusion of medical mimics (not delaying beyond 48 hours).",
+        "disagreement_points": [
+          "I strongly disagree with the physiatrist's proposal for a 3-6 month conservative trial: severe progressive myelopathy with sphincter dysfunction is a surgical emergency, and delay risks irreversible neurologic loss. The literature supports early decompression in such cases.",
+          "An enhancing intramedullary lesion should not automatically mandate primary biopsy before decompression; spondylotic compression can cause edema and enhancement, and decompression may treat both. However, if the lesion characteristics suggest tumor (e.g., mass effect, sharp margins, nodular enhancement), biopsy can be performed at the same setting.",
+          "The record lacks key details (compression direction, stenosis grade, T1/T2 signal details, presence of foraminal stenosis, cord atrophy, dynamic instability) that affect surgical approach and urgency; immediate neuroradiology review and possibly additional MRI sequences or CT myelogram are needed.",
+          "The referral indication 'open biopsy' may be based on the initial MRI; with current data, biopsy of the spinal cord carries significant risk and may be unnecessary if compression is the primary pathology. This needs clarification."
+        ],
+        "deferred_questions_to_director": [
+          "Are you comfortable authorizing urgent surgery without a tissue diagnosis, relying on intraoperative frozen section and postoperative pathology?",
+          "Do we have neurosurgical oncology backup available for intramedullary tumor resection if encountered?",
+          "Can we obtain the missing history and prior imaging from the referring facility before finalizing the approach?",
+          "How do you wish to document the decision to proceed with surgery despite the physiatrist's request for conservative trial, so responsibility is explicit?"
+        ],
+        "public_message": "Recommend urgent surgical decompression for severe progressive cervical myelopathy; conservative trial is contraindicated. Will proceed with further urgent workup and schedule surgery as next available, with intraoperative biopsy of the enhancing lesion."
+      },
+      {
+        "assessment": "This is a 41-year-old with severe, progressive cervical myelopathy (quadriparesis and sphincter dysfunction) over two months. MRI shows C5-6 and C6-7 cord compression with extensive T2 cord signal change and C5-6 enhancement. The differential includes compressive myelopathy, intrinsic cord tumor, or inflammatory/demyelinating lesion. The presence of cord compression and progressive deficits makes surgical decompression the most defensible intervention to prevent permanent neurological injury. The enhancing lesion can be biopsied at the same time, providing diagnostic tissue. A 3-6 month conservative trial carries an unacceptable risk of further irreversible cord damage in a patient with already severe deficits and sphincter involvement. I therefore recommend urgent surgical decompression with intraoperative biopsy, but I support completing the immediate pre-operative workup (repeat contrast MRI, laboratory studies, and formal neuro-radiology review) within 24-48 hours to refine the diagnosis and rule out a primarily medical condition. If that workup strongly suggests an inflammatory or demyelinating aetiology without significant compressive component, the plan can be reconsidered, but the default should remain surgery.",
+        "proposed_options": [
+          "Urgent surgical decompression (e.g., anterior cervical discectomy/corpectomy or posterior laminectomy/fusion depending on compression anatomy) with intraoperative biopsy of the enhancing lesion, after a 24-48 hour targeted workup.",
+          "Proceed directly to surgery and biopsy without further delay, accepting that the workup can be completed concurrently.",
+          "Defer surgery until complete diagnostic workup and formal multi-disciplinary review, while monitoring closely for any deterioration; this risks permanent cord injury and is not my recommendation.",
+          "Conservative management trial as proposed by rehabilitation; this is contraindicated given the severity and progression."
+        ],
+        "preferred_option": "Urgent surgical decompression with intraoperative biopsy after a 24-48 hour targeted workup.",
+        "disagreement_points": [
+          "I disagree with the rehabilitation physician's proposal for a 3-6 month conservative trial: in a patient with severe spastic quadriparesis and sphincter dysfunction, this delay is likely to lead to irreversible neurological loss and does not address the enhancing lesion.",
+          "I understand the director's wish for diagnostic clarity before ruling, but I would press that we cannot wait for all investigations if they take more than a couple of days; the spinal cord is already under threat, and decompression can be both therapeutic and diagnostic."
+        ],
+        "deferred_questions_to_director": [
+          "Will you authorise proceeding with surgery if the urgent repeat MRI and laboratory workup do not reveal a clear contraindication or an alternative medical diagnosis?",
+          "Do you want me to schedule the operating room now for the next available slot while we complete the workup, or hold until after the results are reviewed?",
+          "How would you like to document the disagreement with rehabilitation in the record to ensure the rationale is clear?"
+        ],
+        "public_message": "My recommendation is urgent surgical decompression with intraoperative biopsy. The clinical picture and imaging support a significant compressive component, and delay risks permanent cord injury. I will support any urgent diagnostic workup that can be completed within the next day or two, but I would not proceed with a conservative trial."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Radiologist: perform urgent formal review of the current MRI, specifically clarifying the direction and grade of compression, and the nature of the C5-C6 enhancement (edema vs. intrinsic cord lesion).",
+          "Neurologist: provide a written opinion on whether the upper-extremity-predominant pattern and enhancing lesion indicate a primary intramedullary process; recommend any additional medical or CSF workup.",
+          "Resident: obtain all outside records, prior imaging, and referring physician notes before the next discussion.",
+          "Vice director: prepare a contingency plan for urgent surgical decompression with intraoperative biopsy if the workup confirms a compressive component."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Pending urgent workup to distinguish compressive cervical myelopathy from an intrinsic cord lesion; I will not authorize surgery without this information.",
+        "has_contingency_plan": false,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "Urgent formal neuroradiology review of current MRI with attention to compression direction, stenosis grade, and enhancement characteristics.",
+          "Repeat cervical MRI with and without contrast, including axial T1/T2 and diffusion-weighted sequences, if not already performed.",
+          "CT cervical spine to assess bony anatomy and any dynamic instability.",
+          "Basic laboratory panel including inflammatory markers and, if safe, CSF analysis."
+        ],
+        "family_requests": [],
+        "public_message": "The enhancing intramedullary lesion and atypical upper-extremity predominance leave the surgical indication uncertain. I am not ready to rule today. I have asked the radiologist and neurologist to clarify whether this is primarily compressive or intrinsic cord disease, and I have ordered urgent imaging and laboratory workup. We will reconvene once that information is available."
+      },
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "Proceed with urgent diagnostic evaluation before any surgical decision: repeat contrast-enhanced MRI with axial T2/STIR, CSF analysis, serum inflammatory and nutritional markers, and anesthesia airway assessment. Do not book the operating room now. If the workup supports a compressive cause and shows no medical contraindication or alternative pathology, I will authorize urgent cervical decompression with intraoperative biopsy at the next available slot. If an intrinsic cord lesion is confirmed, we will hold decompression and manage the lesion as indicated. The rehabilitation trial of 3-6 months is not adopted because it allows further permanent cord injury in a severe progressive myelopathy; however, its failure criteria are noted for future re-evaluation if surgery is not indicated.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Radiologist and neurologist: provide a joint written interpretation of all available imaging and laboratory data within 24 hours, specifically addressing whether the enhancing cord lesion is compressive, demyelinating, neoplastic, or inflammatory.",
+          "Anesthesiologist: complete and document airway assessment and fitness for prone positioning before any operating room booking.",
+          "Vice Director: coordinate the urgent workup and ensure results are available for a multidisciplinary review within 24-48 hours; hold the operating room slot but do not schedule surgery until my review.",
+          "Resident: obtain all outside records and any prior laboratory results."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Await urgent repeat imaging and laboratory workup to distinguish compressive from intrinsic cord lesion before irreversible surgery.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "vice_director",
+          "resident"
+        ],
+        "ordered_tests": [
+          "Urgent repeat cervical MRI with and without contrast, including axial T2 and STIR sequences and explicit description of stenosis grade/direction and enhancement pattern.",
+          "CSF analysis (cell count, protein, glucose, oligoclonal bands, cytology) if no contraindication.",
+          "Serum B12, RPR, ANA, ESR, CRP, aquaporin-4 antibody."
+        ],
+        "family_requests": [],
+        "public_message": "Given the enhancing intramedullary lesion and upper-extremity-predominant myelopathy, I am not yet persuaded that decompression alone is the correct treatment. I have ordered urgent repeat imaging and laboratory studies, and asked radiology, neurology, and anesthesia to complete their assessments within 24-48 hours. The operating room will not be booked now. If the workup confirms compression as the primary cause and excludes an alternative diagnosis, I will authorize urgent decompression with intraoperative biopsy; if an intrinsic lesion is found, we will reconsider. The rehabilitation proposal is documented but not adopted because it risks further permanent cord damage."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-5482166-1:avoidant:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 826,
+      "content": "A 41-year-old female with no history of trauma presented with weakness and numbness involving all four extremities and progressive sphincter dysfunction over the last 2 months. Initial cervical noncontrast MRI showed a hyperintense intramedullary cord signal, raising differential diagnoses of cervical spondylotic myelopathy and tumor; she was referred for open biopsy. At transfer, examination revealed severe spastic quadriparesis, markedly greater in the upper than in the lower extremities. Follow-up MRI showed cervical spondylosis with C5–C6 and C6–C7 cord compression, an extensive intramedullary high signal and cord enlargement from C5 to C7 on T2-weighted images, and contrast enhancement at C5–C6 on T1-weighted sagittal images. Past medical history is not documented. No separate laboratory results are available."
+    },
+    {
+      "message_id": "pmc-5482166-1:avoidant:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 389,
+      "content": "I have not seen the films and am reporting only the case record's imaging description: cervical spondylosis with cord compression at C5-6 and C6-7, with extensive intramedullary T2 high signal and cord enlargement from C5 to C7. The record does not state compression direction or stenosis grade. These reported findings correlate highly with the described progressive myelopathic symptoms."
+    },
+    {
+      "message_id": "pmc-5482166-1:avoidant:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 473,
+      "content": "Localization: cervical spinal cord (C5–C7), with upper motor neuron signs in all four limbs. The imaging correlates with myelopathy but also shows an enhancing intramedullary lesion. Match level: medium. Red flags: (1) Enhancing intramedullary lesion (changes_indication) - may be the primary cause, not spondylotic compression. (2) Upper extremity-predominant weakness (changes_indication) - atypical for compression, supports intrinsic cord pathology. No other red flags."
+    },
+    {
+      "message_id": "pmc-5482166-1:avoidant:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 331,
+      "content": "ASA physical status III based on severe spastic quadriparesis with sphincter dysfunction from cervical cord compression. Intraoperative MAP target stated as 85 mmHg. Expected blood loss risk: moderate. Prone position tolerance: moderate. Extubation difficulty: unassessable because no airway assessment is documented in the record."
+    },
+    {
+      "message_id": "pmc-5482166-1:avoidant:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 1522,
+      "content": "I remain the strongest advocate for conservative care. Given the progressive myelopathy and sphincter dysfunction, surgery is being considered, but before proceeding to irreversible intervention, I propose a formal, time-limited 3-6 month trial of intensive conservative management under close neurological monitoring. This would include supervised physical therapy for gait/balance/strength, occupational therapy for activities of daily living, cervical isometric strengthening, posture education, and avoidance of high-risk activities. The literature on nonoperative management of cervical spondylotic myelopathy reports that a subset of patients—particularly those with mild symptoms and no rapid progression—can stabilize or improve without surgery; however, I acknowledge that severe spastic quadriparesis with sphincter involvement and cord enhancement indicates a poorer prognosis for conservative care. Therefore, I define failure as any of the following: (1) no improvement or further deterioration in motor or sphincter function after 3 months of strict conservative therapy; (2) new or worsening neurological deficits during the trial; (3) progression of intramedullary signal abnormality or enhancement on follow-up MRI at 3 months; or (4) inability to participate in therapy due to pain or functional decline. If any of these occur, I will accept that conservative management has failed and support surgical intervention or biopsy as appropriate. Until then, I hold my stance for a trial of conservative care."
+    },
+    {
+      "message_id": "pmc-5482166-1:avoidant:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 254,
+      "content": "Recommend urgent surgical decompression for severe progressive cervical myelopathy; conservative trial is contraindicated. Will proceed with further urgent workup and schedule surgery as next available, with intraoperative biopsy of the enhancing lesion."
+    },
+    {
+      "message_id": "pmc-5482166-1:avoidant:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 697,
+      "content": "The Deputy Director has put forward 'severe progressive cervical myelopathy' as a reason to skip conservative management. That is a finding I have already weighed heavily: it is exactly why I set strict failure criteria and a short trial window. However, the record also shows an enhancing intramedullary lesion that may not be solely compressive; urgent decompression could even be non-curative if there is an intrinsic cord pathology. Without additional argument tying the existing findings to a risk that outweighs a time-limited, closely monitored conservative trial, I hold my position. A 3-6 month trial with predefined failure points remains a reasonable option before irreversible surgery."
+    },
+    {
+      "message_id": "pmc-5482166-1:avoidant:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 380,
+      "content": "The enhancing intramedullary lesion and atypical upper-extremity predominance leave the surgical indication uncertain. I am not ready to rule today. I have asked the radiologist and neurologist to clarify whether this is primarily compressive or intrinsic cord disease, and I have ordered urgent imaging and laboratory workup. We will reconvene once that information is available."
+    },
+    {
+      "message_id": "pmc-5482166-1:avoidant:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 340,
+      "content": "My recommendation is urgent surgical decompression with intraoperative biopsy. The clinical picture and imaging support a significant compressive component, and delay risks permanent cord injury. I will support any urgent diagnostic workup that can be completed within the next day or two, but I would not proceed with a conservative trial."
+    },
+    {
+      "message_id": "pmc-5482166-1:avoidant:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 742,
+      "content": "The Deputy Director has repeated the recommendation for urgent surgery, citing 'significant compressive component' and 'risk of permanent cord injury,' but has not pointed to any specific finding in the record that I have given too little weight. The cord compression and progressive deficits were already central to my risk assessment, which is why I defined strict failure criteria and a short trial window. The Director's own uncertainty about whether this is primarily compressive or intrinsic cord disease supports my caution about irreversible intervention before that question is answered. As no new specific finding has been argued, I hold my position that a closely monitored 3-6 month conservative trial remains a reasonable option."
+    },
+    {
+      "message_id": "pmc-5482166-1:avoidant:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 680,
+      "content": "Given the enhancing intramedullary lesion and upper-extremity-predominant myelopathy, I am not yet persuaded that decompression alone is the correct treatment. I have ordered urgent repeat imaging and laboratory studies, and asked radiology, neurology, and anesthesia to complete their assessments within 24-48 hours. The operating room will not be booked now. If the workup confirms compression as the primary cause and excludes an alternative diagnosis, I will authorize urgent decompression with intraoperative biopsy; if an intrinsic lesion is found, we will reconsider. The rehabilitation proposal is documented but not adopted because it risks further permanent cord damage."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1734,
+      "output_tokens": 2542,
+      "total_tokens": 4276,
+      "latency_ms": 66939,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2623,
+      "output_tokens": 1094,
+      "total_tokens": 3717,
+      "latency_ms": 31331,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4454,
+      "output_tokens": 2450,
+      "total_tokens": 6904,
+      "latency_ms": 64405,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2062,
+      "output_tokens": 3683,
+      "total_tokens": 5745,
+      "latency_ms": 99464,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2817,
+      "output_tokens": 1246,
+      "total_tokens": 4063,
+      "latency_ms": 27301,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4673,
+      "output_tokens": 4312,
+      "total_tokens": 8985,
+      "latency_ms": 115405,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

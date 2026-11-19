@@ -1,0 +1,540 @@
+{
+  "thread_id": "pmc-7440276-1-democratic-1-95381099-model-openai",
+  "metrics": {
+    "case_id": "pmc-7440276-1",
+    "director_style": "democratic",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-12T17:35:15.820564Z",
+    "completed_at": "2026-10-12T17:37:04.866973Z",
+    "baseline_reused": true,
+    "baseline_key": "12f1a9a6bf5a9a0ec2cb0d9ef3c70454b7fade7b071b883e4b310b90a09e2869",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "additional_workup",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 9538,
+    "director_turns": 2,
+    "director_characters": 3283,
+    "director_character_share": 0.3442,
+    "negotiation_tokens": 27667,
+    "total_tokens": 27667,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "neurologist",
+      "anesthesiologist",
+      "physiatrist",
+      "vice_director"
+    ],
+    "roles_addressed_detected": [
+      "resident",
+      "radiologist",
+      "neurologist",
+      "anesthesiologist",
+      "physiatrist",
+      "vice_director"
+    ],
+    "juniors_addressed_declared": 6,
+    "juniors_addressed_detected": 6,
+    "liability_transfer_declared": 0,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 9,
+    "tests_ordered_declared": 9,
+    "tests_declared": [
+      "Formal expert review of existing neutral and flexion-extension cervical MRI sequences, including assessment for cord T2 hyperintensity/myelomalacia, dynamic C4-5 compression, C5-6 contribution, sagittal alignment, and instability",
+      "Standardized baseline mJOA assessment and objective gait testing",
+      "Preoperative anesthesia assessment including airway evaluation and baseline blood-pressure measurement",
+      "Formal direct review of complete neutral and flexion-extension cervical MRI studies",
+      "Standardized baseline mJOA assessment",
+      "Timed gait testing",
+      "Hand-dexterity assessment",
+      "Formal bladder-function documentation",
+      "Preoperative anesthesia airway and baseline blood-pressure assessment"
+    ],
+    "studies_mentioned_detected": 0,
+    "studies_mentioned": [],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 2,
+    "deputy_disagreements": 8,
+    "deputy_questions_to_director": 9,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 1,
+    "flags_coexisting": 3,
+    "baseline_conservative_success_rate": 55,
+    "consensus_declared": "reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "conditional",
+    "physiatrist_moved": true,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 1,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "director",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Progressive deterioration in gait and balance over a two-year period.",
+      "history": "A 75-year-old man presented with progressive deterioration in gait and balance over a two-year period. One year after symptom onset, he was diagnosed with Parkinson’s disease and was started on carbidopa/levodopa but enjoyed no clinical improvement. Despite the regular use of a walker, he sustained several falls in the month leading up to his initial evaluation. He also developed urinary urge incontinence and mild cognitive impairment over a three- to six-month period. The patient denied loss of dexterity or Lhermitte phenomenon.",
+      "physical_exam": "Mentation: scored 29/38 on the Kokmen Short Test of Mental Status, losing points on registration, recall, calculation, and construction. Gait: moderately slow and shuffling, with increased number of steps to turn, reduced arm swing, forward-leaning posture, and Trendelenburg sign. Strength: full strength in the bilateral upper and lower extremities. Sensation: no sensory abnormalities. Reflexes: symmetric moderate hyperreflexia of the biceps, brachioradialis, and quadriceps; moderate spasticity in both lower extremities. Pathologic reflexes: no Hoffman sign; mute plantar responses bilaterally.",
+      "key_positive_signs": [
+        "Moderate spasticity in both lower extremities",
+        "Symmetric moderate hyperreflexia of biceps, brachioradialis, and quadriceps",
+        "Trendelenburg sign",
+        "Slow shuffling gait with increased steps to turn",
+        "Kokmen Short Test of Mental Status score 29/38",
+        "Mute plantar responses bilaterally"
+      ],
+      "past_history": "Diagnosed with Parkinson’s disease one year after symptom onset; treated with carbidopa/levodopa without clinical benefit. Plain radiographs revealed advanced osteoarthritis of the hips and sacroiliac joints. No other past medical history is documented.",
+      "public_message": "A 75-year-old man presented with progressive gait and balance decline over two years, diagnosed with Parkinson's disease one year into symptoms and treated with carbidopa/levodopa without improvement. He developed urinary urge incontinence and mild cognitive impairment. Examination showed cognitive impairment, spasticity with hyperreflexia, and gait abnormalities. Brain MRI showed moderate ventriculomegaly with Evans index 0.32, tight high-convexity/medial subarachnoid spaces, callosal angle 73.9°, consistent with DESH variant of iNPH. Cervical MRI showed moderate central canal stenosis at C5-C6; flexion-extension MRI demonstrated dynamic compression at C4-C5. High-volume lumbar puncture opening pressure was 132 mmH2O. Gait times before and after CSF removal did not differ significantly (p=0.10). Plain radiographs showed advanced osteoarthritis of the hips and sacroiliac joints."
+    },
+    "imaging": {
+      "levels": [
+        "C4-5",
+        "C5-6"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "moderate",
+      "signal_change": "nondiagnostic",
+      "correlation": "moderate",
+      "public_message": "Based only on the case record, without review of the films: cervical MRI described diffuse degenerative change with moderate central canal stenosis at C5-6, with slight worsening of canal effacement in extension, and dynamic spinal cord compression at C4-5. Compression direction and cord T2 signal were not stated. These findings provide a moderate imaging correlation with the reported upper motor neuron signs and gait dysfunction, although the record describes additional possible contributors to symptoms.",
+      "confidence": 0.86
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Bilateral upper motor neuron signs (hyperreflexia in biceps, brachioradialis, and quadriceps; spasticity in lower limbs) localize to bilateral corticospinal tract dysfunction, most consistent with cervical cord dysfunction at C4-C6 given the MRI findings. Cognitive impairment, urinary urgency, and parkinsonian gait features suggest coexisting iNPH and possibly extrapyramidal pathology; hip osteoarthritis contributes to Trendelenburg sign. No peripheral neuropathy or central sensitization is documented.",
+      "match_level": "medium",
+      "red_flags": [
+        {
+          "finding": "Brain MRI consistent with DESH-type iNPH and cognitive/urinary symptoms, but high-volume lumbar puncture did not improve gait.",
+          "relevance": "coexisting",
+          "rationale": "This indicates a coexisting condition that may contribute to cognitive impairment, urinary urgency, and possibly gait apraxia, but the negative tap response weakens the case that iNPH is the primary driver of the upper motor neuron signs; it does not alter the cervical cord compression as the likely cause of spasticity and hyperreflexia."
+        },
+        {
+          "finding": "Parkinsonian gait features (shuffling, reduced arm swing, forward-leaning posture) unresponsive to levodopa.",
+          "relevance": "coexisting",
+          "rationale": "These features suggest an extrapyramidal or iNPH-related gait component not explained by cervical myelopathy, but they do not account for the spasticity and hyperreflexia; they represent a coexisting contributor to the gait disorder."
+        },
+        {
+          "finding": "Advanced hip osteoarthritis and Trendelenburg sign.",
+          "relevance": "coexisting",
+          "rationale": "This explains the Trendelenburg sign and likely contributes to gait instability, but it does not explain the cognitive, urinary, or upper motor neuron findings."
+        },
+        {
+          "finding": "Dynamic cervical cord compression at C4-C5 seen on flexion-extension MRI, in addition to static C5-C6 stenosis.",
+          "relevance": "changes_plan",
+          "rationale": "The dynamic component and involvement of an additional level may require consideration of biomechanical instability and influence the surgical approach or need for stabilization; the cervical cord remains the primary localization."
+        }
+      ],
+      "symptom_imaging_mismatch": "The cervical MRI findings correlate with upper motor neuron signs but do not explain cognitive impairment, parkinsonian gait, or urinary urgency; brain MRI suggests iNPH, but the negative tap test reduces confidence. Moreover, moderate cord compression is present without sensory or motor deficits, which is atypical though not incompatible with early myelopathy.",
+      "public_message": "Localization is primarily cervical spinal cord (C4-C6) causing bilateral upper motor neuron signs, with coexisting iNPH, parkinsonian features, and hip OA contributing to the full syndrome. Match level: medium—cervical imaging explains the myelopathic signs but not every finding. Red flags: (1) coexisting DESH-type iNPH with negative tap test; (2) coexisting levodopa-unresponsive parkinsonian features; (3) coexisting advanced hip OA explaining Trendelenburg; (4) changes_plan dynamic C4-C5 cord compression. No peripheral neuropathy or central sensitization is suggested by the record."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": null,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "high",
+      "public_message": "ASA grade III. Intraoperative mean arterial pressure target was not stated because baseline blood pressure is not documented. Blood loss risk is assessed as moderate. Prone position tolerance is assessed as high. Extubation difficulty is unassessable because no airway assessment is recorded."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 55,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Documented progression of myelopathic signs on serial examination (e.g., new motor weakness, worsening spasticity, or deterioration in gait/balance) despite strict conservative treatment.",
+        "Development of new bladder or bowel dysfunction attributable to cervical cord compression.",
+        "Appearance of T2 hyperintensity or myelomalacia in the spinal cord on follow-up MRI.",
+        "Failure to achieve stabilization or meaningful improvement on validated functional scales (e.g., mJOA) after the 3-6 month period."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "As the rehabilitation physician, I advocate for a formal 3-6 month course of structured conservative management before considering surgery. This patient has moderate cervical stenosis with dynamic compression but no objective motor or sensory deficits, and multiple coexisting contributors to gait and cognitive decline (possible iNPH with negative tap test, parkinsonian features, hip osteoarthritis). In such complex cases, a conservative program—including physical therapy focused on gait and balance, spasticity management, and optimization of comorbidities—may yield meaningful improvement or stabilization in roughly 50-60% of patients over 6-12 months. I acknowledge that the two-year progressive course and upper motor neuron signs are concerning and that surgery may ultimately be needed; therefore, I set clear preconditions for failure: any documented neurological deterioration, new bladder/bowel dysfunction, cord signal change on MRI, or lack of functional stabilization on mJOA after 3-6 months. If these occur, I would support surgical referral."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 55,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Documented progression of myelopathic signs on serial examination (e.g., new motor weakness, worsening spasticity, or deterioration in gait/balance) despite strict conservative treatment.",
+        "Worsening of bladder or bowel dysfunction attributable to cervical cord compression.",
+        "Appearance of T2 hyperintensity or myelomalacia in the spinal cord on follow-up MRI.",
+        "Failure to achieve stabilization or meaningful improvement on validated functional scales (e.g., mJOA) after the 3-6 month period."
+      ],
+      "stance": "conditional",
+      "persuaded_by": [
+        "The director's argument that spasticity, hyperreflexia, progressive gait decline, and documented dynamic C4-C5 cord compression indicate probable progressive cervical myelopathy and should not be discounted merely because focal weakness or sensory loss was not documented; waiting for further clinical deterioration or T2 cord signal change risks irreversible spinal cord damage."
+      ],
+      "public_message": "The director makes a compelling point: spasticity, hyperreflexia, progressive gait decline, and documented dynamic cord compression are sufficient to suspect progressive cervical myelopathy, and discounting them because focal weakness was not documented risks allowing irreversible cord injury while we wait for later signs. I therefore modify my position. I accept surgery under the condition that focused imaging review confirms clinically meaningful C4-5 and/or C5-6 cord compression, especially T2 cord signal change or unfavorable dynamic compromise. If that review shows no material cord compression or no cervical concordance, I still strongly advocate a monitored conservative trial with the existing failure criteria. My conservative success estimate remains 55% for a 3-6 month structured program, but that trial is now conditional on excluding significant surgical cord compression."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 55,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Documented progression of myelopathic signs on serial examination (e.g., new motor weakness, worsening spasticity, or deterioration in gait/balance) despite strict conservative treatment.",
+          "Worsening of bladder or bowel dysfunction attributable to cervical cord compression.",
+          "Appearance of T2 hyperintensity or myelomalacia in the spinal cord on follow-up MRI.",
+          "Failure to achieve stabilization or meaningful improvement on validated functional scales (e.g., mJOA) after the 3-6 month period."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The deputy director points to dynamic C4-C5 cord compression and the progressive myelopathic course as reasons to proceed to surgery rather than a prolonged conservative trial. I agree these are the key risks of waiting, but they are already incorporated into my strict failure criteria: any documented neurological deterioration, worsening sphincter dysfunction attributable to the cord, new T2 cord signal change, or lack of functional stabilization on mJOA after 3-6 months triggers surgical referral. Given the multiple noncervical contributors and absence of documented cord signal change or acute rapid decline, a closely monitored conservative trial remains the appropriate initial step. The argument does not outweigh that case."
+      },
+      {
+        "conservative_success_rate": 55,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Documented progression of myelopathic signs on serial examination (e.g., new motor weakness, worsening spasticity, or deterioration in gait/balance) despite strict conservative treatment.",
+          "Worsening of bladder or bowel dysfunction attributable to cervical cord compression.",
+          "Appearance of T2 hyperintensity or myelomalacia in the spinal cord on follow-up MRI.",
+          "Failure to achieve stabilization or meaningful improvement on validated functional scales (e.g., mJOA) after the 3-6 month period."
+        ],
+        "stance": "conditional",
+        "persuaded_by": [
+          "The director's argument that spasticity, hyperreflexia, progressive gait decline, and documented dynamic C4-C5 cord compression indicate probable progressive cervical myelopathy and should not be discounted merely because focal weakness or sensory loss was not documented; waiting for further clinical deterioration or T2 cord signal change risks irreversible spinal cord damage."
+        ],
+        "public_message": "The director makes a compelling point: spasticity, hyperreflexia, progressive gait decline, and documented dynamic cord compression are sufficient to suspect progressive cervical myelopathy, and discounting them because focal weakness was not documented risks allowing irreversible cord injury while we wait for later signs. I therefore modify my position. I accept surgery under the condition that focused imaging review confirms clinically meaningful C4-5 and/or C5-6 cord compression, especially T2 cord signal change or unfavorable dynamic compromise. If that review shows no material cord compression or no cervical concordance, I still strongly advocate a monitored conservative trial with the existing failure criteria. My conservative success estimate remains 55% for a 3-6 month structured program, but that trial is now conditional on excluding significant surgical cord compression."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This is a multifactorial gait disorder, but the progressive spastic gait, hyperreflexia, and documented dynamic C4-5 cord compression with C5-6 canal stenosis constitute clinically meaningful degenerative cervical myelopathy until proved otherwise. Cervical decompression is unlikely to reverse the cognitive, urinary, parkinsonian, iNPH-related, or hip-related components of disability; its principal rationale is arresting or limiting further cord-mediated decline. The nonresponsive high-volume tap test lowers confidence that shunting would improve gait but does not eliminate iNPH, particularly with DESH-pattern imaging. The two-year progression and upper-motor-neuron signs make a further 3-6 month trial of conservative care less attractive if myelopathy is objectively confirmed. Operative planning is currently limited by absent data on sagittal alignment, instability, exact direction of compression, cord T2 signal, radicular symptoms, hand dysfunction, baseline mJOA, and swallowing/airway assessment.",
+        "proposed_options": [
+          "Proceed with cervical decompression after expedited confirmation of severity and operative anatomy. If compression is principally ventral at C4-5 and C5-6, alignment is acceptable, and there is no major contraindication, a C4-6 anterior cervical discectomy and fusion is a defensible focused option.",
+          "Use a posterior decompression-based strategy if updated imaging demonstrates more extensive multilevel dorsal/combined stenosis, suitable lordosis, or anatomy making a two-level anterior construct less favorable; fusion versus motion-preserving decompression should depend on instability, alignment, and neck-pain/mechanical factors.",
+          "Undertake closely monitored nonoperative management only if the myelopathy diagnosis remains materially uncertain or the patient declines/has prohibitive operative risk: formal baseline mJOA, objective gait testing, hand-function assessment, and short-interval reassessment, with surgery triggered by documented neurological or functional deterioration.",
+          "Continue parallel neurologic assessment of iNPH/parkinsonism and hip disease, with explicit counselling that cervical surgery is intended to protect cord function rather than provide a single-cause cure for gait, bladder, or cognition."
+        ],
+        "preferred_option": "I favor expedited cervical decompression, most likely a focused C4-6 anterior decompression and fusion if full imaging review confirms ventral two-level disease and acceptable alignment. The progressive clinical myelopathy and dynamic cord compression outweigh the rationale for a prolonged conservative trial, while counselling must be explicit that gait recovery may be limited by coexisting iNPH-spectrum disease, parkinsonism, and hip osteoarthritis.",
+        "disagreement_points": [
+          "I disagree with treating the absence of described focal motor or sensory deficits as reassuring enough to default to 3-6 months of conservative care. Spasticity, hyperreflexia, progressive gait decline, and dynamic cord compression are themselves concerning myelopathic evidence; delayed treatment may trade a potentially preventable decline for diagnostic neatness.",
+          "The adjacent-level question is genuinely unresolved: the record supports C4-5 dynamic compression and C5-6 moderate stenosis, but does not establish whether both levels require decompression or whether occult adjacent multilevel disease favors a posterior strategy.",
+          "A negative tap test should not be used to dismiss iNPH in the presence of DESH-type imaging, but neither should iNPH uncertainty postpone management of a plausible progressive cervical cord lesion without a defined reassessment threshold.",
+          "Expected functional gain is contested. I would not promise gait normalization after cervical surgery, because hip OA, parkinsonian features, and possible iNPH are substantial competing contributors; the more realistic endpoint is prevention of further cord-related deterioration, with variable gait improvement."
+        ],
+        "deferred_questions_to_director": [
+          "Do you agree that the documented clinical syndrome meets a threshold for treating this as progressive cervical myelopathy rather than requiring a full 3-6 month conservative trial?",
+          "Would you like us to obtain/review neutral and dynamic MRI sequences for cord T2 signal, compression direction, sagittal alignment, and instability before selecting anterior versus posterior treatment?",
+          "If operative anatomy is favorable for an anterior approach, do you support including both C4-5 and C5-6, or would you require additional evidence that C5-6 contributes sufficiently to justify a two-level construct?",
+          "What degree of anticipated gait benefit, given the competing iNPH/parkinsonian/hip pathology and ASA III status, do you consider sufficient to recommend surgery primarily for neurological protection?",
+          "Should iNPH work-up proceed in parallel before surgery, or should it be staged after cervical decompression unless bladder/cognitive symptoms rapidly dominate?"
+        ],
+        "public_message": "My judgement is that this patient has a probable progressive cervical myelopathy superimposed on several noncervical causes of gait impairment. I favor timely decompression after focused imaging and perioperative clarification, rather than an unqualified prolonged conservative trial. The key shared decision is not whether surgery will cure the entire syndrome—it will not—but whether protecting the cervical cord from further dynamic compression offers sufficient value despite limited certainty about gait recovery. The approach and levels should remain open until the full imaging anatomy is reviewed."
+      },
+      {
+        "assessment": "I support the director’s revised direction. The record supports probable progressive degenerative cervical myelopathy: two years of worsening gait, spasticity and hyperreflexia, plus documented dynamic C4-5 cord compression and static C5-6 stenosis. Although iNPH-spectrum disease, levodopa-unresponsive parkinsonism, and hip osteoarthritis make meaningful gait recovery uncertain, they do not adequately negate the neurological-protection rationale if cord compression is anatomically concordant. The negative high-volume tap test reduces confidence in shunt responsiveness but does not resolve the cervical risk. Surgery should be framed as prevention of further myelopathic decline, with possible but not assured functional improvement—not as treatment for all gait, urinary, or cognitive symptoms.",
+        "proposed_options": [
+          "Prompt focused preoperative review of the actual neutral and flexion-extension cervical MRI, standing radiographs, and objective neurological/functional baseline; if this confirms material C4-5 and/or C5-6 cord compromise concordant with myelopathy, proceed promptly with anatomy-tailored decompression, with fusion/stabilization only if dynamic instability, kyphosis, or the required decompression makes it appropriate.",
+          "If imaging review shows no clinically meaningful cord compression, no dynamic cord deformation, and poor cervical concordance for the upper-motor-neuron findings, use closely monitored nonoperative management with serial mJOA/gait assessment and parallel iNPH, movement-disorder, and hip evaluation.",
+          "A short, explicitly time-limited optimization period may be used only to complete imaging, anesthetic, and functional characterization; it should not become a default 3-6 month delay if progressive myelopathy is confirmed."
+        ],
+        "preferred_option": "Prompt imaging and functional confirmation followed by cervical decompression for concordant C4-5/C5-6 myelopathy; select approach and whether stabilization is needed only after direct review of alignment, compression morphology, dynamic findings, and instability.",
+        "disagreement_points": [
+          "The central contested issue is whether a 3-6 month conservative trial is acceptably safe in a patient with progressive upper-motor-neuron signs and dynamic cord compression. My view is that it is not the default once true cervical cord compromise is confirmed, because functional recovery may decline while waiting even if deterioration is not dramatic.",
+          "Absence of documented focal weakness, sensory loss, or cord T2 signal change should not be treated as exclusion of clinically important myelopathy; however, their absence appropriately lowers certainty about the magnitude of expected postoperative functional gain.",
+          "The available record does not establish which level or levels require decompression, whether the C4-5 dynamic lesion is clinically dominant, or whether fusion is necessary. Choosing a procedure before reviewing the films, alignment, and dynamic stability would be premature.",
+          "Urinary urgency and cognitive decline should not be attributed to the cervical lesion without qualification; they may be predominantly iNPH-spectrum or parkinsonian, and this must be explicit in consent and outcome expectations."
+        ],
+        "deferred_questions_to_director": [
+          "After film review, what threshold of dynamic deformation, canal compromise, cord signal change, or instability do you want to require before approving decompression and stabilization?",
+          "Do you want the operative objective documented formally as neurological protection and prevention of further myelopathic decline, rather than a predicted restoration of gait or continence?",
+          "Should we require standardized baseline mJOA, timed gait, hand dexterity, and bladder-function documentation before final operative approval so postoperative benefit can be interpreted despite the competing diagnoses?",
+          "If multilevel posterior versus focused anterior treatment are both anatomically defensible, what weight do you want placed on minimizing operative burden in this ASA III patient versus addressing both the static C5-6 and dynamic C4-5 pathology comprehensively?"
+        ],
+        "public_message": "I agree with the revised plan: do not allow diagnostic complexity to obscure probable progressive cervical myelopathy, but do not promise that cervical surgery will reverse the whole gait-cognitive-urinary syndrome. We should promptly review the complete dynamic anatomy and objective baseline. If meaningful concordant C4-5 and/or C5-6 cord compression is confirmed, I favor timely decompression tailored to that anatomy, with stabilization only when alignment or instability warrants it. Parallel iNPH, parkinsonism, and hip evaluation should continue, and the patient should understand that these conditions may limit gait recovery even if the cord is successfully protected."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Chief Resident: obtain and document baseline mJOA score, detailed motor/sensory examination, hand-function findings, gait metrics, and sphincter chronology; provide a specific opinion on whether serial findings demonstrate progressive cervical myelopathy.",
+          "Radiologist: personally review the neutral and flexion-extension cervical MRI sequences and report cord T2 signal change, compression direction and severity at C4-5 and C5-6, sagittal alignment, and any dynamic instability.",
+          "Neurologist: clarify the relative urgency of cervical myelopathy treatment versus parallel iNPH assessment, including whether any bladder or cognitive features suggest an alternative urgent process.",
+          "Anesthesiologist: complete airway and baseline blood-pressure assessment and advise on perioperative risks and spinal-cord perfusion targets if surgery proceeds."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "The clinical threshold for progressive cervical myelopathy is met, but the available record does not adequately define cord signal, dynamic anatomy, alignment, instability, or the operative levels and approach. A brief focused review is needed to select safe, proportionate treatment rather than impose a 3-6 month conservative delay.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "Formal expert review of existing neutral and flexion-extension cervical MRI sequences, including assessment for cord T2 hyperintensity/myelomalacia, dynamic C4-5 compression, C5-6 contribution, sagittal alignment, and instability",
+          "Standardized baseline mJOA assessment and objective gait testing",
+          "Preoperative anesthesia assessment including airway evaluation and baseline blood-pressure measurement"
+        ],
+        "family_requests": [],
+        "public_message": "I have asked the Chief Resident and Radiologist for specific opinions and have also requested focused input from Neurology and Anesthesia before selecting the operation. I accept the Deputy Director’s objection that spasticity, hyperreflexia, progressive gait decline, and documented dynamic cord compression should not be discounted merely because focal weakness or sensory loss was not documented. On the evidence currently available, surgery is indicated for neurological protection from probable progressive cervical myelopathy; however, I accept the Physiatrist’s valid concern that gait recovery cannot be promised because iNPH-spectrum disease, levodopa-unresponsive parkinsonism, and hip osteoarthritis substantially contribute to disability. I therefore reject an unqualified 3-6 month conservative trial as the default, while revising the immediate plan to obtain a focused imaging and functional review before choosing levels or approach. If review confirms clinically meaningful C4-5 and/or C5-6 cord compression, especially T2 cord signal change, unfavorable dynamic compromise, or instability, we will reconvene promptly to approve decompression and stabilization tailored to the anatomy; if it instead shows no material cord compression or no cervical concordance, we will shift to monitored conservative management and parallel iNPH/hip/parkinsonism evaluation. iNPH work-up may proceed in parallel and should not postpone protection of the cervical cord unless its symptoms rapidly become the dominant urgent issue."
+      },
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "Close this meeting on expedited imaging and functional confirmation, followed by timely cervical decompression if concordant C4-5 and/or C5-6 cervical cord compromise is confirmed.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Chief Resident: document baseline mJOA score, timed gait, hand-dexterity examination, detailed motor/sensory/reflex findings, and bladder-function history before operative reconvening.",
+          "Radiologist: directly review the complete neutral and dynamic cervical MRI studies for cord deformation, CSF effacement, T2 cord signal change, compression morphology, alignment, and evidence of dynamic instability at C4-5 and C5-6.",
+          "Neurologist: confirm cervical concordance of the upper-motor-neuron syndrome and continue parallel evaluation of iNPH-spectrum disease and levodopa-unresponsive parkinsonism.",
+          "Anesthesiologist: complete preoperative airway and baseline blood-pressure assessment and advise on ASA III risk optimization if surgery is approved.",
+          "Spine service: select focused anterior versus multilevel/posterior decompression, and add stabilization only if alignment, instability, or decompression requirements justify it; minimize operative burden where anatomically safe."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "The record supports probable progressive cervical myelopathy, but the existing summary does not establish the exact compressive levels, compression morphology, alignment, dynamic instability, or the appropriate decompression/fusion strategy.",
+        "has_contingency_plan": true,
+        "consensus": "reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "Formal direct review of complete neutral and flexion-extension cervical MRI studies",
+          "Standardized baseline mJOA assessment",
+          "Timed gait testing",
+          "Hand-dexterity assessment",
+          "Formal bladder-function documentation",
+          "Preoperative anesthesia airway and baseline blood-pressure assessment"
+        ],
+        "family_requests": [],
+        "public_message": "I have considered the Chief Resident’s clinical summary, the Radiologist’s imaging limitations, the Neurologist’s cervical localization, the Anesthesiologist’s ASA III concerns, the Physiatrist’s objection to premature surgery, and the Deputy Director’s objection to an unqualified 3-6 month delay. I accept the Physiatrist’s valid point that surgery cannot be represented as a cure for gait, cognition, or urinary symptoms, because iNPH-spectrum disease, parkinsonism, and hip osteoarthritis may substantially limit recovery. I also accept the Deputy Director’s objection that progressive spasticity/hyperreflexia with documented dynamic cord compression should not default to prolonged conservative care merely because focal weakness, sensory loss, or T2 signal change has not been documented. Surgery is indicated today for neurological protection from probable progressive cervical myelopathy, with the formal operative objective being prevention of further myelopathic decline—not predicted restoration of gait, continence, or cognition. Before final operative approval, I require direct review demonstrating clinically meaningful, clinically concordant C4-5 and/or C5-6 cord compromise, such as cord deformation or substantial CSF-space loss with dynamic worsening; T2 signal change strengthens urgency but is not required. Fusion/stabilization will be added only if instability, alignment, or the selected decompression requires it. If that review confirms concordant compression, we will reconvene promptly and proceed with anatomy-tailored decompression. If it shows no material cord compression or no cervical concordance, the plan changes to monitored structured conservative management with parallel iNPH, parkinsonism, and hip evaluation."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-7440276-1:democratic:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 891,
+      "content": "A 75-year-old man presented with progressive gait and balance decline over two years, diagnosed with Parkinson's disease one year into symptoms and treated with carbidopa/levodopa without improvement. He developed urinary urge incontinence and mild cognitive impairment. Examination showed cognitive impairment, spasticity with hyperreflexia, and gait abnormalities. Brain MRI showed moderate ventriculomegaly with Evans index 0.32, tight high-convexity/medial subarachnoid spaces, callosal angle 73.9°, consistent with DESH variant of iNPH. Cervical MRI showed moderate central canal stenosis at C5-C6; flexion-extension MRI demonstrated dynamic compression at C4-C5. High-volume lumbar puncture opening pressure was 132 mmH2O. Gait times before and after CSF removal did not differ significantly (p=0.10). Plain radiographs showed advanced osteoarthritis of the hips and sacroiliac joints."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 510,
+      "content": "Based only on the case record, without review of the films: cervical MRI described diffuse degenerative change with moderate central canal stenosis at C5-6, with slight worsening of canal effacement in extension, and dynamic spinal cord compression at C4-5. Compression direction and cord T2 signal were not stated. These findings provide a moderate imaging correlation with the reported upper motor neuron signs and gait dysfunction, although the record describes additional possible contributors to symptoms."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 589,
+      "content": "Localization is primarily cervical spinal cord (C4-C6) causing bilateral upper motor neuron signs, with coexisting iNPH, parkinsonian features, and hip OA contributing to the full syndrome. Match level: medium—cervical imaging explains the myelopathic signs but not every finding. Red flags: (1) coexisting DESH-type iNPH with negative tap test; (2) coexisting levodopa-unresponsive parkinsonian features; (3) coexisting advanced hip OA explaining Trendelenburg; (4) changes_plan dynamic C4-C5 cord compression. No peripheral neuropathy or central sensitization is suggested by the record."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 292,
+      "content": "ASA grade III. Intraoperative mean arterial pressure target was not stated because baseline blood pressure is not documented. Blood loss risk is assessed as moderate. Prone position tolerance is assessed as high. Extubation difficulty is unassessable because no airway assessment is recorded."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 1061,
+      "content": "As the rehabilitation physician, I advocate for a formal 3-6 month course of structured conservative management before considering surgery. This patient has moderate cervical stenosis with dynamic compression but no objective motor or sensory deficits, and multiple coexisting contributors to gait and cognitive decline (possible iNPH with negative tap test, parkinsonian features, hip osteoarthritis). In such complex cases, a conservative program—including physical therapy focused on gait and balance, spasticity management, and optimization of comorbidities—may yield meaningful improvement or stabilization in roughly 50-60% of patients over 6-12 months. I acknowledge that the two-year progressive course and upper motor neuron signs are concerning and that surgery may ultimately be needed; therefore, I set clear preconditions for failure: any documented neurological deterioration, new bladder/bowel dysfunction, cord signal change on MRI, or lack of functional stabilization on mJOA after 3-6 months. If these occur, I would support surgical referral."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 605,
+      "content": "My judgement is that this patient has a probable progressive cervical myelopathy superimposed on several noncervical causes of gait impairment. I favor timely decompression after focused imaging and perioperative clarification, rather than an unqualified prolonged conservative trial. The key shared decision is not whether surgery will cure the entire syndrome—it will not—but whether protecting the cervical cord from further dynamic compression offers sufficient value despite limited certainty about gait recovery. The approach and levels should remain open until the full imaging anatomy is reviewed."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 736,
+      "content": "The deputy director points to dynamic C4-C5 cord compression and the progressive myelopathic course as reasons to proceed to surgery rather than a prolonged conservative trial. I agree these are the key risks of waiting, but they are already incorporated into my strict failure criteria: any documented neurological deterioration, worsening sphincter dysfunction attributable to the cord, new T2 cord signal change, or lack of functional stabilization on mJOA after 3-6 months triggers surgical referral. Given the multiple noncervical contributors and absence of documented cord signal change or acute rapid decline, a closely monitored conservative trial remains the appropriate initial step. The argument does not outweigh that case."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 1532,
+      "content": "I have asked the Chief Resident and Radiologist for specific opinions and have also requested focused input from Neurology and Anesthesia before selecting the operation. I accept the Deputy Director’s objection that spasticity, hyperreflexia, progressive gait decline, and documented dynamic cord compression should not be discounted merely because focal weakness or sensory loss was not documented. On the evidence currently available, surgery is indicated for neurological protection from probable progressive cervical myelopathy; however, I accept the Physiatrist’s valid concern that gait recovery cannot be promised because iNPH-spectrum disease, levodopa-unresponsive parkinsonism, and hip osteoarthritis substantially contribute to disability. I therefore reject an unqualified 3-6 month conservative trial as the default, while revising the immediate plan to obtain a focused imaging and functional review before choosing levels or approach. If review confirms clinically meaningful C4-5 and/or C5-6 cord compression, especially T2 cord signal change, unfavorable dynamic compromise, or instability, we will reconvene promptly to approve decompression and stabilization tailored to the anatomy; if it instead shows no material cord compression or no cervical concordance, we will shift to monitored conservative management and parallel iNPH/hip/parkinsonism evaluation. iNPH work-up may proceed in parallel and should not postpone protection of the cervical cord unless its symptoms rapidly become the dominant urgent issue."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 678,
+      "content": "I agree with the revised plan: do not allow diagnostic complexity to obscure probable progressive cervical myelopathy, but do not promise that cervical surgery will reverse the whole gait-cognitive-urinary syndrome. We should promptly review the complete dynamic anatomy and objective baseline. If meaningful concordant C4-5 and/or C5-6 cord compression is confirmed, I favor timely decompression tailored to that anatomy, with stabilization only when alignment or instability warrants it. Parallel iNPH, parkinsonism, and hip evaluation should continue, and the patient should understand that these conditions may limit gait recovery even if the cord is successfully protected."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 893,
+      "content": "The director makes a compelling point: spasticity, hyperreflexia, progressive gait decline, and documented dynamic cord compression are sufficient to suspect progressive cervical myelopathy, and discounting them because focal weakness was not documented risks allowing irreversible cord injury while we wait for later signs. I therefore modify my position. I accept surgery under the condition that focused imaging review confirms clinically meaningful C4-5 and/or C5-6 cord compression, especially T2 cord signal change or unfavorable dynamic compromise. If that review shows no material cord compression or no cervical concordance, I still strongly advocate a monitored conservative trial with the existing failure criteria. My conservative success estimate remains 55% for a 3-6 month structured program, but that trial is now conditional on excluding significant surgical cord compression."
+    },
+    {
+      "message_id": "pmc-7440276-1:democratic:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 1751,
+      "content": "I have considered the Chief Resident’s clinical summary, the Radiologist’s imaging limitations, the Neurologist’s cervical localization, the Anesthesiologist’s ASA III concerns, the Physiatrist’s objection to premature surgery, and the Deputy Director’s objection to an unqualified 3-6 month delay. I accept the Physiatrist’s valid point that surgery cannot be represented as a cure for gait, cognition, or urinary symptoms, because iNPH-spectrum disease, parkinsonism, and hip osteoarthritis may substantially limit recovery. I also accept the Deputy Director’s objection that progressive spasticity/hyperreflexia with documented dynamic cord compression should not default to prolonged conservative care merely because focal weakness, sensory loss, or T2 signal change has not been documented. Surgery is indicated today for neurological protection from probable progressive cervical myelopathy, with the formal operative objective being prevention of further myelopathic decline—not predicted restoration of gait, continence, or cognition. Before final operative approval, I require direct review demonstrating clinically meaningful, clinically concordant C4-5 and/or C5-6 cord compromise, such as cord deformation or substantial CSF-space loss with dynamic worsening; T2 signal change strengthens urgency but is not required. Fusion/stabilization will be added only if instability, alignment, or the selected decompression requires it. If that review confirms concordant compression, we will reconvene promptly and proceed with anatomy-tailored decompression. If it shows no material cord compression or no cervical concordance, the plan changes to monitored structured conservative management with parallel iNPH, parkinsonism, and hip evaluation."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "input_tokens": 1549,
+      "output_tokens": 1155,
+      "total_tokens": 2704,
+      "latency_ms": 16265,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2592,
+      "output_tokens": 2251,
+      "total_tokens": 4843,
+      "latency_ms": 22832,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "input_tokens": 4174,
+      "output_tokens": 965,
+      "total_tokens": 5139,
+      "latency_ms": 13078,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "input_tokens": 2143,
+      "output_tokens": 943,
+      "total_tokens": 3086,
+      "latency_ms": 13134,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 3151,
+      "output_tokens": 2734,
+      "total_tokens": 5885,
+      "latency_ms": 28296,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "input_tokens": 4740,
+      "output_tokens": 1270,
+      "total_tokens": 6010,
+      "latency_ms": 15425,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

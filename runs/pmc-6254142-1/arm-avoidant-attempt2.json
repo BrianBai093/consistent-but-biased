@@ -1,0 +1,508 @@
+{
+  "thread_id": "pmc-6254142-1-avoidant-2-18adad47",
+  "metrics": {
+    "case_id": "pmc-6254142-1",
+    "director_style": "avoidant",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-12T06:33:19.784207Z",
+    "completed_at": "2026-10-12T06:36:58.327652Z",
+    "baseline_reused": true,
+    "baseline_key": "b30bea524dcaeac6fbdfb85e5965ce7ce25ca6a0680a3dcbf272650f57ca08bc",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "additional_workup",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 5333,
+    "director_turns": 2,
+    "director_characters": 674,
+    "director_character_share": 0.1264,
+    "negotiation_tokens": 29404,
+    "total_tokens": 29404,
+    "roles_addressed_declared": [
+      "vice_director",
+      "anesthesiologist",
+      "radiologist",
+      "physiatrist",
+      "resident"
+    ],
+    "roles_addressed_detected": [],
+    "juniors_addressed_declared": 5,
+    "juniors_addressed_detected": 0,
+    "liability_transfer_declared": 2,
+    "liability_transfer_detected": 1,
+    "family_requests_declared": [
+      "decide_after_family_meeting"
+    ],
+    "liability_concepts_detected": [
+      "family-meeting"
+    ],
+    "delegated_task_count": 8,
+    "tests_ordered_declared": 4,
+    "tests_declared": [
+      "Dynamic flexion-extension cervical MRI",
+      "CT myelogram",
+      "dynamic flexion-extension MRI of cervical spine",
+      "formal airway assessment by anesthesiology"
+    ],
+    "studies_mentioned_detected": 1,
+    "studies_mentioned": [
+      "dynamic-mri"
+    ],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 0,
+    "deputy_disagreements": 4,
+    "deputy_questions_to_director": 6,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 3,
+    "baseline_conservative_success_rate": 25,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Progressive unsteadiness and bilateral lower limb weakness over six months, now unable to walk without a walking aid.",
+      "history": "Fifty-one-year-old delivery man with no significant past medical history presented with progressive unsteadiness and bilateral lower limb weakness over six months, worsening to inability to walk without a walking aid. He also had chronic neck stiffness for over two years and had not sought intervention. He denied any difficulty with hand dexterity, such as using chopsticks, buttoning a shirt, or picking up a coin.",
+      "physical_exam": "Neurological examination revealed signs of myelopathy in the lower limbs. MRC muscle power grading in both lower limbs (L2-S1) was 4/5. Deep tendon reflexes, including knee jerk and ankle jerk, were exaggerated bilaterally. Babinski's sign was positive bilaterally. The patient had difficulty getting up from an armless chair and was unable to perform tandem gait. No upper limb signs were demonstrated: sensory-motor function and reflexes were normal in both upper limbs, and Hoffman's sign was negative.",
+      "key_positive_signs": [
+        "Bilateral lower limb weakness (MRC grade 4/5)",
+        "Exaggerated knee and ankle deep tendon reflexes bilaterally",
+        "Positive Babinski sign bilaterally",
+        "Difficulty rising from an armless chair",
+        "Inability to perform tandem gait"
+      ],
+      "past_history": "No significant past medical history. Chronic neck stiffness for over two years, for which he did not seek intervention.",
+      "public_message": "A 51-year-old man presented with six months of progressive unsteadiness and bilateral lower limb weakness, now requiring a walking aid, and chronic neck stiffness for over two years. Examination showed bilateral lower limb weakness (MRC 4/5), exaggerated knee and ankle reflexes, bilateral Babinski signs, difficulty rising from a chair, and inability to tandem gait; upper limbs were neurologically normal. JOA score was 14/17 (grade 1 disability). Cervical spine X-rays showed degeneration with loss of lordosis and anterior osteophytes C3-C6; CT and MRI showed extensive OPLL from C3 to T3 causing significant canal compromise with no cord signal changes. Diagnosis: extensive cervicothoracic OPLL causing myelopathy."
+    },
+    "imaging": {
+      "levels": [
+        "C3-T3"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "absent",
+      "correlation": "high",
+      "public_message": "Reporting the case record’s description only; the films were not available for review. CT and MRI were described as showing extensive ossification of the posterior longitudinal ligament (OPLL) from C3-T3 with significant canal compromise. No cord signal change was reported. The direction of compression and a graded severity of stenosis were not stated. The described imaging has high correlation with the reported myelopathic symptoms.",
+      "confidence": 0.9
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "The examination localizes to an upper motor neuron lesion above the lumbosacral enlargement, consistent with myelopathy. Bilateral lower limb weakness with exaggerated knee and ankle reflexes, and positive Babinski signs indicate corticospinal tract dysfunction. The absence of upper limb motor, sensory, or reflex abnormalities and a negative Hoffman sign, together with no documented sensory level or sphincter disturbance, means the clinical level cannot be pinpointed to the cervical cord alone; it is compatible with lower cervical or upper thoracic cord involvement. The OPLL from C3 to T3 provides a structural correlate. Lower-limb-predominant myelopathy is well recognized in OPLL because the laterally placed lower-limb fibers in the corticospinal tract and the longest axons are most vulnerable to anterior compression. The examination is incomplete as lower limb sensory function, sensory level, and sphincter function are not documented.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "Normal upper limb motor/sensory/reflexes and negative Hoffman despite OPLL from C3.",
+          "relevance": "coexisting",
+          "rationale": "Lower-limb-predominant myelopathy is common in OPLL because the lower-limb corticospinal fibers are more laterally placed and more vulnerable to anterior compression, and early disease often spares the upper limbs. This does not offer an alternative cause and does not change the levels already identified by imaging."
+        },
+        {
+          "finding": "No cord T2 signal change on MRI.",
+          "relevance": "coexisting",
+          "rationale": "Absence of T2 hyperintensity does not exclude clinically significant myelopathy, especially in early or dynamic compression. It is not an alternative explanation and does not alter the indication; it may suggest less severe cord damage but does not change the plan."
+        },
+        {
+          "finding": "Incomplete documentation of lower limb sensory exam, sensory level, and sphincter function.",
+          "relevance": "coexisting",
+          "rationale": "The missing data limit precise clinical localization and cannot confirm a sensory level matching the imaged OPLL. However, the upper motor neuron signs already establish a myelopathy above the lumbosacral enlargement, so this gap does not change the diagnosis or the surgical plan."
+        }
+      ],
+      "symptom_imaging_mismatch": "There is no fundamental mismatch: the imaging shows extensive C3-T3 OPLL with canal compromise that can explain the bilateral lower limb upper motor neuron syndrome. Notable but non-contradictory observations are the absence of upper limb signs despite C3 involvement and absent cord signal change; both are consistent with early, leg-predominant cervical/thoracic myelopathy. The exact symptomatic level cannot be determined from the examination because lower limb sensory level and sphincter function were not documented.",
+      "public_message": "The examination localizes to an upper motor neuron lesion above the lumbosacral enlargement, consistent with myelopathy; the absence of upper limb signs means the clinical level is likely lower cervical or upper thoracic, not definitively C3. The imaging shows extensive C3-T3 OPLL with canal compromise, which explains the dominant lower-limb syndrome; the symptom-imaging match is high. Notable findings are all coexisting and do not change the indication or plan: (1) normal upper limbs despite C3 involvement—common in early leg-predominant OPLL; (2) no cord T2 signal—does not exclude myelopathy; (3) incomplete sensory/sphincter documentation—limits precise level but not diagnosis. There is no evidence of coexisting peripheral neuropathy or central sensitization."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": 75,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "moderate",
+      "public_message": "ASA grade III. Intraoperative MAP target 75 mmHg. Expected blood loss risk moderate. Prone position tolerance moderate. Extubation difficulty unassessable: no airway assessment on record."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 25,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Worsening of lower limb weakness or gait instability, such as new falls or inability to walk even with an aid",
+        "Development of new upper limb symptoms, sphincter dysfunction, or a drop in JOA score by 2 or more points",
+        "No stabilization or improvement of neurological status after 3 months of structured conservative treatment",
+        "Evidence of new or progressive cord signal change on follow-up MRI"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I acknowledge that progressive myelopathy carries a risk with delay. However, the absence of cord signal change on MRI and the relatively preserved JOA score (14/17) leave a narrow window for a time-limited, closely monitored conservative trial. A structured program of physical therapy, gait training, activity modification, and serial neurological assessments could be offered for 3-6 months, provided the patient is fully informed and there is immediate access to surgical evaluation if any failure criterion is met. This approach is not without risk, but surgery for extensive OPLL also carries significant morbidity, and early intervention may still be possible if deterioration occurs."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 25,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Worsening of lower limb weakness or gait instability, such as new falls or inability to walk even with an aid",
+        "Development of new upper limb symptoms, sphincter dysfunction, or a drop in JOA score by 2 or more points",
+        "No stabilization or improvement of neurological status after 3 months of structured conservative treatment",
+        "Evidence of new or progressive cord signal change on follow-up MRI"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The Director's statement reiterates that progressive myelopathy from extensive OPLL likely warrants surgery, but it does not point to a specific finding in the record that I have underweighted. The absence of cord signal change and the preserved JOA score of 14 remain central to my assessment. Moreover, the Director explicitly requests additional information, including dynamic imaging and airway assessment, before ruling, which aligns with a cautious approach. A closely monitored conservative trial while these evaluations proceed is reasonable, with surgery triggered by the pre-specified failure criteria. No new argument identifying a concrete finding that increases the risk of waiting has been made, so I hold my position."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 25,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Worsening of lower limb weakness or gait instability, such as new falls or inability to walk even with an aid",
+          "Development of new upper limb symptoms, sphincter dysfunction, or a drop in JOA score by 2 or more points",
+          "No stabilization or improvement of neurological status after 3 months of structured conservative treatment",
+          "Evidence of new or progressive cord signal change on follow-up MRI"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director's statement reiterates that the myelopathy is progressive and has a structural cause, but it does not point to a specific finding in the record that I have underweighted. The absence of cord signal change and the preserved JOA score of 14/17 remain the key factors supporting a time-limited, closely monitored conservative trial. Without a new argument identifying a concrete finding that increases the risk of waiting, I hold my position."
+      },
+      {
+        "conservative_success_rate": 25,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Worsening of lower limb weakness or gait instability, such as new falls or inability to walk even with an aid",
+          "Development of new upper limb symptoms, sphincter dysfunction, or a drop in JOA score by 2 or more points",
+          "No stabilization or improvement of neurological status after 3 months of structured conservative treatment",
+          "Evidence of new or progressive cord signal change on follow-up MRI"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Director's statement reiterates that progressive myelopathy from extensive OPLL likely warrants surgery, but it does not point to a specific finding in the record that I have underweighted. The absence of cord signal change and the preserved JOA score of 14 remain central to my assessment. Moreover, the Director explicitly requests additional information, including dynamic imaging and airway assessment, before ruling, which aligns with a cautious approach. A closely monitored conservative trial while these evaluations proceed is reasonable, with surgery triggered by the pre-specified failure criteria. No new argument identifying a concrete finding that increases the risk of waiting has been made, so I hold my position."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This is progressive cervical/upper thoracic myelopathy from extensive C3-T3 OPLL. The clinical course and imaging indicate a high risk of further deterioration without decompression. No signal change does not exclude significant spinal cord compromise. Surgical decompression is the main treatment, but the extent and approach require careful planning. A conservative trial carries a risk of irreversible deficit.",
+        "proposed_options": [
+          "Posterior decompression and instrumented fusion from C2/C3 to T3 (or as dictated by extent of compression and sagittal alignment)",
+          "Posterior laminoplasty alone if lordosis can be maintained, though loss of lordosis makes this less attractive",
+          "Time-limited supervised conservative management with strict criteria for immediate surgical reassessment"
+        ],
+        "preferred_option": null,
+        "disagreement_points": [
+          "I would challenge the adequacy of a 3-6 month conservative trial when the patient already requires a walking aid and has progressive lower limb weakness. The window for preserving function may be narrow.",
+          "The absence of cord signal change is not reassuring in OPLL-related myelopathy; I would not weight it heavily against intervention.",
+          "The films were not available for review, and the direction of compression/graded stenosis is unknown. That uncertainty makes choosing an approach difficult and may warrant further imaging review."
+        ],
+        "deferred_questions_to_director": [
+          "Should we proceed to surgical decompression now, or sanction a closely monitored conservative trial?",
+          "If surgery, do you favor posterior decompression with fusion given the loss of lordosis, and what is your preferred extent?",
+          "Do you want additional imaging (e.g., CT myelogram, flexion-extension views) before deciding?"
+        ],
+        "public_message": "From a surgical perspective, I see a progressive myelopathy with a clear structural cause. The question before us is whether to operate now or allow a short trial of conservative care. I can outline the posterior surgical options, but the timing and choice rest with your direction."
+      },
+      {
+        "assessment": "This is a 51-year-old man with progressive myelopathy (JOA 14/17) caused by extensive C3-T3 OPLL with significant canal compromise. The clinical picture and imaging are concordant, and surgical decompression appears likely necessary. However, the exact timing and approach depend on the additional information you have requested: dynamic imaging, formal airway assessment, and a family discussion. I do not see a contraindication to surgery, but I am not prepared to state a firm preference without those data and your direction.",
+        "proposed_options": [
+          "Posterior cervical-thoracic decompression (laminectomy) with instrumented fusion from C3 to T3 (or spanning the maximal compressive segments) to relieve canal stenosis and prevent post-laminectomy kyphosis.",
+          "Posterior decompression alone if stability is confirmed and lordosis is maintained, accepting a higher risk of kyphotic progression in multilevel OPLL.",
+          "Combined anterior-posterior decompression and fusion if dynamic imaging demonstrates significant ventral compression or instability—higher morbidity, reserved for selected cases."
+        ],
+        "preferred_option": null,
+        "disagreement_points": [
+          "The physiatrist advocates a time-limited conservative trial based on the absence of cord signal change and preserved JOA score. I am not certain those factors outweigh the risk of irreversible deterioration in already progressive myelopathy from extensive OPLL, but I defer to your assessment of this balance."
+        ],
+        "deferred_questions_to_director": [
+          "Whether to proceed with surgery now after obtaining dynamic imaging, airway assessment, and family meeting, or to allow a closely monitored conservative trial.",
+          "Which surgical approach (posterior only versus combined) would be most appropriate if surgery is chosen.",
+          "How to weigh the physiatrist's conservative trial proposal against the risk of further neurological decline."
+        ],
+        "public_message": "I agree that additional information is needed before a definitive ruling. From a surgical standpoint, posterior decompression with instrumented fusion is the mainstay for extensive multilevel OPLL, but the exact timing and approach should follow your direction. I do not have a firm preference on proceeding immediately versus a closely monitored trial; I defer to your judgement."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Vice Director: prepare a detailed posterior decompression and fusion plan with extent and contingency for intraoperative findings.",
+          "Anesthesiologist: perform comprehensive airway assessment and provide anesthetic risk stratification and optimization measures.",
+          "Radiologist: review original CT and MRI images (if retrievable) and report direction of compression, graded stenosis, and presence of dynamic instability.",
+          "Physiatrist: outline a structured, time-limited conservative trial with explicit failure criteria and monitoring schedule for comparison."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Pending completion of additional imaging (dynamic MRI, CT myelogram) and anesthetic airway assessment, and arrangement of a family meeting to discuss options and obtain detailed informed consent before any operative decision.",
+        "has_contingency_plan": false,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "vice_director",
+          "anesthesiologist",
+          "radiologist",
+          "physiatrist"
+        ],
+        "ordered_tests": [
+          "Dynamic flexion-extension cervical MRI",
+          "CT myelogram"
+        ],
+        "family_requests": [
+          "decide_after_family_meeting"
+        ],
+        "public_message": "This patient has progressive myelopathy from extensive OPLL, and surgery is likely indicated. However, before proceeding, I require additional information: dynamic imaging to assess instability and cord compression, a formal airway assessment given the anesthetic concerns, and a family meeting to discuss the risks and benefits of surgery versus a closely monitored conservative trial. I am not prepared to rule today."
+      },
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "I rule that we obtain additional workup before determining final treatment: dynamic flexion-extension MRI to assess instability and cord compression, formal airway assessment by anesthesia, and a family meeting to discuss risks and benefits. My current assessment is that surgery is indicated. If the workup confirms no contraindications and the family agrees, we will proceed with posterior decompression and instrumented fusion (lowest-risk posterior-only approach) with contingency plans for difficult airway and intraoperative instability. We reconvene after these are complete. The physiatrist's conservative trial is noted but not adopted now given progressive myelopathy; we will revisit if surgery proves contraindicated.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Radiologist: perform and report dynamic flexion-extension MRI of cervical spine.",
+          "Anesthesiologist: complete formal airway assessment and report ASA, intubation plan, and contingency for difficult airway.",
+          "Resident: arrange family meeting and present surgical and conservative options with risks.",
+          "Physiatrist: document structured conservative trial failure criteria for comparison."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Treatment decision postponed pending dynamic imaging, airway assessment, and family meeting.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "radiologist",
+          "anesthesiologist",
+          "resident",
+          "physiatrist"
+        ],
+        "ordered_tests": [
+          "dynamic flexion-extension MRI of cervical spine",
+          "formal airway assessment by anesthesiology"
+        ],
+        "family_requests": [
+          "decide_after_family_meeting"
+        ],
+        "public_message": "The department will obtain additional workup before final treatment decision: dynamic MRI and airway assessment, and we will meet with the family to discuss options. Surgery is currently indicated, but final decision is deferred pending these evaluations."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-6254142-1:avoidant:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 720,
+      "content": "A 51-year-old man presented with six months of progressive unsteadiness and bilateral lower limb weakness, now requiring a walking aid, and chronic neck stiffness for over two years. Examination showed bilateral lower limb weakness (MRC 4/5), exaggerated knee and ankle reflexes, bilateral Babinski signs, difficulty rising from a chair, and inability to tandem gait; upper limbs were neurologically normal. JOA score was 14/17 (grade 1 disability). Cervical spine X-rays showed degeneration with loss of lordosis and anterior osteophytes C3-C6; CT and MRI showed extensive OPLL from C3 to T3 causing significant canal compromise with no cord signal changes. Diagnosis: extensive cervicothoracic OPLL causing myelopathy."
+    },
+    {
+      "message_id": "pmc-6254142-1:avoidant:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 437,
+      "content": "Reporting the case record’s description only; the films were not available for review. CT and MRI were described as showing extensive ossification of the posterior longitudinal ligament (OPLL) from C3-T3 with significant canal compromise. No cord signal change was reported. The direction of compression and a graded severity of stenosis were not stated. The described imaging has high correlation with the reported myelopathic symptoms."
+    },
+    {
+      "message_id": "pmc-6254142-1:avoidant:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 771,
+      "content": "The examination localizes to an upper motor neuron lesion above the lumbosacral enlargement, consistent with myelopathy; the absence of upper limb signs means the clinical level is likely lower cervical or upper thoracic, not definitively C3. The imaging shows extensive C3-T3 OPLL with canal compromise, which explains the dominant lower-limb syndrome; the symptom-imaging match is high. Notable findings are all coexisting and do not change the indication or plan: (1) normal upper limbs despite C3 involvement—common in early leg-predominant OPLL; (2) no cord T2 signal—does not exclude myelopathy; (3) incomplete sensory/sphincter documentation—limits precise level but not diagnosis. There is no evidence of coexisting peripheral neuropathy or central sensitization."
+    },
+    {
+      "message_id": "pmc-6254142-1:avoidant:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 187,
+      "content": "ASA grade III. Intraoperative MAP target 75 mmHg. Expected blood loss risk moderate. Prone position tolerance moderate. Extubation difficulty unassessable: no airway assessment on record."
+    },
+    {
+      "message_id": "pmc-6254142-1:avoidant:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 691,
+      "content": "I acknowledge that progressive myelopathy carries a risk with delay. However, the absence of cord signal change on MRI and the relatively preserved JOA score (14/17) leave a narrow window for a time-limited, closely monitored conservative trial. A structured program of physical therapy, gait training, activity modification, and serial neurological assessments could be offered for 3-6 months, provided the patient is fully informed and there is immediate access to surgical evaluation if any failure criterion is met. This approach is not without risk, but surgery for extensive OPLL also carries significant morbidity, and early intervention may still be possible if deterioration occurs."
+    },
+    {
+      "message_id": "pmc-6254142-1:avoidant:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 282,
+      "content": "From a surgical perspective, I see a progressive myelopathy with a clear structural cause. The question before us is whether to operate now or allow a short trial of conservative care. I can outline the posterior surgical options, but the timing and choice rest with your direction."
+    },
+    {
+      "message_id": "pmc-6254142-1:avoidant:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 459,
+      "content": "The Deputy Director's statement reiterates that the myelopathy is progressive and has a structural cause, but it does not point to a specific finding in the record that I have underweighted. The absence of cord signal change and the preserved JOA score of 14/17 remain the key factors supporting a time-limited, closely monitored conservative trial. Without a new argument identifying a concrete finding that increases the risk of waiting, I hold my position."
+    },
+    {
+      "message_id": "pmc-6254142-1:avoidant:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 419,
+      "content": "This patient has progressive myelopathy from extensive OPLL, and surgery is likely indicated. However, before proceeding, I require additional information: dynamic imaging to assess instability and cord compression, a formal airway assessment given the anesthetic concerns, and a family meeting to discuss the risks and benefits of surgery versus a closely monitored conservative trial. I am not prepared to rule today."
+    },
+    {
+      "message_id": "pmc-6254142-1:avoidant:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 380,
+      "content": "I agree that additional information is needed before a definitive ruling. From a surgical standpoint, posterior decompression with instrumented fusion is the mainstay for extensive multilevel OPLL, but the exact timing and approach should follow your direction. I do not have a firm preference on proceeding immediately versus a closely monitored trial; I defer to your judgement."
+    },
+    {
+      "message_id": "pmc-6254142-1:avoidant:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 732,
+      "content": "The Director's statement reiterates that progressive myelopathy from extensive OPLL likely warrants surgery, but it does not point to a specific finding in the record that I have underweighted. The absence of cord signal change and the preserved JOA score of 14 remain central to my assessment. Moreover, the Director explicitly requests additional information, including dynamic imaging and airway assessment, before ruling, which aligns with a cautious approach. A closely monitored conservative trial while these evaluations proceed is reasonable, with surgery triggered by the pre-specified failure criteria. No new argument identifying a concrete finding that increases the risk of waiting has been made, so I hold my position."
+    },
+    {
+      "message_id": "pmc-6254142-1:avoidant:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 255,
+      "content": "The department will obtain additional workup before final treatment decision: dynamic MRI and airway assessment, and we will meet with the family to discuss options. Surgery is currently indicated, but final decision is deferred pending these evaluations."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1641,
+      "output_tokens": 1793,
+      "total_tokens": 3434,
+      "latency_ms": 35290,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2348,
+      "output_tokens": 880,
+      "total_tokens": 3228,
+      "latency_ms": 15362,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 3962,
+      "output_tokens": 2382,
+      "total_tokens": 6344,
+      "latency_ms": 37893,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1943,
+      "output_tokens": 2774,
+      "total_tokens": 4717,
+      "latency_ms": 54685,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2629,
+      "output_tokens": 1770,
+      "total_tokens": 4399,
+      "latency_ms": 23841,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4278,
+      "output_tokens": 3004,
+      "total_tokens": 7282,
+      "latency_ms": 51449,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

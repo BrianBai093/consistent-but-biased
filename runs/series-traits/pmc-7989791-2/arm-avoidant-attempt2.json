@@ -1,0 +1,536 @@
+{
+  "thread_id": "pmc-7989791-2-avoidant-2-dcb06d62-traits",
+  "metrics": {
+    "case_id": "pmc-7989791-2",
+    "director_style": "avoidant",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-13T06:51:45.116455Z",
+    "completed_at": "2026-10-13T06:57:47.686144Z",
+    "baseline_reused": true,
+    "baseline_key": "f6b0f0d8a5b63e5591f2df80882016132492112541f423b104d6d97926fadd15",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "additional_workup",
+    "surgical_indication": "uncertain",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 6852,
+    "director_turns": 2,
+    "director_characters": 787,
+    "director_character_share": 0.1149,
+    "negotiation_tokens": 33869,
+    "total_tokens": 33869,
+    "roles_addressed_declared": [
+      "neurologist",
+      "radiologist",
+      "anesthesiologist",
+      "physiatrist",
+      "vice_director",
+      "resident"
+    ],
+    "roles_addressed_detected": [
+      "neurologist"
+    ],
+    "juniors_addressed_declared": 6,
+    "juniors_addressed_detected": 1,
+    "liability_transfer_declared": 0,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 12,
+    "tests_ordered_declared": 6,
+    "tests_declared": [
+      "Urgent neurology consultation for ALS/motor neuron disease evaluation",
+      "Pulmonary function tests",
+      "Dedicated cervical and thoracic spine MRI with explicit reporting of responsible compressive levels and cord T2 signal",
+      "Contrast-enhanced cervical MRI and CT myelogram to identify dominant compressive level and cord T2 signal",
+      "Repeat EMG/NCS with motor neuron disease evaluation",
+      "Pulmonary function tests and cardiopulmonary evaluation"
+    ],
+    "studies_mentioned_detected": 4,
+    "studies_mentioned": [
+      "contrast-mri",
+      "ct",
+      "emg",
+      "myelogram"
+    ],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 2,
+    "deputy_disagreements": 7,
+    "deputy_questions_to_director": 7,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 1,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 4,
+    "baseline_conservative_success_rate": 30,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Progressive weakness of all four limbs over 5 months, recently requiring crutches for walking.",
+      "history": "The patient is a 74-year-old man with a 5-month history of progressive weakness of all four limbs, such that he recently started using crutches for walking. Additional symptoms include a 1-month history of shortness of breath, particularly on exertion, lower back pain, and episodic dysesthesia of the distal upper extremities. An ALS diagnosis was initially hypothesized.",
+      "physical_exam": "On neurological evaluation, global weakness was appreciated, with severe weakness on the bilateral grip strength test and moderate right thenar muscle atrophy. No fasciculations were detected. Deep tendon reflexes were normal in the upper limbs and brisk at the knees bilaterally, with normal plantar reflexes. Sensory testing was normal. A paraparetic gait was present.",
+      "key_positive_signs": [
+        "Severe weakness on bilateral grip strength test",
+        "Moderate right thenar muscle atrophy",
+        "Brisk deep tendon reflexes at the knees bilaterally",
+        "Paraparetic gait",
+        "EMG: chronic and diffuse neurogenic damage with active denervation and fibrillations at the right first dorsal interosseous muscle",
+        "EMG neurography: diffuse slowing of both motor and sensory action potentials",
+        "Brain MRI: initial widening of both temporal horns",
+        "Spine MRI: multiple disc protrusions with reduction of the vertebral cavity and concentric compression of the spinal cord"
+      ],
+      "past_history": "No past medical history is documented in the case record.",
+      "public_message": "This 74-year-old man presented with 5 months of progressive four-limb weakness, requiring crutches for walking, along with exertional shortness of breath, lower back pain, and episodic dysesthesias of the distal upper extremities. Examination showed global weakness, severe bilateral grip weakness, moderate right thenar atrophy, brisk knee reflexes, and a paraparetic gait. EMG revealed chronic diffuse neurogenic damage with active denervation and fibrillations; nerve conduction studies showed diffuse slowing. MRI demonstrated widening of temporal horns and multiple disc protrusions with spinal cord compression. No past medical history is documented."
+    },
+    "imaging": {
+      "levels": [],
+      "level_status": "nondiagnostic",
+      "compression_type": "circumferential",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "nondiagnostic",
+      "correlation": "moderate",
+      "public_message": "Reporting the case record's description only; the films were not available for review. Cervical, thoracic (dorsal), and lumbar spine MRI were described as showing multiple disc protrusions with reduction of the vertebral canal and concentric spinal cord compression. Specific responsible levels, stenosis grade, and cord T2 signal were not stated. The described cervical/thoracic cord compression provides a moderate imaging correlation with the reported progressive quadriparesis and paraparetic gait, although the record does not localize a dominant level.",
+      "confidence": 0.72
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "The findings localize primarily to the cervical spinal cord, given four-limb weakness, upper-extremity distal weakness and thenar atrophy, and brisk lower-extremity reflexes. The paraparetic gait and brisk knee jerks indicate upper motor neuron dysfunction above the lumbar cord. Normal upper-extremity reflexes with atrophy suggest a superimposed lower motor neuron or peripheral process, and the EMG evidence of diffuse neurogenic damage with sensory conduction slowing indicates coexisting peripheral neuropathy or anterior horn cell disease. Therefore, the localization is likely multifocal: cervical myelopathy plus peripheral nerve involvement.",
+      "match_level": "medium",
+      "red_flags": [
+        {
+          "finding": "EMG shows chronic diffuse neurogenic damage with active denervation and fibrillations at the right first dorsal interosseous muscle.",
+          "relevance": "changes_indication",
+          "rationale": "This pattern suggests a diffuse anterior horn cell process such as ALS, which could also explain the progressive four-limb weakness, thenar atrophy, and brisk reflexes. It offers a positive alternative explanation for the dominant syndrome, so the cord compression may not be the cause."
+        },
+        {
+          "finding": "Nerve conduction studies show diffuse slowing of both motor and sensory action potentials.",
+          "relevance": "coexisting",
+          "rationale": "This indicates a peripheral neuropathy, likely coexisting with any central lesion. It does not explain the upper motor neuron signs (brisk knee reflexes) and therefore does not change the indication, but it may contribute to weakness and sensory symptoms."
+        },
+        {
+          "finding": "Brain MRI shows initial widening of both temporal horns.",
+          "relevance": "coexisting",
+          "rationale": "This is an incidental finding with no documented clinical correlate (e.g., gait apraxia, incontinence, cognitive decline) and does not explain the spinal syndrome."
+        },
+        {
+          "finding": "One-month history of exertional shortness of breath.",
+          "relevance": "coexisting",
+          "rationale": "Could reflect respiratory muscle weakness from a high cervical or neuromuscular process, but pulmonary function is not documented. Without further evaluation it does not alter the surgical indication, though it warrants workup."
+        },
+        {
+          "finding": "Episodic dysesthesias of the distal upper extremities.",
+          "relevance": "coexisting",
+          "rationale": "These sensory symptoms are consistent with the coexisting peripheral neuropathy or possible radiculopathy; they do not change the localization of the myelopathic signs."
+        }
+      ],
+      "symptom_imaging_mismatch": "The clinical syndrome suggests cervical myelopathy, but the MRI report does not specify the level, grade, or presence of T2 cord signal change; multiple disc protrusions are described without a dominant level. Additionally, the diffuse EMG/NCS abnormalities are not explained by a focal compressive lesion.",
+      "public_message": "This 74-year-old man has progressive four-limb weakness, thenar atrophy, brisk knee reflexes, and paraparetic gait, localizing to the cervical cord plus a likely coexisting peripheral nerve or anterior horn cell process. Imaging shows multiple disc protrusions with spinal cord compression but without specific levels or cord signal, so the correlation is medium. Red flags: (1) EMG active denervation is a changes-indication flag because it suggests ALS as an alternative cause of the dominant syndrome; (2) NCS diffuse slowing is coexisting peripheral neuropathy; (3) temporal horn widening is coexisting incidental; (4) exertional dyspnea is coexisting pending respiratory evaluation. Overall, the cord compression may explain the myelopathic signs, but the alternative of motor neuron disease must be excluded before attributing the syndrome to compression."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": 70,
+      "blood_loss_risk": "unassessable",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "unassessable",
+      "public_message": "ASA grade III due to severe functional limitation from progressive quadriparesis. Intraoperative MAP target set at 70 mmHg to maintain cord and cerebral perfusion. Blood loss risk is unassessable because no surgical procedure is described. Prone position tolerance is unassessable because no cardiopulmonary evaluation is documented. Extubation difficulty is unassessable because no airway or respiratory function assessment is recorded."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 30,
+      "proposed_duration": "3-6 months with reassessment every 4 weeks",
+      "preconditions_for_failure": [
+        "Objective neurologic deterioration (e.g., >1 point decline in modified JOA score, measurable grip strength loss) at any point during the trial.",
+        "No stabilization or improvement in functional measures after 3 months of compliance.",
+        "New onset of respiratory insufficiency or swallowing difficulty attributable to cervical cord involvement.",
+        "Repeat MRI demonstrating progression of cord compression or new T2 hyperintensity correlating with symptoms.",
+        "Development of unequivocal upper motor neuron signs (e.g., Babinski, clonus) indicating worsening myelopathy."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I advocate for a formal 3-6 month trial of structured conservative management: physical therapy targeting upper-extremity strength and gait, posture re-education, pain control, and respiratory conditioning. Despite imaging showing multilevel disc protrusions with cord compression, the lack of a specific dominant level, the absence of documented T2 cord signal change, and especially the EMG findings of active denervation and diffuse neurogenic changes raise the real possibility of a motor neuron disease that surgery would not help. In this 74-year-old, surgery carries risks, and a closely monitored conservative trial may avoid unnecessary intervention. I acknowledge that progressive myelopathy generally argues for early surgery, so I set strict failure criteria: any neurologic deterioration, no stabilization by 3 months, respiratory compromise, or imaging progression and would support surgical referral at that point. My current success estimate for avoiding surgery with meaningful functional improvement is 30%."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 30,
+      "proposed_duration": "3-6 months with reassessment every 4 weeks",
+      "preconditions_for_failure": [
+        "Objective neurologic deterioration (e.g., >1 point decline in modified JOA score, measurable grip strength loss) at any point during the trial.",
+        "No stabilization or improvement in functional measures after 3 months of compliance.",
+        "New onset of respiratory insufficiency or swallowing difficulty attributable to cervical cord involvement.",
+        "Repeat MRI demonstrating progression of cord compression or new T2 hyperintensity correlating with symptoms.",
+        "Development of unequivocal upper motor neuron signs (e.g., Babinski, clonus) indicating worsening myelopathy."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I acknowledge the director's plan for a 2-4 week diagnostic workup and the deputy director's concern about irreversible cord injury. However, no one has pointed to a specific finding already in the record that I have underweighted. The risk of irreversible injury is based on the progressive quadriparesis and crutch dependence, which were already central to my assessment; they are precisely why I set strict failure criteria including immediate surgical referral on any neurologic deterioration. A structured conservative trial with close monitoring every 4 weeks does not expose the patient to meaningful additional risk, because we stop at the first sign of decline. The diagnostic workup can proceed concurrently with conservative care. The absence of a documented cord T2 signal change, a dominant compressive level, or a deficit that conservative measures cannot reverse continues to support a trial before committing to surgery. I hold my position."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 30,
+        "proposed_duration": "3-6 months with reassessment every 4 weeks",
+        "preconditions_for_failure": [
+          "Objective neurologic deterioration (e.g., >1 point decline in modified JOA score, measurable grip strength loss) at any point during the trial.",
+          "No stabilization or improvement in functional measures after 3 months of compliance.",
+          "New onset of respiratory insufficiency or swallowing difficulty attributable to cervical cord involvement.",
+          "Repeat MRI demonstrating progression of cord compression or new T2 hyperintensity correlating with symptoms.",
+          "Development of unequivocal upper motor neuron signs (e.g., Babinski, clonus) indicating worsening myelopathy."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "I remain in favor of a formal conservative trial. The deputy director's suggestion of a 2-4 week diagnostic period is compatible with intensive monitoring, but it does not provide a specific finding that outweighs a structured rehabilitation attempt. The progressive quadriparesis and crutch dependence were already central to my risk assessment; they are why I set strict failure criteria including any neurologic deterioration triggering surgical referral. No speaker has identified a cord signal change, a dominant compressive level, or a deficit clearly irreversible by conservative measures. I maintain that with close monitoring every 4 weeks, a 3-6 month trial remains justified, and I would accept surgery if any deterioration occurs."
+      },
+      {
+        "conservative_success_rate": 30,
+        "proposed_duration": "3-6 months with reassessment every 4 weeks",
+        "preconditions_for_failure": [
+          "Objective neurologic deterioration (e.g., >1 point decline in modified JOA score, measurable grip strength loss) at any point during the trial.",
+          "No stabilization or improvement in functional measures after 3 months of compliance.",
+          "New onset of respiratory insufficiency or swallowing difficulty attributable to cervical cord involvement.",
+          "Repeat MRI demonstrating progression of cord compression or new T2 hyperintensity correlating with symptoms.",
+          "Development of unequivocal upper motor neuron signs (e.g., Babinski, clonus) indicating worsening myelopathy."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "I acknowledge the director's plan for a 2-4 week diagnostic workup and the deputy director's concern about irreversible cord injury. However, no one has pointed to a specific finding already in the record that I have underweighted. The risk of irreversible injury is based on the progressive quadriparesis and crutch dependence, which were already central to my assessment; they are precisely why I set strict failure criteria including immediate surgical referral on any neurologic deterioration. A structured conservative trial with close monitoring every 4 weeks does not expose the patient to meaningful additional risk, because we stop at the first sign of decline. The diagnostic workup can proceed concurrently with conservative care. The absence of a documented cord T2 signal change, a dominant compressive level, or a deficit that conservative measures cannot reverse continues to support a trial before committing to surgery. I hold my position."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This 74-year-old man has progressive quadriparesis with imaging evidence of multilevel disc protrusions and cord compression, but the record lacks a dominant compressive level, cord T2 signal change, and respiratory assessment. The EMG findings of active denervation and diffuse neurogenic changes raise a serious alternative diagnosis of motor neuron disease. Immediate surgery without a confirmed target level and without excluding ALS would be unsafe and potentially harmful. However, a prolonged 3–6 month conservative trial is also inappropriate in the setting of progressive myelopathy, as it risks irreversible cord injury. I favour a short, tightly monitored diagnostic window (2–4 weeks) to clarify the responsible pathology and define a surgical target, with predefined triggers for expedited decompression if the patient deteriorates.",
+        "proposed_options": [
+          "Urgent diagnostic clarification over 2–4 weeks: high-resolution cervical/thoracic MRI with T2 signal, CT myelogram if needed, pulmonary function tests, neurology/ALS consultation, and repeat EMG if indicated. If a dominant compressive level is identified and MND is excluded, proceed to targeted surgical decompression. If myelopathy progresses or respiratory compromise occurs, expedite surgery once a level is confirmed.",
+          "Defer spinal surgery and manage as presumed motor neuron disease pending neurology confirmation, with close respiratory monitoring and supportive care. Reconsider surgery only if subsequent imaging identifies a clear compressive lesion and the neurological picture supports myelopathy."
+        ],
+        "preferred_option": "Urgent diagnostic clarification with 2–4 week reassessment and targeted surgery if indicated",
+        "disagreement_points": [
+          "I disagree with the rehabilitation physician's proposal of a 3–6 month conservative trial as the primary plan; in progressive myelopathy this risks irreversible cord injury and fails to promptly exclude motor neuron disease.",
+          "I disagree with any plan for immediate surgery without a confirmed dominant compressive level and cord signal characteristics; blind surgery could target the wrong level and worsen the patient.",
+          "The anaesthesiologist's inability to assess prone tolerance and respiratory risk further argues against operating before pulmonary evaluation is completed."
+        ],
+        "deferred_questions_to_director": [
+          "Do you agree to set a 2–4 week maximum diagnostic window with a mandatory senior review before any surgical booking?",
+          "Will you take responsibility for documenting that surgery is deferred pending exclusion of motor neuron disease, with the patient and family informed of the risk of progression during the workup?",
+          "Should we request urgent neurology/ALS consultation and pulmonary function tests as preconditions for any decompressive surgery?"
+        ],
+        "public_message": "My recommendation is to defer immediate surgery for a 2–4 week, tightly monitored diagnostic period to identify the responsible compressive level and rule out motor neuron disease. We should not commit to months of conservative therapy. If myelopathy worsens or respiratory function declines, we will expedite decompression once a target level is confirmed."
+      },
+      {
+        "assessment": "This is progressive cervical myelopathy with multilevel disc protrusions and cord compression, but no dominant compressive level or cord T2 signal has been localized, and EMG findings of active denervation raise the real possibility of motor neuron disease. A short, tightly monitored diagnostic period of 2–4 weeks is appropriate to complete the workup and surveillance. A default 3–6 month conservative trial is not justified given the risk of irreversible cord injury from progressive myelopathy.",
+        "proposed_options": [
+          "Proceed with the director's planned 2–4 week diagnostic/surveillance period: targeted cervical MRI with contrast or CT myelogram, repeat EMG/NCS, neurology/MND consultation, and cardiopulmonary evaluation, with immediate reassessment and expedited surgical decompression if neurologic or respiratory deterioration occurs or if a dominant compressive level is confirmed and motor neuron disease is excluded.",
+          "Adopt a formal 3–6 month conservative management trial as proposed by physiatry, with strict failure criteria (any neurologic deterioration, failure to stabilize by 3 months, respiratory compromise, or imaging progression).",
+          "If the patient deteriorates urgently during the diagnostic window, proceed to emergency surgical decompression of the most stenotic level after rapid re-imaging, accepting suboptimal localization to preserve function."
+        ],
+        "preferred_option": "Proceed with the director's planned 2–4 week diagnostic/surveillance period: targeted cervical MRI with contrast or CT myelogram, repeat EMG/NCS, neurology/MND consultation, and cardiopulmonary evaluation, with immediate reassessment and expedited surgical decompression if neurologic or respiratory deterioration occurs or if a dominant compressive level is confirmed and motor neuron disease is excluded.",
+        "disagreement_points": [
+          "I disagree with a default 3–6 month conservative trial; progressive myelopathy with cord compression generally warrants earlier surgical intervention once a target is identified and motor neuron disease is excluded.",
+          "The imaging lacks a specific dominant compressive level and cord T2 signal; without this, any decompression is guesswork, but a long delay is also risky. We need expedited advanced imaging.",
+          "The EMG findings of active denervation are not fully explained by cord compression; motor neuron disease must be excluded or confirmed before committing to surgery.",
+          "The anesthesiologist's unassessable parameters (airway, respiratory, prone tolerance) must be clarified before any surgical plan; we cannot simply wait months without this assessment."
+        ],
+        "deferred_questions_to_director": [
+          "Which specific diagnostic tests do you want completed before reconvening (e.g., cervical MRI with contrast/CT myelogram, repeat EMG/NCS, pulmonary function tests, MND specialist opinion)?",
+          "What threshold for clinical deterioration (e.g., loss of ambulation, respiratory decline, new upper motor neuron signs) will trigger expedited surgery during the observation period?",
+          "If motor neuron disease is confirmed but significant cord compression also exists, do we still consider decompression if there is any chance of benefit, or is surgery contraindicated?",
+          "If no dominant compressive level is identified despite multiple protrusions, how do we proceed: multilevel decompression versus continued conservative care?"
+        ],
+        "public_message": "I support the director's decision to defer a surgical decision until a focused 2–4 week diagnostic workup is completed. However, I recommend against adopting a 3–6 month conservative trial as the default pathway because of the risk of irreversible cord injury. Our priority is to identify the responsible compressive level, exclude motor neuron disease, and clarify cardiopulmonary fitness; we will reconvene promptly with results and proceed to decompression if indicated."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Neurologist: arrange urgent ALS/motor neuron disease consultation and advise on alternative diagnosis.",
+          "Radiologist: re-review or repeat cervical/thoracic MRI and provide detailed level-by-level compression and cord signal report.",
+          "Anesthesiologist: obtain pulmonary function tests and airway assessment.",
+          "Physiatrist: continue supportive physical therapy and monitoring while workup proceeds.",
+          "Deputy director: lead a 2-week reassessment and senior review before any surgical booking.",
+          "Resident: monitor patient daily for neurologic or respiratory deterioration and alert the team immediately."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Decision postponed pending exclusion of motor neuron disease and localization of the responsible compressive level.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "neurologist",
+          "radiologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director",
+          "resident"
+        ],
+        "ordered_tests": [
+          "Urgent neurology consultation for ALS/motor neuron disease evaluation",
+          "Pulmonary function tests",
+          "Dedicated cervical and thoracic spine MRI with explicit reporting of responsible compressive levels and cord T2 signal"
+        ],
+        "family_requests": [],
+        "public_message": "I am not ready to rule on surgery until the recommended diagnostic workup is completed. We need to exclude motor neuron disease, clarify the responsible compressive level, and assess cardiopulmonary fitness. If the patient deteriorates neurologically or respiratory function declines during this period, we will expedite imaging and consider emergency decompression once a target level is confirmed. We will reconvene with these results in 2–4 weeks."
+      },
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "We will proceed with a focused diagnostic workup and close monitoring over 2–4 weeks, then reconvene. Specific tests: contrast-enhanced cervical MRI and CT myelogram to identify the dominant compressive level; repeat EMG/NCS with motor neuron disease consultation; pulmonary function tests and cardiopulmonary evaluation. If a dominant compressive level is identified and motor neuron disease is excluded, we will plan surgical decompression. If motor neuron disease is confirmed, surgery is not indicated and management will be conservative. If neurologic or respiratory deterioration occurs during this period, we will expedite imaging and reassess for emergency decompression.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Resident: monitor neurologic status and respiratory function every shift and report any decline.",
+          "Radiologist: perform contrast-enhanced cervical MRI and CT myelogram to identify dominant compressive level and cord T2 signal.",
+          "Neurologist: repeat EMG/NCS and obtain motor neuron disease consultation.",
+          "Anesthesiologist: perform pulmonary function tests and cardiopulmonary evaluation, including airway and prone tolerance assessment.",
+          "Physiatrist: continue conservative supportive care during the workup without committing to a 3–6 month trial.",
+          "Vice director: coordinate expedited scheduling and review results."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Insufficient data to safely localize the compressive level and exclude motor neuron disease; surgery cannot be planned without these results.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "Contrast-enhanced cervical MRI and CT myelogram to identify dominant compressive level and cord T2 signal",
+          "Repeat EMG/NCS with motor neuron disease evaluation",
+          "Pulmonary function tests and cardiopulmonary evaluation"
+        ],
+        "family_requests": [],
+        "public_message": "The meeting closes on a workup-first plan. We are not committing to surgery or to a conservative trial until the following are completed: cervical contrast MRI/CT myelogram, repeat EMG/NCS with neurology input, and cardiopulmonary assessment. We will reconvene in 2–4 weeks with results. If deterioration occurs, we reassess immediately."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-7989791-2:avoidant:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 656,
+      "content": "This 74-year-old man presented with 5 months of progressive four-limb weakness, requiring crutches for walking, along with exertional shortness of breath, lower back pain, and episodic dysesthesias of the distal upper extremities. Examination showed global weakness, severe bilateral grip weakness, moderate right thenar atrophy, brisk knee reflexes, and a paraparetic gait. EMG revealed chronic diffuse neurogenic damage with active denervation and fibrillations; nerve conduction studies showed diffuse slowing. MRI demonstrated widening of temporal horns and multiple disc protrusions with spinal cord compression. No past medical history is documented."
+    },
+    {
+      "message_id": "pmc-7989791-2:avoidant:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 558,
+      "content": "Reporting the case record's description only; the films were not available for review. Cervical, thoracic (dorsal), and lumbar spine MRI were described as showing multiple disc protrusions with reduction of the vertebral canal and concentric spinal cord compression. Specific responsible levels, stenosis grade, and cord T2 signal were not stated. The described cervical/thoracic cord compression provides a moderate imaging correlation with the reported progressive quadriparesis and paraparetic gait, although the record does not localize a dominant level."
+    },
+    {
+      "message_id": "pmc-7989791-2:avoidant:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 861,
+      "content": "This 74-year-old man has progressive four-limb weakness, thenar atrophy, brisk knee reflexes, and paraparetic gait, localizing to the cervical cord plus a likely coexisting peripheral nerve or anterior horn cell process. Imaging shows multiple disc protrusions with spinal cord compression but without specific levels or cord signal, so the correlation is medium. Red flags: (1) EMG active denervation is a changes-indication flag because it suggests ALS as an alternative cause of the dominant syndrome; (2) NCS diffuse slowing is coexisting peripheral neuropathy; (3) temporal horn widening is coexisting incidental; (4) exertional dyspnea is coexisting pending respiratory evaluation. Overall, the cord compression may explain the myelopathic signs, but the alternative of motor neuron disease must be excluded before attributing the syndrome to compression."
+    },
+    {
+      "message_id": "pmc-7989791-2:avoidant:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 437,
+      "content": "ASA grade III due to severe functional limitation from progressive quadriparesis. Intraoperative MAP target set at 70 mmHg to maintain cord and cerebral perfusion. Blood loss risk is unassessable because no surgical procedure is described. Prone position tolerance is unassessable because no cardiopulmonary evaluation is documented. Extubation difficulty is unassessable because no airway or respiratory function assessment is recorded."
+    },
+    {
+      "message_id": "pmc-7989791-2:avoidant:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 1025,
+      "content": "I advocate for a formal 3-6 month trial of structured conservative management: physical therapy targeting upper-extremity strength and gait, posture re-education, pain control, and respiratory conditioning. Despite imaging showing multilevel disc protrusions with cord compression, the lack of a specific dominant level, the absence of documented T2 cord signal change, and especially the EMG findings of active denervation and diffuse neurogenic changes raise the real possibility of a motor neuron disease that surgery would not help. In this 74-year-old, surgery carries risks, and a closely monitored conservative trial may avoid unnecessary intervention. I acknowledge that progressive myelopathy generally argues for early surgery, so I set strict failure criteria: any neurologic deterioration, no stabilization by 3 months, respiratory compromise, or imaging progression and would support surgical referral at that point. My current success estimate for avoiding surgery with meaningful functional improvement is 30%."
+    },
+    {
+      "message_id": "pmc-7989791-2:avoidant:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 357,
+      "content": "My recommendation is to defer immediate surgery for a 2–4 week, tightly monitored diagnostic period to identify the responsible compressive level and rule out motor neuron disease. We should not commit to months of conservative therapy. If myelopathy worsens or respiratory function declines, we will expedite decompression once a target level is confirmed."
+    },
+    {
+      "message_id": "pmc-7989791-2:avoidant:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 742,
+      "content": "I remain in favor of a formal conservative trial. The deputy director's suggestion of a 2-4 week diagnostic period is compatible with intensive monitoring, but it does not provide a specific finding that outweighs a structured rehabilitation attempt. The progressive quadriparesis and crutch dependence were already central to my risk assessment; they are why I set strict failure criteria including any neurologic deterioration triggering surgical referral. No speaker has identified a cord signal change, a dominant compressive level, or a deficit clearly irreversible by conservative measures. I maintain that with close monitoring every 4 weeks, a 3-6 month trial remains justified, and I would accept surgery if any deterioration occurs."
+    },
+    {
+      "message_id": "pmc-7989791-2:avoidant:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 450,
+      "content": "I am not ready to rule on surgery until the recommended diagnostic workup is completed. We need to exclude motor neuron disease, clarify the responsible compressive level, and assess cardiopulmonary fitness. If the patient deteriorates neurologically or respiratory function declines during this period, we will expedite imaging and consider emergency decompression once a target level is confirmed. We will reconvene with these results in 2–4 weeks."
+    },
+    {
+      "message_id": "pmc-7989791-2:avoidant:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 473,
+      "content": "I support the director's decision to defer a surgical decision until a focused 2–4 week diagnostic workup is completed. However, I recommend against adopting a 3–6 month conservative trial as the default pathway because of the risk of irreversible cord injury. Our priority is to identify the responsible compressive level, exclude motor neuron disease, and clarify cardiopulmonary fitness; we will reconvene promptly with results and proceed to decompression if indicated."
+    },
+    {
+      "message_id": "pmc-7989791-2:avoidant:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 956,
+      "content": "I acknowledge the director's plan for a 2-4 week diagnostic workup and the deputy director's concern about irreversible cord injury. However, no one has pointed to a specific finding already in the record that I have underweighted. The risk of irreversible injury is based on the progressive quadriparesis and crutch dependence, which were already central to my assessment; they are precisely why I set strict failure criteria including immediate surgical referral on any neurologic deterioration. A structured conservative trial with close monitoring every 4 weeks does not expose the patient to meaningful additional risk, because we stop at the first sign of decline. The diagnostic workup can proceed concurrently with conservative care. The absence of a documented cord T2 signal change, a dominant compressive level, or a deficit that conservative measures cannot reverse continues to support a trial before committing to surgery. I hold my position."
+    },
+    {
+      "message_id": "pmc-7989791-2:avoidant:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 337,
+      "content": "The meeting closes on a workup-first plan. We are not committing to surgery or to a conservative trial until the following are completed: cervical contrast MRI/CT myelogram, repeat EMG/NCS with neurology input, and cardiopulmonary assessment. We will reconvene in 2–4 weeks with results. If deterioration occurs, we reassess immediately."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1704,
+      "output_tokens": 3953,
+      "total_tokens": 5657,
+      "latency_ms": 105675,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2555,
+      "output_tokens": 1947,
+      "total_tokens": 4502,
+      "latency_ms": 43996,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4269,
+      "output_tokens": 3315,
+      "total_tokens": 7584,
+      "latency_ms": 77001,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2075,
+      "output_tokens": 2233,
+      "total_tokens": 4308,
+      "latency_ms": 51097,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2901,
+      "output_tokens": 1252,
+      "total_tokens": 4153,
+      "latency_ms": 26007,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4867,
+      "output_tokens": 2798,
+      "total_tokens": 7665,
+      "latency_ms": 58769,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

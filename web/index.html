@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spine MDT</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <span class="brand-mark">MDT</span>
+          <div>
+            <strong>Spine Decision Room</strong>
+            <p>术前脊柱多学科讨论原型</p>
+          </div>
+        </div>
+        <div class="service-state checking" id="serviceState">
+          <span aria-hidden="true"></span><span>正在检查服务</span>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="case-panel" aria-labelledby="caseTitle">
+          <div class="panel-heading">
+            <div>
+              <span class="eyebrow">CASE INTAKE</span>
+              <h1 id="caseTitle">提交术前资料包</h1>
+              <p>分别上传人工筛选后的病历页、检验页和术前影像。</p>
+            </div>
+            <span class="case-id" id="caseIdLabel">待创建</span>
+          </div>
+
+          <form id="caseForm" novalidate>
+            <section class="upload-group">
+              <div class="upload-heading">
+                <div><label class="field-label" for="casePageInput">病历页</label><p>按页面顺序上传截图。</p></div>
+                <span class="image-count" id="casePageCount">0 张</span>
+              </div>
+              <label class="dropzone" id="casePageDropzone" for="casePageInput">
+                <input id="casePageInput" type="file" accept="image/png,image/jpeg,.png,.jpg,.jpeg" multiple />
+                <span class="upload-icon" aria-hidden="true">＋</span><strong>选择病历截图</strong>
+              </label>
+              <div class="image-list" id="casePageList"></div>
+            </section>
+
+            <section class="upload-group">
+              <div class="upload-heading">
+                <div><label class="field-label" for="testPageInput">检验页</label><p>按页面顺序上传检验和检查报告截图。</p></div>
+                <span class="image-count" id="testPageCount">0 张</span>
+              </div>
+              <label class="dropzone" id="testPageDropzone" for="testPageInput">
+                <input id="testPageInput" type="file" accept="image/png,image/jpeg,.png,.jpg,.jpeg" multiple />
+                <span class="upload-icon" aria-hidden="true">＋</span><strong>选择检验截图</strong>
+              </label>
+              <div class="image-list" id="testPageList"></div>
+            </section>
+
+            <section class="upload-group">
+              <div class="upload-heading">
+                <div><label class="field-label" for="imageInput">术前影像</label><p>支持 X-ray、CT 和 MRI 胶片照片或截图。</p></div>
+                <span class="image-count" id="imageCount">0 张</span>
+              </div>
+              <label class="dropzone" id="imageDropzone" for="imageInput">
+                <input id="imageInput" type="file" accept="image/png,image/jpeg,.png,.jpg,.jpeg" multiple />
+                <span class="upload-icon" aria-hidden="true">＋</span><strong>选择术前影像</strong>
+              </label>
+              <div class="image-list" id="imageList"></div>
+            </section>
+
+            <label class="preop-confirmation">
+              <input id="preopConfirmation" type="checkbox" />
+              <span>已人工排除本次真实手术方案、术中、术后和随访资料</span>
+            </label>
+            <div class="form-error" id="formError" role="alert" hidden></div>
+            <button class="primary-button" id="submitButton" type="submit">
+              <span>整理资料并发起 MDT</span><span aria-hidden="true">→</span>
+            </button>
+          </form>
+        </section>
+
+        <section class="discussion-panel" aria-labelledby="discussionTitle">
+          <div class="discussion-header">
+            <div><span class="eyebrow">LIVE MDT ROOM</span><h2 id="discussionTitle">多学科讨论</h2></div>
+            <div class="run-badge idle" id="runBadge">等待病例</div>
+          </div>
+          <div class="run-context" id="runContext" hidden>
+            <div><span>THREAD ID</span><code id="threadId"></code></div>
+            <div><span>当前阶段</span><strong id="runPhase">等待开始</strong></div>
+            <button class="copy-button" type="button" id="copyThreadButton">复制</button>
+          </div>
+
+          <details class="prepared-documents" id="preparedDocuments" hidden>
+            <summary>查看已整理资料</summary>
+            <div id="preparationWarnings"></div>
+            <h3>术前病历</h3><pre id="casePreopDocument"></pre>
+            <h3>术前检验</h3><pre id="testsPreopDocument"></pre>
+            <h3>病例摘要</h3><pre id="caseSummaryDocument"></pre>
+            <h3>影像报告</h3><pre id="radiologyPreopDocument"></pre>
+          </details>
+
+          <div class="view-tabs" role="tablist" aria-label="运行视图">
+            <button type="button" id="chatTab" class="view-tab active" role="tab" aria-selected="true" aria-controls="chatView">讨论记录 <span id="messageCount">0</span></button>
+            <button type="button" id="resultTab" class="view-tab" role="tab" aria-selected="false" aria-controls="resultView" disabled>最终方案</button>
+          </div>
+          <div class="chat-view" id="chatView" role="tabpanel">
+            <div class="empty-chat" id="emptyChat">
+              <div class="orbit" aria-hidden="true"><span>M</span><span>R</span><span>S</span><span>A</span><span>N</span></div>
+              <h3>讨论室尚未开启</h3><p>资料整理和影像审阅完成后，各专业 Agent 的发言会显示在这里。</p>
+            </div>
+            <div class="message-list" id="messageList" aria-live="polite"></div>
+            <div class="thinking" id="thinkingIndicator" hidden><span></span><span></span><span></span><p>系统正在整理资料或等待下一位 Agent</p></div>
+          </div>
+          <div class="result-view" id="resultView" role="tabpanel" hidden>
+            <div class="result-placeholder" id="resultPlaceholder"><span aria-hidden="true">◆</span><p>讨论完成后，结构化术前方案会显示在这里。</p></div>
+            <div id="finalPlan"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <template id="pageItemTemplate">
+      <article class="image-item compact-page-item">
+        <div class="image-summary">
+          <img class="image-preview" alt="页面预览" />
+          <div class="image-name-block"><strong class="image-name"></strong><span class="image-size"></span></div>
+          <button class="remove-image" type="button" aria-label="移除页面">×</button>
+        </div>
+      </article>
+    </template>
+
+    <template id="imageItemTemplate">
+      <article class="image-item">
+        <div class="image-summary">
+          <img class="image-preview" alt="术前影像预览" />
+          <div class="image-name-block"><strong class="image-name"></strong><span class="image-size"></span></div>
+          <button class="remove-image" type="button" aria-label="移除影像">×</button>
+        </div>
+        <div class="image-metadata">
+          <label>检查类型<select class="modality-select" required><option value="">请选择</option><option value="MRI">MRI</option><option value="CT">CT</option><option value="XRAY">X-ray</option></select></label>
+          <label>部位 <span>可选</span><input class="body-region-input" type="text" /></label>
+          <label>方位/层面 <span>可选</span><input class="plane-input" type="text" /></label>
+          <details><summary>更多影像信息</summary><div class="metadata-more">
+            <label>序列<input class="sequence-input" type="text" /></label>
+            <label>节段<input class="level-input" type="text" /></label>
+            <label class="wide-field">说明<input class="description-input" type="text" /></label>
+          </div></details>
+        </div>
+      </article>
+    </template>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>

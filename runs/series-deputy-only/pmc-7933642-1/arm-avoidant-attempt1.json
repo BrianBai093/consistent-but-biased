@@ -1,0 +1,388 @@
+{
+  "thread_id": "pmc-7933642-1-avoidant-1-31f98b5e-deputy-only",
+  "metrics": {
+    "case_id": "pmc-7933642-1",
+    "director_style": "neutral",
+    "deputy_style": "avoidant",
+    "negotiation": true,
+    "workflow_version": "dept-v2",
+    "started_at": "2026-11-03T02:43:19.881701Z",
+    "completed_at": "2026-11-03T02:44:59.205050Z",
+    "baseline_reused": true,
+    "baseline_key": "b52c95f02457c438e0e0cabba837b9212447356db5b6be6391e9663d9af16882",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 1,
+    "decision": "operate",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": null,
+    "surgery_recommended": true,
+    "surgery_intended": true,
+    "delay_declared": false,
+    "delay_terminated": false,
+    "turn_count": 8,
+    "total_characters": 4335,
+    "director_turns": 1,
+    "director_characters": 411,
+    "director_character_share": 0.0948,
+    "negotiation_tokens": 12808,
+    "total_tokens": 12808,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "neurologist",
+      "anesthesiologist",
+      "physiatrist",
+      "vice_director"
+    ],
+    "roles_addressed_detected": [
+      "anesthesiologist"
+    ],
+    "juniors_addressed_declared": 6,
+    "juniors_addressed_detected": 1,
+    "liability_transfer_declared": 1,
+    "liability_transfer_detected": 0,
+    "family_requests_declared": [
+      "detailed_consent"
+    ],
+    "liability_concepts_detected": [],
+    "delegated_task_count": 5,
+    "tests_ordered_declared": 2,
+    "tests_declared": [
+      "High-resolution CT cervical spine",
+      "MRI cervical spine with T2-weighted sequences"
+    ],
+    "studies_mentioned_detected": 2,
+    "studies_mentioned": [
+      "ct",
+      "mri"
+    ],
+    "deputy_rounds": 1,
+    "deputy_preference_stated": 0,
+    "deputy_disagreements": 3,
+    "deputy_questions_to_director": 3,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 1,
+    "baseline_conservative_success_rate": 40,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": false,
+    "persuaded_by_count": 0,
+    "consensus_reached": false
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Bilateral upper and lower limb weakness and inability to walk for 4 months, gradually progressive.",
+      "history": "The patient was apparently healthy 4 months prior. Over 4 months, he developed bilateral upper and lower limb weakness and inability to walk, which was gradually progressive. There was no history of trauma, fever, weight loss, or loss of appetite. Bowel and bladder function were spared. No dysphagia or difficulty breathing.",
+      "physical_exam": "Muscle power in both upper and lower limbs was 3/5. Bilateral Hoffman's sign was positive. All reflexes were exaggerated. There was difficulty in tandem gait. Clonus was absent. Bowel and bladder were spared.",
+      "key_positive_signs": [
+        "Bilateral upper and lower limb weakness with muscle power 3/5",
+        "Bilateral Hoffman's sign positive",
+        "Exaggerated reflexes",
+        "Difficulty with tandem gait",
+        "Multiple contiguous ossifications of anterior and posterior longitudinal ligaments from C2 to T1 and thoracic/lumbar spine",
+        "OPLL with multiple level cord compression at cervical spine"
+      ],
+      "past_history": "The patient was apparently healthy 4 months ago. No other past medical history is documented.",
+      "public_message": "This is a 69-year-old male who presented with bilateral upper and lower limb weakness and inability to walk for 4 months, gradually progressive. He was apparently healthy 4 months earlier, with no trauma, fever, weight loss, or loss of appetite. Bowel and bladder function was spared, and there was no dysphagia or breathing difficulty. Physical examination showed muscle power 3/5 in all limbs, bilateral Hoffman's sign positive, exaggerated reflexes, difficulty with tandem gait, and no clonus. Radiological examination demonstrated multiple contiguous ossifications of the anterior and posterior longitudinal ligaments from C2 to T1 and in the thoracic and lumbar spine, with normal sacroiliac joints; there was cervical OPLL with multilevel cord compression. No separate laboratory data are available."
+    },
+    "imaging": {
+      "levels": [
+        "C2-3",
+        "C3-4",
+        "C4-5",
+        "C5-6",
+        "C6-7",
+        "C7-T1"
+      ],
+      "level_status": "reported",
+      "compression_type": "ventral",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "nondiagnostic",
+      "correlation": "high",
+      "public_message": "Reporting the case record’s description only; the films were not available for review. The record describes multilevel cervical cord compression associated with ossification of the posterior longitudinal ligament from C2 through T1, with the dominant abnormality being multilevel cervical involvement. Stenosis severity and cord T2 signal are not stated in the record.",
+      "confidence": 0.78
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical spinal cord, likely multilevel (C2–T1), consistent with myelopathy from ventral compression due to OPLL. Bilateral upper and lower limb weakness with hyperreflexia and Hoffman's sign localizes above C5 and below the brainstem; absence of bulbar signs supports cervical rather than brainstem localization. Bowel and bladder sparing is consistent with early or partial cord involvement.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "Thoracolumbar ossifications of the posterior longitudinal ligament are described, but thoracic/lumbar cord compression is not documented.",
+          "relevance": "coexisting",
+          "rationale": "The dominant syndrome is explained by cervical cord compression; lower limb signs are already attributable to the cervical lesion. Without documented thoracic cord compression or T2 signal change, this does not change the indication or plan, but it is a coexisting finding that may warrant attention if surgical planning extends beyond the cervical spine."
+        }
+      ],
+      "symptom_imaging_mismatch": null,
+      "public_message": "Localization is to the cervical spinal cord, with multilevel ventral compression from OPLL explaining the bilateral pyramidal weakness and Hoffman's sign. The match between symptoms and imaging is high; the dominant syndrome of progressive myelopathy is well explained by the documented multilevel cervical cord compression. One coexisting red flag is noted: thoracolumbar ossifications are present but without documented cord compression, so they do not alter the cervical localization or current indication; they should be kept in mind if the surgical plan extends caudally. The examination as documented lacks sensory, cranial nerve, and detailed reflex grading, so localization rests on an incomplete examination. No symptom-imaging mismatch is identified."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": 80,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "low",
+      "public_message": "ASA physical status III. Intraoperative mean arterial pressure target 80 mmHg. Blood loss risk moderate. Extubation difficulty unassessable because no airway assessment is documented. Prone position tolerance low."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 40,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Neurological deterioration during conservative treatment (decline in motor power, new long-tract signs, or sphincter dysfunction)",
+        "No meaningful functional improvement in ambulation or activities of daily living after 3 months of supervised rehabilitation",
+        "MRI evidence of cord signal change (T2 hyperintensity) or increase in cord compression on follow-up imaging",
+        "Development of severe pain or instability that precludes participation in rehabilitation"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I recommend a structured conservative program for 3-6 months. Although the progressive nature of this myelopathy is concerning and evidence suggests surgery may be more effective for severe cases, a trial of intensive rehabilitation remains a reasonable option in selected patients without rapid deterioration or sphincter involvement. The program should include physical therapy for gait and balance, core stabilization, cervical isometric strengthening, posture education, fall prevention, and pain management. Conservative treatment would be considered failed if there is further neurological decline, no functional improvement after 3 months, or new bowel/bladder symptoms. We should obtain serial MRI to assess cord signal; if cord T2 hyperintensity is present or myelopathy progresses, surgical referral should be expedited."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 40,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Neurological deterioration during conservative treatment (decline in motor power, new long-tract signs, or sphincter dysfunction)",
+        "No meaningful functional improvement in ambulation or activities of daily living after 3 months of supervised rehabilitation",
+        "MRI evidence of cord signal change (T2 hyperintensity) or increase in cord compression on follow-up imaging",
+        "Development of severe pain or instability that precludes participation in rehabilitation"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I have reviewed the deputy director's comments. No specific finding from the record was cited that outweighs the case for a monitored conservative trial. The patient has progressive myelopathy, but the record does not document rapid deterioration, sphincter involvement, or cord T2 signal change. I maintain my recommendation for a structured 3-6 month conservative program with serial assessment and expedited surgical referral if predefined failure criteria are met."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 40,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Neurological deterioration during conservative treatment (decline in motor power, new long-tract signs, or sphincter dysfunction)",
+          "No meaningful functional improvement in ambulation or activities of daily living after 3 months of supervised rehabilitation",
+          "MRI evidence of cord signal change (T2 hyperintensity) or increase in cord compression on follow-up imaging",
+          "Development of severe pain or instability that precludes participation in rehabilitation"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "I have reviewed the deputy director's comments. No specific finding from the record was cited that outweighs the case for a monitored conservative trial. The patient has progressive myelopathy, but the record does not document rapid deterioration, sphincter involvement, or cord T2 signal change. I maintain my recommendation for a structured 3-6 month conservative program with serial assessment and expedited surgical referral if predefined failure criteria are met."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This 69-year-old male presents with progressive myelopathy (4 months, bilateral limb weakness, Hoffmann sign, hyperreflexia, gait difficulty) and imaging shows extensive OPLL from C2 to T1 causing multilevel cervical cord compression. The clinical picture is consistent with cervical spondylotic myelopathy secondary to OPLL, and without treatment there is risk of further neurological deterioration. While conservative rehabilitation has been proposed, the progressive course and the degree of documented weakness favor definitive decompression; however, the absence of cord signal changes on MRI and the patient's ASA III status introduce uncertainty. Definitive recommendation should be made after obtaining additional imaging details (cord T2 signal, stenosis severity) and careful risk stratification.",
+        "proposed_options": [
+          "Surgical decompression of the cervical spine (anterior, posterior, or combined approach depending on OPLL morphology and cord compression) with perioperative neurophysiological monitoring.",
+          "Structured conservative management with intensive rehabilitation and close neurological follow-up, with serial MRI and surgical referral if deterioration or no improvement within 3 months.",
+          "Further diagnostic workup to clarify cord signal and stenosis severity before committing to surgery or conservative trial."
+        ],
+        "preferred_option": null,
+        "disagreement_points": [
+          "The rehabilitation physician recommends a conservative trial, but the progressive nature over 4 months and already 3/5 strength may make delay risky; I would like your judgment on whether surgery should be offered now or after a short trial.",
+          "The radiologist could not assess cord T2 signal or stenosis severity; these factors are important for prognosis and urgency, and their absence increases uncertainty.",
+          "Anterior versus posterior approach remains undecided and would need detailed imaging review; I defer to your preference or recommend a consensus discussion with a neuroradiologist."
+        ],
+        "deferred_questions_to_director": [
+          "Should we proceed to surgical planning now, or initiate a time-limited conservative trial with close monitoring?",
+          "If surgery is chosen, do you have a preference for anterior, posterior, or combined approach, and should we obtain additional imaging first?",
+          "Given the anesthesiologist's concerns (ASA III, poor prone tolerance, moderate blood loss), do you want optimization and further anesthetic evaluation before scheduling?"
+        ],
+        "public_message": "Director, this is a 69-year-old man with progressive cervical myelopathy from extensive OPLL. Surgery is the standard definitive treatment, but a conservative trial has been suggested. There are several uncertainties: no cord signal information, multiple levels, and significant anesthetic risk. I would appreciate your direction on whether to move toward surgery now or attempt a monitored conservative course first, and on the preferred surgical approach if surgery is selected."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "operate",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": "Proceed with surgical decompression for progressive cervical myelopathy due to multilevel OPLL. The rehabilitation physician's conservative trial is overridden because of progressive 4-month decline with 3/5 motor power; surgery is indicated to halt progression and maximize recovery. Preoperative imaging (high-resolution CT and MRI with T2 sequences) will be obtained to plan the approach, and anesthesia will optimize the patient.",
+        "surgical_plan": "Posterior cervical decompression from C2 to T1 (laminectomy or laminoplasty with instrumented fusion as needed) to address multilevel ventral compression from OPLL. Anterior approach is not preferred given the extensive multilevel OPLL. Final decision on technique to be made after review of CT and MRI. If MRI shows extensive T2 signal change or severe cord compression, proceed with decompression urgently; if CT reveals dural ossification, plan anterior or combined approach as needed.",
+        "delegated_tasks": [
+          "Resident: Order high-resolution CT cervical spine and MRI cervical spine with T2-weighted sequences (including axial and sagittal) to evaluate cord signal change and OPLL morphology.",
+          "Radiologist: Review the imaging when available and report stenosis severity, cord T2 hyperintensity, and OPLL extent (including dural ossification) to guide surgical planning.",
+          "Anesthesiologist: Perform preoperative anesthetic evaluation, optimize medical status (ASA III), and plan for possible difficult airway and hemodynamic management during prone positioning.",
+          "Neurologist: Document a complete neurologic examination including sensory, cranial nerves, and detailed reflexes before surgery.",
+          "Physiatrist: Provide preoperative assessment and plan for postoperative rehabilitation."
+        ],
+        "if_delay": false,
+        "reason_for_delay": null,
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "High-resolution CT cervical spine",
+          "MRI cervical spine with T2-weighted sequences"
+        ],
+        "family_requests": [
+          "detailed_consent"
+        ],
+        "public_message": "After reviewing the case, I determine that surgery is indicated for this progressive cervical myelopathy caused by multilevel OPLL. A conservative trial is not appropriate given the rapid decline and 3/5 motor power. We will proceed with posterior cervical decompression and fusion, with preoperative high-resolution CT and MRI to finalize the surgical plan. Anesthesia will optimize the patient before surgery."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-7933642-1:chair-neutral-deputy-avoidant:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 805,
+      "content": "This is a 69-year-old male who presented with bilateral upper and lower limb weakness and inability to walk for 4 months, gradually progressive. He was apparently healthy 4 months earlier, with no trauma, fever, weight loss, or loss of appetite. Bowel and bladder function was spared, and there was no dysphagia or breathing difficulty. Physical examination showed muscle power 3/5 in all limbs, bilateral Hoffman's sign positive, exaggerated reflexes, difficulty with tandem gait, and no clonus. Radiological examination demonstrated multiple contiguous ossifications of the anterior and posterior longitudinal ligaments from C2 to T1 and in the thoracic and lumbar spine, with normal sacroiliac joints; there was cervical OPLL with multilevel cord compression. No separate laboratory data are available."
+    },
+    {
+      "message_id": "pmc-7933642-1:chair-neutral-deputy-avoidant:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 368,
+      "content": "Reporting the case record’s description only; the films were not available for review. The record describes multilevel cervical cord compression associated with ossification of the posterior longitudinal ligament from C2 through T1, with the dominant abnormality being multilevel cervical involvement. Stenosis severity and cord T2 signal are not stated in the record."
+    },
+    {
+      "message_id": "pmc-7933642-1:chair-neutral-deputy-avoidant:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 760,
+      "content": "Localization is to the cervical spinal cord, with multilevel ventral compression from OPLL explaining the bilateral pyramidal weakness and Hoffman's sign. The match between symptoms and imaging is high; the dominant syndrome of progressive myelopathy is well explained by the documented multilevel cervical cord compression. One coexisting red flag is noted: thoracolumbar ossifications are present but without documented cord compression, so they do not alter the cervical localization or current indication; they should be kept in mind if the surgical plan extends caudally. The examination as documented lacks sensory, cranial nerve, and detailed reflex grading, so localization rests on an incomplete examination. No symptom-imaging mismatch is identified."
+    },
+    {
+      "message_id": "pmc-7933642-1:chair-neutral-deputy-avoidant:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 213,
+      "content": "ASA physical status III. Intraoperative mean arterial pressure target 80 mmHg. Blood loss risk moderate. Extubation difficulty unassessable because no airway assessment is documented. Prone position tolerance low."
+    },
+    {
+      "message_id": "pmc-7933642-1:chair-neutral-deputy-avoidant:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 830,
+      "content": "I recommend a structured conservative program for 3-6 months. Although the progressive nature of this myelopathy is concerning and evidence suggests surgery may be more effective for severe cases, a trial of intensive rehabilitation remains a reasonable option in selected patients without rapid deterioration or sphincter involvement. The program should include physical therapy for gait and balance, core stabilization, cervical isometric strengthening, posture education, fall prevention, and pain management. Conservative treatment would be considered failed if there is further neurological decline, no functional improvement after 3 months, or new bowel/bladder symptoms. We should obtain serial MRI to assess cord signal; if cord T2 hyperintensity is present or myelopathy progresses, surgical referral should be expedited."
+    },
+    {
+      "message_id": "pmc-7933642-1:chair-neutral-deputy-avoidant:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 480,
+      "content": "Director, this is a 69-year-old man with progressive cervical myelopathy from extensive OPLL. Surgery is the standard definitive treatment, but a conservative trial has been suggested. There are several uncertainties: no cord signal information, multiple levels, and significant anesthetic risk. I would appreciate your direction on whether to move toward surgery now or attempt a monitored conservative course first, and on the preferred surgical approach if surgery is selected."
+    },
+    {
+      "message_id": "pmc-7933642-1:chair-neutral-deputy-avoidant:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 468,
+      "content": "I have reviewed the deputy director's comments. No specific finding from the record was cited that outweighs the case for a monitored conservative trial. The patient has progressive myelopathy, but the record does not document rapid deterioration, sphincter involvement, or cord T2 signal change. I maintain my recommendation for a structured 3-6 month conservative program with serial assessment and expedited surgical referral if predefined failure criteria are met."
+    },
+    {
+      "message_id": "pmc-7933642-1:chair-neutral-deputy-avoidant:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 411,
+      "content": "After reviewing the case, I determine that surgery is indicated for this progressive cervical myelopathy caused by multilevel OPLL. A conservative trial is not appropriate given the rapid decline and 3/5 motor power. We will proceed with posterior cervical decompression and fusion, with preoperative high-resolution CT and MRI to finalize the surgical plan. Anesthesia will optimize the patient before surgery."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1631,
+      "output_tokens": 1748,
+      "total_tokens": 3379,
+      "latency_ms": 34904,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2390,
+      "output_tokens": 561,
+      "total_tokens": 2951,
+      "latency_ms": 11773,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 3897,
+      "output_tokens": 2581,
+      "total_tokens": 6478,
+      "latency_ms": 52634,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  },
+  "arm": "avoidant"
+}

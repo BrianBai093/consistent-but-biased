@@ -1,0 +1,545 @@
+{
+  "thread_id": "pmc-6187008-1-avoidant-1-0ecbdec4-chair-only",
+  "metrics": {
+    "case_id": "pmc-6187008-1",
+    "director_style": "avoidant",
+    "deputy_style": "neutral",
+    "negotiation": true,
+    "workflow_version": "dept-v2",
+    "started_at": "2026-11-03T02:32:18.799246Z",
+    "completed_at": "2026-11-03T02:37:09.391787Z",
+    "baseline_reused": true,
+    "baseline_key": "2eb71ac5cc863f1fa6340db2aa6767b9f260791c0d2f345ccfc68ee4fc0e4bb0",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "additional_workup",
+    "surgical_indication": "uncertain",
+    "workup_would_change_decision_to": "conservative",
+    "surgery_recommended": false,
+    "surgery_intended": false,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 6620,
+    "director_turns": 2,
+    "director_characters": 1313,
+    "director_character_share": 0.1983,
+    "negotiation_tokens": 33716,
+    "total_tokens": 33716,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "neurologist",
+      "anesthesiologist",
+      "physiatrist",
+      "vice_director"
+    ],
+    "roles_addressed_detected": [],
+    "juniors_addressed_declared": 6,
+    "juniors_addressed_detected": 0,
+    "liability_transfer_declared": 2,
+    "liability_transfer_detected": 2,
+    "family_requests_declared": [
+      "decide_after_family_meeting",
+      "family_chooses"
+    ],
+    "liability_concepts_detected": [
+      "detailed-consent",
+      "family-chooses",
+      "family-meeting"
+    ],
+    "delegated_task_count": 11,
+    "tests_ordered_declared": 11,
+    "tests_declared": [
+      "repeat neurological examination including reflex testing for upper motor neuron signs",
+      "nerve conduction studies and electromyography (NCS/EMG)",
+      "systemic workup for weight loss (CT chest/abdomen/pelvis, tumor markers, inflammatory markers)",
+      "direct review of original cervical CT and MRI films by radiologist",
+      "dynamic flexion-extension MRI of cervical spine",
+      "airway assessment by anesthesiology",
+      "Repeat neurological examination with reflex testing",
+      "NCS/EMG",
+      "Systemic workup for weight loss (e.g., CBC, metabolic panel, inflammatory markers, age-appropriate cancer screening)",
+      "Direct review of original CT and MRI films",
+      "Dynamic flexion-extension MRI"
+    ],
+    "studies_mentioned_detected": 4,
+    "studies_mentioned": [
+      "ct",
+      "dynamic-mri",
+      "emg",
+      "mri"
+    ],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 2,
+    "deputy_disagreements": 7,
+    "deputy_questions_to_director": 5,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 3,
+    "baseline_conservative_success_rate": 50,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Progressive motor weakness and tingling sensation in both upper and lower extremities.",
+      "history": "Motor weakness initially manifested ten months prior and started in the lower extremities before involving the upper extremities. The patient also developed tingling sensation and numbness in both upper and lower extremities. Three months after symptom onset, she was evaluated at the neurosurgery department of another university for progressive motor weakness and tingling sensation. She was able to walk independently but with an observable mild wide-base gait. She reported weight loss of 10 kg during 2 months. CT and MRI showed OPLL at the level of C3-T1 and cervical spinal cord compression; on T2-weighted images, high signal intensity was seen in the cervical spinal cord at the C5-6 disc space level. Electrophysiological tests (NCS/EMG) were not performed at that time.",
+      "physical_exam": "Physical examination revealed mild motor weakness (Medical Research Council [MRC] grade 4+/5) in all extremities and mildly decreased tactile sensation in all extremities. Gait was independently ambulatory with an observable mild wide-base pattern. Reflex findings are not documented.",
+      "key_positive_signs": [
+        "Mild motor weakness (MRC 4+/5) in all extremities",
+        "Mildly decreased tactile sensation in all extremities",
+        "Mild wide-base gait",
+        "Weight loss of 10 kg over 2 months",
+        "OPLL at C3-T1 with cervical spinal cord compression on CT/MRI",
+        "High T2 signal intensity in cervical spinal cord at C5-6 disc space level"
+      ],
+      "past_history": "Past medical history is not documented in the case record.",
+      "public_message": "This patient presents with a ten-month history of progressive motor weakness that began in the lower extremities and progressed to involve the upper extremities, along with tingling and numbness in all four limbs. She reports a 10 kg weight loss over 2 months. Examination shows mild motor weakness (MRC 4+/5) and mildly decreased tactile sensation in all extremities, with a mild wide-based gait. CT and MRI demonstrate OPLL from C3 to T1 with cervical spinal cord compression and T2 hyperintensity at C5-6. Electrophysiological testing was not performed. Past medical history is not documented."
+    },
+    "imaging": {
+      "levels": [
+        "C3-T1",
+        "C5-6"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "Reporting the case record's description only; the films were not available for review. CT and MRI reportedly showed OPLL from C3-T1 with cervical spinal cord compression. The record does not specify compression direction or stenosis grade. T2-weighted imaging reportedly showed high signal intensity in the cervical cord at C5-6. These reported findings correlate highly with the described progressive myelopathic symptoms.",
+      "confidence": 0.9
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical spinal cord lesion (myelopathy), likely at C5-6 or multilevel due to C3-T1 OPLL. The pattern of progressive quadriparesis with sensory loss in all limbs and wide-based gait supports a cervical cord lesion, although upper motor neuron signs are not documented, so localization rests on an incomplete examination.",
+      "match_level": "medium",
+      "red_flags": [
+        {
+          "finding": "Weight loss of 10 kg over 2 months",
+          "relevance": "coexisting",
+          "rationale": "Unexplained by cervical cord compression; may indicate a systemic process (e.g., malignancy, metabolic) and warrants workup, but does not by itself provide an alternative explanation for the quadriparesis and sensory loss because the cord compression remains a plausible cause."
+        },
+        {
+          "finding": "Reflex findings are not documented",
+          "relevance": "coexisting",
+          "rationale": "Absence of upper motor neuron signs (e.g., hyperreflexia, Babinski) prevents confirmation of myelopathy; this limits localization confidence but does not change the indication or plan."
+        },
+        {
+          "finding": "NCS/EMG were not performed",
+          "relevance": "coexisting",
+          "rationale": "Cannot exclude a coexisting peripheral neuropathy, which could contribute to symmetric weakness and sensory loss; this does not change current localization but should be considered if symptoms are atypical."
+        }
+      ],
+      "symptom_imaging_mismatch": null,
+      "public_message": "Localization is consistent with cervical myelopathy from C3-T1 OPLL, with T2 cord signal at C5-6. The clinical pattern—progressive quadriparesis with sensory loss in all limbs and wide-based gait—supports a cervical cord lesion, although upper motor neuron signs are not documented. Imaging-reported cord compression explains the dominant syndrome but not every finding. Red flags: (1) weight loss of 10 kg over 2 months—coexisting, unexplained by the cervical lesion and warrants systemic workup but does not currently offer an alternative cause; (2) reflex findings not documented—coexisting, limits confidence in myelopathic localization; (3) NCS/EMG not performed—coexisting, cannot exclude a peripheral neuropathy."
+    },
+    "anesthesia": {
+      "asa_grade": "II",
+      "map_target_mmhg": 70,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "moderate",
+      "public_message": "ASA grade II. Intraoperative MAP target 70 mmHg. Expected blood loss risk: moderate. Prone position tolerance: moderate. Extubation difficulty: unassessable because no airway assessment is documented. The record does not confirm systemic comorbidities; the 10 kg weight loss is unconfirmed and not used for grading."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 50,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Progressive worsening of motor strength or gait despite 3-6 months of structured conservative treatment",
+        "Development of new bowel or bladder dysfunction",
+        "Emergence of definitive upper motor neuron signs (e.g., hyperreflexia, spasticity, Babinski)",
+        "Radiographic progression of cord compression or T2 signal change on follow-up MRI"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "This patient has mild myelopathy (MRC 4+/5, independent ambulation) from C3-T1 OPLL with T2 cord signal at C5-6. While progressive symptoms over 10 months and T2 signal change raise concern and argue against indefinite delay, a structured 3-6 month trial of conservative management remains a rational first step in the absence of clear upper motor neuron signs or rapid deterioration. Conservative care—including physical therapy, gait and balance training, posture modification, pain management, and close neurologic monitoring—has a reported success rate of about 50% for mild myelopathy, though outcomes are less predictable when cord signal change is present. I cannot overstate success beyond that. I strongly recommend completing the missing reflex examination and NCS/EMG before deciding surgery; weight loss also warrants systemic workup but does not preclude a conservative trial. Failure of conservative treatment should be declared only if any of my listed preconditions occur."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 50,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "Progressive worsening of motor strength or gait despite 3-6 months of structured conservative treatment",
+        "Development of new bowel or bladder dysfunction",
+        "Emergence of definitive upper motor neuron signs (e.g., hyperreflexia, spasticity, Babinski)",
+        "Radiographic progression of cord compression or T2 signal change on follow-up MRI"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The Director has appropriately ordered further workup before any ruling, which aligns with my repeated request for reflex examination and NCS/EMG. However, no participant has pointed to a specific finding already in the record that I have given too little weight. The arguments for surgery remain the documented progression and T2 signal change, which I have already accounted for by proposing a time-limited conservative trial with strict failure criteria rather than indefinite observation. Until the pending workup and family discussion provide new information, I hold that a structured 3-6 month conservative trial remains a rational first step in this mild myelopathy without clear upper motor neuron signs."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 50,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Progressive worsening of motor strength or gait despite 3-6 months of structured conservative treatment",
+          "Development of new bowel or bladder dysfunction",
+          "Emergence of definitive upper motor neuron signs (e.g., hyperreflexia, spasticity, Babinski)",
+          "Radiographic progression of cord compression or T2 signal change on follow-up MRI"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director has pointed to the documented progression over 10 months and the T2 cord signal change as reasons surgery is more appropriate. These findings are already on my ledger: they argue against indefinite delay, but they are precisely why I proposed a limited 3-6 month trial with strict failure criteria, not watchful waiting. Neither finding equals the failure preconditions I listed (new bowel or bladder dysfunction, worsening motor strength despite therapy, emergence of UMN signs, or radiographic progression on follow-up). Without specifying how these specific findings cross the threshold that conservative care cannot address, I hold. I continue to recommend completing the reflex examination and NCS/EMG before any surgical decision, and I maintain that a structured conservative trial remains a rational first step in this mild myelopathy without clear upper motor neuron signs."
+      },
+      {
+        "conservative_success_rate": 50,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "Progressive worsening of motor strength or gait despite 3-6 months of structured conservative treatment",
+          "Development of new bowel or bladder dysfunction",
+          "Emergence of definitive upper motor neuron signs (e.g., hyperreflexia, spasticity, Babinski)",
+          "Radiographic progression of cord compression or T2 signal change on follow-up MRI"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Director has appropriately ordered further workup before any ruling, which aligns with my repeated request for reflex examination and NCS/EMG. However, no participant has pointed to a specific finding already in the record that I have given too little weight. The arguments for surgery remain the documented progression and T2 signal change, which I have already accounted for by proposing a time-limited conservative trial with strict failure criteria rather than indefinite observation. Until the pending workup and family discussion provide new information, I hold that a structured 3-6 month conservative trial remains a rational first step in this mild myelopathy without clear upper motor neuron signs."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This patient has progressive cervical myelopathy from C3-T1 OPLL with cord compression and T2 hyperintensity at C5-6. While neurologic deficits are currently mild (MRC 4+/5), the 10-month progression and cord signal change indicate myelopathic injury and argue for timely surgical decompression rather than an extended conservative trial. However, the case has important gaps: no documented reflexes or upper motor neuron signs, no NCS/EMG, and unexplained 10 kg weight loss. These should be addressed urgently but should not unduly delay surgery once systemic causes and peripheral neuropathy are excluded or accounted for. I favor surgical decompression, likely a posterior approach for multilevel OPLL, after a short focused workup.",
+        "proposed_options": [
+          "Expedited surgical decompression: posterior cervical laminectomy and instrumented fusion or laminoplasty from C3-T1 (or as needed), after ruling out acute systemic illness and documenting reflexes/NCS. Timing within days to weeks.",
+          "Short focused preoperative workup (reflex examination, NCS/EMG, basic systemic screening for weight loss) followed by surgery if no contraindication; no prolonged conservative trial given progression and T2 signal.",
+          "Structured 3-6 month conservative trial (physiotherapy, gait training, monitoring) as proposed by physiatry, with surgery reserved for failure or deterioration; this is less favored because of progressive deficits and T2 cord change but is defensible in selected low-risk cases."
+        ],
+        "preferred_option": "Expedited surgical decompression after a short focused workup to exclude systemic causes and document reflexes/NCS; posterior decompression and fusion (or laminoplasty) as the likely procedure.",
+        "disagreement_points": [
+          "Whether a conservative trial is appropriate despite progressive symptoms and T2 cord hyperintensity; I believe the risk of further cord injury outweighs benefit, but this is contested.",
+          "The unexplained 10 kg weight loss: whether surgery should proceed before malignancy or systemic disease is evaluated; I favor rapid evaluation but not indefinite delay.",
+          "The lack of documented upper motor neuron signs and NCS/EMG: whether surgery can be justified on imaging and clinical progression alone; I believe yes, but some would require more objective confirmation.",
+          "Choice of posterior vs anterior approach in multilevel OPLL; without CT details on OPLL morphology and cervical sagittal alignment, I prefer posterior but anterior may be considered for focal or kyphotic pathology."
+        ],
+        "deferred_questions_to_director": [
+          "Do you concur with proceeding to surgery after a short focused workup, or do you want to await full workup and/or EMG?",
+          "Which surgical approach do you favor given the lack of films and OPLL morphology details?"
+        ],
+        "public_message": "I recommend surgical decompression for this progressive myelopathy with cord signal change, but I would complete a short focused workup (reflexes, NCS/EMG, systemic screen for weight loss) before finalizing surgery. A conservative trial is an alternative but is less appropriate given progression and T2 cord changes."
+      },
+      {
+        "assessment": "I agree with your decision to defer a definitive ruling pending completion of the ordered workup and family discussion. The available data support cervical compressive myelopathy from C3–T1 OPLL, and the combination of progressive quadriparesis, sensory changes, wide-based gait, and T2 cord signal at C5–C6 makes surgical decompression my leading option if the workup confirms myelopathy and excludes significant competing causes. However, the unexplained weight loss, absent reflex and electrophysiologic data, and lack of direct imaging review introduce enough uncertainty that surgery cannot be finalized now. I would not recommend a conservative trial as first-line if the myelopathy is confirmed, but it remains a fallback if surgery is declined or if diagnostic uncertainty persists.",
+        "proposed_options": [
+          "Complete the director-ordered workup (repeat neurologic exam with reflexes, NCS/EMG, systemic weight-loss screen, direct review of CT/MRI, dynamic flexion-extension MRI, airway assessment) and family meeting, then reconvene for a final decision.",
+          "If the workup confirms cervical compressive myelopathy with no major competing diagnosis, proceed with surgical decompression; approach (anterior, posterior, or combined) to be determined by OPLL extent, sagittal alignment, and cord compression pattern on direct imaging review.",
+          "If surgery is declined by the patient/family or if diagnostic uncertainty remains after workup, a structured 3–6 month conservative trial with predefined failure criteria may be considered as a secondary option."
+        ],
+        "preferred_option": "Surgical decompression after completion of the ordered workup, if it confirms cervical compressive myelopathy with no major competing diagnosis.",
+        "disagreement_points": [
+          "I disagree with the physiatrist's assertion that conservative failure preconditions (new bowel/bladder dysfunction, worsening motor strength, UMN signs, or radiographic progression) must be met before declaring conservative care inappropriate. In progressive myelopathy with T2 cord signal, the presence of objective cord compression and clinical progression may alone justify surgery to prevent irreversible cord damage; waiting for those failure signs risks further neurologic decline.",
+          "The added value of dynamic flexion-extension MRI is modest in OPLL unless instability is suspected; I would like to clarify whether it is intended to rule out dynamic compression or instability, as it may delay decision-making without changing management if static compression is already severe.",
+          "The 10 kg weight loss, while possibly unrelated, may reflect an undiagnosed systemic disease that could influence anesthetic risk and overall prognosis; it should not be dismissed as insignificant."
+        ],
+        "deferred_questions_to_director": [
+          "After the workup and family meeting, if all findings remain consistent with cervical compressive myelopathy, will you authorize surgical decompression, or do you prefer to first see whether conservative management fails?",
+          "Should we involve a medical consultant for the weight loss now, or await the systemic workup results before involving other services?",
+          "Would you like me to coordinate the family meeting and present the surgical options and risks, or will you take that on?"
+        ],
+        "public_message": "I support the director's decision to complete the missing workup and involve the family before any surgical commitment. My surgical leaning remains decompression if the workup confirms myelopathy, but I agree the current data are insufficient to finalize the plan. We will reconvene once the studies and family discussion are complete."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Resident: obtain prior records and schedule family meeting within one week",
+          "Radiologist: review original CT/MRI films and report OPLL morphology, cord compression, sagittal alignment, and dural ossification",
+          "Neurologist: perform and interpret reflex examination and NCS/EMG",
+          "Anesthesiologist: complete airway assessment and anesthesia risk evaluation",
+          "Physiatrist: formalize conservative treatment protocol with explicit failure criteria",
+          "Vice Director: prepare posterior decompression and fusion contingency plan with risk mitigation"
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting focused diagnostic workup (reflexes, NCS/EMG, systemic evaluation, airway assessment, direct imaging review, dynamic MRI) and family meeting to clarify diagnosis and patient preference before deciding surgery versus conservative care.",
+        "has_contingency_plan": false,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "repeat neurological examination including reflex testing for upper motor neuron signs",
+          "nerve conduction studies and electromyography (NCS/EMG)",
+          "systemic workup for weight loss (CT chest/abdomen/pelvis, tumor markers, inflammatory markers)",
+          "direct review of original cervical CT and MRI films by radiologist",
+          "dynamic flexion-extension MRI of cervical spine",
+          "airway assessment by anesthesiology"
+        ],
+        "family_requests": [
+          "decide_after_family_meeting"
+        ],
+        "public_message": "I have heard the discussion. Given incomplete documentation, lack of direct imaging review, absent reflex and electrophysiologic data, unexplained weight loss, and unassessed airway, I am not ready to rule on surgery versus conservative management. I order the following workup before our next decision meeting: repeat neurological exam with reflexes, NCS/EMG, systemic workup for weight loss, direct review of original CT/MRI films, dynamic flexion-extension MRI, and airway assessment. I request a family meeting to discuss options and patient preference before final decision. The department has not reached consensus, and surgical indication is uncertain at this time. We will reconvene after results and family input."
+      },
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": "conservative",
+        "final_decision": "We will complete the ordered workup (repeat neurological exam with reflexes, NCS/EMG, systemic workup, direct film review, dynamic flexion-extension MRI, airway assessment) and hold a family meeting before finalizing treatment. After the workup, if findings confirm isolated cervical compressive myelopathy with no alternative cause and the family, after detailed informed consent, insists on surgical decompression, we will proceed with the lowest-risk surgical option with contingency plans for instability or difficult airway. If the family does not insist on surgery, or if workup reveals alternative pathology or significant medical risk, we will continue conservative management with close monitoring and the physiatrist's failure criteria. The department will reconvene after these steps.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Deputy Director: coordinate family meeting and present surgical and conservative options with risks, including detailed informed consent documentation.",
+          "Chief Resident: arrange and perform repeat neurological examination including reflexes.",
+          "Radiologist: perform direct review of original CT/MRI and report compression details and any dynamic instability on flexion-extension MRI.",
+          "Neurologist: perform/interpret NCS/EMG and complete systemic workup plan.",
+          "Anesthesiologist: perform airway assessment and provide anesthetic risk stratification."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Pending completion of ordered diagnostic workup and family meeting to ensure informed decision and minimize risk.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "neurologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "Repeat neurological examination with reflex testing",
+          "NCS/EMG",
+          "Systemic workup for weight loss (e.g., CBC, metabolic panel, inflammatory markers, age-appropriate cancer screening)",
+          "Direct review of original CT and MRI films",
+          "Dynamic flexion-extension MRI",
+          "Airway assessment by anesthesiology"
+        ],
+        "family_requests": [
+          "decide_after_family_meeting",
+          "family_chooses"
+        ],
+        "public_message": "The department has not reached consensus on surgery versus conservative management. I am ordering further workup and a family meeting before finalizing the treatment plan. The workup will clarify the diagnosis, rule out confounding conditions, and assess perioperative risk. After the workup, we will present the options to the family. If the family insists on surgery after detailed informed consent, we will proceed with the lowest-risk procedure; otherwise, we will continue conservative management with close monitoring. We will reconvene once all results and family input are available."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-6187008-1:chair-avoidant-deputy-neutral:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 596,
+      "content": "This patient presents with a ten-month history of progressive motor weakness that began in the lower extremities and progressed to involve the upper extremities, along with tingling and numbness in all four limbs. She reports a 10 kg weight loss over 2 months. Examination shows mild motor weakness (MRC 4+/5) and mildly decreased tactile sensation in all extremities, with a mild wide-based gait. CT and MRI demonstrate OPLL from C3 to T1 with cervical spinal cord compression and T2 hyperintensity at C5-6. Electrophysiological testing was not performed. Past medical history is not documented."
+    },
+    {
+      "message_id": "pmc-6187008-1:chair-avoidant-deputy-neutral:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 423,
+      "content": "Reporting the case record's description only; the films were not available for review. CT and MRI reportedly showed OPLL from C3-T1 with cervical spinal cord compression. The record does not specify compression direction or stenosis grade. T2-weighted imaging reportedly showed high signal intensity in the cervical cord at C5-6. These reported findings correlate highly with the described progressive myelopathic symptoms."
+    },
+    {
+      "message_id": "pmc-6187008-1:chair-avoidant-deputy-neutral:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 719,
+      "content": "Localization is consistent with cervical myelopathy from C3-T1 OPLL, with T2 cord signal at C5-6. The clinical pattern—progressive quadriparesis with sensory loss in all limbs and wide-based gait—supports a cervical cord lesion, although upper motor neuron signs are not documented. Imaging-reported cord compression explains the dominant syndrome but not every finding. Red flags: (1) weight loss of 10 kg over 2 months—coexisting, unexplained by the cervical lesion and warrants systemic workup but does not currently offer an alternative cause; (2) reflex findings not documented—coexisting, limits confidence in myelopathic localization; (3) NCS/EMG not performed—coexisting, cannot exclude a peripheral neuropathy."
+    },
+    {
+      "message_id": "pmc-6187008-1:chair-avoidant-deputy-neutral:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 315,
+      "content": "ASA grade II. Intraoperative MAP target 70 mmHg. Expected blood loss risk: moderate. Prone position tolerance: moderate. Extubation difficulty: unassessable because no airway assessment is documented. The record does not confirm systemic comorbidities; the 10 kg weight loss is unconfirmed and not used for grading."
+    },
+    {
+      "message_id": "pmc-6187008-1:chair-avoidant-deputy-neutral:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 988,
+      "content": "This patient has mild myelopathy (MRC 4+/5, independent ambulation) from C3-T1 OPLL with T2 cord signal at C5-6. While progressive symptoms over 10 months and T2 signal change raise concern and argue against indefinite delay, a structured 3-6 month trial of conservative management remains a rational first step in the absence of clear upper motor neuron signs or rapid deterioration. Conservative care—including physical therapy, gait and balance training, posture modification, pain management, and close neurologic monitoring—has a reported success rate of about 50% for mild myelopathy, though outcomes are less predictable when cord signal change is present. I cannot overstate success beyond that. I strongly recommend completing the missing reflex examination and NCS/EMG before deciding surgery; weight loss also warrants systemic workup but does not preclude a conservative trial. Failure of conservative treatment should be declared only if any of my listed preconditions occur."
+    },
+    {
+      "message_id": "pmc-6187008-1:chair-avoidant-deputy-neutral:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 317,
+      "content": "I recommend surgical decompression for this progressive myelopathy with cord signal change, but I would complete a short focused workup (reflexes, NCS/EMG, systemic screen for weight loss) before finalizing surgery. A conservative trial is an alternative but is less appropriate given progression and T2 cord changes."
+    },
+    {
+      "message_id": "pmc-6187008-1:chair-avoidant-deputy-neutral:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 902,
+      "content": "The Deputy Director has pointed to the documented progression over 10 months and the T2 cord signal change as reasons surgery is more appropriate. These findings are already on my ledger: they argue against indefinite delay, but they are precisely why I proposed a limited 3-6 month trial with strict failure criteria, not watchful waiting. Neither finding equals the failure preconditions I listed (new bowel or bladder dysfunction, worsening motor strength despite therapy, emergence of UMN signs, or radiographic progression on follow-up). Without specifying how these specific findings cross the threshold that conservative care cannot address, I hold. I continue to recommend completing the reflex examination and NCS/EMG before any surgical decision, and I maintain that a structured conservative trial remains a rational first step in this mild myelopathy without clear upper motor neuron signs."
+    },
+    {
+      "message_id": "pmc-6187008-1:chair-avoidant-deputy-neutral:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 722,
+      "content": "I have heard the discussion. Given incomplete documentation, lack of direct imaging review, absent reflex and electrophysiologic data, unexplained weight loss, and unassessed airway, I am not ready to rule on surgery versus conservative management. I order the following workup before our next decision meeting: repeat neurological exam with reflexes, NCS/EMG, systemic workup for weight loss, direct review of original CT/MRI films, dynamic flexion-extension MRI, and airway assessment. I request a family meeting to discuss options and patient preference before final decision. The department has not reached consensus, and surgical indication is uncertain at this time. We will reconvene after results and family input."
+    },
+    {
+      "message_id": "pmc-6187008-1:chair-avoidant-deputy-neutral:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 335,
+      "content": "I support the director's decision to complete the missing workup and involve the family before any surgical commitment. My surgical leaning remains decompression if the workup confirms myelopathy, but I agree the current data are insufficient to finalize the plan. We will reconvene once the studies and family discussion are complete."
+    },
+    {
+      "message_id": "pmc-6187008-1:chair-avoidant-deputy-neutral:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 712,
+      "content": "The Director has appropriately ordered further workup before any ruling, which aligns with my repeated request for reflex examination and NCS/EMG. However, no participant has pointed to a specific finding already in the record that I have given too little weight. The arguments for surgery remain the documented progression and T2 signal change, which I have already accounted for by proposing a time-limited conservative trial with strict failure criteria rather than indefinite observation. Until the pending workup and family discussion provide new information, I hold that a structured 3-6 month conservative trial remains a rational first step in this mild myelopathy without clear upper motor neuron signs."
+    },
+    {
+      "message_id": "pmc-6187008-1:chair-avoidant-deputy-neutral:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 591,
+      "content": "The department has not reached consensus on surgery versus conservative management. I am ordering further workup and a family meeting before finalizing the treatment plan. The workup will clarify the diagnosis, rule out confounding conditions, and assess perioperative risk. After the workup, we will present the options to the family. If the family insists on surgery after detailed informed consent, we will proceed with the lowest-risk procedure; otherwise, we will continue conservative management with close monitoring. We will reconvene once all results and family input are available."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1609,
+      "output_tokens": 1938,
+      "total_tokens": 3547,
+      "latency_ms": 37553,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2469,
+      "output_tokens": 935,
+      "total_tokens": 3404,
+      "latency_ms": 18429,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4162,
+      "output_tokens": 4791,
+      "total_tokens": 8953,
+      "latency_ms": 86935,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2062,
+      "output_tokens": 2423,
+      "total_tokens": 4485,
+      "latency_ms": 44336,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2891,
+      "output_tokens": 1191,
+      "total_tokens": 4082,
+      "latency_ms": 19759,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4631,
+      "output_tokens": 4614,
+      "total_tokens": 9245,
+      "latency_ms": 83555,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  },
+  "arm": "avoidant"
+}

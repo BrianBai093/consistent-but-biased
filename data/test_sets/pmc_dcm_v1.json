@@ -1,0 +1,167 @@
+{
+  "name": "pmc_dcm_v1",
+  "created": "2026-10-10",
+  "dataset": {
+    "name": "PMC-Patients",
+    "source": "https://huggingface.co/datasets/zhengyun21/PMC-Patients",
+    "license": "CC BY-NC-SA 4.0",
+    "file": "PMC-Patients.csv"
+  },
+  "purpose": "A fixed set of published, text-only adult degenerative cervical myelopathy cases for the department experiment. Selected by hand from 32 usable cases screened out of 167,034 PMC-Patients summaries (see output/pmc_patients_dcm/candidates.zh-CN.md).",
+  "selection": [
+    "Balanced across three groups: 7 not operated, operated late, or with a borderline indication; 7 where the diagnosis was hard to make; 6 with a clear indication for surgery, as controls.",
+    "Excluded: summaries that never say what was done (no retrospective comparison possible); summaries under about 200 words; cases that are mostly about a surgical technique; a case whose timeline runs through a revision.",
+    "Group and real_decision are the selector's reading of the summary, not reviewed by a clinician."
+  ],
+  "analysis_only": "real_decision and real_treatment are the answer. They are for analysis after the runs and must never be given to an agent; the runner reads only patient_uid.",
+  "cases": [
+    {
+      "patient_uid": "8059481-1",
+      "pmid": "33898127",
+      "group": "borderline_or_not_operated",
+      "real_decision": "not_operated",
+      "real_treatment": "Surgery not offered (comorbidities, risk of a multi-stage operation, little expected gain); medication."
+    },
+    {
+      "patient_uid": "6580147-1",
+      "pmid": "31207532",
+      "group": "borderline_or_not_operated",
+      "real_decision": "operated_after_delay",
+      "real_treatment": "Refused laminoplasty at first; 4 months of physiotherapy without improvement; laminoplasty."
+    },
+    {
+      "patient_uid": "6389466-1",
+      "pmid": "30847190",
+      "group": "borderline_or_not_operated",
+      "real_decision": "operated_after_delay",
+      "real_treatment": "JOA 14 judged no indication; CPAP for respiratory failure; C3-7 laminoplasty once neuropathy worsened."
+    },
+    {
+      "patient_uid": "7440276-1",
+      "pmid": "32839680",
+      "group": "hard_diagnosis",
+      "real_decision": "operated",
+      "real_treatment": "ACDF C4-C6 for cervical myelopathy (iNPH vs CSM unresolved after an equivocal tap test); gait kept worsening over the next year, a repeat tap test was positive and a ventriculoperitoneal shunt was placed."
+    },
+    {
+      "patient_uid": "7529124-1",
+      "pmid": "33071672",
+      "group": "borderline_or_not_operated",
+      "real_decision": "operated",
+      "real_treatment": "mJOA 15: C3-6 laminectomy and C2-T1 posterior fusion."
+    },
+    {
+      "patient_uid": "7227285-1",
+      "pmid": "32410709",
+      "group": "borderline_or_not_operated",
+      "real_decision": "operated",
+      "real_treatment": "No myelopathic signs, thigh claudication only: C4-6 laminoplasty."
+    },
+    {
+      "patient_uid": "2857503-2",
+      "pmid": "20411153",
+      "group": "borderline_or_not_operated",
+      "real_decision": "operated",
+      "real_treatment": "JOA 15, walking normally: C1 posterior arch resection."
+    },
+    {
+      "patient_uid": "6538236-1",
+      "pmid": "31183272",
+      "group": "hard_diagnosis",
+      "real_decision": "operated",
+      "real_treatment": "Presented as stroke; recommended C4-6 fusion."
+    },
+    {
+      "patient_uid": "5553503-1",
+      "pmid": "28825009",
+      "group": "hard_diagnosis",
+      "real_decision": "operated",
+      "real_treatment": "Presented with dyspnoea; CABG first without relief; C2-6 laminectomy and fusion."
+    },
+    {
+      "patient_uid": "8645501-1",
+      "pmid": "34877036",
+      "group": "hard_diagnosis",
+      "real_decision": "operated",
+      "real_treatment": "Suspected ALS; urgent spinal cord decompression."
+    },
+    {
+      "patient_uid": "7989791-2",
+      "pmid": "33790773",
+      "group": "hard_diagnosis",
+      "real_decision": "operated",
+      "real_treatment": "Suspected ALS; operated after a couple of months."
+    },
+    {
+      "patient_uid": "6187008-1",
+      "pmid": "30370039",
+      "group": "hard_diagnosis",
+      "real_decision": "operated",
+      "real_treatment": "OPLL with missed CIDP; laminectomy and foraminotomy without benefit."
+    },
+    {
+      "patient_uid": "5482166-1",
+      "pmid": "28680730",
+      "group": "hard_diagnosis",
+      "real_decision": "operated",
+      "real_treatment": "Cord oedema mistaken for a tumour; C5-7 ACDF."
+    },
+    {
+      "patient_uid": "4426531-1",
+      "pmid": "25972718",
+      "group": "hard_diagnosis",
+      "real_decision": "operated",
+      "real_treatment": "Disc herniation mistaken for an intramedullary mass; C5-6 laminectomy and discectomy."
+    },
+    {
+      "patient_uid": "5159182-1",
+      "pmid": "27887013",
+      "group": "clear_indication",
+      "real_decision": "operated",
+      "real_treatment": "mJOA 5: multilevel anterior discectomy and foraminotomy."
+    },
+    {
+      "patient_uid": "6254142-1",
+      "pmid": "30474608",
+      "group": "clear_indication",
+      "real_decision": "operated",
+      "real_treatment": "Cervicothoracic OPLL, JOA 14: C3-T3 posterior decompression and fusion."
+    },
+    {
+      "patient_uid": "7933642-1",
+      "pmid": "33708711",
+      "group": "clear_indication",
+      "real_decision": "operated",
+      "real_treatment": "DISH with OPLL: C2-T1 posterior decompression and fixation."
+    },
+    {
+      "patient_uid": "4432380-1",
+      "pmid": "25983784",
+      "group": "clear_indication",
+      "real_decision": "operated",
+      "real_treatment": "Ossified ligamentum flavum: C5-6 laminectomy."
+    },
+    {
+      "patient_uid": "6533938-1",
+      "pmid": "31124460",
+      "group": "clear_indication",
+      "real_decision": "operated",
+      "real_treatment": "Ossified yellow ligament, JOA 7: C4-6 posterior decompression and fusion."
+    },
+    {
+      "patient_uid": "2729274-1",
+      "pmid": "19718247",
+      "group": "clear_indication",
+      "real_decision": "operated",
+      "real_treatment": "C7/T1 facet arthrosis, JOA 8: hemilaminectomy, facetectomy and fusion."
+    }
+  ],
+  "corrections": [
+    {
+      "date": "2026-10-13",
+      "patient_uid": "7440276-1",
+      "change": "real_decision not_operated -> operated; group borderline_or_not_operated -> hard_diagnosis",
+      "reason": "Checked against the full summary while writing the paper outline: the team performed C4-C6 ACDF first and placed the shunt a year later. The original label came from a truncated view at screening. The M5/M6 replication subset is fixed by its explicit uid list in plan v1.0 and is unchanged."
+    }
+  ]
+}

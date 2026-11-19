@@ -1,0 +1,6 @@
+<!-- source: case-page-001 -->
+
+A 30-year old male engineer of African descent, presented with progressive left upper limb and bilateral lower limb weakness over a period of 3 months, associated with an unsteady gait. He complained of altered sensation of his feet, which he described as ‘walking on cotton wool’. He denied any preceding trauma and there was no neck or back pain.
+Clinical examination revealed that he had normal power in both upper and lower limbs. However, there was generalized hyper-reflexia in all muscle groups of both upper and lower limbs, bilateral inverted supinator jerk, positive Hoffman’s sign and clonus. Sensation was decreased in the left sole of the foot sparing the dorsum. At the time of presentation, patient had a Japanese Orthopaedic Association (JOA) score of 7 and significant gait disability (Grade 3 as per Nurick’s Grading) [].
+Magnetic Resonance Imaging (MRI) of the whole spine showed stenosis with cord signal changes from C4 to C6 levels, secondary to impingement by a prominent bony growth arising antero-superiorly from the C6 spinous process and indenting the spinal canal (). Computed Tomography of the cervical spine further confirmed the bony mass in relation to the C6 spinous (, ).
+In view of the above findings, cervical myelopathy resulting from spinal canal stenosis due to OYL was suspected.

@@ -1,0 +1,545 @@
+{
+  "thread_id": "pmc-5553503-1-democratic-2-88534816",
+  "metrics": {
+    "case_id": "pmc-5553503-1",
+    "director_style": "democratic",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-12T05:23:21.124076Z",
+    "completed_at": "2026-10-12T05:26:25.761930Z",
+    "baseline_reused": true,
+    "baseline_key": "bbd6f28f247d410e9bfd8894821ec4b2934b33fd3d33450fd0083882cde67a77",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "operate",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": null,
+    "surgery_recommended": true,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 7949,
+    "director_turns": 2,
+    "director_characters": 1828,
+    "director_character_share": 0.23,
+    "negotiation_tokens": 34834,
+    "total_tokens": 34834,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist",
+      "anesthesiologist",
+      "physiatrist",
+      "vice_director"
+    ],
+    "roles_addressed_detected": [
+      "resident",
+      "radiologist",
+      "anesthesiologist",
+      "physiatrist",
+      "vice_director"
+    ],
+    "juniors_addressed_declared": 5,
+    "juniors_addressed_detected": 5,
+    "liability_transfer_declared": 1,
+    "liability_transfer_detected": 1,
+    "family_requests_declared": [
+      "detailed_consent"
+    ],
+    "liability_concepts_detected": [
+      "detailed-consent"
+    ],
+    "delegated_task_count": 9,
+    "tests_ordered_declared": 7,
+    "tests_declared": [
+      "Radiologist review of original cervical MRI with specific attention to compression direction and OPLL",
+      "Anesthesiology airway evaluation and optimization plan",
+      "Cardiology consultation for antiplatelet/anticoagulation management and surgical timing",
+      "Review of original cervical MRI images with report on compression direction and OPLL",
+      "Preoperative CT cervical spine to assess OPLL and fusion anatomy",
+      "Anesthesia airway assessment",
+      "Cardiology consultation for antiplatelet management"
+    ],
+    "studies_mentioned_detected": 1,
+    "studies_mentioned": [
+      "mri"
+    ],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 2,
+    "deputy_disagreements": 7,
+    "deputy_questions_to_director": 8,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 1,
+    "flags_coexisting": 3,
+    "baseline_conservative_success_rate": 20,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": false,
+    "persuaded_by_count": 0,
+    "consensus_reached": false
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Nonproductive cough, chest congestion, subjective fevers, hoarseness, and shortness of breath on ambulation for 2 days.",
+      "history": "An 82-year-old man presented with a 2-day history of nonproductive cough, chest congestion, subjective fevers, hoarseness, and shortness of breath on ambulation. He had chronic mild neck pain for the past 10 years, treated conservatively. He reported a 6-month history of unstable gait, loss of hand dexterity, and bilateral upper extremity numbness and pain. Laboratory evaluation revealed an elevated white blood cell count, elevated troponins, hyponatremia, and elevated blood glucose. Auxiliary tests showed an abnormal electrocardiogram and elevated right hemidiaphragm with full inspiration on chest radiograph. On hospital day 3, cardiac catheterization revealed extensive stenosis of the major coronary arteries, believed to be the main cause of his dyspnea. On hospital day 5, he underwent triple coronary artery bypass grafting. Despite the cardiac surgery, the patient's dyspnea did not improve. He developed new complaints of generalized weakness and continued to complain of chest discomfort. Magnetic resonance imaging and radiographic imaging of the cervical spine revealed extensive multilevel degenerative spondylosis with moderate to severe central canal narrowing from C2 to C7 and myelomalacia.",
+      "physical_exam": "On examination, the patient had a grade 3/6 systolic murmur and decreased breath sounds at the bases bilaterally. Spine examination revealed decreased cervical range of motion. Neurologic examination revealed diffuse upper extremity weakness and hyperreflexia in the upper and lower extremities. Hoffman and Babinski signs were negative.",
+      "key_positive_signs": [
+        "Grade 3/6 systolic murmur",
+        "Decreased breath sounds at the lung bases bilaterally",
+        "Decreased cervical range of motion",
+        "Diffuse upper extremity weakness",
+        "Hyperreflexia in the upper and lower extremities",
+        "Elevated white blood cell count",
+        "Elevated troponins",
+        "Hyponatremia",
+        "Elevated blood glucose",
+        "Abnormal electrocardiogram",
+        "Elevated right hemidiaphragm with full inspiration on chest radiograph",
+        "Extensive stenosis of the major coronary arteries on cardiac catheterization",
+        "MRI showing extensive multilevel degenerative spondylosis with moderate to severe central canal narrowing from C2 to C7 and myelomalacia"
+      ],
+      "past_history": "Medical history included hypertension, type II diabetes mellitus, peripheral vascular disease with claudication, benign prostatic hypertrophy, colonic polyps, and multifocal osteoarthritis. He had a 35 pack-year smoking history, discontinued 30 years prior to presentation. He had chronic mild neck pain treated conservatively for the past 10 years.",
+      "public_message": "An 82-year-old man presented with a two-day history of nonproductive cough, chest congestion, subjective fevers, hoarseness, and exertional dyspnea. He also reported a six-month history of unstable gait, loss of hand dexterity, and bilateral upper extremity numbness and pain, with chronic mild neck pain for ten years. Physical examination showed a grade 3/6 systolic murmur, decreased breath sounds at both lung bases, decreased cervical range of motion, diffuse upper extremity weakness, and hyperreflexia in all extremities; Hoffman and Babinski signs were negative. Laboratory evaluation revealed elevated white blood cell count, elevated troponins, hyponatremia, and elevated blood glucose; electrocardiogram was abnormal and chest radiograph showed elevated right hemidiaphragm with full inspiration. Cardiac catheterization on hospital day 3 demonstrated extensive coronary stenosis, and the patient underwent triple bypass on day 5, but dyspnea persisted and he developed generalized weakness. MRI of the cervical spine showed extensive multilevel degenerative spondylosis with moderate to severe central canal narrowing from C2 to C7 and myelomalacia. Past medical history includes hypertension, type II diabetes mellitus, peripheral vascular disease with claudication, benign prostatic hypertrophy, colonic polyps, multifocal osteoarthritis, and a 35 pack-year smoking history discontinued 30 years ago."
+    },
+    "imaging": {
+      "levels": [
+        "C2-3",
+        "C3-4",
+        "C4-5",
+        "C5-6",
+        "C6-7"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "severe",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "Reporting the case record's description only; the films were not available for review. Cervical MRI/radiographs reportedly showed extensive multilevel degenerative spondylosis with moderate to severe central canal narrowing from C2 through C7 and myelomalacia. The dominant abnormality is multilevel C2-7 canal narrowing. The direction of compression was not stated. These findings correlate highly with the reported gait instability, hand dexterity loss, bilateral upper-extremity symptoms, weakness, and hyperreflexia.",
+      "confidence": 0.9
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "The myelopathic signs (unstable gait, loss of hand dexterity, bilateral upper extremity numbness and pain, diffuse upper extremity weakness, hyperreflexia in all limbs) localize to the cervical spinal cord, spanning C2-C7, consistent with cervical spondylotic myelopathy. Negative Hoffman and Babinski signs do not exclude this localization.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "Diffuse upper extremity weakness without long-tract signs (negative Hoffman and Babinski) and no documented sensory level.",
+          "relevance": "coexisting",
+          "rationale": "Weakness may be compounded by post-surgical deconditioning or critical illness, but the chronic loss of hand dexterity and hyperreflexia point to upper motor neuron involvement. Absence of long-tract signs does not rule out cervical myelopathy, especially in chronic compression."
+        },
+        {
+          "finding": "Elevated right hemidiaphragm on chest radiograph.",
+          "relevance": "coexisting",
+          "rationale": "Could reflect phrenic nerve dysfunction from C3-C5 cord involvement or post-surgical changes, but the dominant myelopathic syndrome is already explained by the C2-C7 stenosis. This finding does not alter the cervical localization or the surgical indication."
+        },
+        {
+          "finding": "Persistent dyspnea and chest discomfort after CABG, with new generalized weakness.",
+          "relevance": "coexisting",
+          "rationale": "These symptoms are likely cardiac or systemic and not explained by the cervical cord lesion. They may affect overall perioperative risk but do not change the indication for addressing the cervical stenosis if the myelopathy is symptomatic and progressive."
+        },
+        {
+          "finding": "MRI compression direction not specified (reported as nondiagnostic).",
+          "relevance": "changes_plan",
+          "rationale": "The surgical approach (anterior vs posterior) for multilevel C2-C7 stenosis depends on whether the compression is predominantly anterior (disc/osteophyte) or posterior (ligamentum flavum). Clarifying this is important for planning the decompression."
+        }
+      ],
+      "symptom_imaging_mismatch": "No significant mismatch: the myelopathic signs correlate with the C2-C7 stenosis and myelomalacia. Negative Hoffman and Babinski do not contradict the localization.",
+      "public_message": "Localization is to the cervical spinal cord (C2-C7) with a high match to imaging. Red flags: (1) diffuse upper extremity weakness and absent Hoffman/Babinski are coexisting and do not exclude myelopathy; (2) elevated right hemidiaphragm is coexisting and likely unrelated to the primary cord syndrome; (3) persistent dyspnea/generalized weakness after CABG is coexisting and does not alter the cervical indication; (4) unspecified compression direction on MRI changes_plan because it may affect surgical approach."
+    },
+    "anesthesia": {
+      "asa_grade": "IV",
+      "map_target_mmhg": 70,
+      "blood_loss_risk": "moderate",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "high",
+      "public_message": "ASA grade IV. Intraoperative mean arterial pressure target: 70 mmHg. Blood loss risk: moderate. Prone position tolerance: high risk. Extubation difficulty: unassessable because no airway assessment is documented."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 20,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "No improvement or further deterioration in myelopathic symptoms (unstable gait, hand dexterity, bilateral upper extremity numbness/pain) after 3 months of supervised conservative treatment (physical therapy, cervical bracing, pain management, and activity modification).",
+        "Development of new or progressive neurological deficits, including appearance of Hoffmann or Babinski signs, worsening hyperreflexia, or new bowel/bladder dysfunction.",
+        "Radiographic progression on repeat MRI (increased stenosis or worsening myelomalacia) at 3-6 months.",
+        "Intractable neuropathic pain or significant functional decline (e.g., loss of independent ambulation, inability to perform activities of daily living).",
+        "Evidence of respiratory compromise attributable to cervical cord involvement (e.g., worsening hemidiaphragm elevation or dyspnea due to phrenic nerve dysfunction)."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "As the rehabilitation physician, I advocate a structured conservative treatment program for this 82-year-old man before considering cervical decompression, given his high perioperative risk following recent triple CABG and his multiple comorbidities. A 3-6 month trial of intensive physical therapy focusing on gait, balance, hand dexterity, and cervical stabilization, along with pain management and activity modification, is a reasonable first step. However, I must acknowledge that the severe multilevel stenosis with myelomalacia and the 6-month progressive myelopathic symptoms are strong predictors of poor response to conservative care; the literature suggests a conservative success rate of approximately 20% in such cases. Therefore, I propose strict preconditions: if there is no stabilization or improvement in myelopathic symptoms within 3 months, or if new deficits, radiographic progression, or functional decline occur, then surgical decompression should be pursued without further delay. I also recommend clarifying the compression direction to inform surgical planning if needed."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 20,
+      "proposed_duration": "3-6 months",
+      "preconditions_for_failure": [
+        "No improvement or further deterioration in myelopathic symptoms (unstable gait, hand dexterity, bilateral upper extremity numbness/pain) after 3 months of supervised conservative treatment (physical therapy, cervical bracing, pain management, and activity modification).",
+        "Development of new or progressive neurological deficits, including appearance of Hoffmann or Babinski signs, worsening hyperreflexia, or new bowel/bladder dysfunction.",
+        "Radiographic progression on repeat MRI (increased stenosis or worsening myelomalacia) at 3-6 months.",
+        "Intractable neuropathic pain or significant functional decline (e.g., loss of independent ambulation, inability to perform activities of daily living).",
+        "Evidence of respiratory compromise attributable to cervical cord involvement (e.g., worsening hemidiaphragm elevation or dyspnea due to phrenic nerve dysfunction)."
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The director's dismissal of a conservative trial cites the same severe myelomalacia and progressive deficits I already weighted heavily when I set the success rate at 20%. No one has identified a finding in the record that I underappreciated or explained why the risk of waiting exceeds the risk of multilevel surgery in this ASA IV patient with recent triple CABG. The director's request for further evaluations is appropriate and may refine timing and approach, but it does not negate the option of a structured, time-limited conservative trial with clear failure criteria. If those criteria are met, I will support expedited decompression without further delay. Holding my position."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 20,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "No improvement or further deterioration in myelopathic symptoms (unstable gait, hand dexterity, bilateral upper extremity numbness/pain) after 3 months of supervised conservative treatment (physical therapy, cervical bracing, pain management, and activity modification).",
+          "Development of new or progressive neurological deficits, including appearance of Hoffmann or Babinski signs, worsening hyperreflexia, or new bowel/bladder dysfunction.",
+          "Radiographic progression on repeat MRI (increased stenosis or worsening myelomalacia) at 3-6 months.",
+          "Intractable neuropathic pain or significant functional decline (e.g., loss of independent ambulation, inability to perform activities of daily living).",
+          "Evidence of respiratory compromise attributable to cervical cord involvement (e.g., worsening hemidiaphragm elevation or dyspnea due to phrenic nerve dysfunction)."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "I hear the deputy director's position that progressive cervical myelopathy with severe C2-C7 stenosis and myelomalacia is a clear surgical indication. However, those exact findings were already central to my assessment: I assigned a conservative success rate of only 20% specifically because of the severe multilevel stenosis, myelomalacia, and six-month progression. The argument does not point to any finding I have underweighted; it simply reasserts that surgery is indicated, which I accept as a possible but not yet obligatory conclusion. Given this patient's ASA IV status and recent triple CABG, a structured 3-6 month conservative trial with rigorous monitoring and predefined failure criteria remains justified to avoid exposing him to high perioperative risk before exhausting reversible factors. If those criteria are met, I will support prompt surgical decompression."
+      },
+      {
+        "conservative_success_rate": 20,
+        "proposed_duration": "3-6 months",
+        "preconditions_for_failure": [
+          "No improvement or further deterioration in myelopathic symptoms (unstable gait, hand dexterity, bilateral upper extremity numbness/pain) after 3 months of supervised conservative treatment (physical therapy, cervical bracing, pain management, and activity modification).",
+          "Development of new or progressive neurological deficits, including appearance of Hoffmann or Babinski signs, worsening hyperreflexia, or new bowel/bladder dysfunction.",
+          "Radiographic progression on repeat MRI (increased stenosis or worsening myelomalacia) at 3-6 months.",
+          "Intractable neuropathic pain or significant functional decline (e.g., loss of independent ambulation, inability to perform activities of daily living).",
+          "Evidence of respiratory compromise attributable to cervical cord involvement (e.g., worsening hemidiaphragm elevation or dyspnea due to phrenic nerve dysfunction)."
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The director's dismissal of a conservative trial cites the same severe myelomalacia and progressive deficits I already weighted heavily when I set the success rate at 20%. No one has identified a finding in the record that I underappreciated or explained why the risk of waiting exceeds the risk of multilevel surgery in this ASA IV patient with recent triple CABG. The director's request for further evaluations is appropriate and may refine timing and approach, but it does not negate the option of a structured, time-limited conservative trial with clear failure criteria. If those criteria are met, I will support expedited decompression without further delay. Holding my position."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This is a progressive cervical myelopathy with severe C2-C7 central canal stenosis and myelomalacia. The imaging and clinical findings are concordant and indicate spinal cord injury. Nonoperative management has a low probability of preventing further deterioration, and the 6-month symptom progression raises the risk of irreversible deficit. However, the recent triple CABG, ASA IV status, high-risk prone positioning, and unassessable airway create significant perioperative hazards. I believe surgical decompression is indicated, but the timing and approach require careful balancing of neurological urgency against cardiac and anesthetic risk.",
+        "proposed_options": [
+          "Proceed with surgical decompression as soon as feasible, after a brief period (days to ~2 weeks) of medical optimization and anesthesia airway assessment, using a posterior approach (laminectomy and fusion or laminoplasty) because of multilevel stenosis.",
+          "Delay surgery for 4–6 weeks after CABG to reduce cardiac and bleeding risk, with close neurological monitoring and urgent intervention if deterioration occurs.",
+          "Conservative management trial for 3–6 months with strict failure criteria (physiatrist proposal), accepting a low likelihood of success and risk of progression."
+        ],
+        "preferred_option": "Proceed with surgical decompression as soon as feasible, after a brief period (days to ~2 weeks) of medical optimization and anesthesia airway assessment, using a posterior approach (laminectomy and fusion or laminoplasty) because of multilevel stenosis.",
+        "disagreement_points": [
+          "I disagree with the rehabilitation physician's 3–6 month conservative trial: with myelomalacia and progressive deficits, delay risks irreversible cord damage, and the quoted 20% success rate is not acceptable. A shorter trial or none is preferable.",
+          "The MRI compression direction is unknown, which materially affects surgical approach (anterior vs posterior) and extent; we should not finalize the plan without reviewing actual images.",
+          "The recent triple CABG and antiplatelet/anticoagulation status raise contested questions about how long we can safely delay surgery and whether posterior surgery in the prone position is feasible now."
+        ],
+        "deferred_questions_to_director": [
+          "What is your judgement on the acceptable delay after CABG given the progressive myelopathy and myelomalacia?",
+          "Can we obtain and review the actual cervical MRI to determine compression direction, presence of OPLL, and surgical approach?",
+          "Do you favor posterior decompression (laminectomy/fusion vs laminoplasty) for this long-segment stenosis, or would you consider a hybrid approach?",
+          "How should we proceed with airway assessment and anesthetic optimization before scheduling surgery?"
+        ],
+        "public_message": "This patient has a clear surgical indication: progressive cervical myelopathy with severe C2-C7 stenosis and myelomalacia. I cannot support a prolonged conservative trial. My preference is surgical decompression, most likely posterior, as soon as the patient is medically optimized after his bypass. I have raised my disagreements about timing and approach, and I need the director's guidance on antiplatelet management, image review, and anesthesia risks."
+      },
+      {
+        "assessment": "This patient has progressive cervical myelopathy with severe C2-C7 stenosis and myelomalacia on MRI. Surgical decompression is clearly indicated given the six-month functional decline and the presence of myelomalacia, which predicts poor recovery without surgery. The recent triple CABG adds significant perioperative risk, but the neurologic condition is active and progressive; a prolonged conservative trial is not defensible. The approach must be tailored to the compression vector, which is still unknown, and the patient must be medically optimized, particularly regarding antiplatelet therapy, airway assessment, and hemodynamic stability. My strong preference is for a posterior decompression and fusion once these issues are clarified.",
+        "proposed_options": [
+          "Posterior cervical laminectomy and instrumented fusion from C2 to C7, addressing multi-level stenosis and myelomalacia while stabilizing the spine.",
+          "Anterior cervical corpectomy and fusion if imaging demonstrates predominantly anterior compression at multiple levels.",
+          "Combined anterior-posterior or staged decompression and fusion if the compression is circumferential or there is significant kyphosis."
+        ],
+        "preferred_option": "Posterior cervical decompression and instrumented fusion C2-C7, assuming the MRI confirms predominantly posterior or multilevel circumferential compression without a large anterior mass, and after cardiology and anesthesia clearance; this approach treats the diffuse stenosis while minimizing anterior approach risks in this elderly post-CABG patient.",
+        "disagreement_points": [
+          "I continue to disagree with a 3-6 month conservative trial; myelomalacia and progressive deficits make early surgical decompression necessary despite elevated cardiac risk.",
+          "The surgical approach cannot be finalized until we know the dominant compression direction and presence of OPLL; I disagree with proceeding without reviewing the original MRI images.",
+          "The extent of fusion remains contested: including C2 adds risk of dysphagia and reduced range of motion, but severe C2 stenosis may require it. We need a consensus on whether to include C2 in the construct.",
+          "I disagree with automatically delaying surgery solely due to antiplatelet concerns without weighing the risk of neurological deterioration; the timing should be balanced against the myelopathy progression."
+        ],
+        "deferred_questions_to_director": [
+          "If the MRI shows predominantly anterior compression at C2-C7, do you agree with a combined anterior-posterior approach, or would you consider posterior-only decompression with indirect decompression?",
+          "Would you accept proceeding with surgery while the patient remains on aspirin, using meticulous hemostasis, if cardiology insists on continued antiplatelet therapy?",
+          "Do you want us to obtain a preoperative CT to assess for ossification of the posterior longitudinal ligament and to plan fusion anatomy?",
+          "Should we involve cardiac anesthesia or a vascular surgeon for intraoperative hemodynamic monitoring given the recent CABG?"
+        ],
+        "public_message": "The surgical indication is clear. I continue to recommend posterior decompression and fusion C2-C7 once imaging is reviewed and the patient is optimized. I cannot support a conservative trial. I have raised open questions about approach, antiplatelet management, and timing; I await the director's final decisions after the requested evaluations."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Resident: compile current medication list (especially antiplatelet/anticoagulation), confirm functional status, and note any interval neurological changes.",
+          "Radiologist: obtain and review the original cervical MRI images, focusing on compression direction (anterior vs posterior) and presence of OPLL.",
+          "Anesthesiologist: perform a formal airway assessment and provide an anesthetic plan for prone positioning, including optimization strategies.",
+          "Obtain cardiology consultation regarding antiplatelet management and safe timing for elective surgery after recent CABG."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting essential imaging review, anesthesia airway assessment, and cardiology guidance to finalize surgical approach and timing.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "anesthesiologist"
+        ],
+        "ordered_tests": [
+          "Radiologist review of original cervical MRI with specific attention to compression direction and OPLL",
+          "Anesthesiology airway evaluation and optimization plan",
+          "Cardiology consultation for antiplatelet/anticoagulation management and surgical timing"
+        ],
+        "family_requests": [],
+        "public_message": "Thank you for the thorough discussion. I want to respond formally to the objections raised. The rehabilitation physician's conservative trial is not supported by the evidence given severe myelomalacia and progressive deficits; however, his emphasis on optimizing the patient's medical status is well taken. The deputy director's preference for expedited surgery is appropriate, but we cannot proceed without clarifying the imaging details and anesthetic risk. I am therefore not closing the meeting yet. I ask specifically Dr. Resident to compile the current medication list, including antiplatelet/anticoagulation, and confirm functional status and any interval changes. I ask Dr. Radiologist to obtain and review the original MRI images and report the compression direction and presence of OPLL. I ask Dr. Anesthesiologist to perform an airway assessment and provide an anesthetic plan for prone positioning. My current position is that surgery is indicated, but the final plan and timing depend on these results. Contingencies: if compression is predominantly anterior, we will consider an anterior or hybrid approach; if posterior, posterior laminectomy/fusion. If airway assessment shows high risk, we will plan awake fiberoptic intubation. If cardiology advises a longer delay for antiplatelet management, we will reassess urgency. We will reconvene after these are completed."
+      },
+      {
+        "decision": "operate",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": "After formal discussion and consideration of the rehabilitation physician's objection, I rule for surgical decompression. The myelomalacia and progressive myelopathy are clear indications, and a 3-6 month conservative trial is not supported given the risk of irreversible cord damage. I acknowledge the high perioperative risk (ASA IV, recent CABG) and will mitigate by immediate anesthesia and cardiology optimization, with surgery scheduled as soon as these are complete. The plan is posterior cervical decompression and instrumented fusion C2-C7, contingent on imaging findings: if MRI shows predominantly anterior compression or OPLL, we will change to anterior or combined approach; if airway assessment is high risk, we will use awake fiberoptic intubation; if cardiology advises continuing aspirin, we will proceed with meticulous hemostasis and consider platelet transfusion if needed. I delegate tasks to resident, radiologist, anesthesiologist, and physiatrist as listed. Consent will be detailed given the risks.",
+        "surgical_plan": "Posterior cervical decompression and instrumented fusion C2-C7. Approach may be modified based on preoperative imaging: if predominantly anterior compression or OPLL, consider anterior or combined approach. Intraoperative MAP target >=70 mmHg; if airway high risk, awake fiberoptic intubation; coordinate with cardiology for antiplatelet management.",
+        "delegated_tasks": [
+          "Resident: compile current medication list including antiplatelet/anticoagulation and document interval functional changes.",
+          "Radiologist: obtain and review original cervical MRI images and report compression direction and presence of OPLL.",
+          "Anesthesiologist: perform airway assessment and provide anesthetic plan for prone positioning, including extubation strategy.",
+          "Physiatrist: prepare a structured post-operative rehabilitation plan and assist with perioperative optimization.",
+          "Vice director: coordinate with cardiology for antiplatelet management and timing of surgery."
+        ],
+        "if_delay": false,
+        "reason_for_delay": null,
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist",
+          "anesthesiologist",
+          "physiatrist",
+          "vice_director"
+        ],
+        "ordered_tests": [
+          "Review of original cervical MRI images with report on compression direction and OPLL",
+          "Preoperative CT cervical spine to assess OPLL and fusion anatomy",
+          "Anesthesia airway assessment",
+          "Cardiology consultation for antiplatelet management"
+        ],
+        "family_requests": [
+          "detailed_consent"
+        ],
+        "public_message": "The department has not reached consensus, but as director I rule for surgical decompression now with immediate preoperative optimization and clear contingencies. I thank the rehabilitation physician for his input; his conservative trial is noted but overruled due to severe myelomalacia. We will proceed with posterior decompression and fusion C2-C7, with approach adjusted based on imaging and airway. Detailed informed consent will be obtained."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-5553503-1:democratic:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 1414,
+      "content": "An 82-year-old man presented with a two-day history of nonproductive cough, chest congestion, subjective fevers, hoarseness, and exertional dyspnea. He also reported a six-month history of unstable gait, loss of hand dexterity, and bilateral upper extremity numbness and pain, with chronic mild neck pain for ten years. Physical examination showed a grade 3/6 systolic murmur, decreased breath sounds at both lung bases, decreased cervical range of motion, diffuse upper extremity weakness, and hyperreflexia in all extremities; Hoffman and Babinski signs were negative. Laboratory evaluation revealed elevated white blood cell count, elevated troponins, hyponatremia, and elevated blood glucose; electrocardiogram was abnormal and chest radiograph showed elevated right hemidiaphragm with full inspiration. Cardiac catheterization on hospital day 3 demonstrated extensive coronary stenosis, and the patient underwent triple bypass on day 5, but dyspnea persisted and he developed generalized weakness. MRI of the cervical spine showed extensive multilevel degenerative spondylosis with moderate to severe central canal narrowing from C2 to C7 and myelomalacia. Past medical history includes hypertension, type II diabetes mellitus, peripheral vascular disease with claudication, benign prostatic hypertrophy, colonic polyps, multifocal osteoarthritis, and a 35 pack-year smoking history discontinued 30 years ago."
+    },
+    {
+      "message_id": "pmc-5553503-1:democratic:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 520,
+      "content": "Reporting the case record's description only; the films were not available for review. Cervical MRI/radiographs reportedly showed extensive multilevel degenerative spondylosis with moderate to severe central canal narrowing from C2 through C7 and myelomalacia. The dominant abnormality is multilevel C2-7 canal narrowing. The direction of compression was not stated. These findings correlate highly with the reported gait instability, hand dexterity loss, bilateral upper-extremity symptoms, weakness, and hyperreflexia."
+    },
+    {
+      "message_id": "pmc-5553503-1:democratic:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 513,
+      "content": "Localization is to the cervical spinal cord (C2-C7) with a high match to imaging. Red flags: (1) diffuse upper extremity weakness and absent Hoffman/Babinski are coexisting and do not exclude myelopathy; (2) elevated right hemidiaphragm is coexisting and likely unrelated to the primary cord syndrome; (3) persistent dyspnea/generalized weakness after CABG is coexisting and does not alter the cervical indication; (4) unspecified compression direction on MRI changes_plan because it may affect surgical approach."
+    },
+    {
+      "message_id": "pmc-5553503-1:democratic:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 212,
+      "content": "ASA grade IV. Intraoperative mean arterial pressure target: 70 mmHg. Blood loss risk: moderate. Prone position tolerance: high risk. Extubation difficulty: unassessable because no airway assessment is documented."
+    },
+    {
+      "message_id": "pmc-5553503-1:democratic:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 1096,
+      "content": "As the rehabilitation physician, I advocate a structured conservative treatment program for this 82-year-old man before considering cervical decompression, given his high perioperative risk following recent triple CABG and his multiple comorbidities. A 3-6 month trial of intensive physical therapy focusing on gait, balance, hand dexterity, and cervical stabilization, along with pain management and activity modification, is a reasonable first step. However, I must acknowledge that the severe multilevel stenosis with myelomalacia and the 6-month progressive myelopathic symptoms are strong predictors of poor response to conservative care; the literature suggests a conservative success rate of approximately 20% in such cases. Therefore, I propose strict preconditions: if there is no stabilization or improvement in myelopathic symptoms within 3 months, or if new deficits, radiographic progression, or functional decline occur, then surgical decompression should be pursued without further delay. I also recommend clarifying the compression direction to inform surgical planning if needed."
+    },
+    {
+      "message_id": "pmc-5553503-1:democratic:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 456,
+      "content": "This patient has a clear surgical indication: progressive cervical myelopathy with severe C2-C7 stenosis and myelomalacia. I cannot support a prolonged conservative trial. My preference is surgical decompression, most likely posterior, as soon as the patient is medically optimized after his bypass. I have raised my disagreements about timing and approach, and I need the director's guidance on antiplatelet management, image review, and anesthesia risks."
+    },
+    {
+      "message_id": "pmc-5553503-1:democratic:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 879,
+      "content": "I hear the deputy director's position that progressive cervical myelopathy with severe C2-C7 stenosis and myelomalacia is a clear surgical indication. However, those exact findings were already central to my assessment: I assigned a conservative success rate of only 20% specifically because of the severe multilevel stenosis, myelomalacia, and six-month progression. The argument does not point to any finding I have underweighted; it simply reasserts that surgery is indicated, which I accept as a possible but not yet obligatory conclusion. Given this patient's ASA IV status and recent triple CABG, a structured 3-6 month conservative trial with rigorous monitoring and predefined failure criteria remains justified to avoid exposing him to high perioperative risk before exhausting reversible factors. If those criteria are met, I will support prompt surgical decompression."
+    },
+    {
+      "message_id": "pmc-5553503-1:democratic:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 1382,
+      "content": "Thank you for the thorough discussion. I want to respond formally to the objections raised. The rehabilitation physician's conservative trial is not supported by the evidence given severe myelomalacia and progressive deficits; however, his emphasis on optimizing the patient's medical status is well taken. The deputy director's preference for expedited surgery is appropriate, but we cannot proceed without clarifying the imaging details and anesthetic risk. I am therefore not closing the meeting yet. I ask specifically Dr. Resident to compile the current medication list, including antiplatelet/anticoagulation, and confirm functional status and any interval changes. I ask Dr. Radiologist to obtain and review the original MRI images and report the compression direction and presence of OPLL. I ask Dr. Anesthesiologist to perform an airway assessment and provide an anesthetic plan for prone positioning. My current position is that surgery is indicated, but the final plan and timing depend on these results. Contingencies: if compression is predominantly anterior, we will consider an anterior or hybrid approach; if posterior, posterior laminectomy/fusion. If airway assessment shows high risk, we will plan awake fiberoptic intubation. If cardiology advises a longer delay for antiplatelet management, we will reassess urgency. We will reconvene after these are completed."
+    },
+    {
+      "message_id": "pmc-5553503-1:democratic:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 346,
+      "content": "The surgical indication is clear. I continue to recommend posterior decompression and fusion C2-C7 once imaging is reviewed and the patient is optimized. I cannot support a conservative trial. I have raised open questions about approach, antiplatelet management, and timing; I await the director's final decisions after the requested evaluations."
+    },
+    {
+      "message_id": "pmc-5553503-1:democratic:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 685,
+      "content": "The director's dismissal of a conservative trial cites the same severe myelomalacia and progressive deficits I already weighted heavily when I set the success rate at 20%. No one has identified a finding in the record that I underappreciated or explained why the risk of waiting exceeds the risk of multilevel surgery in this ASA IV patient with recent triple CABG. The director's request for further evaluations is appropriate and may refine timing and approach, but it does not negate the option of a structured, time-limited conservative trial with clear failure criteria. If those criteria are met, I will support expedited decompression without further delay. Holding my position."
+    },
+    {
+      "message_id": "pmc-5553503-1:democratic:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 446,
+      "content": "The department has not reached consensus, but as director I rule for surgical decompression now with immediate preoperative optimization and clear contingencies. I thank the rehabilitation physician for his input; his conservative trial is noted but overruled due to severe myelomalacia. We will proceed with posterior decompression and fusion C2-C7, with approach adjusted based on imaging and airway. Detailed informed consent will be obtained."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1813,
+      "output_tokens": 2764,
+      "total_tokens": 4577,
+      "latency_ms": 36403,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2701,
+      "output_tokens": 1140,
+      "total_tokens": 3841,
+      "latency_ms": 12852,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4499,
+      "output_tokens": 3281,
+      "total_tokens": 7780,
+      "latency_ms": 38190,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2409,
+      "output_tokens": 2247,
+      "total_tokens": 4656,
+      "latency_ms": 29589,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 3248,
+      "output_tokens": 1087,
+      "total_tokens": 4335,
+      "latency_ms": 13588,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 5092,
+      "output_tokens": 4553,
+      "total_tokens": 9645,
+      "latency_ms": 53990,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

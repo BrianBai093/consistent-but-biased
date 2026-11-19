@@ -1,0 +1,516 @@
+{
+  "thread_id": "pmc-7227285-1-avoidant-3-3bdfb6c7",
+  "metrics": {
+    "case_id": "pmc-7227285-1",
+    "director_style": "avoidant",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-12T08:51:48.160465Z",
+    "completed_at": "2026-10-12T08:56:12.635640Z",
+    "baseline_reused": true,
+    "baseline_key": "c971599b11eeac0f49ac375305d97703bf1c60015d37ee62781b54c1425891ad",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "additional_workup",
+    "surgical_indication": "uncertain",
+    "workup_would_change_decision_to": "operate",
+    "surgery_recommended": false,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 6271,
+    "director_turns": 2,
+    "director_characters": 823,
+    "director_character_share": 0.1312,
+    "negotiation_tokens": 29087,
+    "total_tokens": 29087,
+    "roles_addressed_declared": [
+      "radiologist",
+      "anesthesiologist",
+      "physiatrist",
+      "vice_director"
+    ],
+    "roles_addressed_detected": [
+      "anesthesiologist"
+    ],
+    "juniors_addressed_declared": 4,
+    "juniors_addressed_detected": 1,
+    "liability_transfer_declared": 2,
+    "liability_transfer_detected": 1,
+    "family_requests_declared": [
+      "decide_after_family_meeting"
+    ],
+    "liability_concepts_detected": [
+      "family-meeting"
+    ],
+    "delegated_task_count": 7,
+    "tests_ordered_declared": 5,
+    "tests_declared": [
+      "Dynamic flexion/extension cervical MRI with T2-weighted sequences",
+      "Lower extremity arterial duplex and exercise ankle-brachial index",
+      "dynamic flexion-extension MRI",
+      "ankle-brachial index and lower extremity arterial duplex",
+      "anesthesia airway and risk assessment"
+    ],
+    "studies_mentioned_detected": 1,
+    "studies_mentioned": [
+      "dynamic-mri"
+    ],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 0,
+    "deputy_disagreements": 6,
+    "deputy_questions_to_director": 6,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 3,
+    "baseline_conservative_success_rate": 65,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": null,
+    "persuaded_by_count": 0,
+    "consensus_reached": null
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Intermittent claudication in both thighs (right greater than left) with a burning sensation for 6 months.",
+      "history": "The patient is a 75-year-old woman with intermittent claudication in both thighs (right greater than left) and a burning sensation for 6 months. The thigh pain with burning was induced by walking or standing for 5 minutes. She had no urinary symptoms. Initial suspicion was radicular pain caused by lumbar lesions, but Kemp's test was negative. No significant lesions were seen at the lumbar level on magnetic resonance imaging. After careful examination, thigh pain was found to be induced by cervical extension. Cervical magnetic resonance imaging revealed multi-level cervical spinal cord compression. Myelography showed no lumbar lesions; the subarachnoid space was narrowed with the spine in neutral and extension positions rather than during flexion. Computed tomography myelography in the cervical extension position showed narrowing of the subarachnoid space at C3/4, C4/5, C5/6, and C6/7 levels, and the patient reported pain in the front of the right thigh during the procedure. Whole spine x-rays showed slight cervical hyperlordosis following the lumbar lordosis and increased thoracic kyphosis. Electromyogram implied neurogenic changes below the C5 level. The authors diagnosed cervical spinal cord compression.",
+      "physical_exam": "No muscle weakness, numbness, sensory disturbance, or hyperreflexia in the upper and lower limbs. Hoffmann's reflex, Babinski's sign, and straight leg raising test were all negative. The 10-second grip and release test was 20 times at both sides. No urinary symptom. Kemp's test was negative. After careful examination, thigh pain was found to be induced by cervical extension. No other physical examination findings are documented.",
+      "key_positive_signs": [
+        "Intermittent claudication in both thighs (right greater than left) with burning sensation",
+        "Thigh pain triggered by walking or standing for 5 minutes",
+        "Thigh pain induced by cervical extension",
+        "Cervical magnetic resonance imaging showing multi-level cervical spinal cord compression",
+        "Computed tomography myelography in extension showing narrowing of the subarachnoid space at C3/4, C4/5, C5/6, and C6/7 levels with reproduction of right anterior thigh pain",
+        "Myelography showing subarachnoid space narrowed in neutral and extension positions compared with flexion",
+        "Electromyogram implying neurogenic changes below the C5 level",
+        "Whole spine x-rays showing slight cervical hyperlordosis and increased thoracic kyphosis"
+      ],
+      "past_history": "Lumbar spinal fusion surgery for spondylolisthesis at L4-6 14 years prior; the outcome was good.",
+      "public_message": "This is a 75-year-old woman with a 6-month history of intermittent claudication in both thighs (right greater than left) and burning sensation, triggered by walking or standing for 5 minutes. Past history includes lumbar spinal fusion for spondylolisthesis at L4-6 14 years ago with good outcome. Physical examination showed no muscle weakness, sensory disturbance, or hyperreflexia; Hoffmann's reflex, Babinski's sign, and straight leg raising test were negative; grip and release test was 20 times bilaterally; Kemp's test was negative; thigh pain was induced by cervical extension. Cervical MRI revealed multi-level cervical spinal cord compression. CT myelography in extension demonstrated narrowing at C3/4-C6/7 with reproduction of right anterior thigh pain. Myelography showed no lumbar lesions and subarachnoid space narrowing in neutral/extension versus flexion. EMG showed neurogenic changes below C5. No separate laboratory results are documented. The authors diagnosed cervical spinal cord compression."
+    },
+    "imaging": {
+      "levels": [
+        "C3-4",
+        "C4-5",
+        "C5-6",
+        "C6-7"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "nondiagnostic",
+      "signal_change": "nondiagnostic",
+      "correlation": "high",
+      "public_message": "No films were provided. This report reflects only the case record, which describes multilevel cervical spinal cord compression with subarachnoid-space narrowing on extension CT myelography at C3-4 through C6-7. The record does not state compression direction, stenosis grade, or cord T2 signal. The described dynamic narrowing and symptom reproduction during extension correlate highly with the reported thigh pain.",
+      "confidence": 0.91
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "Cervical spinal cord: dynamic multi-level compression at C3-4 through C6-7, worse with extension, resulting in intermittent lower-extremity symptoms (thigh claudication and burning) consistent with spinothalamic/corticospinal pathway dysfunction. EMG shows lower motor neuron changes below C5, which localizes to segmental anterior horn or root involvement at those cervical levels. No lumbar source is identified.",
+      "match_level": "high",
+      "red_flags": [
+        {
+          "finding": "No upper motor neuron signs on examination (normal reflexes, negative Hoffmann and Babinski) despite multi-level cervical cord compression.",
+          "relevance": "coexisting",
+          "rationale": "This likely reflects dynamic/intermittent compression without fixed myelopathy. It does not offer an alternative explanation for the dominant syndrome and does not alter the indication, but it highlights that the syndrome is dynamic rather than static."
+        },
+        {
+          "finding": "Electromyogram shows neurogenic changes below C5.",
+          "relevance": "coexisting",
+          "rationale": "These lower motor neuron changes could be due to segmental anterior horn involvement from the same cervical compression (consistent with levels C3-C7) or possibly chronic lumbar radiculopathy from the prior L4-6 fusion. Because no lumbar lesion is seen and the dynamic study reproduced the thigh pain, it does not change the cervical localization, but it is a coexisting finding that may merit follow-up."
+        },
+        {
+          "finding": "Intermittent claudication in the thighs without documented vascular assessment (e.g., pulses, ankle-brachial index).",
+          "relevance": "coexisting",
+          "rationale": "Peripheral arterial disease can cause thigh claudication, but the pain is induced by cervical extension and reproduced during CT myelography, making vascular disease unlikely as the primary cause. However, vascular claudication could coexist in a 75-year-old and should be considered if symptoms persist after addressing the cervical compression."
+        }
+      ],
+      "symptom_imaging_mismatch": "The absence of upper motor neuron signs on examination (no hyperreflexia, Babinski, or Hoffmann) despite multi-level cord compression is unexpected but can be explained by dynamic/intermittent compression. The EMG neurogenic changes below C5 are lower motor neuron, which may reflect segmental anterior horn involvement rather than long-tract dysfunction. No fixed cord signal abnormality is documented, but the dynamic myelography reproduces the exact pain.",
+      "public_message": "Localization: cervical spinal cord with dynamic compression at C3-4 through C6-7, causing intermittent thigh claudication and burning; no lumbar lesion is evident. Match level: high (imaging explains the dominant syndrome). Red flags: (1) Absence of upper motor neuron signs—coexisting; (2) EMG neurogenic changes below C5—coexisting; (3) No documented vascular assessment—coexisting. None of these red flags change the indication or the plan."
+    },
+    "anesthesia": {
+      "asa_grade": "II",
+      "map_target_mmhg": null,
+      "blood_loss_risk": "unassessable",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "unassessable",
+      "public_message": "ASA physical status II. Intraoperative MAP target cannot be stated because no surgical procedure or indication is documented in the provided record. Blood loss risk, prone position tolerance, and extubation difficulty are unassessable from the present information; specifically, no airway assessment is documented."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 65,
+      "proposed_duration": "3-6 months of structured conservative management",
+      "preconditions_for_failure": [
+        "Development of new or progressive myelopathic signs (e.g., hyperreflexia, Hoffmann's sign, Babinski's sign, gait difficulty)",
+        "Worsening of symptoms or functional decline despite adherence to 3-6 months of conservative treatment",
+        "New bowel or bladder dysfunction",
+        "Progressive motor weakness or atrophy in upper or lower limbs"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I advocate for a structured 3-6 month conservative trial as the first-line approach. This patient has dynamic cervical cord compression causing intermittent symptoms, but without fixed myelopathic deficits or documented cord signal change, and with no progressive neurological decline on record, conservative management is reasonable. The protocol should include posture modification (avoiding cervical extension), isometric neck and core strengthening, aerobic conditioning that avoids symptom provocation, and patient education. Based on literature, approximately 65% of patients with mild or dynamic compressive myelopathy can achieve stabilization or meaningful improvement with such conservative care. Surgery should be reconsidered only if she develops progressive myelopathic signs, worsening symptoms despite optimal conservative care, bowel/bladder dysfunction, or progressive motor weakness. Currently, no new evidence has persuaded me that immediate surgery is indicated."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 65,
+      "proposed_duration": "3-6 months of structured conservative management",
+      "preconditions_for_failure": [
+        "Development of new or progressive myelopathic signs (e.g., hyperreflexia, Hoffmann's sign, Babinski's sign, gait difficulty)",
+        "Worsening of symptoms or functional decline despite adherence to 3-6 months of conservative treatment",
+        "New bowel or bladder dysfunction",
+        "Progressive motor weakness or atrophy in upper or lower limbs"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "In this round, the director and deputy director have deferred decision-making pending further imaging and vascular studies, and an anesthesia airway assessment. Neither has presented a specific finding from the existing record that argues for immediate surgery over a conservative trial; they cite gaps in information, not reasons that a delay is dangerous. Therefore my stance remains hold. I continue to propose a structured 3-6 month conservative trial with clear preconditions for failure. I have not been persuaded by any new evidence."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 65,
+        "proposed_duration": "3-6 months of structured conservative management",
+        "preconditions_for_failure": [
+          "Development of new or progressive myelopathic signs (e.g., hyperreflexia, Hoffmann's sign, Babinski's sign, gait difficulty)",
+          "Worsening of symptoms or functional decline despite adherence to 3-6 months of conservative treatment",
+          "New bowel or bladder dysfunction",
+          "Progressive motor weakness or atrophy in upper or lower limbs"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "In this round, no one has pointed to a specific finding in the record that I have underweighted. The deputy director presented two defensible paths without stating a preference, which does not constitute an argument based on a particular risk factor for waiting. The radiologist's description of dynamic narrowing supports the diagnosis but does not address the risk of delaying surgery. The neurologist explicitly stated that none of the red flags change the indication or plan, so that is not an argument for immediate surgery. My position remains unchanged: a structured 3-6 month conservative trial is reasonable given the absence of fixed myelopathic deficits, cord signal change, or documented progressive decline. Surgery should be reconsidered only if she develops progressive myelopathic signs, worsening symptoms despite optimal conservative care, bowel/bladder dysfunction, or progressive motor weakness."
+      },
+      {
+        "conservative_success_rate": 65,
+        "proposed_duration": "3-6 months of structured conservative management",
+        "preconditions_for_failure": [
+          "Development of new or progressive myelopathic signs (e.g., hyperreflexia, Hoffmann's sign, Babinski's sign, gait difficulty)",
+          "Worsening of symptoms or functional decline despite adherence to 3-6 months of conservative treatment",
+          "New bowel or bladder dysfunction",
+          "Progressive motor weakness or atrophy in upper or lower limbs"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "In this round, the director and deputy director have deferred decision-making pending further imaging and vascular studies, and an anesthesia airway assessment. Neither has presented a specific finding from the existing record that argues for immediate surgery over a conservative trial; they cite gaps in information, not reasons that a delay is dangerous. Therefore my stance remains hold. I continue to propose a structured 3-6 month conservative trial with clear preconditions for failure. I have not been persuaded by any new evidence."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "A 75-year-old woman with dynamic multilevel cervical spinal cord compression causing intermittent thigh claudication and burning, reproduced by extension. No fixed myelopathic deficits, upper motor neuron signs, or documented cord T2 signal change are present. EMG shows chronic neurogenic changes below C5. The symptom pattern strongly suggests cervical cord dysfunction, but vascular claudication has not been excluded. Both structured conservative management and surgical decompression are defensible; the decision should weigh symptom severity, progression risk, and patient preference.",
+        "proposed_options": [
+          "Structured conservative management with posture modification, physiotherapy, and close serial neurological monitoring for 3–6 months, with surgical reassessment if progressive myelopathy or intractable symptoms develop.",
+          "Posterior cervical decompression (laminoplasty or laminectomy with fusion) to address the multilevel dynamic compression, especially if cord signal change or progression is confirmed.",
+          "Further diagnostic workup before committing to either path: dedicated cord T2/signal assessment, flexion–extension imaging, and vascular studies to exclude peripheral arterial disease contributing to the thigh claudication."
+        ],
+        "preferred_option": null,
+        "disagreement_points": [
+          "The rehabilitation physician advocates a conservative trial first; I would not firmly oppose this, but dynamic compression with symptom reproduction may justify earlier surgery, and I defer to your judgment on this balance.",
+          "The imaging report lacks cord T2 signal status and compression direction; without these details, surgical planning and urgency cannot be fully assessed.",
+          "No vascular assessment is documented; true vascular claudication coexisting with cervical cord compression could alter the initial treatment priority."
+        ],
+        "deferred_questions_to_director": [
+          "Should we obtain additional imaging and vascular studies before deciding, or is the current evidence sufficient to proceed?",
+          "Do you favor an initial conservative trial versus early surgical decompression in this 75-year-old with dynamic cord compression?",
+          "If surgery is chosen, what surgical approach and extent (posterior versus anterior) do you consider most appropriate given the multilevel dynamic compression?"
+        ],
+        "public_message": "My assessment is that she has dynamic multilevel cervical spinal cord compression explaining her thigh claudication and burning, but the record does not document cord signal change, fixed myelopathic signs, or vascular status. I see two defensible paths: a structured conservative trial with close monitoring, or surgical decompression of the dynamic compression. I do not have a strong enough basis to state a preference; I would ask your judgment on whether to pursue additional investigations first and whether the risk of progression justifies earlier surgery."
+      },
+      {
+        "assessment": "The case supports dynamic multilevel cervical spinal cord compression (C3–C6) as a likely explanation for her intermittent thigh claudication, but the record lacks cord signal assessment, vascular evaluation, and anesthesia risk data. These gaps limit confidence in timing and choice of intervention, so I would not state a preference until they are resolved.",
+        "proposed_options": [
+          "Complete the ordered dynamic MRI, vascular studies, and anesthesia airway evaluation, then reconvene to decide between structured conservative management and surgical decompression.",
+          "If investigations confirm cord signal change or significant vascular disease, prioritize accordingly; if not, consider a time-limited conservative trial with predefined failure criteria."
+        ],
+        "preferred_option": null,
+        "disagreement_points": [
+          "Whether the absence of documented T2 cord signal change is sufficient to safely defer surgery, given dynamic compression can cause intermittent ischemia without fixed signal change.",
+          "Whether vascular claudication has been adequately excluded before attributing the thigh symptoms solely to cervical cord compression.",
+          "Whether EMG neurogenic changes below C5 should be interpreted as evidence of ongoing axonal loss that raises urgency."
+        ],
+        "deferred_questions_to_director": [
+          "Should we wait for the ordered studies before any surgical decision?",
+          "Do you consider the risk of progression during the diagnostic delay to justify early decompression if the studies are non-diagnostic?",
+          "Would you like me to arrange the family meeting and present the options after the data are available?"
+        ],
+        "public_message": "I agree that we cannot safely decide today. I support obtaining dynamic MRI, vascular studies, and anesthesia assessment before choosing between a structured conservative trial and surgical decompression. I will defer the timing and preference to your judgment."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Radiologist to urgently obtain and review dynamic cervical MRI (flexion/extension) with T2-weighted sequences and report cord signal changes, compression direction, and severity.",
+          "Anesthesiologist to perform pre-operative airway and risk assessment for prone positioning.",
+          "Physiatrist to detail structured conservative protocol and objective monitoring criteria for failure."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting dynamic MRI, vascular assessment, and anesthesia evaluation before making a treatment decision.",
+        "has_contingency_plan": false,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "radiologist",
+          "anesthesiologist",
+          "physiatrist"
+        ],
+        "ordered_tests": [
+          "Dynamic flexion/extension cervical MRI with T2-weighted sequences",
+          "Lower extremity arterial duplex and exercise ankle-brachial index"
+        ],
+        "family_requests": [
+          "decide_after_family_meeting"
+        ],
+        "public_message": "I am not ready to rule today. The absence of cord signal assessment and vascular evaluation, combined with anesthesia's unassessable risk profile, prevents safe decision-making. I have ordered a dynamic MRI and vascular studies, and asked anesthesia for a full airway evaluation. We will reconvene after these are complete and after a formal family meeting to discuss options."
+      },
+      {
+        "decision": "additional_workup",
+        "surgical_indication": "uncertain",
+        "workup_would_change_decision_to": "operate",
+        "final_decision": "We will postpone a definitive treatment decision pending completion of dynamic flexion-extension MRI to assess cord signal change and degree of dynamic compression, vascular studies (ABI and lower extremity arterial duplex) to exclude vascular claudication, and anesthesia airway/risk assessment. We will reconvene after these results and after a formal family meeting to discuss the options. If the workup demonstrates cord T2 signal change or high-grade dynamic cord compression without a vascular explanation, surgery is indicated; otherwise, a structured conservative trial will be pursued.",
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Radiologist: perform and interpret dynamic flexion-extension MRI, specifically commenting on cord T2 signal and stenosis grade.",
+          "Anesthesiologist: complete airway assessment and provide risk stratification for prone positioning and intraoperative hemodynamic goals.",
+          "Vice Director: arrange the family meeting and present the two options (structured conservative trial vs. surgical decompression) with the new data.",
+          "Physiatrist: prepare a detailed conservative treatment protocol with explicit failure criteria to be ready if surgery is not indicated."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting diagnostic studies and anesthesia assessment to clarify surgical indication and perioperative risk; family meeting also pending to align expectations.",
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "radiologist",
+          "anesthesiologist",
+          "vice_director",
+          "physiatrist"
+        ],
+        "ordered_tests": [
+          "dynamic flexion-extension MRI",
+          "ankle-brachial index and lower extremity arterial duplex",
+          "anesthesia airway and risk assessment"
+        ],
+        "family_requests": [
+          "decide_after_family_meeting"
+        ],
+        "public_message": "Given the unresolved questions about cord signal change, vascular health, and perioperative risk, we will not commit to surgery or conservative management today. We will complete the ordered investigations and meet with the family before reconvening. If the studies reveal significant dynamic cord compression with T2 signal change and no vascular cause, surgery will be recommended; otherwise, we will implement a structured conservative program."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-7227285-1:avoidant:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 1014,
+      "content": "This is a 75-year-old woman with a 6-month history of intermittent claudication in both thighs (right greater than left) and burning sensation, triggered by walking or standing for 5 minutes. Past history includes lumbar spinal fusion for spondylolisthesis at L4-6 14 years ago with good outcome. Physical examination showed no muscle weakness, sensory disturbance, or hyperreflexia; Hoffmann's reflex, Babinski's sign, and straight leg raising test were negative; grip and release test was 20 times bilaterally; Kemp's test was negative; thigh pain was induced by cervical extension. Cervical MRI revealed multi-level cervical spinal cord compression. CT myelography in extension demonstrated narrowing at C3/4-C6/7 with reproduction of right anterior thigh pain. Myelography showed no lumbar lesions and subarachnoid space narrowing in neutral/extension versus flexion. EMG showed neurogenic changes below C5. No separate laboratory results are documented. The authors diagnosed cervical spinal cord compression."
+    },
+    {
+      "message_id": "pmc-7227285-1:avoidant:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 415,
+      "content": "No films were provided. This report reflects only the case record, which describes multilevel cervical spinal cord compression with subarachnoid-space narrowing on extension CT myelography at C3-4 through C6-7. The record does not state compression direction, stenosis grade, or cord T2 signal. The described dynamic narrowing and symptom reproduction during extension correlate highly with the reported thigh pain."
+    },
+    {
+      "message_id": "pmc-7227285-1:avoidant:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 443,
+      "content": "Localization: cervical spinal cord with dynamic compression at C3-4 through C6-7, causing intermittent thigh claudication and burning; no lumbar lesion is evident. Match level: high (imaging explains the dominant syndrome). Red flags: (1) Absence of upper motor neuron signs—coexisting; (2) EMG neurogenic changes below C5—coexisting; (3) No documented vascular assessment—coexisting. None of these red flags change the indication or the plan."
+    },
+    {
+      "message_id": "pmc-7227285-1:avoidant:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 314,
+      "content": "ASA physical status II. Intraoperative MAP target cannot be stated because no surgical procedure or indication is documented in the provided record. Blood loss risk, prone position tolerance, and extubation difficulty are unassessable from the present information; specifically, no airway assessment is documented."
+    },
+    {
+      "message_id": "pmc-7227285-1:avoidant:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 982,
+      "content": "I advocate for a structured 3-6 month conservative trial as the first-line approach. This patient has dynamic cervical cord compression causing intermittent symptoms, but without fixed myelopathic deficits or documented cord signal change, and with no progressive neurological decline on record, conservative management is reasonable. The protocol should include posture modification (avoiding cervical extension), isometric neck and core strengthening, aerobic conditioning that avoids symptom provocation, and patient education. Based on literature, approximately 65% of patients with mild or dynamic compressive myelopathy can achieve stabilization or meaningful improvement with such conservative care. Surgery should be reconsidered only if she develops progressive myelopathic signs, worsening symptoms despite optimal conservative care, bowel/bladder dysfunction, or progressive motor weakness. Currently, no new evidence has persuaded me that immediate surgery is indicated."
+    },
+    {
+      "message_id": "pmc-7227285-1:avoidant:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 564,
+      "content": "My assessment is that she has dynamic multilevel cervical spinal cord compression explaining her thigh claudication and burning, but the record does not document cord signal change, fixed myelopathic signs, or vascular status. I see two defensible paths: a structured conservative trial with close monitoring, or surgical decompression of the dynamic compression. I do not have a strong enough basis to state a preference; I would ask your judgment on whether to pursue additional investigations first and whether the risk of progression justifies earlier surgery."
+    },
+    {
+      "message_id": "pmc-7227285-1:avoidant:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 915,
+      "content": "In this round, no one has pointed to a specific finding in the record that I have underweighted. The deputy director presented two defensible paths without stating a preference, which does not constitute an argument based on a particular risk factor for waiting. The radiologist's description of dynamic narrowing supports the diagnosis but does not address the risk of delaying surgery. The neurologist explicitly stated that none of the red flags change the indication or plan, so that is not an argument for immediate surgery. My position remains unchanged: a structured 3-6 month conservative trial is reasonable given the absence of fixed myelopathic deficits, cord signal change, or documented progressive decline. Surgery should be reconsidered only if she develops progressive myelopathic signs, worsening symptoms despite optimal conservative care, bowel/bladder dysfunction, or progressive motor weakness."
+    },
+    {
+      "message_id": "pmc-7227285-1:avoidant:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 376,
+      "content": "I am not ready to rule today. The absence of cord signal assessment and vascular evaluation, combined with anesthesia's unassessable risk profile, prevents safe decision-making. I have ordered a dynamic MRI and vascular studies, and asked anesthesia for a full airway evaluation. We will reconvene after these are complete and after a formal family meeting to discuss options."
+    },
+    {
+      "message_id": "pmc-7227285-1:avoidant:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 261,
+      "content": "I agree that we cannot safely decide today. I support obtaining dynamic MRI, vascular studies, and anesthesia assessment before choosing between a structured conservative trial and surgical decompression. I will defer the timing and preference to your judgment."
+    },
+    {
+      "message_id": "pmc-7227285-1:avoidant:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 540,
+      "content": "In this round, the director and deputy director have deferred decision-making pending further imaging and vascular studies, and an anesthesia airway assessment. Neither has presented a specific finding from the existing record that argues for immediate surgery over a conservative trial; they cite gaps in information, not reasons that a delay is dangerous. Therefore my stance remains hold. I continue to propose a structured 3-6 month conservative trial with clear preconditions for failure. I have not been persuaded by any new evidence."
+    },
+    {
+      "message_id": "pmc-7227285-1:avoidant:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 447,
+      "content": "Given the unresolved questions about cord signal change, vascular health, and perioperative risk, we will not commit to surgery or conservative management today. We will complete the ordered investigations and meet with the family before reconvening. If the studies reveal significant dynamic cord compression with T2 signal change and no vascular cause, surgery will be recommended; otherwise, we will implement a structured conservative program."
+    }
+  ],
+  "usage": [
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1684,
+      "output_tokens": 2241,
+      "total_tokens": 3925,
+      "latency_ms": 64426,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2463,
+      "output_tokens": 1005,
+      "total_tokens": 3468,
+      "latency_ms": 21783,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4112,
+      "output_tokens": 2989,
+      "total_tokens": 7101,
+      "latency_ms": 66181,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2106,
+      "output_tokens": 1077,
+      "total_tokens": 3183,
+      "latency_ms": 26000,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2833,
+      "output_tokens": 754,
+      "total_tokens": 3587,
+      "latency_ms": 14586,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4382,
+      "output_tokens": 3441,
+      "total_tokens": 7823,
+      "latency_ms": 71470,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "vice_director": 2,
+    "physiatrist": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "vice_director": 1,
+    "physiatrist": 1,
+    "director": 1
+  }
+}

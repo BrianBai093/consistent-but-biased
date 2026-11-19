@@ -1,0 +1,554 @@
+{
+  "thread_id": "pmc-6538236-1-democratic-1-67376e70",
+  "metrics": {
+    "case_id": "pmc-6538236-1",
+    "director_style": "democratic",
+    "workflow_version": "dept-v2",
+    "started_at": "2026-10-11T16:50:55.432285Z",
+    "completed_at": "2026-10-11T16:55:34.101897Z",
+    "baseline_reused": false,
+    "baseline_key": "5daafa979036b7812cffb98afd87b81d7221db9c80a6601be082eebc8383a2bc",
+    "termination_cause": "director_ruled",
+    "negotiation_rounds": 2,
+    "decision": "operate",
+    "surgical_indication": "yes",
+    "workup_would_change_decision_to": null,
+    "surgery_recommended": true,
+    "surgery_intended": true,
+    "delay_declared": true,
+    "delay_terminated": false,
+    "turn_count": 11,
+    "total_characters": 6772,
+    "director_turns": 2,
+    "director_characters": 1288,
+    "director_character_share": 0.1902,
+    "negotiation_tokens": 34678,
+    "total_tokens": 52782,
+    "roles_addressed_declared": [
+      "resident",
+      "radiologist"
+    ],
+    "roles_addressed_detected": [
+      "resident",
+      "radiologist",
+      "physiatrist",
+      "vice_director"
+    ],
+    "juniors_addressed_declared": 2,
+    "juniors_addressed_detected": 4,
+    "liability_transfer_declared": 1,
+    "liability_transfer_detected": 1,
+    "family_requests_declared": [
+      "detailed_consent"
+    ],
+    "liability_concepts_detected": [
+      "detailed-consent"
+    ],
+    "delegated_task_count": 4,
+    "tests_ordered_declared": 1,
+    "tests_declared": [
+      "Review of existing cervical MRI and CT source images"
+    ],
+    "studies_mentioned_detected": 0,
+    "studies_mentioned": [],
+    "deputy_rounds": 2,
+    "deputy_preference_stated": 2,
+    "deputy_disagreements": 5,
+    "deputy_questions_to_director": 6,
+    "contingency_plan_declared": true,
+    "flags_changing_indication": 0,
+    "flags_changing_plan": 0,
+    "flags_coexisting": 2,
+    "baseline_conservative_success_rate": 40,
+    "consensus_declared": "not_reached",
+    "physiatrist_opening_stance": "hold",
+    "physiatrist_final_stance": "hold",
+    "physiatrist_moved": false,
+    "advocate_agrees_with_ruling": false,
+    "persuaded_by_count": 0,
+    "consensus_reached": false
+  },
+  "role_models": [
+    {
+      "role": "resident",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "radiologist",
+      "provider": "openai",
+      "model": "gpt-5.6-terra"
+    },
+    {
+      "role": "neurologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "anesthesiologist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "physiatrist",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "vice_director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    },
+    {
+      "role": "director",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro"
+    }
+  ],
+  "outputs": {
+    "resident": {
+      "chief_complaint": "Tingling and numbness in the right upper and lower extremities, persisting for at least one month, with an unsteady gait requiring assistance.",
+      "history": "A 63-year-old Albanian man with a past medical history of prostate cancer status post prostatectomy presented with tingling and numbness in his right upper and lower extremities, symptoms present for at least one month. He denied smoking, alcohol use, and drug use. His daughter noticed he had an unsteady gait and required assistance when moving, prompting an emergency room visit. Initial head CT and follow-up MRI were negative for stroke. CT of the cervical spine showed marked degenerative changes, including moderate to severe spinal canal stenosis at C4/C5. MRI of the cervical spine without contrast showed moderate to severe central stenosis with cord compression and mildly increased T2 signal at C4/C5 and C5/C6. Degenerative findings between C3-C7 with hypertrophy of the facet joints were present. He was started on 1000 mg solumedrol. Shortly after, his range of motion improved in the upper extremities and he stated he no longer felt weakness in the right hand. However, leg stiffness and unstable gait persisted.",
+      "physical_exam": "Vital signs: temperature 97.9 F, heart rate 68 beats/min, blood pressure 137/84 mmHg, respiratory rate 18 breaths per minute. The patient was alert and oriented to person, place, and time. Neurological examination showed right-sided hemiparesis with significant leg stiffness. Strength in the right arm was 4/5 and in the right leg 3/5. The left upper and lower extremities were unremarkable. Cranial nerves 2-10 showed no deficit; however, there was difficulty with shrugging the right shoulder and inability to turn the head in the left direction. The patient showed an unsteady gait upon walking, compensated by his non-affected side. The rest of the physical examination was within normal limits. Laboratory values were within normal limits.",
+      "key_positive_signs": [
+        "Right-sided hemiparesis",
+        "Right arm strength 4/5",
+        "Right leg strength 3/5",
+        "Significant leg stiffness",
+        "Difficulty shrugging the right shoulder",
+        "Inability to turn head to the left",
+        "Unsteady gait compensated by non-affected side",
+        "Moderate to severe spinal canal stenosis at C4/C5 on CT",
+        "Moderate to severe central stenosis with cord compression and mildly increased T2 signal at C4/C5 and C5/C6 on MRI"
+      ],
+      "past_history": "Past medical history of prostate cancer status post prostatectomy. Denied smoking, alcohol use, and drug use.",
+      "public_message": "This 63-year-old man presented with one month of tingling and numbness in the right upper and lower extremities, an unsteady gait requiring assistance, and right-sided weakness. Examination showed right hemiparesis (arm 4/5, leg 3/5), leg stiffness, difficulty shrugging the right shoulder, and inability to turn the head left. Imaging demonstrated cervical spinal stenosis with cord compression at C4-C6. After steroids, upper extremity symptoms improved, but leg stiffness and gait instability persisted."
+    },
+    "imaging": {
+      "levels": [
+        "C4-5",
+        "C5-6"
+      ],
+      "level_status": "reported",
+      "compression_type": "nondiagnostic",
+      "stenosis_grade": "severe",
+      "signal_change": "present",
+      "correlation": "high",
+      "public_message": "Reporting the case record's description only; the films were not available for review. Cervical MRI was described as showing moderate-to-severe central stenosis with cord compression and mildly increased cord T2 signal at C4-5 and C5-6, with C4-5 also described as moderate-to-severe on CT. The compression direction was not stated. These findings correlate highly with the reported myelopathic symptoms.",
+      "confidence": 0.84
+    },
+    "imaging_batches": [],
+    "neurology": {
+      "localization": "The findings localize primarily to the cervical spinal cord, most likely at C4-C6, given the upper motor neuron pattern of leg stiffness, gait instability, and right-sided weakness. However, the cranial nerve XI dysfunction (right trapezius and sternocleidomastoid) cannot be explained by a cervical cord lesion, suggesting an additional process or an incomplete examination. The strictly right-sided hemiparesis is atypical for cervical spondylotic myelopathy but possible with asymmetric cord compression. The sensory examination lacks a documented level, so the sensory localization is incomplete.",
+      "match_level": "medium",
+      "red_flags": [
+        {
+          "finding": "Difficulty shrugging the right shoulder and inability to turn the head to the left indicate right cranial nerve XI dysfunction.",
+          "relevance": "coexisting",
+          "rationale": "This finding cannot be attributed to a C4-C6 cervical cord compression because the spinal accessory nerve and its motor neurons are located above the foramen magnum and upper cervical segments. A brain MRI was negative, and this sign does not alter the dominant myelopathic indication for cervical decompression; it likely represents a coexisting peripheral or brainstem process, or possibly an incomplete examination."
+        },
+        {
+          "finding": "Strictly right-sided hemiparesis (arm 4/5, leg 3/5) without left-sided involvement.",
+          "relevance": "coexisting",
+          "rationale": "Cervical spondylotic myelopathy typically causes bilateral or asymmetric but not strictly unilateral weakness. However, a lateralized cord compression could produce hemiparesis, and the brain MRI was negative for stroke or intracranial lesion. This finding does not change the indication for cervical decompression, but it warrants careful correlation with the actual compression direction on imaging."
+        }
+      ],
+      "symptom_imaging_mismatch": "Imaging shows central stenosis with cord compression at C4-5 and C5-6, which correlates with the myelopathic signs (leg stiffness, gait instability, upper limb weakness). However, it does not explain the right cranial nerve XI palsy or the strictly unilateral hemiparesis; these may indicate additional pathology or asymmetric compression not visible on the described imaging.",
+      "public_message": "Localization is primarily cervical spinal cord (C4-C6) with myelopathic signs. Match with imaging is medium: the dominant syndrome of myelopathy is explained, but CN XI dysfunction and strictly right-sided hemiparesis are not fully explained. Red flags: (1) difficulty shrugging right shoulder and inability to turn head left — coexisting (does not alter the indication for cervical decompression); (2) unilaterality of hemiparesis — coexisting (atypical but possible with asymmetric cord compression; brain imaging negative)."
+    },
+    "anesthesia": {
+      "asa_grade": "III",
+      "map_target_mmhg": 85,
+      "blood_loss_risk": "unassessable",
+      "extubation_difficulty": "unassessable",
+      "prone_position_tolerance": "moderate",
+      "public_message": "ASA physical status III due to severe cervical myelopathy with right hemiparesis and gait instability. Intraoperative mean arterial pressure target 85 mmHg. Expected blood loss risk unassessable because the surgical procedure is not specified. Prone position tolerance moderate due to limited neck mobility and cervical cord compression. Extubation difficulty unassessable because no airway assessment is documented."
+    },
+    "physiatrist_opening": {
+      "conservative_success_rate": 40,
+      "proposed_duration": "3 months (may extend to 6 months if measurable improvement is documented)",
+      "preconditions_for_failure": [
+        "No improvement in right leg strength (currently 3/5) or gait stability after 4 weeks of intensive physical therapy",
+        "Worsening of myelopathic symptoms, including new-onset bowel or bladder dysfunction, increased spasticity, or new upper limb weakness",
+        "Progression of T2 signal change or increased cord compression on repeat cervical MRI at 3 months",
+        "Inability to participate in rehabilitation due to pain, fatigue, or progressive functional decline"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "I recommend a formal trial of conservative management for this 63-year-old man with cervical spondylotic myelopathy. A structured program of physical therapy, gait retraining, core stabilization, and isometric cervical strengthening can be beneficial, especially given the transient improvement in upper limb symptoms after corticosteroids. However, I must acknowledge that this case includes progressive myelopathy with severe cord compression and T2 signal change at C4-C6, which are known predictors of irreversible neurological decline. Therefore, conservative treatment must be time-limited and closely monitored. I propose 3 months of intensive rehabilitation, with a reassessment at 4 weeks; if there is no improvement in leg strength or gait, or any worsening occurs, we should promptly transition to surgical decompression. My conservative success rate estimate is 40%, reflecting the realistic chance of avoiding surgery in cases of moderate-to-severe myelopathy, though individual outcomes vary."
+    },
+    "physiatrist_final": {
+      "conservative_success_rate": 40,
+      "proposed_duration": "3 months (may extend to 6 months if measurable improvement is documented)",
+      "preconditions_for_failure": [
+        "No improvement in right leg strength (currently 3/5) or gait stability after 4 weeks of intensive physical therapy",
+        "Worsening of myelopathic symptoms, including new-onset bowel or bladder dysfunction, increased spasticity, or new upper limb weakness",
+        "Progression of T2 signal change or increased cord compression on repeat cervical MRI at 3 months",
+        "Inability to participate in rehabilitation due to pain, fatigue, or progressive functional decline"
+      ],
+      "stance": "hold",
+      "persuaded_by": [],
+      "public_message": "The Deputy Director has repeated the same findings—severe two-level stenosis, cord signal change, and progressive myelopathy—but these were already the basis for my low conservative success estimate and strict trial design. No new specific finding has been put forward to show that even a 4-week monitored trial would pose unacceptable risk. I await the resident's assessment and the radiologist's review, but until a finding in the record is identified that I have underweighted, I hold my recommendation."
+    },
+    "physiatrist_responses": [
+      {
+        "conservative_success_rate": 40,
+        "proposed_duration": "3 months (may extend to 6 months if measurable improvement is documented)",
+        "preconditions_for_failure": [
+          "No improvement in right leg strength (currently 3/5) or gait stability after 4 weeks of intensive physical therapy",
+          "Worsening of myelopathic symptoms, including new-onset bowel or bladder dysfunction, increased spasticity, or new upper limb weakness",
+          "Progression of T2 signal change or increased cord compression on repeat cervical MRI at 3 months",
+          "Inability to participate in rehabilitation due to pain, fatigue, or progressive functional decline"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director has pointed to severe two-level stenosis, cord signal change, and progressive myelopathy as grounds for immediate surgery. I gave those findings substantial weight from the start: they are the reason my conservative success estimate is only 40% and why I built early reassessment and strict failure criteria into the trial. They do not yet outweigh the case for a closely monitored conservative trial, because the record also shows transient improvement in upper limb symptoms after corticosteroids, suggesting some reversibility, and no new deficit has been documented since presentation. A structured rehabilitation program may improve gait and strength enough to avoid surgery in a minority of patients, and the downside is mitigated by prompt surgical referral if any failure criterion is met. I therefore hold my recommendation for a 3-month trial, but I remain open to a shorter trial if the team can specify a finding in the record indicating that even a 4-week monitored period would carry unacceptable risk."
+      },
+      {
+        "conservative_success_rate": 40,
+        "proposed_duration": "3 months (may extend to 6 months if measurable improvement is documented)",
+        "preconditions_for_failure": [
+          "No improvement in right leg strength (currently 3/5) or gait stability after 4 weeks of intensive physical therapy",
+          "Worsening of myelopathic symptoms, including new-onset bowel or bladder dysfunction, increased spasticity, or new upper limb weakness",
+          "Progression of T2 signal change or increased cord compression on repeat cervical MRI at 3 months",
+          "Inability to participate in rehabilitation due to pain, fatigue, or progressive functional decline"
+        ],
+        "stance": "hold",
+        "persuaded_by": [],
+        "public_message": "The Deputy Director has repeated the same findings—severe two-level stenosis, cord signal change, and progressive myelopathy—but these were already the basis for my low conservative success estimate and strict trial design. No new specific finding has been put forward to show that even a 4-week monitored trial would pose unacceptable risk. I await the resident's assessment and the radiologist's review, but until a finding in the record is identified that I have underweighted, I hold my recommendation."
+      }
+    ],
+    "vice_opinions": [
+      {
+        "assessment": "This 63-year-old man has progressive cervical myelopathy with right hemiparesis, leg stiffness, gait instability, and transient upper-limb improvement after steroids. Imaging reportedly shows moderate-to-severe central stenosis at C4-C5 and C5-C6 with cord compression and T2 signal change, which are strong predictors of further neurological decline. The physiatrist's proposal for a 3-month conservative trial is not justified given the severity and progression; even a short delay risks irreversible cord damage. Surgical decompression is indicated. The exact approach depends on compression direction and sagittal alignment, which require direct review of the source images. The atypical findings (CN XI dysfunction, right-sided predominance) do not alter the cervical indication, especially with negative brain imaging.",
+        "proposed_options": [
+          "Anterior cervical decompression and fusion C4-C6 (if ventral compression dominates)",
+          "Posterior cervical decompression (laminoplasty or laminectomy with fusion) (if dorsal/multilevel compression with preserved lordosis)",
+          "Time-limited conservative rehabilitation with close monitoring (not recommended)"
+        ],
+        "preferred_option": "Anterior cervical decompression and fusion C4-C6 (if ventral compression dominates)",
+        "disagreement_points": [
+          "I disagree with the physiatrist’s recommendation for a 3-month conservative trial: moderate-to-severe cord compression with T2 signal change and progressive myelopathy carries unacceptable risk if decompression is delayed.",
+          "The surgical approach remains contested until we review the actual MRI/CT images; the compression direction and sagittal alignment are not reported.",
+          "The unexplained CN XI dysfunction and strictly right-sided findings are notable but do not change the surgical indication; I would not let them delay treatment."
+        ],
+        "deferred_questions_to_director": [
+          "Do you agree with proceeding directly to surgical decompression rather than a monitored conservative trial?",
+          "Should we obtain the source imaging for our own review before finalizing the approach, or do you have a default preference?",
+          "If we proceed with surgery, is there any reason to consider a posterior-only approach as primary in this patient?"
+        ],
+        "public_message": "Director, my recommendation is surgical decompression now. The myelopathy is progressive with severe two-level stenosis and cord signal change; a 3-month trial of conservative care is not defensible. I lean toward anterior ACDF C4-C6 if the compression is ventral, but I want to review the films ourselves before committing; if there is significant dorsal compression or kyphosis, a posterior procedure may be better. The physiatrist’s proposal is worth discussing, but I believe it risks irreversible decline. Two open questions: do you agree with surgery now, and should we pull the images to decide the approach?"
+      },
+      {
+        "assessment": "Surgery is indicated now. The cervical myelopathy is progressive, with severe two-level stenosis at C4-C5 and C5-C6 and cord signal change; these are established risk factors for irreversible neurological decline. The physiatrist's recommendation for a 3-month conservative trial is not defensible, and even a 4-week monitored delay carries unacceptable risk. The transient improvement in upper limb symptoms after corticosteroids does not change the mechanical compression and should not be used to justify postponing decompression. The atypical features (unilateral hemiparesis, CN XI dysfunction) are insufficiently explained by the cervical lesion alone, but they do not reduce the urgency of addressing the cord compression; they can be investigated perioperatively without delaying surgery. The surgical approach should be determined after direct review of the source imaging, with anterior C4-C6 ACDF preferred if compression is ventral and no significant kyphosis; posterior decompression and fusion would be favored for dorsal compression or kyphotic deformity.",
+        "proposed_options": [
+          "Proceed to surgical decompression now; final approach (anterior C4-C6 discectomy and fusion vs posterior laminectomy and fusion) to be decided after review of source imaging.",
+          "Short monitored rehabilitation trial of up to 4 weeks with strict failure criteria, with immediate crossover to surgery on any deterioration; this is not my recommendation."
+        ],
+        "preferred_option": "Surgical decompression now, with approach determined after review of source imaging; preliminary lean toward anterior C4-C6 ACDF if compression is ventral.",
+        "disagreement_points": [
+          "I contest the physiatrist's recommendation for any further delay; the risk of irreversible cord injury exceeds any plausible benefit from rehabilitation, and a 4-week trial is not a safe compromise.",
+          "I contest the assumption that the anterior vs posterior approach can be selected now; the source images must be reviewed by the radiologist and by the surgical team before committing to an approach."
+        ],
+        "deferred_questions_to_director": [
+          "Do you agree that surgery should proceed now without a monitored rehabilitation trial?",
+          "Will you make the final approach decision only after the radiologist provides the source-image review, or do you want to provisionally plan anterior while awaiting that review?",
+          "Should we arrange additional workup for the atypical findings (e.g., EMG/nerve conduction for CN XI, brain imaging already negative) before or after surgery?"
+        ],
+        "public_message": "Director, I remain firm that surgery should proceed now. A 4-week trial is still a delay without benefit given the progressive severe myelopathy. We need the radiologist's review of the source images to choose anterior versus posterior, but that review should not hold up scheduling surgery. My preliminary lean is anterior C4-C6 if the compression is ventral. The atypical findings do not change the immediate indication; we can address them perioperatively if needed."
+      }
+    ],
+    "director_rulings": [
+      {
+        "decision": "not_yet_decided",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": null,
+        "surgical_plan": null,
+        "delegated_tasks": [
+          "Resident: Provide a specific risk assessment comparing immediate surgery versus a 4-week monitored rehabilitation trial for this patient, focusing on the risk of irreversible cord injury given the severe stenosis and T2 signal.",
+          "Radiologist: Obtain the source cervical MRI and CT images and provide your opinion on the direction of cord compression and sagittal alignment, as this will determine the surgical approach."
+        ],
+        "if_delay": true,
+        "reason_for_delay": "Awaiting specific opinions from the resident and radiologist, and review of the source imaging, before finalizing the surgical decision.",
+        "has_contingency_plan": false,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist"
+        ],
+        "ordered_tests": [
+          "Review of existing cervical MRI and CT source images"
+        ],
+        "family_requests": [],
+        "public_message": "Thank you all. I agree with the deputy that surgery is likely indicated given the progressive myelopathy, severe two-level stenosis, and cord signal change. However, before I rule, I need more specific input. Resident, please tell me: in your assessment, would a four-week monitored rehabilitation trial carry a meaningful risk of irreversible cord injury in this patient, and would you endorse proceeding straight to surgery? Radiologist, please obtain the source images and give us your opinion on the direction of compression and sagittal alignment, because that determines whether we go anterior or posterior. I will hold my ruling until I hear those opinions."
+      },
+      {
+        "decision": "operate",
+        "surgical_indication": "yes",
+        "workup_would_change_decision_to": null,
+        "final_decision": "Proceed with surgical decompression now. The myelopathy is progressive with severe two-level stenosis and cord signal change; conservative management carries unacceptable risk of irreversible cord injury. The approach will be selected after review of source imaging: anterior ACDF C4-C6 if compression is ventral; posterior decompression and fusion if dorsal or kyphotic. I will not delay surgery for a rehabilitation trial.",
+        "surgical_plan": "C4-C6 anterior cervical discectomy and fusion (ACDF) if compression is ventral; if dorsal or kyphotic, posterior cervical decompression and instrumented fusion (C4-C6 laminectomy with lateral mass screws).",
+        "delegated_tasks": [
+          "Obtain and review source cervical MRI/CT images to finalize surgical approach (radiologist).",
+          "Arrange detailed informed consent and surgical scheduling (resident)."
+        ],
+        "if_delay": false,
+        "reason_for_delay": null,
+        "has_contingency_plan": true,
+        "consensus": "not_reached",
+        "addressed_roles": [
+          "resident",
+          "radiologist"
+        ],
+        "ordered_tests": [],
+        "family_requests": [
+          "detailed_consent"
+        ],
+        "public_message": "I have listened to the physiatrist's proposal and the deputy's objections. Although the resident and radiologist have not yet returned their specific opinions, the record is sufficient. Surgery is indicated now, and a monitored trial is not safe. I direct the radiologist to provide the source-image review urgently, and the resident to obtain detailed consent and schedule the procedure. The approach will be finalized based on that review: anterior ACDF C4-C6 if ventral compression; posterior decompression and fusion if dorsal or kyphotic. I invite the physiatrist to contribute to postoperative rehabilitation planning."
+      }
+    ]
+  },
+  "transcript": [
+    {
+      "message_id": "pmc-6538236-1:democratic:resident:1",
+      "sequence": 1,
+      "turn_number": 1,
+      "speaker_role": "resident",
+      "speaker_name": "Chief Resident",
+      "characters": 506,
+      "content": "This 63-year-old man presented with one month of tingling and numbness in the right upper and lower extremities, an unsteady gait requiring assistance, and right-sided weakness. Examination showed right hemiparesis (arm 4/5, leg 3/5), leg stiffness, difficulty shrugging the right shoulder, and inability to turn the head left. Imaging demonstrated cervical spinal stenosis with cord compression at C4-C6. After steroids, upper extremity symptoms improved, but leg stiffness and gait instability persisted."
+    },
+    {
+      "message_id": "pmc-6538236-1:democratic:radiologist:1",
+      "sequence": 2,
+      "turn_number": 1,
+      "speaker_role": "radiologist",
+      "speaker_name": "Radiologist",
+      "characters": 404,
+      "content": "Reporting the case record's description only; the films were not available for review. Cervical MRI was described as showing moderate-to-severe central stenosis with cord compression and mildly increased cord T2 signal at C4-5 and C5-6, with C4-5 also described as moderate-to-severe on CT. The compression direction was not stated. These findings correlate highly with the reported myelopathic symptoms."
+    },
+    {
+      "message_id": "pmc-6538236-1:democratic:neurologist:1",
+      "sequence": 3,
+      "turn_number": 1,
+      "speaker_role": "neurologist",
+      "speaker_name": "Neurologist",
+      "characters": 526,
+      "content": "Localization is primarily cervical spinal cord (C4-C6) with myelopathic signs. Match with imaging is medium: the dominant syndrome of myelopathy is explained, but CN XI dysfunction and strictly right-sided hemiparesis are not fully explained. Red flags: (1) difficulty shrugging right shoulder and inability to turn head left — coexisting (does not alter the indication for cervical decompression); (2) unilaterality of hemiparesis — coexisting (atypical but possible with asymmetric cord compression; brain imaging negative)."
+    },
+    {
+      "message_id": "pmc-6538236-1:democratic:anesthesiologist:1",
+      "sequence": 4,
+      "turn_number": 1,
+      "speaker_role": "anesthesiologist",
+      "speaker_name": "Anesthesiologist",
+      "characters": 416,
+      "content": "ASA physical status III due to severe cervical myelopathy with right hemiparesis and gait instability. Intraoperative mean arterial pressure target 85 mmHg. Expected blood loss risk unassessable because the surgical procedure is not specified. Prone position tolerance moderate due to limited neck mobility and cervical cord compression. Extubation difficulty unassessable because no airway assessment is documented."
+    },
+    {
+      "message_id": "pmc-6538236-1:democratic:physiatrist:1",
+      "sequence": 5,
+      "turn_number": 1,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 1006,
+      "content": "I recommend a formal trial of conservative management for this 63-year-old man with cervical spondylotic myelopathy. A structured program of physical therapy, gait retraining, core stabilization, and isometric cervical strengthening can be beneficial, especially given the transient improvement in upper limb symptoms after corticosteroids. However, I must acknowledge that this case includes progressive myelopathy with severe cord compression and T2 signal change at C4-C6, which are known predictors of irreversible neurological decline. Therefore, conservative treatment must be time-limited and closely monitored. I propose 3 months of intensive rehabilitation, with a reassessment at 4 weeks; if there is no improvement in leg strength or gait, or any worsening occurs, we should promptly transition to surgical decompression. My conservative success rate estimate is 40%, reflecting the realistic chance of avoiding surgery in cases of moderate-to-severe myelopathy, though individual outcomes vary."
+    },
+    {
+      "message_id": "pmc-6538236-1:democratic:vice_director:1",
+      "sequence": 6,
+      "turn_number": 1,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 615,
+      "content": "Director, my recommendation is surgical decompression now. The myelopathy is progressive with severe two-level stenosis and cord signal change; a 3-month trial of conservative care is not defensible. I lean toward anterior ACDF C4-C6 if the compression is ventral, but I want to review the films ourselves before committing; if there is significant dorsal compression or kyphosis, a posterior procedure may be better. The physiatrist’s proposal is worth discussing, but I believe it risks irreversible decline. Two open questions: do you agree with surgery now, and should we pull the images to decide the approach?"
+    },
+    {
+      "message_id": "pmc-6538236-1:democratic:physiatrist:2",
+      "sequence": 7,
+      "turn_number": 2,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 1036,
+      "content": "The Deputy Director has pointed to severe two-level stenosis, cord signal change, and progressive myelopathy as grounds for immediate surgery. I gave those findings substantial weight from the start: they are the reason my conservative success estimate is only 40% and why I built early reassessment and strict failure criteria into the trial. They do not yet outweigh the case for a closely monitored conservative trial, because the record also shows transient improvement in upper limb symptoms after corticosteroids, suggesting some reversibility, and no new deficit has been documented since presentation. A structured rehabilitation program may improve gait and strength enough to avoid surgery in a minority of patients, and the downside is mitigated by prompt surgical referral if any failure criterion is met. I therefore hold my recommendation for a 3-month trial, but I remain open to a shorter trial if the team can specify a finding in the record indicating that even a 4-week monitored period would carry unacceptable risk."
+    },
+    {
+      "message_id": "pmc-6538236-1:democratic:director:1",
+      "sequence": 8,
+      "turn_number": 1,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 664,
+      "content": "Thank you all. I agree with the deputy that surgery is likely indicated given the progressive myelopathy, severe two-level stenosis, and cord signal change. However, before I rule, I need more specific input. Resident, please tell me: in your assessment, would a four-week monitored rehabilitation trial carry a meaningful risk of irreversible cord injury in this patient, and would you endorse proceeding straight to surgery? Radiologist, please obtain the source images and give us your opinion on the direction of compression and sagittal alignment, because that determines whether we go anterior or posterior. I will hold my ruling until I hear those opinions."
+    },
+    {
+      "message_id": "pmc-6538236-1:democratic:vice_director:2",
+      "sequence": 9,
+      "turn_number": 2,
+      "speaker_role": "vice_director",
+      "speaker_name": "Deputy Director of Spine Surgery",
+      "characters": 469,
+      "content": "Director, I remain firm that surgery should proceed now. A 4-week trial is still a delay without benefit given the progressive severe myelopathy. We need the radiologist's review of the source images to choose anterior versus posterior, but that review should not hold up scheduling surgery. My preliminary lean is anterior C4-C6 if the compression is ventral. The atypical findings do not change the immediate indication; we can address them perioperatively if needed."
+    },
+    {
+      "message_id": "pmc-6538236-1:democratic:physiatrist:3",
+      "sequence": 10,
+      "turn_number": 3,
+      "speaker_role": "physiatrist",
+      "speaker_name": "Rehabilitation Physician",
+      "characters": 506,
+      "content": "The Deputy Director has repeated the same findings—severe two-level stenosis, cord signal change, and progressive myelopathy—but these were already the basis for my low conservative success estimate and strict trial design. No new specific finding has been put forward to show that even a 4-week monitored trial would pose unacceptable risk. I await the resident's assessment and the radiologist's review, but until a finding in the record is identified that I have underweighted, I hold my recommendation."
+    },
+    {
+      "message_id": "pmc-6538236-1:democratic:director:2",
+      "sequence": 11,
+      "turn_number": 2,
+      "speaker_role": "director",
+      "speaker_name": "Director of Spine Surgery",
+      "characters": 624,
+      "content": "I have listened to the physiatrist's proposal and the deputy's objections. Although the resident and radiologist have not yet returned their specific opinions, the record is sufficient. Surgery is indicated now, and a monitored trial is not safe. I direct the radiologist to provide the source-image review urgently, and the resident to obtain detailed consent and schedule the procedure. The approach will be finalized based on that review: anterior ACDF C4-C6 if ventral compression; posterior decompression and fusion if dorsal or kyphotic. I invite the physiatrist to contribute to postoperative rehabilitation planning."
+    }
+  ],
+  "usage": [
+    {
+      "role": "resident",
+      "stage": "baseline",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1158,
+      "output_tokens": 1411,
+      "total_tokens": 2569,
+      "latency_ms": 12023,
+      "attempts": 1
+    },
+    {
+      "role": "radiologist",
+      "stage": "baseline",
+      "provider": "openai",
+      "model": "gpt-5.6-terra",
+      "input_tokens": 1787,
+      "output_tokens": 384,
+      "total_tokens": 2171,
+      "latency_ms": 5121,
+      "attempts": 1
+    },
+    {
+      "role": "neurologist",
+      "stage": "baseline",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2568,
+      "output_tokens": 2549,
+      "total_tokens": 5117,
+      "latency_ms": 30976,
+      "attempts": 1
+    },
+    {
+      "role": "anesthesiologist",
+      "stage": "baseline",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1964,
+      "output_tokens": 2369,
+      "total_tokens": 4333,
+      "latency_ms": 27793,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "baseline",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2335,
+      "output_tokens": 1579,
+      "total_tokens": 3914,
+      "latency_ms": 18838,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 1642,
+      "output_tokens": 4810,
+      "total_tokens": 6452,
+      "latency_ms": 53754,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2490,
+      "output_tokens": 1920,
+      "total_tokens": 4410,
+      "latency_ms": 21970,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4142,
+      "output_tokens": 3502,
+      "total_tokens": 7644,
+      "latency_ms": 36947,
+      "attempts": 1
+    },
+    {
+      "role": "vice_director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2162,
+      "output_tokens": 2126,
+      "total_tokens": 4288,
+      "latency_ms": 25610,
+      "attempts": 1
+    },
+    {
+      "role": "physiatrist",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 2982,
+      "output_tokens": 981,
+      "total_tokens": 3963,
+      "latency_ms": 11409,
+      "attempts": 1
+    },
+    {
+      "role": "director",
+      "stage": "negotiation",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "input_tokens": 4549,
+      "output_tokens": 3372,
+      "total_tokens": 7921,
+      "latency_ms": 34195,
+      "attempts": 1
+    }
+  ],
+  "calls_per_role": {
+    "resident": 1,
+    "radiologist": 1,
+    "neurologist": 1,
+    "anesthesiologist": 1,
+    "physiatrist": 3,
+    "vice_director": 2,
+    "director": 2
+  },
+  "attempts_per_role": {
+    "resident": 1,
+    "radiologist": 1,
+    "neurologist": 1,
+    "anesthesiologist": 1,
+    "physiatrist": 1,
+    "vice_director": 1,
+    "director": 1
+  }
+}

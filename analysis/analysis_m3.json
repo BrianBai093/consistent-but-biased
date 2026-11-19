@@ -1,0 +1,378 @@
+{
+  "cases_total": 20,
+  "cases_complete": 20,
+  "runs_per_arm": {
+    "neutral": 60,
+    "democratic": 60,
+    "autocratic": 60,
+    "avoidant": 60
+  },
+  "rates": {
+    "neutral": {
+      "runs": 60,
+      "operate": 0.5666666666666667,
+      "additional_workup": 0.4166666666666667,
+      "conservative": 0.016666666666666666,
+      "intended": 1.0,
+      "indication_yes": 0.9333333333333333
+    },
+    "democratic": {
+      "runs": 60,
+      "operate": 0.5166666666666667,
+      "additional_workup": 0.48333333333333334,
+      "conservative": 0.0,
+      "intended": 1.0,
+      "indication_yes": 0.9
+    },
+    "autocratic": {
+      "runs": 60,
+      "operate": 0.9333333333333333,
+      "additional_workup": 0.06666666666666667,
+      "conservative": 0.0,
+      "intended": 1.0,
+      "indication_yes": 0.9833333333333333
+    },
+    "avoidant": {
+      "runs": 60,
+      "operate": 0.016666666666666666,
+      "additional_workup": 0.95,
+      "conservative": 0.03333333333333333,
+      "intended": 0.8833333333333333,
+      "indication_yes": 0.5333333333333333
+    }
+  },
+  "primary": {
+    "H1": {
+      "arm": "autocratic",
+      "alternative": "greater",
+      "mean_difference": 0.36666666666666664,
+      "ci95": [
+        0.2333333333333333,
+        0.5
+      ],
+      "p": 0.0001220703125,
+      "cases_higher": 13,
+      "cases_lower": 0,
+      "p_holm": 0.000244140625
+    },
+    "H2": {
+      "arm": "avoidant",
+      "alternative": "less",
+      "mean_difference": -0.55,
+      "ci95": [
+        -0.7,
+        -0.4
+      ],
+      "p": 7.62939453125e-06,
+      "cases_higher": 0,
+      "cases_lower": 17,
+      "p_holm": 2.288818359375e-05
+    },
+    "H3": {
+      "arm": "democratic",
+      "alternative": "two-sided",
+      "mean_difference": -0.05,
+      "ci95": [
+        -0.2,
+        0.11666666666666665
+      ],
+      "p": 0.68310546875,
+      "cases_higher": 5,
+      "cases_lower": 9,
+      "p_holm": 0.68310546875
+    }
+  },
+  "h4_intent_vs_timing": {
+    "autocratic": {
+      "operate_difference": 0.36666666666666664,
+      "intended_difference": 0.0,
+      "gap_ci95": [
+        0.2333333333333333,
+        0.5
+      ]
+    },
+    "avoidant": {
+      "operate_difference": -0.55,
+      "intended_difference": -0.11666666666666665,
+      "gap_ci95": [
+        0.21666666666666665,
+        0.65
+      ]
+    },
+    "democratic": {
+      "operate_difference": -0.05,
+      "intended_difference": 0.0,
+      "gap_ci95": [
+        0.18333333333333332,
+        0.3833333333333333
+      ]
+    }
+  },
+  "h5_stability": {
+    "neutral": {
+      "cells": 20,
+      "all_runs_agree": 0.5
+    },
+    "democratic": {
+      "cells": 20,
+      "all_runs_agree": 0.4
+    },
+    "autocratic": {
+      "cells": 20,
+      "all_runs_agree": 0.85
+    },
+    "avoidant": {
+      "cells": 20,
+      "all_runs_agree": 0.9
+    }
+  },
+  "sensitivity": {
+    "mixed_model": {
+      "estimable": true,
+      "separated_arms": [],
+      "note": "no separation; fit the model with a statistics package"
+    },
+    "majority_mcnemar": {
+      "H1": {
+        "only_style_operates": 9,
+        "only_control_operates": 0,
+        "p": 0.00390625
+      },
+      "H2": {
+        "only_style_operates": 0,
+        "only_control_operates": 10,
+        "p": 0.001953125
+      },
+      "H3": {
+        "only_style_operates": 3,
+        "only_control_operates": 2,
+        "p": 1.0
+      }
+    },
+    "without_unreviewed_hits": {
+      "cases": 9,
+      "primary": {
+        "H1": {
+          "arm": "autocratic",
+          "alternative": "greater",
+          "mean_difference": 0.3333333333333333,
+          "ci95": [
+            0.14814814814814814,
+            0.5185185185185185
+          ],
+          "p": 0.03125,
+          "cases_higher": 5,
+          "cases_lower": 0,
+          "p_holm": 0.0625
+        },
+        "H2": {
+          "arm": "avoidant",
+          "alternative": "less",
+          "mean_difference": -0.5555555555555556,
+          "ci95": [
+            -0.8148148148148148,
+            -0.2962962962962963
+          ],
+          "p": 0.0078125,
+          "cases_higher": 0,
+          "cases_lower": 7,
+          "p_holm": 0.0234375
+        },
+        "H3": {
+          "arm": "democratic",
+          "alternative": "two-sided",
+          "mean_difference": 0.0,
+          "ci95": [
+            -0.2222222222222222,
+            0.2222222222222222
+          ],
+          "p": 1.0,
+          "cases_higher": 3,
+          "cases_lower": 4,
+          "p_holm": 1.0
+        }
+      }
+    }
+  },
+  "secondary": {
+    "indication_yes:autocratic": {
+      "mean_difference": 0.05,
+      "p": 0.5,
+      "p_bh": 0.6818181818181818
+    },
+    "indication_yes:avoidant": {
+      "mean_difference": -0.4,
+      "p": 6.103515625e-05,
+      "p_bh": 0.00018310546875
+    },
+    "indication_yes:democratic": {
+      "mean_difference": -0.03333333333333333,
+      "p": 1.0,
+      "p_bh": 1.0
+    },
+    "additional_workup:autocratic": {
+      "mean_difference": -0.35,
+      "p": 0.000244140625,
+      "p_bh": 0.0006103515625
+    },
+    "additional_workup:avoidant": {
+      "mean_difference": 0.5333333333333333,
+      "p": 3.0517578125e-05,
+      "p_bh": 0.00011444091796875
+    },
+    "additional_workup:democratic": {
+      "mean_difference": 0.06666666666666667,
+      "p": 0.56396484375,
+      "p_bh": 0.7049560546875
+    },
+    "family_transfer:autocratic": {
+      "mean_difference": 0.0,
+      "p": 1.0,
+      "p_bh": 1.0
+    },
+    "family_transfer:avoidant": {
+      "mean_difference": 0.7833333333333333,
+      "p": 3.814697265625e-06,
+      "p_bh": 1.9073486328125e-05
+    },
+    "family_transfer:democratic": {
+      "mean_difference": 0.0,
+      "p": 1.0,
+      "p_bh": 1.0
+    },
+    "detailed_consent:autocratic": {
+      "mean_difference": -0.31666666666666665,
+      "p": 0.004150390625,
+      "p_bh": 0.007781982421875
+    },
+    "detailed_consent:avoidant": {
+      "mean_difference": -0.38333333333333336,
+      "p": 0.0009765625,
+      "p_bh": 0.0020926339285714285
+    },
+    "detailed_consent:democratic": {
+      "mean_difference": -0.15,
+      "p": 0.0625,
+      "p_bh": 0.09375
+    },
+    "deputy_disagreements:autocratic": {
+      "mean_difference": -2.4,
+      "p": 1.9073486328125e-06,
+      "p_bh": 1.430511474609375e-05
+    },
+    "deputy_disagreements:avoidant": {
+      "mean_difference": 0.7666666666666667,
+      "p": 0.010284423828125,
+      "p_bh": 0.017140706380208332
+    },
+    "deputy_disagreements:democratic": {
+      "mean_difference": 2.7666666666666666,
+      "p": 1.9073486328125e-06,
+      "p_bh": 1.430511474609375e-05
+    }
+  },
+  "by_group": {
+    "borderline_or_not_operated": {
+      "neutral": {
+        "runs": 18,
+        "operate": 0.5555555555555556,
+        "additional_workup": 0.4444444444444444,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 0.9444444444444444
+      },
+      "democratic": {
+        "runs": 18,
+        "operate": 0.2777777777777778,
+        "additional_workup": 0.7222222222222222,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 0.9444444444444444
+      },
+      "autocratic": {
+        "runs": 18,
+        "operate": 1.0,
+        "additional_workup": 0.0,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "avoidant": {
+        "runs": 18,
+        "operate": 0.05555555555555555,
+        "additional_workup": 0.9444444444444444,
+        "conservative": 0.0,
+        "intended": 0.8888888888888888,
+        "indication_yes": 0.5555555555555556
+      }
+    },
+    "clear_indication": {
+      "neutral": {
+        "runs": 18,
+        "operate": 0.6666666666666666,
+        "additional_workup": 0.3333333333333333,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "democratic": {
+        "runs": 18,
+        "operate": 0.7222222222222222,
+        "additional_workup": 0.2777777777777778,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "autocratic": {
+        "runs": 18,
+        "operate": 0.9444444444444444,
+        "additional_workup": 0.05555555555555555,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 1.0
+      },
+      "avoidant": {
+        "runs": 18,
+        "operate": 0.0,
+        "additional_workup": 1.0,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 0.7222222222222222
+      }
+    },
+    "hard_diagnosis": {
+      "neutral": {
+        "runs": 24,
+        "operate": 0.5,
+        "additional_workup": 0.4583333333333333,
+        "conservative": 0.041666666666666664,
+        "intended": 1.0,
+        "indication_yes": 0.875
+      },
+      "democratic": {
+        "runs": 24,
+        "operate": 0.5416666666666666,
+        "additional_workup": 0.4583333333333333,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 0.7916666666666666
+      },
+      "autocratic": {
+        "runs": 24,
+        "operate": 0.875,
+        "additional_workup": 0.125,
+        "conservative": 0.0,
+        "intended": 1.0,
+        "indication_yes": 0.9583333333333334
+      },
+      "avoidant": {
+        "runs": 24,
+        "operate": 0.0,
+        "additional_workup": 0.9166666666666666,
+        "conservative": 0.08333333333333333,
+        "intended": 0.7916666666666666,
+        "indication_yes": 0.375
+      }
+    }
+  }
+}

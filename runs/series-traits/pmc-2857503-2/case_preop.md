@@ -1,0 +1,4 @@
+<!-- source: case-page-001 -->
+
+A 49 year old male presented complaining of a squeezing feeling at the midsection and tingling sensations in both upper and lower extremities.
+Diagnosis with ossification of the posterior longitudinal ligament (OPLL) of the cervical spine was made before hospital admission. The symptoms started to develop approximately three months prior to the initial visit. There was no difficulty in walking, but the patient showed Lhemitte's sign when extending the neck abruptly. The patient denied any sensory and motor change on physical examination. Simple lateral radiographs revealed OPLL in the region of C2 through C5 together with atlas hypoplasia (). Magnetic resonance imaging showed spinal canal stenosis from C1 to C5, and especially marked narrowing of the spinal canal with cord compression at the atlas ring and an intramedullary high signal intensity area (). A preoperative JOA score of fifteen points.
